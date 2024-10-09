@@ -109,5 +109,11 @@
     <Content Include="Raytheon.ico" />
     <Content Include="Resources\Raytheon.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\phils\source\repos\TestExec\TestExec.csproj">
+      <Project>{314614cb-6e17-4b74-a9f9-ce4699f78c9b}</Project>
+      <Name>TestExec</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
