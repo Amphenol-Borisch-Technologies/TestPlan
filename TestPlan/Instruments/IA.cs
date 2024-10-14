@@ -1,4 +1,5 @@
-﻿using static ABT.Test.TestExecutive.Instruments.Instrumentation;
+﻿using System;
+using static ABT.Test.TestExecutive.Instruments.Instrumentation;
 
 namespace ABT.Test.UUT.Instruments {
     /// <summary>
@@ -30,11 +31,11 @@ namespace ABT.Test.UUT.Instruments {
     /// </para>
     /// </summary>
     internal static class IA {
-        internal static readonly Alias PRI_BIAS = new Alias("PS1ε2");
-        internal static readonly Alias SEAL     = new Alias("PS3");
-        internal static readonly Alias MSO      = new Alias("MSO1");
-        internal static readonly Alias MSMU     = new Alias("MSMU1");
-        internal static readonly Alias MM       = new Alias("MM1");
-        internal static readonly Alias WG       = new Alias("WG1ε2");
+        internal static readonly String PRI_BIAS = "PS1ε2";
+        internal static readonly String SEAL     = "PS3";
+        internal static readonly String MSO      = "MSO1";
+        internal static readonly String MSMU     = "MSMU1";
+        internal static readonly String MM       = "MM1";
+        internal static readonly String WG       = "WG1ε2";
     }
 }
