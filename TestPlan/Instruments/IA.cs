@@ -1,5 +1,5 @@
 ﻿using System;
-using static ABT.Test.TestExecutive.Instruments.Instrumentation;
+using static ABT.Test.TestExecutive.Instruments.Instruments;
 
 namespace ABT.Test.UUT.Instruments {
     /// <summary>
