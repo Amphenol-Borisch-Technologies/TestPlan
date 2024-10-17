@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.Threading;
 using ABT.Test.TestExecutive;
 using ABT.Test.TestExecutive.AppConfig;
-using static ABT.Test.TestExecutive.Instruments.Instruments;
+using static ABT.Test.TestExecutive.InstrumentDrivers.Instruments;
 using ABT.Test.UUT.Instruments;
 
 namespace ABT.Test.UUT.TestOperations {

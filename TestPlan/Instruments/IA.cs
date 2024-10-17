@@ -1,11 +1,11 @@
 ﻿using System;
-using static ABT.Test.TestExecutive.Instruments.Instruments;
+using ABT.Test.TestExecutive.InstrumentDrivers;
 
 namespace ABT.Test.UUT.Instruments {
     /// <summary>
-    /// IA correlates TestExecutive.GlobalConfigurationFile's canonical SCPI_VISA_InstrumentElement IDs to meaningful TestExecutor Customer UUT specific names, or aliases.
+    /// IA correlates TestExecutive.ConfigurationTestExec's canonical SCPI_VISA_InstrumentElement IDs to meaningful TestExecutor Customer UUT specific names, or aliases.
     /// <para>
-    /// So, UUT power supplies, input stimuli & output signals might be meaningfully correlated to TestExecutive.GlobalConfigurationFile's instruments as follows:
+    /// So, UUT power supplies, input stimuli & output signals might be meaningfully correlated to TestExecutive.ConfigurationTestExec's instruments as follows:
     ///     internal static class IA {
     ///         internal static readonly Alias P2V5      = new Alias("PS1");   // Single output Power Supply 1
     ///         internal static readonly Alias P3V3      = new Alias("PS2");   // Single output Power Supply 2
@@ -17,14 +17,14 @@ namespace ABT.Test.UUT.Instruments {
     ///     }
     ///
     /// - Include only required/utilized SCPI VISA Instruments:
-	/// - That is, if this TestExecutive.GlobalConfigurationFile contains elements for 10 power supplies, but a TestExecutor program
+	/// - That is, if this TestExecutive.ConfigurationTestExec contains elements for 10 power supplies, but a TestExecutor program
 	///   only requires & utilizes 2, simply don't alias the unused 8 in class IA.
 	/// - This documents the minimum necessary SCPI VISA Instrument configuration for the TestExecutor's program.
-	/// - Allows a TestExecutor program to be most easily ported to different Test Systems having different TestExecutive.GlobalConfigurationFile configurations.
+	/// - Allows a TestExecutor program to be most easily ported to different Test Systems having different TestExecutive.ConfigurationTestExec configurations.
 	/// 	- If Test System #1 with it's specific SCPI VISA Instruments dies suddenly, may need to run its TestExecutor programs on Test System #2
 	/// 		with different SCPI VISA Instruments.
 	/// 	- If all TestExecutor.cs files list only their necessary SCPI VISA Instruments, quite easy to determine which are
-	/// 		compatible subsets of the Test Systems' TestExecutive.GlobalConfigurationFile configurations.
+	/// 		compatible subsets of the Test Systems' TestExecutive.ConfigurationTestExec configurations.
 	/// - This approach is similar to the Keysight i3070's Board config files:
 	/// 	- i3070 Board config files specify only the subset of i3070 cards used by their test programs.
 	/// 	- This makes porting a Keysight i3070 In-Circuit Test program to a differently configured i3070 as easy as possible, though not necessarily easy.    
