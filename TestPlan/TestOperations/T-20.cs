@@ -28,7 +28,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: TestExec.NONE,
                 IDNext: "TM_01_00",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());

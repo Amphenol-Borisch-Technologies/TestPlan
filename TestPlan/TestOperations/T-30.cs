@@ -25,7 +25,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_00_00",
                 IDNext: "TM_02_00",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -46,7 +46,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_01_00",
                 IDNext: "TM_03_00",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -67,7 +67,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_02_00",
                 IDNext: "TM_03_01",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -81,7 +81,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_03_00",
                 IDNext: "TM_04_00",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -102,7 +102,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_03_01",
                 IDNext: "TM_04_01",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -116,7 +116,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_04_00",
                 IDNext: "TM_04_02",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -130,7 +130,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_04_01",
                 IDNext: "TM_04_03",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -144,7 +144,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_04_02",
                 IDNext: "TM_04_04",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -158,7 +158,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_04_03",
                 IDNext: "TM_04_05",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -172,7 +172,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_04_04",
                 IDNext: "TM_04_06",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -186,7 +186,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_04_05",
                 IDNext: "TM_04_07",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -200,7 +200,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_04_06",
                 IDNext: "TM_05_00",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -230,7 +230,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_04_07",
                 IDNext: "TM_05_01",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -244,7 +244,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_00",
                 IDNext: "TM_05_02",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -258,7 +258,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_01",
                 IDNext: "TM_05_03",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -272,7 +272,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_02",
                 IDNext: "TM_05_04",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -286,7 +286,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_03",
                 IDNext: "TM_05_05",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -300,7 +300,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_04",
                 IDNext: "TM_05_06",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -314,7 +314,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_05",
                 IDNext: "TM_05_07",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -328,7 +328,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_06",
                 IDNext: "TM_05_08",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -342,7 +342,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_07",
                 IDNext: "TM_05_09",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -356,7 +356,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_08",
                 IDNext: "TM_05_10",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -370,7 +370,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_09",
                 IDNext: "TM_05_11",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -384,7 +384,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_10",
                 IDNext: "TM_05_12",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -398,7 +398,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_11",
                 IDNext: "TM_05_13",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -412,7 +412,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_12",
                 IDNext: "TM_05_14",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -426,7 +426,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_13",
                 IDNext: "TM_05_15",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -440,7 +440,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_14",
                 IDNext: "TM_05_16",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -454,7 +454,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_15",
                 IDNext: "TM_05_17",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -468,7 +468,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_16",
                 IDNext: "TM_05_18",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -482,7 +482,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_17",
                 IDNext: "TM_05_19",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -496,7 +496,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_18",
                 IDNext: "TM_05_20",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -510,7 +510,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_19",
                 IDNext: "TM_05_21",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -524,7 +524,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_20",
                 IDNext: "TM_05_22",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -538,7 +538,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_21",
                 IDNext: "TM_05_23",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -552,7 +552,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_22",
                 IDNext: "TM_05_24",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -566,7 +566,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_23",
                 IDNext: "TM_05_25",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -580,7 +580,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_24",
                 IDNext: "TM_05_26",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -594,7 +594,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_25",
                 IDNext: "TM_05_27",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -608,7 +608,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_26",
                 IDNext: "TM_05_28",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -622,7 +622,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_27",
                 IDNext: "TM_05_29",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -636,7 +636,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_28",
                 IDNext: "TM_05_30",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -650,7 +650,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_29",
                 IDNext: "TM_05_11",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -664,7 +664,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_30",
                 IDNext: "TM_05_32",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -678,7 +678,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_31",
                 IDNext: "TM_05_33",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -692,7 +692,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_32",
                 IDNext: "TM_05_34",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -706,7 +706,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_33",
                 IDNext: "TM_05_35",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -720,7 +720,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_34",
                 IDNext: "TM_05_36",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -734,7 +734,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_35",
                 IDNext: "TM_05_37",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -748,7 +748,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_36",
                 IDNext: "TM_05_38",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -762,7 +762,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_37",
                 IDNext: "TM_05_39",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -776,7 +776,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_38",
                 IDNext: "TM_05_40",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -790,7 +790,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_39",
                 IDNext: "TM_05_41",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -804,7 +804,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_40",
                 IDNext: "TM_05_42",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -818,7 +818,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_41",
                 IDNext: "TM_05_43",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -832,7 +832,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_42",
                 IDNext: "TM_05_44",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -846,7 +846,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_43",
                 IDNext: "TM_05_45",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -860,7 +860,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_44",
                 IDNext: "TM_05_46",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -874,7 +874,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_45",
                 IDNext: "TM_05_47",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -888,7 +888,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_46",
                 IDNext: "TM_05_48",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -902,7 +902,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_47",
                 IDNext: "TM_05_49",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -916,7 +916,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_48",
                 IDNext: "TM_05_50",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -930,7 +930,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_49",
                 IDNext: "TM_05_51",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -944,7 +944,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_50",
                 IDNext: "TM_05_52",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -958,7 +958,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_51",
                 IDNext: "TM_05_53",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -972,7 +972,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_52",
                 IDNext: "TM_05_54",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -986,7 +986,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_53",
                 IDNext: "TM_05_55",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1000,7 +1000,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_54",
                 IDNext: "TM_05_56",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1014,7 +1014,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_55",
                 IDNext: "TM_05_57",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1028,7 +1028,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_56",
                 IDNext: "TM_05_58",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1042,7 +1042,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_57",
                 IDNext: "TM_05_59",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1056,7 +1056,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_58",
                 IDNext: "TM_05_60",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1070,7 +1070,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_59",
                 IDNext: "TM_05_61",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1084,7 +1084,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_60",
                 IDNext: "TM_05_62",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1098,7 +1098,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_61",
                 IDNext: "TM_05_63",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1112,7 +1112,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_62",
                 IDNext: "TM_05_64",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1126,7 +1126,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_63",
                 IDNext: "TM_05_65",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1140,7 +1140,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_64",
                 IDNext: "TM_05_66",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1154,7 +1154,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_65",
                 IDNext: "TM_05_67",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1168,7 +1168,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_66",
                 IDNext: "TM_05_68",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1182,7 +1182,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_67",
                 IDNext: "TM_05_69",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1196,7 +1196,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_68",
                 IDNext: "TM_05_70",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1210,7 +1210,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_69",
                 IDNext: "TM_05_71",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1224,7 +1224,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_70",
                 IDNext: "TM_05_72",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1238,7 +1238,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_71",
                 IDNext: "TM_05_73",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1252,7 +1252,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_72",
                 IDNext: "TM_05_74",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1266,7 +1266,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_73",
                 IDNext: "TM_05_75",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1280,7 +1280,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_74",
                 IDNext: "TM_05_76",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1294,7 +1294,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_75",
                 IDNext: "TM_05_77",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1308,7 +1308,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_76",
                 IDNext: "TM_05_78",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1322,7 +1322,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_77",
                 IDNext: "TM_05_79",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1336,7 +1336,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_78",
                 IDNext: "TM_05_80",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1350,7 +1350,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_79",
                 IDNext: "TM_05_81",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1364,7 +1364,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_80",
                 IDNext: "TM_05_82",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1378,7 +1378,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_81",
                 IDNext: "TM_05_83",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1392,7 +1392,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_82",
                 IDNext: "TM_05_84",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1406,7 +1406,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_83",
                 IDNext: "TM_05_85",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1420,7 +1420,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_84",
                 IDNext: "TM_05_86",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1434,7 +1434,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_85",
                 IDNext: "TM_05_87",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1448,7 +1448,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_86",
                 IDNext: "TM_05_88",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1462,7 +1462,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_87",
                 IDNext: "TM_05_89",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1476,7 +1476,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_88",
                 IDNext: "TM_05_90",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1490,7 +1490,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_89",
                 IDNext: "TM_05_91",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1504,7 +1504,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_90",
                 IDNext: "TM_05_92",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1518,7 +1518,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_91",
                 IDNext: "TM_05_93",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1532,7 +1532,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_92",
                 IDNext: "TM_05_94",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1546,7 +1546,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_93",
                 IDNext: "TM_05_95",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1560,7 +1560,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_94",
                 IDNext: "TM_05_96",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1574,7 +1574,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_95",
                 IDNext: "TM_05_97",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1588,7 +1588,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_96",
                 IDNext: "TM_05_98",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1602,7 +1602,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_97",
                 IDNext: "TM_05_99",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1616,7 +1616,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_98",
                 IDNext: "TM_06_00",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1637,7 +1637,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_05_99",
                 IDNext: "TM_06_01",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1651,7 +1651,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_06_00",
                 IDNext: "TM_06_02",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1665,7 +1665,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_06_01",
                 IDNext: "TM_06_03",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1679,7 +1679,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_06_02",
                 IDNext: "TM_06_04",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1693,7 +1693,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_06_03",
                 IDNext: "TM_06_05",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1707,7 +1707,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_06_04",
                 IDNext: "TM_06_06",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1721,7 +1721,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_06_05",
                 IDNext: "TM_06_07",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1735,7 +1735,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_06_06",
                 IDNext: "TM_06_08",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1749,7 +1749,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_06_07",
                 IDNext: "TM_07_00",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1770,7 +1770,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_06_08",
                 IDNext: "TM_07_01",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1784,7 +1784,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_07_00",
                 IDNext: "TM_07_02",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1798,7 +1798,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_07_01",
                 IDNext: "TM_07_03",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1812,7 +1812,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_07_02",
                 IDNext: "TM_08_00",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1833,7 +1833,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_07_03",
                 IDNext: "TM_08_01",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1847,7 +1847,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_08_00",
                 IDNext: "TM_09_00",
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
@@ -1868,7 +1868,7 @@ namespace ABT.Test.UUT.TestOperations {
                 Description: "Description.",
                 IDPrior: "TM_08_01",
                 IDNext: TestPlan.NONE,
-                ClassName: MeasurementCustom.ClassName,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             Debug.Assert(TestPlan.Only.Initialized());
