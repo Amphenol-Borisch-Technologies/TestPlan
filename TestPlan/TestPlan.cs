@@ -139,14 +139,14 @@ namespace ABT.Test.Exec {
             return (String)task;
         }
 
-        public override void Initialize() {
+        public override void ReInitialize() {
             if (ConfigUUT.Simulate) return;
-            base.Initialize();
+            base.ReInitialize();
         }
 
-        public override Boolean Initialized() {
+        public override Boolean ReInitialized() {
             if (ConfigUUT.Simulate) return true;
-            return base.Initialized() && false;
+            return false;
         }
     }
 }
