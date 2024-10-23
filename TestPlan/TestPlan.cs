@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Diagnostics;
 using System.Drawing;
 using System.Reflection;
 using System.Threading;
@@ -138,24 +137,6 @@ namespace ABT.Test.Exec {
             // or "private static String MethodName()", though the latter are discouraged for consistency.
             Object task = await Task.Run(() => methodInfo.Invoke(null, null));
             return (String)task;
-        }
-
-        public override void ReInitialize() {
-            if (ConfigUUT.Simulate) return;
-            base.ReInitialize();
-            Disconnect();
-            Debug.Assert(Disconnected());
-        }
-
-        public override void Disconnect() {
-            if (ConfigUUT.Simulate) return;
-            // TODO:
-        }
-
-        public override Boolean Disconnected() {
-            if (ConfigUUT.Simulate) return true;
-            // TODO:
-            return false;
         }
     }
 }
