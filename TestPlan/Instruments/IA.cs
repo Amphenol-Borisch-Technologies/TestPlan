@@ -1,5 +1,4 @@
 ﻿using System;
-using ABT.Test.Exec.InstrumentDrivers;
 
 namespace ABT.Test.UUT.Instruments {
     /// <summary>
@@ -31,11 +30,11 @@ namespace ABT.Test.UUT.Instruments {
     /// </para>
     /// </summary>
     internal static class IA {
-        internal static readonly String PRI_BIAS = "PS1ε2";
-        internal static readonly String SEAL     = "PS3";
-        internal static readonly String MSO      = "MSO1";
-        internal static readonly String MSMU     = "MSMU1";
-        internal static readonly String MM       = "MM1";
-        internal static readonly String WG       = "WG1ε2";
+        internal const String V28_IN   = "PS3_E3634A";
+        internal const String SEAL     = "PS1ε2_E3649A";
+        internal const String MSO      = "MSO1_3014";
+        internal const String MSMU     = "MSMU1_34980A";
+        internal const String MM       = "MM1_34401A";
+        internal const String WG       = "WG1ε2_3162";
     }
 }
