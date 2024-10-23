@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Drawing;
 using System.Reflection;
 using System.Threading;
@@ -142,10 +143,18 @@ namespace ABT.Test.Exec {
         public override void ReInitialize() {
             if (ConfigUUT.Simulate) return;
             base.ReInitialize();
+            Disconnect();
+            Debug.Assert(Disconnected());
         }
 
-        public override Boolean ReInitialized() {
+        public override void Disconnect() {
+            if (ConfigUUT.Simulate) return;
+            // TODO:
+        }
+
+        public override Boolean Disconnected() {
             if (ConfigUUT.Simulate) return true;
+            // TODO:
             return false;
         }
     }

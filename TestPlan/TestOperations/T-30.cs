@@ -28,7 +28,6 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -49,7 +48,6 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -70,7 +68,6 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -84,7 +81,6 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -105,8 +101,6 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
-            TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
 
@@ -119,7 +113,6 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -133,7 +126,6 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -147,7 +139,6 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -161,7 +152,6 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -175,7 +165,6 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -189,7 +178,6 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -203,7 +191,6 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -233,7 +220,6 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -247,7 +233,6 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -261,7 +246,6 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -275,7 +259,6 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -289,7 +272,6 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -303,7 +285,6 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -317,7 +298,6 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -331,7 +311,6 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -345,7 +324,6 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -359,7 +337,6 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -373,7 +350,6 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -387,7 +363,6 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -401,7 +376,6 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -415,7 +389,6 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -429,8 +402,6 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
-            TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
 
@@ -443,7 +414,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -457,7 +428,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -471,7 +442,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -485,7 +456,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -499,7 +470,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -513,7 +484,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -527,7 +498,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -541,7 +512,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -555,7 +526,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -569,7 +540,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -583,7 +554,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -597,7 +568,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -611,7 +582,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -625,7 +596,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -639,7 +610,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -653,7 +624,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -667,7 +638,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -681,7 +652,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -695,7 +666,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -709,7 +680,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -723,7 +694,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -737,7 +708,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -751,7 +722,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -765,7 +736,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -779,7 +750,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -793,7 +764,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -807,7 +778,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -821,7 +792,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -835,7 +806,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -849,7 +820,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -863,7 +834,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -877,7 +848,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -891,7 +862,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -905,7 +876,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -919,7 +890,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -933,7 +904,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -947,7 +918,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -961,7 +932,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -975,7 +946,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -989,7 +960,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1003,7 +974,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1017,7 +988,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1031,7 +1002,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1045,7 +1016,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1059,7 +1030,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1073,7 +1044,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1087,7 +1058,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1101,7 +1072,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1115,7 +1086,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1129,7 +1100,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1143,7 +1114,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1157,7 +1128,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1171,7 +1142,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1185,7 +1156,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1199,7 +1170,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1213,7 +1184,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1227,7 +1198,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1241,7 +1212,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1255,7 +1226,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1269,7 +1240,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1283,7 +1254,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1297,7 +1268,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1311,7 +1282,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1325,7 +1296,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1339,7 +1310,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1353,7 +1324,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1367,7 +1338,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1381,7 +1352,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1395,7 +1366,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1409,7 +1380,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1423,7 +1394,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1437,7 +1408,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1451,7 +1422,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1465,7 +1436,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1479,7 +1450,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1493,7 +1464,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1507,7 +1478,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1521,7 +1492,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1535,7 +1506,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1549,7 +1520,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1563,7 +1534,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1577,7 +1548,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1591,7 +1562,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1605,7 +1576,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1619,7 +1590,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1640,7 +1611,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1654,7 +1625,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1668,7 +1639,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1682,7 +1653,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1696,7 +1667,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1710,7 +1681,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1724,7 +1695,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1738,7 +1709,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1752,7 +1723,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1773,7 +1744,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1787,7 +1758,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1801,7 +1772,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1815,7 +1786,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1836,7 +1807,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1850,7 +1821,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -1871,7 +1842,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Debug.Assert(TestPlan.Only.ReInitialized());
+
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
