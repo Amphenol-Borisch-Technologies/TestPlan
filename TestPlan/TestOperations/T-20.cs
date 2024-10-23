@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Threading;
-using ABT.Test.TestExecutive;
-using ABT.Test.TestExecutive.AppConfig;
+using ABT.Test.Exec;
+using ABT.Test.Exec.AppConfig;
 using ABT.Test.UUT.Instruments;
 
 namespace ABT.Test.UUT.TestOperations {

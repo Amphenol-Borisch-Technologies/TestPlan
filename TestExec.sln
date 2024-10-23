@@ -3,12 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestPlan", "TestPlan\TestPlan.csproj", "{5FC19C56-1566-457A-A8AF-A3A69561320C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plan", "TestPlan\Plan.csproj", "{5FC19C56-1566-457A-A8AF-A3A69561320C}"
 	ProjectSection(ProjectDependencies) = postProject
 		{314614CB-6E17-4B74-A9F9-CE4699F78C9B} = {314614CB-6E17-4B74-A9F9-CE4699F78C9B}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestExec", "C:\Users\phils\source\repos\TestExec\TestExec.csproj", "{314614CB-6E17-4B74-A9F9-CE4699F78C9B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exec", "C:\Users\phils\source\repos\TestExec\Exec.csproj", "{314614CB-6E17-4B74-A9F9-CE4699F78C9B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

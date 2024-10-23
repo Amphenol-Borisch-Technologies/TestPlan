@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.Collections.Generic;
 using System.Threading;
-using ABT.Test.TestExecutive.InstrumentDrivers;
+using ABT.Test.Exec.InstrumentDrivers;
 
 namespace ABT.Test.UUT.Instruments {
     internal enum FREQUENCY { off, KHz445, KHz535, KHz625 }

@@ -86,7 +86,7 @@ using System.Windows.Forms;
 ///        inside the TestExec.MeasurementsRun() loop.
 /// </para>
 /// </summary>
-namespace ABT.Test.TestExecutive {
+namespace ABT.Test.Exec {
     internal class TestPlanMain {
         [STAThread]
         static void Main() {

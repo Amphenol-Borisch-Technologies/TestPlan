@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{5FC19C56-1566-457A-A8AF-A3A69561320C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>ABT.Test.UUT</RootNamespace>
+    <RootNamespace>ABT.Test.Plan.UUT</RootNamespace>
     <AssemblyName>TestPlan</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ABT.Test.TestExecutive.TestPlanMain</StartupObject>
+    <StartupObject>ABT.Test.Exec.TestPlanMain</StartupObject>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
     <DebugSymbols>true</DebugSymbols>
@@ -167,9 +167,9 @@
     <Content Include="Resources\Raytheon.ico" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\phils\source\repos\TestExec\TestExec.csproj">
+    <ProjectReference Include="C:\Users\phils\source\repos\TestExec\Exec.csproj">
       <Project>{314614cb-6e17-4b74-a9f9-ce4699f78c9b}</Project>
-      <Name>TestExec</Name>
+      <Name>Exec</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

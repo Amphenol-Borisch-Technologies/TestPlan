@@ -4,10 +4,10 @@ using System.Diagnostics;
 using System.Text;
 using System.Threading;
 using System.Windows.Forms;
-using ABT.Test.TestExecutive;
-using ABT.Test.TestExecutive.AppConfig;
-using ABT.Test.TestExecutive.Logging;
-using ABT.Test.TestExecutive.Processes;
+using ABT.Test.Exec;
+using ABT.Test.Exec.AppConfig;
+using ABT.Test.Exec.Logging;
+using ABT.Test.Exec.Processes;
 
 namespace ABT.Test.UUT.TestOperations {
     internal static partial class TestMeasurements {

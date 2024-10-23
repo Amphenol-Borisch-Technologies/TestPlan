@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
-using ABT.Test.TestExecutive;
-using ABT.Test.TestExecutive.AppConfig;
+using ABT.Test.Exec;
+using ABT.Test.Exec.AppConfig;
 
 namespace ABT.Test.UUT.TestOperations {
     internal static partial class TestMeasurements {
