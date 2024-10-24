@@ -30,7 +30,6 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            Thread.Sleep(5000);
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }

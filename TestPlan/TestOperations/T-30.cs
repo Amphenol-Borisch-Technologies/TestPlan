@@ -23,7 +23,7 @@ namespace ABT.Test.UUT.TestOperations {
                 CancelNotPassed: true));
             Debug.Assert(TestPlan.Only.IsMeasurement(
                 Description: "Description.",
-                IDPrior: "TM_00_00",
+                IDPrior: TestExec.NONE,
                 IDNext: "TM_02_00",
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
@@ -57,7 +57,7 @@ namespace ABT.Test.UUT.TestOperations {
         internal static String TM_03_00() {
             Debug.Assert(TestPlan.Only.IsGroup(
                 GroupID: "4.4.2",
-                Description: "UUT Remote Update Firmware Operation.",
+                Description: "Program MAC Addresses.",
                 MeasurementIDs: "TM_03_00|TM_03_01",
                 Selectable: false,
                 CancelNotPassed: true));
@@ -101,6 +101,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
+            TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
 
@@ -402,6 +403,7 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
+            TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
 
@@ -414,7 +416,6 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -428,7 +429,6 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -456,7 +456,6 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -484,7 +483,6 @@ namespace ABT.Test.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
         }
@@ -620,7 +618,7 @@ namespace ABT.Test.UUT.TestOperations {
             Debug.Assert(TestPlan.Only.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_29",
-                IDNext: "TM_05_11",
+                IDNext: "TM_05_31",
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
@@ -1797,7 +1795,7 @@ namespace ABT.Test.UUT.TestOperations {
             Debug.Assert(TestPlan.Only.IsGroup(
                 GroupID: "4.9",
                 Description: "UUT Ambient Temperature Command.",
-                MeasurementIDs: "TM_07_00|TM_07_01",
+                MeasurementIDs: "TM_08_00|TM_08_01",
                 Selectable: false,
                 CancelNotPassed: true));
             Debug.Assert(TestPlan.Only.IsMeasurement(
@@ -1813,7 +1811,7 @@ namespace ABT.Test.UUT.TestOperations {
         }
 
         internal static String TM_08_01() {
-            Debug.Assert(TestPlan.Only.IsGroup(GroupID: "4.8"));
+            Debug.Assert(TestPlan.Only.IsGroup(GroupID: "4.9"));
             Debug.Assert(TestPlan.Only.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_08_00",
@@ -1838,7 +1836,7 @@ namespace ABT.Test.UUT.TestOperations {
             Debug.Assert(TestPlan.Only.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_08_01",
-                IDNext: TestPlan.NONE,
+                IDNext: TestExec.NONE,
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
