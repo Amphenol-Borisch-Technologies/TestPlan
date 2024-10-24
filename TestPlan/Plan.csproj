@@ -163,8 +163,9 @@
     <Folder Include="Firmware\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Raytheon.ico" />
-    <Content Include="Resources\Raytheon.ico" />
+    <Content Include="Resources\Raytheon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Users\phils\source\repos\TestExec\Exec.csproj">

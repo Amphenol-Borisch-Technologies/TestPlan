@@ -61,12 +61,11 @@ namespace ABT.Test.Plan.UUT.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        ///   Looks up a localized string similar to .
         /// </summary>
-        internal static System.Drawing.Icon Raytheon {
+        internal static string Raytheon {
             get {
-                object obj = ResourceManager.GetObject("Raytheon", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
+                return ResourceManager.GetString("Raytheon", resourceCulture);
             }
         }
     }
