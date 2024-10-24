@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Diagnostics;
-using System.Net;
 using System.Windows.Forms;
 using ABT.Test.Exec;
 using ABT.Test.Exec.AppConfig;
