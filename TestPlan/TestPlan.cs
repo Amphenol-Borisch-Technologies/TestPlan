@@ -127,6 +127,7 @@ namespace ABT.Test.Exec {
             // TODO:  Eventually; dynamically create custom TestExec menu items, allowing non-standard Apps & UUT menu choices.
             //        - https://stackoverflow.com/questions/1757574/dynamically-adding-toolstripmenuitems-to-a-menustrip-c-winforms
             //        - https://learn.microsoft.com/en-us/dotnet/desktop/winforms/controls/how-to-add-toolstrip-items-dynamically?view=netframeworkdesktop-4.8
+            WindowState = FormWindowState.Maximized;
         }
 
         protected override async Task<String> MeasurementRun(String measurementID) {

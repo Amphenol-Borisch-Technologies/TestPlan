@@ -3,7 +3,6 @@ using System.Diagnostics;
 using System.Threading;
 using ABT.Test.Exec;
 using ABT.Test.Exec.AppConfig;
-using ABT.Test.UUT.Instruments;
 
 namespace ABT.Test.UUT.TestOperations {
     internal static partial class TestMeasurements {
@@ -24,13 +23,13 @@ namespace ABT.Test.UUT.TestOperations {
                 MeasurementIDs: "TM_00_00",
                 Selectable: true,
                 CancelNotPassed: true));
-            //Debug.Assert(TestPlan.Only.IsMeasurement(
-            //    Description: "Description.",
-            //    IDPrior: TestExec.NONE,
-            //    IDNext: TestExec.NONE,
-            //    ClassName: nameof(MeasurementCustom),
-            //    CancelNotPassed: true,
-            //    Arguments: "NotApplicable"));
+            Debug.Assert(TestPlan.Only.IsMeasurement(
+                Description: "Description.",
+                IDPrior: TestExec.NONE,
+                IDNext: TestExec.NONE,
+                ClassName: nameof(MeasurementCustom),
+                CancelNotPassed: true,
+                Arguments: "NotApplicable"));
             Thread.Sleep(5000);
             TestPlan.Only.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
             return String.Empty;
