@@ -1,48 +1,44 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Windows.Forms;
-using ABT.Test.Exec;
-using ABT.Test.Exec.AppConfig;
-using ABT.Test.Exec.InstrumentDrivers;
-using ABT.Test.Exec.InstrumentDrivers.Interfaces;
-using ABT.Test.Exec.InstrumentDrivers.Multifunction;
-using ABT.Test.Exec.InstrumentDrivers.MultiMeters;
-using ABT.Test.Exec.InstrumentDrivers.Oscilloscopes;
-using ABT.Test.Exec.InstrumentDrivers.PowerSupplies;
-using ABT.Test.UUT.Instruments;
+using ABT.Test.Lib;
+using ABT.Test.Lib.AppConfig;
+using ABT.Test.Lib.InstrumentDrivers;
+using ABT.Test.Lib.InstrumentDrivers.Interfaces;
+using ABT.Test.Plan.UUT.Instruments;
 
-namespace ABT.Test.UUT.TestOperations {
+namespace ABT.Test.Plan.UUT.TestOperations {
     internal static partial class TestMeasurements {
         // NOTE:  Invocable test methods in this class, defined as TestMeasurement IDs in App.config, require signatures like "internal static String MethodName()".
         #region GroupID Programming
         internal static String TM_00_00() {
-            if (TestPlan.Only.ConfigTest.IsOperation) {
+            if (TestData.ConfigTest.IsOperation) {
                 Debug.Assert(
-                    TestPlan.Only.IsOperation(
+                    TestData.IsOperation(
                     OperationID: "T-20",
                     Description: "FilePro T-20 Programming.",
                     Revision: "1.0",
                     GroupsIDs: "Programming"));
             }
-            Debug.Assert(TestPlan.Only.IsGroup(
+            Debug.Assert(TestData.IsGroup(
                 GroupID: "Programming",
                 Description: "Programming.",
                 MeasurementIDs: "TM_00_00",
                 Selectable: true,
                 CancelNotPassed: true));
-            Debug.Assert(TestPlan.Only.IsMeasurement(
+            Debug.Assert(TestData.IsMeasurement(
                 Description: "Description.",
-                IDPrior: TestExec.NONE,
-                IDNext: TestExec.NONE,
+                IDPrior: TestData.NONE,
+                IDNext: TestData.NONE,
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            ((PS_E3634A_SCPI_NET)TestPlan.Only.Instruments[IA.V28_IN]).Set(3.3, 0.1, 7, STATES.ON);
-            ((PS_E3649A_SCPI_NET)TestPlan.Only.Instruments[IA.SEAL]).Set(OUTPUTS2.OUTput1, 1, 0.1, 7, STATES.ON);
-            ((PS_E3649A_SCPI_NET)TestPlan.Only.Instruments[IA.SEAL]).Set(OUTPUTS2.OUTput2, 2, 0.1, 7, STATES.ON);
+            ID.V28_IN.Set(3.3, 0.1, 7, STATES.ON);
+            ID.SEAL.Set(OUTPUTS2.OUTput1, 1, 0.1, 7, STATES.ON);
+            ID.SEAL.Set(OUTPUTS2.OUTput2, 2, 0.1, 7, STATES.ON);
             _ = MessageBox.Show($"Waiting...", "zzzzzzz", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            TestPlan.Only.MeasurementPresent.TestEvent = TestEvents.PASS;
+            TestData.MeasurementPresent.TestEvent = TestEvents.PASS;
             return String.Empty;
         }
         #endregion GroupID Programming

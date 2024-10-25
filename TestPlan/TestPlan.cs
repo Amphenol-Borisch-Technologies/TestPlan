@@ -4,6 +4,7 @@ using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ABT.Test.Lib;
 
 // NOTE:  Recommend using Microsoft's Visual Studio Code to develop/debug TestPlan based closed source/proprietary projects:
 //        - Visual Studio Code is a co$t free, open-source Integrated Development Environment entirely suitable for textual C# development, like TestPlan.
@@ -90,13 +91,13 @@ namespace ABT.Test.Exec {
     internal class TestPlanMain {
         [STAThread]
         static void Main() {
-            TestExec.MutexTestPlan = new Mutex(true, TestExec.MutexTestPlanName, out Boolean onlyInstance);
+            TestData.MutexTestPlan = new Mutex(true, TestData.MutexTestPlanName, out Boolean onlyInstance);
             if (!onlyInstance) {
                 _ = MessageBox.Show($"Already have one executing instance of a TestPlan.{Environment.NewLine}{Environment.NewLine}" +
                     $"Cannot have two, as both would control system instruments simultaneously.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            GC.KeepAlive(TestExec.MutexTestPlan);
+            GC.KeepAlive(TestData.MutexTestPlan);
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
@@ -133,7 +134,7 @@ namespace ABT.Test.Exec {
         protected override async Task<String> MeasurementRun(String measurementID) {
             Type type = Type.GetType("ABT.Test.UUT.TestOperations.TestMeasurements");
             // NOTE:  Will only seek invocable measurement methods in class TestMeasurements that are defined as TestMeasurement IDs in App.config & and are part of a Group.
-            MethodInfo methodInfo = type.GetMethod(MeasurementIDPresent, BindingFlags.Static | BindingFlags.NonPublic);
+            MethodInfo methodInfo = type.GetMethod(TestData.MeasurementIDPresent, BindingFlags.Static | BindingFlags.NonPublic);
             // NOTE:  Invocable measurement methods in class TestMeasurements, defined as TestMeasurement IDs in App.config, must have signatures identical to "internal static String MethodName()",
             // or "private static String MethodName()", though the latter are discouraged for consistency.
             Object task = await Task.Run(() => methodInfo.Invoke(null, null));
