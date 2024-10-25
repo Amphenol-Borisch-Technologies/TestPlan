@@ -5,7 +5,7 @@ using ABT.Test.Lib;
 using ABT.Test.Lib.AppConfig;
 using ABT.Test.Lib.InstrumentDrivers;
 using ABT.Test.Lib.InstrumentDrivers.Interfaces;
-using ABT.Test.Plan.UUT.Instruments;
+using ABT.Test.Plan.UUT.InstrumentsDrivers;
 
 namespace ABT.Test.Plan.UUT.TestOperations {
     internal static partial class TestMeasurements {
