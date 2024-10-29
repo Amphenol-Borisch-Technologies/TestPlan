@@ -91,13 +91,13 @@ namespace ABT.Test.Exec {
     internal class TestPlanMain {
         [STAThread]
         static void Main() {
-            TestData.MutexTestPlan = new Mutex(true, TestData.MutexTestPlanName, out Boolean onlyInstance);
-            if (!onlyInstance) {
-                _ = MessageBox.Show($"Already have one executing instance of a TestPlan.{Environment.NewLine}{Environment.NewLine}" +
-                    $"Cannot have two, as both would control system instruments simultaneously.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            GC.KeepAlive(TestData.MutexTestPlan);
+            //TestData.MutexTestPlan = new Mutex(true, TestData.MutexTestPlanName, out Boolean onlyInstance);
+            //if (!onlyInstance) {
+            //    _ = MessageBox.Show($"Already have one executing instance of a TestPlan.{Environment.NewLine}{Environment.NewLine}" +
+            //        $"Cannot have two, as both would control system instruments simultaneously.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    return;
+            //}
+            //GC.KeepAlive(TestData.MutexTestPlan);
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
