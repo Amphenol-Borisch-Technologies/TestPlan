@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{5FC19C56-1566-457A-A8AF-A3A69561320C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>ABT.Test.Plan.UUT</RootNamespace>
+    <RootNamespace>ABT.Test.Plans.UUT</RootNamespace>
     <AssemblyName>UUT</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
