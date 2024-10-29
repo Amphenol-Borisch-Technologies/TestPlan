@@ -4,7 +4,7 @@ using ABT.Test.Lib.InstrumentDrivers.MultiMeters;
 using ABT.Test.Lib.InstrumentDrivers.Oscilloscopes;
 using ABT.Test.Lib.InstrumentDrivers.PowerSupplies;
 
-namespace ABT.Test.Plan.UUT.InstrumentsDrivers {
+namespace ABT.Test.Plans.UUT.InstrumentsDrivers {
     internal static class ID {
         internal static PS_E3634A_SCPI_NET   V28_IN = ((PS_E3634A_SCPI_NET)TestData.InstrumentDrivers["PS3_E3634A"]);
         internal static PS_E3649A_SCPI_NET   SEAL   = ((PS_E3649A_SCPI_NET)TestData.InstrumentDrivers["PS1ε2_E3649A"]);

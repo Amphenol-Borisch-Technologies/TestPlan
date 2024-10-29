@@ -5,9 +5,9 @@ using ABT.Test.Lib;
 using ABT.Test.Lib.AppConfig;
 using ABT.Test.Lib.InstrumentDrivers;
 using ABT.Test.Lib.InstrumentDrivers.Interfaces;
-using ABT.Test.Plan.UUT.InstrumentsDrivers;
+using ABT.Test.Plans.UUT.InstrumentsDrivers;
 
-namespace ABT.Test.Plan.UUT.TestOperations {
+namespace ABT.Test.Plans.UUT.TestOperations {
     internal static partial class TestMeasurements {
         // NOTE:  Invocable test methods in this class, defined as TestMeasurement IDs in App.config, require signatures like "internal static String MethodName()".
         #region GroupID Programming
