@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{5FC19C56-1566-457A-A8AF-A3A69561320C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>ABT.Test.Plans.UUT</RootNamespace>
-    <AssemblyName>UUT</AssemblyName>
+    <RootNamespace>ABT.TestExec.Tests.Diagnostics</RootNamespace>
+    <AssemblyName>Diagnostics</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,7 +33,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ABT.Test.Exec.TestPlanMain</StartupObject>
+    <StartupObject>
+    </StartupObject>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
     <DebugSymbols>true</DebugSymbols>
@@ -112,7 +113,7 @@
     <Compile Include="TestOperations\T-20.cs" />
     <Compile Include="TestOperations\T-30.cs" />
     <Compile Include="TestOperations\T-Troubleshooting.cs" />
-    <Compile Include="TestPlan.cs" />
+    <Compile Include="Tests.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -123,8 +124,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="TestPlan.resx">
-      <DependentUpon>TestPlan.cs</DependentUpon>
+    <EmbeddedResource Include="Tests.resx">
+      <DependentUpon>Tests.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -178,11 +179,11 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\TestExec\Exec.csproj">
+    <ProjectReference Include="..\..\Exec\Exec.csproj">
       <Project>{314614cb-6e17-4b74-a9f9-ce4699f78c9b}</Project>
       <Name>Exec</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\phils\source\repos\ABT\Test\Lib\Lib.csproj">
+    <ProjectReference Include="..\..\Lib\Lib.csproj">
       <Project>{24d5e99e-185c-4507-81f0-132d8cb8164e}</Project>
       <Name>Lib</Name>
     </ProjectReference>

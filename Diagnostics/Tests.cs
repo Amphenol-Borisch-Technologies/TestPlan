@@ -4,10 +4,9 @@ using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ABT.Test.Lib;
 
-// NOTE:  Recommend using Microsoft's Visual Studio Code to develop/debug TestPlan based closed source/proprietary projects:
-//        - Visual Studio Code is a co$t free, open-source Integrated Development Environment entirely suitable for textual C# development, like TestPlan.
+// NOTE:  Recommend using Microsoft's Visual Studio Code to develop/debug TestExec based closed source/proprietary projects:
+//        - Visual Studio Code is a co$t free, open-source Integrated Development Environment entirely suitable for textual C# development, like Exec.
 //          - That is, it's excellent for non-GUI C# development.
 //          - VS Code is free for both private & commercial use:
 //            - https://code.visualstudio.com/docs/supporting/FAQ
@@ -16,7 +15,7 @@ using ABT.Test.Lib;
 //        - https://github.com/Amphenol-Borisch-Technologies/TestExecutive/blob/master/LICENSE.txt
 //        - "An unlimited number of users within an organization can use Visual Studio Community for the following scenarios:
 //           in a classroom learning environment, for academic research, or for contributing to open source projects."
-//        - TestPlan based projects are very likely closed source/proprietary, which are disqualified from using VS Studio Community Edition.
+//        - Test based projects are very likely closed source/proprietary, which are disqualified from using VS Studio Community Edition.
 //          - https://visualstudio.microsoft.com/vs/community/
 //          - https://visualstudio.microsoft.com/license-terms/vs2022-ga-community/
 // NOTE:  - VS Studio Community Edition is more preferable for GUI C# development than VS Code.
@@ -52,13 +51,13 @@ using ABT.Test.Lib;
 /// </summary>
 /// 
 /// <summary>
-/// NOTE:  Two types of TestPlan cancellations possible, each having two sub-types resulting in 4 altogether:
+/// NOTE:  Two types of TestExec cancellations possible, each having two sub-types resulting in 4 altogether:
 /// <para>
 /// A) Spontaneous Operator Initiated Cancellations:
 ///      1)  Operator Proactive:
 ///          - Microsoft's recommended CancellationTokenSource technique, permitting Operator to proactively
 ///            cancel currently executing Measurement.
-///          - Requires TestPlan implementation by the Test Developer, but is initiated by Operator, so categorized as such.
+///          - Requires Test project implementation by the Test Developer, but is initiated by Operator, so categorized as such.
 ///          - Implementation necessary if the *currently* executing Measurement must be cancellable during execution by the Operator.
 ///          - https://learn.microsoft.com/en-us/dotnet/standard/threading/cancellation-in-managed-threads
 ///          - https://learn.microsoft.com/en-us/dotnet/standard/parallel-programming/task-cancellation
@@ -70,38 +69,38 @@ using ABT.Test.Lib;
 ///            prior to the next Measurement's execution.
 ///          - Note: This doesn't proactively cancel the *currently* executing Measurement, which runs to completion.
 /// B) PrePlanned Developer Programmed Cancellations:
-///      3)  TestPlan/Test Developer initiated cancellations:
-///          - Any TestPlan's Measurement can initiate a cancellation programmatically by simply throwing an OperationCanceledException:
+///      3)  TestExec Developer initiated cancellations:
+///          - Any Test project's Measurement can initiate a cancellation programmatically by simply throwing an OperationCanceledException:
 ///          - Permits immediate cancellation if specific condition(s) occur in a Measurement; perhaps to prevent UUT or equipment damage,
 ///            or simply because futher execution is pointless.
 ///          - Simply throw an OperationCanceledException if the specific condition(s) occcur.
 ///      4)  App.config's CancelNotPassed:
 ///          - App.config's TestMeasurement element has a Boolean "CancelNotPassed" field:
-///          - If the current TestPlan.MeasurementRun() has CancelNotPassed=true and it's resulting EvaluateEventMeasurement() doesn't return EVENTS.PASS,
+///          - If the current Test.MeasurementRun() has CancelNotPassed=true and it's resulting EvaluateEventMeasurement() doesn't return EVENTS.PASS,
 ///            TestExec.MeasurementsRun() will break/exit, stopping further testing.
 ///		    - Do not pass Go, do not collect $200, go directly to TestExec.MeasurementsPostRun().
 ///
-/// NOTE:  The Operator Proactive & TestPlan/Test Developer initiated cancellations both occur while the currently executing TestPlan.MeasurementRun() conpletes, via 
+/// NOTE:  The Operator Proactive & TestExec Developer initiated cancellations both occur while the currently executing Test.MeasurementRun() conpletes, via 
 ///        thrown OperationCanceledExceptions.
-/// NOTE:  The Operator Reactive & App.config's CancelNotPassed cancellations both occur after the currently executing TestPlan.MeasurementRun() completes, via checks
-///        inside the TestExec.MeasurementsRun() loop.
+/// NOTE:  The Operator Reactive & App.config's CancelNotPassed cancellations both occur after the currently executing Test.MeasurementRun() completes, via checks
+///        inside the Exec.MeasurementsRun() loop.
 /// </para>
 /// </summary>
-namespace ABT.Test.Exec {
-    internal class TestPlanMain {
+namespace ABT.TestExec.Exec {
+    internal class TestsMain {
         [STAThread]
         static void Main() {
-            TestData.MutexTestPlan = new Mutex(true, TestData.MutexTestPlanName, out Boolean onlyInstance);
+            Lib.TestLib.MutexTest = new Mutex(true, Lib.TestLib.MutexTestName, out Boolean onlyInstance);
             if (!onlyInstance) {
-                _ = MessageBox.Show($"Already have one executing instance of a TestPlan.{Environment.NewLine}{Environment.NewLine}" +
+                _ = MessageBox.Show($"Already have one executing instance of a Tests.{Environment.NewLine}{Environment.NewLine}" +
                     $"Cannot have two, as both would control system instruments simultaneously.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            GC.KeepAlive(TestData.MutexTestPlan);
+            GC.KeepAlive(Lib.TestLib.MutexTest);
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            try { Application.Run(TestPlan.Only); }
+            try { Application.Run(Tests.Only); }
             catch (Exception e) {
                 TestExec.ErrorMessage(e.ToString());
                 TestExec.ErrorMessage(e);
@@ -109,20 +108,20 @@ namespace ABT.Test.Exec {
         }
     }
 
-    internal sealed partial class TestPlan : TestExec {
-        internal static TestPlan Only { get; } = new TestPlan();
+    internal sealed partial class Tests : TestExec {
+        internal static Tests Only { get; } = new Tests ();
 
-        static TestPlan() { }
+        static Tests() { }
         /// <summary>
         /// Singleton pattern requires explicit static constructor to tell C# compiler not to mark type as beforefieldinit.
         /// https://csharpindepth.com/articles/singleton
         /// <para>
-        ///  - Utilized Singleton for TestPlan class because there should only ever be 1 instance of TestPlan.
-        ///  - Also, TestPlan being a Singleton eliminates needing to pass it's instance to all TestPlan methods, most which don't require it, which generates annoying compiler warnings.
-        ///    - Realize both mayn't be optimal practices, and may refactor TestPlan to a non-Singleton class, and resume explicitly passing TestPlan object into methods.
+        ///  - Utilized Singleton for Tests class because there should only ever be 1 instance of Tests.
+        ///  - Also, Tests being a Singleton eliminates needing to pass it's instance to all Tests methods, most which don't require it, which generates annoying compiler warnings.
+        ///    - Realize both mayn't be optimal practices, and may refactor Tests to a non-Singleton class, and resume explicitly passing Tests object into methods.
         /// </para>
         /// </summary>
-        private TestPlan() : base(new Icon(@"Resources\Raytheon.ico")) {
+        private Tests() : base(new Icon(@"Resources\Raytheon.ico")) {
             // NOTE:  Change base constructor's Icon as applicable, depending on customer.
             // https://stackoverflow.com/questions/40933304/how-to-create-an-icon-for-visual-studio-with-just-mspaint-and-visual-studio
             // TODO:  Eventually; dynamically create custom TestExec menu items, allowing non-standard Apps & UUT menu choices.
@@ -132,9 +131,9 @@ namespace ABT.Test.Exec {
         }
 
         protected override async Task<String> MeasurementRun(String measurementID) {
-            Type type = Type.GetType("ABT.Test.Plans.UUT.TestOperations.TestMeasurements");
+            Type type = Type.GetType("ABT.TestExec.Tests.UUT.TestOperations.TestMeasurements");
             // NOTE:  Will only seek invocable measurement methods in class TestMeasurements that are defined as TestMeasurement IDs in App.config & and are part of a Group.
-            MethodInfo methodInfo = type.GetMethod(TestData.MeasurementIDPresent, BindingFlags.Static | BindingFlags.NonPublic);
+            MethodInfo methodInfo = type.GetMethod(Lib.TestLib.MeasurementIDPresent, BindingFlags.Static | BindingFlags.NonPublic);
             // NOTE:  Invocable measurement methods in class TestMeasurements, defined as TestMeasurement IDs in App.config, must have signatures identical to "internal static String MethodName()",
             // or "private static String MethodName()", though the latter are discouraged for consistency.
             Object task = await Task.Run(() => methodInfo.Invoke(null, null));
