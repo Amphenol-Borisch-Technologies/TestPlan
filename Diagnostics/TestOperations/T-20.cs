@@ -12,25 +12,25 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         // NOTE:  Invocable test methods in this class, defined as TestMeasurement IDs in App.config, require signatures like "internal static String MethodName()".
         #region GroupID Programming
         internal static String TM_00_00() {
-            if (Lib.TestLib.ConfigTest.IsOperation) {
+            if (TestLib.ConfigTest.IsOperation) {
                 Debug.Assert(
-                    Lib.TestLib.IsOperation(
+                    TestLib.IsOperation(
                     OperationID: "T-20",
                     Description: "FilePro T-20 Programming.",
                     Revision: "1.0",
                     GroupsIDs: "Programming"));
             }
-            Debug.Assert(Lib.TestLib.IsGroup(
+            Debug.Assert(TestLib.IsGroup(
                 GroupID: "Programming",
                 Description: "Programming.",
                 MeasurementIDs: "TM_00_00",
                 Selectable: true,
                 CancelNotPassed: true));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
-                IDPrior: Lib.TestLib.NONE,
-                IDNext: Lib.TestLib.NONE,
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                IDPrior: TestLib.NONE,
+                IDNext: TestLib.NONE,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 

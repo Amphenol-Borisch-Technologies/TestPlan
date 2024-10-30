@@ -10,22 +10,22 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         #region GroupID 4.2
         internal static String TM_01_00() {
             Debug.Assert(
-                Lib.TestLib.IsOperation(
+                TestLib.IsOperation(
                 OperationID: "T-30",
                 Description: "FilePro T-30 Functional Test.",
                 Revision: "1.0",
                 GroupsIDs: "4.2|4.4.1|4.4.2|4.5|4.6|4.7|4.8|4.9|4.10"));
-            Debug.Assert(Lib.TestLib.IsGroup(
+            Debug.Assert(TestLib.IsGroup(
                 GroupID: "4.2",
                 Description: "Preliminary Electrical Test.",
                 MeasurementIDs: "TM_01_00",
                 Selectable: false,
                 CancelNotPassed: true));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
-                IDPrior: Lib.TestLib.NONE,
+                IDPrior: TestLib.NONE,
                 IDNext: "TM_02_00",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
@@ -34,17 +34,17 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
 
         #region GroupID 4.4.1
         internal static String TM_02_00() {
-            Debug.Assert(Lib.TestLib.IsGroup(
+            Debug.Assert(TestLib.IsGroup(
                 GroupID: "4.4.1",
                 Description: "UUT Remote Update Firmware Operation.",
                 MeasurementIDs: "TM_02_00",
                 Selectable: false,
                 CancelNotPassed: true));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_01_00",
                 IDNext: "TM_03_00",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
@@ -54,17 +54,17 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
 
         #region GroupID 4.4.2
         internal static String TM_03_00() {
-            Debug.Assert(Lib.TestLib.IsGroup(
+            Debug.Assert(TestLib.IsGroup(
                 GroupID: "4.4.2",
                 Description: "Program MAC Addresses.",
                 MeasurementIDs: "TM_03_00|TM_03_01",
                 Selectable: false,
                 CancelNotPassed: true));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_02_00",
                 IDNext: "TM_03_01",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
@@ -72,12 +72,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_03_01() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.4.2"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.4.2"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_03_00",
                 IDNext: "TM_04_00",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
@@ -87,17 +87,17 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
 
         #region GroupID 4.5
         internal static String TM_04_00() {
-            Debug.Assert(Lib.TestLib.IsGroup(
+            Debug.Assert(TestLib.IsGroup(
                 GroupID: "4.5",
                 Description: "IIU Test.",
                 MeasurementIDs: "TM_04_00|TM_04_01|TM_04_02|TM_04_03|TM_04_04|TM_04_05|TM_04_06|TM_04_07",
                 Selectable: false,
                 CancelNotPassed: true));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_03_01",
                 IDNext: "TM_04_01",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
@@ -105,12 +105,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_04_01() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.5"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.5"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_04_00",
                 IDNext: "TM_04_02",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
@@ -118,12 +118,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_04_02() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.5"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.5"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_04_01",
                 IDNext: "TM_04_03",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
@@ -131,12 +131,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_04_03() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.5"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.5"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_04_02",
                 IDNext: "TM_04_04",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
@@ -144,12 +144,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_04_04() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.5"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.5"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_04_03",
                 IDNext: "TM_04_05",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
@@ -157,12 +157,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_04_05() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.5"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.5"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_04_04",
                 IDNext: "TM_04_06",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
@@ -170,12 +170,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_04_06() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.5"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.5"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_04_05",
                 IDNext: "TM_04_07",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
@@ -183,12 +183,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_04_07() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.5"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.5"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_04_06",
                 IDNext: "TM_05_00",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
@@ -198,7 +198,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
 
         #region GroupID 4.6
         internal static String TM_05_00() {
-            Debug.Assert(Lib.TestLib.IsGroup(
+            Debug.Assert(TestLib.IsGroup(
                 GroupID: "4.6",
                 Description: "UUT Test Command.",
                 MeasurementIDs: "TM_05_00|TM_05_01|TM_05_02|TM_05_03|TM_05_04|TM_05_05|TM_05_06|TM_05_07|TM_05_08|" +
@@ -213,23 +213,23 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 "TM_05_97|TM_05_98|TM_05_99",
                 Selectable: false,
                 CancelNotPassed: true));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_04_07",
                 IDNext: "TM_05_01",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
         }
 
         internal static String TM_05_01() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_00",
                 IDNext: "TM_05_02",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
@@ -237,12 +237,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_02() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_01",
                 IDNext: "TM_05_03",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
@@ -250,12 +250,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_03() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_02",
                 IDNext: "TM_05_04",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
@@ -263,12 +263,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_04() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_03",
                 IDNext: "TM_05_05",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
@@ -276,12 +276,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_05() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_04",
                 IDNext: "TM_05_06",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
@@ -289,12 +289,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_06() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_05",
                 IDNext: "TM_05_07",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
@@ -302,12 +302,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_07() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_06",
                 IDNext: "TM_05_08",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
@@ -315,12 +315,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_08() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_07",
                 IDNext: "TM_05_09",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
@@ -328,12 +328,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_09() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_08",
                 IDNext: "TM_05_10",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
@@ -341,12 +341,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_10() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_09",
                 IDNext: "TM_05_11",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
@@ -354,12 +354,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_11() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_10",
                 IDNext: "TM_05_12",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
@@ -367,12 +367,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_12() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_11",
                 IDNext: "TM_05_13",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
@@ -380,12 +380,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_13() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_12",
                 IDNext: "TM_05_14",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
@@ -393,12 +393,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_14() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_13",
                 IDNext: "TM_05_15",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
@@ -406,12 +406,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_15() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_14",
                 IDNext: "TM_05_16",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
@@ -419,12 +419,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_16() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_15",
                 IDNext: "TM_05_17",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
@@ -432,12 +432,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_17() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_16",
                 IDNext: "TM_05_18",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -446,12 +446,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_18() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_17",
                 IDNext: "TM_05_19",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
@@ -459,12 +459,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_19() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_18",
                 IDNext: "TM_05_20",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -473,12 +473,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_20() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_19",
                 IDNext: "TM_05_21",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
             return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
@@ -486,12 +486,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_21() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_20",
                 IDNext: "TM_05_22",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -500,12 +500,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_22() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_21",
                 IDNext: "TM_05_23",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -514,12 +514,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_23() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_22",
                 IDNext: "TM_05_24",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -528,12 +528,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_24() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_23",
                 IDNext: "TM_05_25",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -542,12 +542,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_25() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_24",
                 IDNext: "TM_05_26",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -556,12 +556,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_26() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_25",
                 IDNext: "TM_05_27",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -570,12 +570,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_27() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_26",
                 IDNext: "TM_05_28",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -584,12 +584,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_28() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_27",
                 IDNext: "TM_05_29",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -598,12 +598,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_29() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_28",
                 IDNext: "TM_05_30",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -612,12 +612,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_30() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_29",
                 IDNext: "TM_05_31",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -626,12 +626,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_31() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_30",
                 IDNext: "TM_05_32",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -640,12 +640,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_32() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_31",
                 IDNext: "TM_05_33",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -654,12 +654,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_33() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_32",
                 IDNext: "TM_05_34",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -668,12 +668,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_34() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_33",
                 IDNext: "TM_05_35",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -682,12 +682,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_35() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_34",
                 IDNext: "TM_05_36",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -696,12 +696,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_36() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_35",
                 IDNext: "TM_05_37",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -710,12 +710,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_37() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_36",
                 IDNext: "TM_05_38",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -724,12 +724,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_38() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_37",
                 IDNext: "TM_05_39",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -738,12 +738,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_39() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_38",
                 IDNext: "TM_05_40",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -752,12 +752,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_40() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_39",
                 IDNext: "TM_05_41",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -766,12 +766,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_41() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_40",
                 IDNext: "TM_05_42",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -780,12 +780,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_42() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_41",
                 IDNext: "TM_05_43",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -794,12 +794,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_43() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_42",
                 IDNext: "TM_05_44",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -808,12 +808,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_44() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_43",
                 IDNext: "TM_05_45",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -822,12 +822,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_45() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_44",
                 IDNext: "TM_05_46",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -836,12 +836,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_46() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_45",
                 IDNext: "TM_05_47",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -850,12 +850,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_47() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_46",
                 IDNext: "TM_05_48",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -864,12 +864,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_48() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_47",
                 IDNext: "TM_05_49",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -878,12 +878,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_49() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_48",
                 IDNext: "TM_05_50",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -892,12 +892,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_50() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_49",
                 IDNext: "TM_05_51",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -906,12 +906,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_51() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_50",
                 IDNext: "TM_05_52",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -920,12 +920,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_52() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_51",
                 IDNext: "TM_05_53",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -934,12 +934,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_53() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_52",
                 IDNext: "TM_05_54",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -948,12 +948,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_54() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_53",
                 IDNext: "TM_05_55",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -962,12 +962,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_55() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_54",
                 IDNext: "TM_05_56",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -976,12 +976,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_56() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_55",
                 IDNext: "TM_05_57",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -990,12 +990,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_57() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_56",
                 IDNext: "TM_05_58",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1004,12 +1004,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_58() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_57",
                 IDNext: "TM_05_59",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1018,12 +1018,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_59() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_58",
                 IDNext: "TM_05_60",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1032,12 +1032,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_60() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_59",
                 IDNext: "TM_05_61",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1046,12 +1046,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_61() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_60",
                 IDNext: "TM_05_62",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1060,12 +1060,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_62() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_61",
                 IDNext: "TM_05_63",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1074,12 +1074,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_63() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_62",
                 IDNext: "TM_05_64",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1088,12 +1088,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_64() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_63",
                 IDNext: "TM_05_65",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1102,12 +1102,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_65() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_64",
                 IDNext: "TM_05_66",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1116,12 +1116,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_66() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_65",
                 IDNext: "TM_05_67",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1130,12 +1130,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_67() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_66",
                 IDNext: "TM_05_68",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1144,12 +1144,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_68() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_67",
                 IDNext: "TM_05_69",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1158,12 +1158,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_69() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_68",
                 IDNext: "TM_05_70",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1172,12 +1172,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_70() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_69",
                 IDNext: "TM_05_71",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1186,12 +1186,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_71() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_70",
                 IDNext: "TM_05_72",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1200,12 +1200,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_72() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_71",
                 IDNext: "TM_05_73",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1214,12 +1214,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_73() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_72",
                 IDNext: "TM_05_74",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1228,12 +1228,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_74() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_73",
                 IDNext: "TM_05_75",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1242,12 +1242,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_75() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_74",
                 IDNext: "TM_05_76",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1256,12 +1256,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_76() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_75",
                 IDNext: "TM_05_77",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1270,12 +1270,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_77() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_76",
                 IDNext: "TM_05_78",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1284,12 +1284,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_78() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_77",
                 IDNext: "TM_05_79",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1298,12 +1298,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_79() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_78",
                 IDNext: "TM_05_80",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1312,12 +1312,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_80() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_79",
                 IDNext: "TM_05_81",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1326,12 +1326,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_81() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_80",
                 IDNext: "TM_05_82",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1340,12 +1340,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_82() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_81",
                 IDNext: "TM_05_83",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1354,12 +1354,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_83() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_82",
                 IDNext: "TM_05_84",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1368,12 +1368,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_84() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_83",
                 IDNext: "TM_05_85",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1382,12 +1382,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_85() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_84",
                 IDNext: "TM_05_86",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1396,12 +1396,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_86() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_85",
                 IDNext: "TM_05_87",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1410,12 +1410,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_87() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_86",
                 IDNext: "TM_05_88",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1424,12 +1424,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_88() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_87",
                 IDNext: "TM_05_89",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1438,12 +1438,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_89() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_88",
                 IDNext: "TM_05_90",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1452,12 +1452,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_90() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_89",
                 IDNext: "TM_05_91",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1466,12 +1466,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_91() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_90",
                 IDNext: "TM_05_92",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1480,12 +1480,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_92() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_91",
                 IDNext: "TM_05_93",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1494,12 +1494,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_93() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_92",
                 IDNext: "TM_05_94",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1508,12 +1508,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_94() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_93",
                 IDNext: "TM_05_95",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1522,12 +1522,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_95() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_94",
                 IDNext: "TM_05_96",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1536,12 +1536,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_96() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_95",
                 IDNext: "TM_05_97",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1550,12 +1550,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_97() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_96",
                 IDNext: "TM_05_98",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1564,12 +1564,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_98() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_97",
                 IDNext: "TM_05_99",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1578,12 +1578,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_05_99() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.6"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.6"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_98",
                 IDNext: "TM_06_00",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1594,17 +1594,17 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
 
         #region GroupID 4.7
         internal static String TM_06_00() {
-            Debug.Assert(Lib.TestLib.IsGroup(
+            Debug.Assert(TestLib.IsGroup(
                 GroupID: "4.7",
                 Description: "CPOW Test.",
                 MeasurementIDs: "TM_06_00|TM_06_01|TM_06_02|TM_06_03|TM_06_04|TM_06_05|TM_06_06|TM_06_07|TM_06_08",
                 Selectable: false,
                 CancelNotPassed: true));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_05_99",
                 IDNext: "TM_06_01",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1613,12 +1613,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_06_01() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.7"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.7"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_06_00",
                 IDNext: "TM_06_02",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1627,12 +1627,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_06_02() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.7"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.7"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_06_01",
                 IDNext: "TM_06_03",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1641,12 +1641,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_06_03() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.7"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.7"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_06_02",
                 IDNext: "TM_06_04",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1655,12 +1655,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_06_04() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.7"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.7"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_06_03",
                 IDNext: "TM_06_05",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1669,12 +1669,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_06_05() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.7"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.7"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_06_04",
                 IDNext: "TM_06_06",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1683,12 +1683,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_06_06() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.7"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.7"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_06_05",
                 IDNext: "TM_06_07",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1697,12 +1697,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_06_07() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.7"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.7"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_06_06",
                 IDNext: "TM_06_08",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1711,12 +1711,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_06_08() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.7"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.7"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_06_07",
                 IDNext: "TM_07_00",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1727,17 +1727,17 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
 
         #region GroupID 4.8
         internal static String TM_07_00() {
-            Debug.Assert(Lib.TestLib.IsGroup(
+            Debug.Assert(TestLib.IsGroup(
                 GroupID: "4.8",
                 Description: "UUT Memory Write32 Command.",
                 MeasurementIDs: "TM_07_00|TM_07_01|TM_07_02|TM_07_03",
                 Selectable: false,
                 CancelNotPassed: true));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_06_08",
                 IDNext: "TM_07_01",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1746,12 +1746,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_07_01() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.8"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.8"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_07_00",
                 IDNext: "TM_07_02",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1760,12 +1760,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_07_02() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.8"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.8"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_07_01",
                 IDNext: "TM_07_03",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1774,12 +1774,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_07_03() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.8"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.8"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_07_02",
                 IDNext: "TM_08_00",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1790,17 +1790,17 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
 
         #region GroupID 4.9
         internal static String TM_08_00() {
-            Debug.Assert(Lib.TestLib.IsGroup(
+            Debug.Assert(TestLib.IsGroup(
                 GroupID: "4.9",
                 Description: "UUT Ambient Temperature Command.",
                 MeasurementIDs: "TM_08_00|TM_08_01",
                 Selectable: false,
                 CancelNotPassed: true));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_07_03",
                 IDNext: "TM_08_01",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1809,12 +1809,12 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
         }
 
         internal static String TM_08_01() {
-            Debug.Assert(Lib.TestLib.IsGroup(GroupID: "4.9"));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsGroup(GroupID: "4.9"));
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_08_00",
                 IDNext: "TM_09_00",
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
@@ -1825,17 +1825,17 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
 
         #region GroupID 4.10
         internal static String TM_09_00() {
-            Debug.Assert(Lib.TestLib.IsGroup(
+            Debug.Assert(TestLib.IsGroup(
                 GroupID: "4.10",
                 Description: "UUT Remote Update Firmware Operation.",
                 MeasurementIDs: "TM_09_00",
                 Selectable: false,
                 CancelNotPassed: true));
-            Debug.Assert(Lib.TestLib.IsMeasurement(
+            Debug.Assert(TestLib.IsMeasurement(
                 Description: "Description.",
                 IDPrior: "TM_08_01",
-                IDNext: Lib.TestLib.NONE,
-                ClassName: nameof(Lib.AppConfig.MeasurementCustom),
+                IDNext: TestLib.NONE,
+                ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
