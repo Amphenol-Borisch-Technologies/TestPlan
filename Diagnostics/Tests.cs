@@ -4,6 +4,7 @@ using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ABT.TestExec.Lib;
 
 // NOTE:  Recommend using Microsoft's Visual Studio Code to develop/debug TestExec based closed source/proprietary projects:
 //        - Visual Studio Code is a co$t free, open-source Integrated Development Environment entirely suitable for textual C# development, like Exec.
@@ -90,13 +91,13 @@ namespace ABT.TestExec.Exec {
     internal class TestsMain {
         [STAThread]
         static void Main() {
-            Lib.TestLib.MutexTest = new Mutex(true, Lib.TestLib.MutexTestName, out Boolean onlyInstance);
+            TestLib.MutexTest = new Mutex(true, TestLib.MutexTestName, out Boolean onlyInstance);
             if (!onlyInstance) {
                 _ = MessageBox.Show($"Already have one executing instance of a Tests.{Environment.NewLine}{Environment.NewLine}" +
                     $"Cannot have two, as both would control system instruments simultaneously.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            GC.KeepAlive(Lib.TestLib.MutexTest);
+            GC.KeepAlive(TestLib.MutexTest);
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
