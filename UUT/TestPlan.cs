@@ -77,7 +77,7 @@ using ABT.Test.Lib;
 ///          - Simply throw an OperationCanceledException if the specific condition(s) occcur.
 ///      4)  App.config's CancelNotPassed:
 ///          - App.config's TestMeasurement element has a Boolean "CancelNotPassed" field:
-///          - If the current TestPlan.MeasurementRun() has CancelNotPassed=true and it's resulting EvaluateEventMeasurement() doesn't return TestEvents.PASS,
+///          - If the current TestPlan.MeasurementRun() has CancelNotPassed=true and it's resulting EvaluateEventMeasurement() doesn't return EVENTS.PASS,
 ///            TestExec.MeasurementsRun() will break/exit, stopping further testing.
 ///		    - Do not pass Go, do not collect $200, go directly to TestExec.MeasurementsPostRun().
 ///

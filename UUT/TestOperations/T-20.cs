@@ -38,8 +38,7 @@ namespace ABT.Test.Plans.UUT.TestOperations {
             ID.SEAL.Set(OUTPUTS2.OUTput1, 1, 0.1, 7, STATES.ON);
             ID.SEAL.Set(OUTPUTS2.OUTput2, 2, 0.1, 7, STATES.ON);
             _ = MessageBox.Show($"Waiting...", "zzzzzzz", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            TestData.MeasurementPresent.TestEvent = TestEvents.PASS;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
         }
         #endregion GroupID Programming
     }

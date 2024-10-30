@@ -28,8 +28,7 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
         }
         #endregion GroupID 4.2
 
@@ -48,8 +47,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
         #endregion GroupID 4.4.1
 
@@ -68,8 +67,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_03_01() {
@@ -81,8 +80,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
         #endregion GroupID 4.4.2
 
@@ -101,8 +100,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_04_01() {
@@ -114,8 +113,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_04_02() {
@@ -127,8 +126,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_04_03() {
@@ -140,8 +139,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_04_04() {
@@ -153,8 +152,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_04_05() {
@@ -166,8 +165,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_04_06() {
@@ -179,8 +178,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_04_07() {
@@ -192,8 +191,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
         #endregion GroupID 4.5
 
@@ -221,8 +220,7 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
         }
 
         internal static String TM_05_01() {
@@ -234,8 +232,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_02() {
@@ -247,8 +245,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_03() {
@@ -260,8 +258,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_04() {
@@ -273,8 +271,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_05() {
@@ -286,8 +284,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_06() {
@@ -299,8 +297,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_07() {
@@ -312,8 +310,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_08() {
@@ -325,8 +323,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_09() {
@@ -338,8 +336,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_10() {
@@ -351,8 +349,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_11() {
@@ -364,8 +362,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_12() {
@@ -377,8 +375,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_13() {
@@ -390,8 +388,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_14() {
@@ -403,8 +401,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_15() {
@@ -416,8 +414,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_16() {
@@ -429,8 +427,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_17() {
@@ -443,8 +441,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_18() {
@@ -456,8 +454,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_19() {
@@ -470,8 +468,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_20() {
@@ -483,8 +481,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_21() {
@@ -497,8 +495,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_22() {
@@ -511,8 +509,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_23() {
@@ -525,8 +523,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_24() {
@@ -539,8 +537,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_25() {
@@ -553,8 +551,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_26() {
@@ -567,8 +565,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_27() {
@@ -581,8 +579,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_28() {
@@ -595,8 +593,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_29() {
@@ -609,8 +607,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_30() {
@@ -623,8 +621,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_31() {
@@ -637,8 +635,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_32() {
@@ -651,8 +649,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_33() {
@@ -665,8 +663,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_34() {
@@ -679,8 +677,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_35() {
@@ -693,8 +691,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_36() {
@@ -707,8 +705,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_37() {
@@ -721,8 +719,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_38() {
@@ -735,8 +733,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_39() {
@@ -749,8 +747,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_40() {
@@ -763,8 +761,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_41() {
@@ -777,8 +775,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_42() {
@@ -791,8 +789,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_43() {
@@ -805,8 +803,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_44() {
@@ -819,8 +817,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_45() {
@@ -833,8 +831,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_46() {
@@ -847,8 +845,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_47() {
@@ -861,8 +859,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_48() {
@@ -875,8 +873,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_49() {
@@ -889,8 +887,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_50() {
@@ -903,8 +901,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_51() {
@@ -917,8 +915,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_52() {
@@ -931,8 +929,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_53() {
@@ -945,8 +943,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_54() {
@@ -959,8 +957,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_55() {
@@ -973,8 +971,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_56() {
@@ -987,8 +985,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_57() {
@@ -1001,8 +999,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_58() {
@@ -1015,8 +1013,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_59() {
@@ -1029,8 +1027,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_60() {
@@ -1043,8 +1041,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_61() {
@@ -1057,8 +1055,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_62() {
@@ -1071,8 +1069,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_63() {
@@ -1085,8 +1083,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_64() {
@@ -1099,8 +1097,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_65() {
@@ -1113,8 +1111,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_66() {
@@ -1127,8 +1125,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_67() {
@@ -1141,8 +1139,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_68() {
@@ -1155,8 +1153,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_69() {
@@ -1169,8 +1167,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_70() {
@@ -1183,8 +1181,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_71() {
@@ -1197,8 +1195,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_72() {
@@ -1211,8 +1209,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_73() {
@@ -1225,8 +1223,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_74() {
@@ -1239,8 +1237,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_75() {
@@ -1253,8 +1251,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_76() {
@@ -1267,8 +1265,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_77() {
@@ -1281,8 +1279,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_78() {
@@ -1295,8 +1293,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_79() {
@@ -1309,8 +1307,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_80() {
@@ -1323,8 +1321,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_81() {
@@ -1337,8 +1335,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_82() {
@@ -1351,8 +1349,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_83() {
@@ -1365,8 +1363,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_84() {
@@ -1379,8 +1377,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_85() {
@@ -1393,8 +1391,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_86() {
@@ -1407,8 +1405,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_87() {
@@ -1421,8 +1419,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_88() {
@@ -1435,8 +1433,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_89() {
@@ -1449,8 +1447,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_90() {
@@ -1463,8 +1461,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_91() {
@@ -1477,8 +1475,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_92() {
@@ -1491,8 +1489,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_93() {
@@ -1505,8 +1503,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_94() {
@@ -1519,8 +1517,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_95() {
@@ -1533,8 +1531,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_96() {
@@ -1547,8 +1545,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_97() {
@@ -1561,8 +1559,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_98() {
@@ -1575,8 +1573,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_05_99() {
@@ -1589,8 +1587,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
         #endregion GroupID 4.6
 
@@ -1610,8 +1608,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_06_01() {
@@ -1624,8 +1622,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_06_02() {
@@ -1638,8 +1636,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_06_03() {
@@ -1652,8 +1650,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_06_04() {
@@ -1666,8 +1664,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_06_05() {
@@ -1680,8 +1678,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_06_06() {
@@ -1694,8 +1692,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_06_07() {
@@ -1708,8 +1706,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_06_08() {
@@ -1722,8 +1720,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
         #endregion GroupID 4.7
 
@@ -1743,8 +1741,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_07_01() {
@@ -1757,8 +1755,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_07_02() {
@@ -1771,8 +1769,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_07_03() {
@@ -1785,8 +1783,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
         #endregion GroupID 4.8
 
@@ -1806,8 +1804,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
 
         internal static String TM_08_01() {
@@ -1820,8 +1818,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
         #endregion GroupID 4.9
 
@@ -1841,8 +1839,8 @@ namespace ABT.Test.Plans.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            TestData.MeasurementPresent.TestEvent = String.Equals(String.Empty, String.Empty) ? TestEvents.PASS : TestEvents.FAIL;
-            return String.Empty;
+            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+
         }
         #endregion GroupID 4.10
     }
