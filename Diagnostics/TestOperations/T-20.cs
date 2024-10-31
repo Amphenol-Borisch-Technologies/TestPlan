@@ -34,11 +34,11 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            ID.V28_IN.Set(3.3, 0.1, 7, STATES.ON);
-            ID.SEAL.Set(OUTPUTS2.OUTput1, 1, 0.1, 7, STATES.ON);
-            ID.SEAL.Set(OUTPUTS2.OUTput2, 2, 0.1, 7, STATES.ON);
+            ID.V28_IN.Set(Volts: 3.3, Amps: 0.1, OVP: 7, STATES.ON);
+            ID.SEAL.Set(OUTPUTS2.OUTput1, Volts: 1, Amps: 0.1, OVP: 7, STATES.ON);
+            ID.SEAL.Set(OUTPUTS2.OUTput2, Volts: 2, Amps: 0.1, OVP: 7, STATES.ON);
             _ = MessageBox.Show($"Waiting...", "zzzzzzz", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
         }
         #endregion GroupID Programming
     }

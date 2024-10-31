@@ -28,7 +28,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
         }
         #endregion GroupID 4.2
 
@@ -47,7 +47,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
         #endregion GroupID 4.4.1
@@ -67,7 +67,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -80,7 +80,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
         #endregion GroupID 4.4.2
@@ -100,7 +100,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -113,7 +113,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -126,7 +126,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -139,7 +139,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -152,7 +152,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -165,7 +165,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -178,7 +178,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -191,7 +191,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
         #endregion GroupID 4.5
@@ -220,7 +220,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
         }
 
         internal static String TM_05_01() {
@@ -232,7 +232,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -245,7 +245,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -258,7 +258,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -271,7 +271,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -284,7 +284,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -297,7 +297,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -310,7 +310,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -323,7 +323,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -336,7 +336,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -349,7 +349,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -362,7 +362,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -375,7 +375,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -388,7 +388,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -401,7 +401,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -414,7 +414,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -427,7 +427,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -441,7 +441,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -454,7 +454,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -468,7 +468,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -481,7 +481,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -495,7 +495,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -509,7 +509,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -523,7 +523,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -537,7 +537,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -551,7 +551,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -565,7 +565,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -579,7 +579,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -593,7 +593,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -607,7 +607,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -621,7 +621,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -635,7 +635,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -649,7 +649,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -663,7 +663,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -677,7 +677,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -691,7 +691,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -705,7 +705,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -719,7 +719,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -733,7 +733,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -747,7 +747,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -761,7 +761,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -775,7 +775,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -789,7 +789,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -803,7 +803,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -817,7 +817,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -831,7 +831,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -845,7 +845,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -859,7 +859,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -873,7 +873,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -887,7 +887,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -901,7 +901,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -915,7 +915,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -929,7 +929,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -943,7 +943,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -957,7 +957,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -971,7 +971,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -985,7 +985,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -999,7 +999,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1013,7 +1013,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1027,7 +1027,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1041,7 +1041,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1055,7 +1055,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1069,7 +1069,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1083,7 +1083,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1097,7 +1097,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1111,7 +1111,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1125,7 +1125,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1139,7 +1139,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1153,7 +1153,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1167,7 +1167,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1181,7 +1181,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1195,7 +1195,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1209,7 +1209,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1223,7 +1223,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1237,7 +1237,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1251,7 +1251,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1265,7 +1265,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1279,7 +1279,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1293,7 +1293,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1307,7 +1307,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1321,7 +1321,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1335,7 +1335,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1349,7 +1349,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1363,7 +1363,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1377,7 +1377,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1391,7 +1391,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1405,7 +1405,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1419,7 +1419,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1433,7 +1433,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1447,7 +1447,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1461,7 +1461,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1475,7 +1475,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1489,7 +1489,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1503,7 +1503,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1517,7 +1517,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1531,7 +1531,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1545,7 +1545,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1559,7 +1559,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1573,7 +1573,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1587,7 +1587,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
         #endregion GroupID 4.6
@@ -1608,7 +1608,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1622,7 +1622,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1636,7 +1636,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1650,7 +1650,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1664,7 +1664,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1678,7 +1678,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1692,7 +1692,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1706,7 +1706,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1720,7 +1720,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
         #endregion GroupID 4.7
@@ -1741,7 +1741,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1755,7 +1755,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1769,7 +1769,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1783,7 +1783,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
         #endregion GroupID 4.8
@@ -1804,7 +1804,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
 
@@ -1818,7 +1818,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
         #endregion GroupID 4.9
@@ -1839,7 +1839,7 @@ namespace ABT.TestExec.Tests.UUT.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            return String.Equals(String.Empty, String.Empty) ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return EVENTS.PASS.ToString();
 
         }
         #endregion GroupID 4.10
