@@ -101,7 +101,7 @@ namespace ABT.TestExec.Exec {
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            try { Application.Run(Tests.Only); }
+            try { Application.Run(TestPlan.Only); }
             catch (Exception e) {
                 TestExec.ErrorMessage(e.ToString());
                 TestExec.ErrorMessage(e);
@@ -109,10 +109,10 @@ namespace ABT.TestExec.Exec {
         }
     }
 
-    internal sealed partial class Tests : TestExec {
-        internal static Tests Only { get; } = new Tests ();
+    internal sealed partial class TestPlan : TestExec {
+        internal static TestPlan Only { get; } = new TestPlan ();
 
-        static Tests() { }
+        static TestPlan() { }
         /// <summary>
         /// Singleton pattern requires explicit static constructor to tell C# compiler not to mark type as beforefieldinit.
         /// https://csharpindepth.com/articles/singleton
@@ -122,7 +122,7 @@ namespace ABT.TestExec.Exec {
         ///    - Realize both mayn't be optimal practices, and may refactor Tests to a non-Singleton class, and resume explicitly passing Tests object into methods.
         /// </para>
         /// </summary>
-        private Tests() : base(new Icon(@"Resources\Raytheon.ico")) {
+        private TestPlan() : base(new Icon(@"Resources\Raytheon.ico")) {
             // NOTE:  Change base constructor's Icon as applicable, depending on customer.
             // https://stackoverflow.com/questions/40933304/how-to-create-an-icon-for-visual-studio-with-just-mspaint-and-visual-studio
             // TODO:  Eventually; dynamically create custom TestExec menu items, allowing non-standard Apps & UUT menu choices.
@@ -132,7 +132,7 @@ namespace ABT.TestExec.Exec {
         }
 
         protected override async Task<String> MeasurementRun(String measurementID) {
-            Type type = Type.GetType("ABT.TestExec.Tests.UUT.TestOperations.TestMeasurements");
+            Type type = Type.GetType("ABT.TestExec.Tests.Diagnostics.TestOperations.TestMeasurements");
             // NOTE:  Will only seek invocable measurement methods in class TestMeasurements that are defined as TestMeasurement IDs in App.config & and are part of a Group.
             MethodInfo methodInfo = type.GetMethod(Lib.TestLib.MeasurementIDPresent, BindingFlags.Static | BindingFlags.NonPublic);
             // NOTE:  Invocable measurement methods in class TestMeasurements, defined as TestMeasurement IDs in App.config, must have signatures identical to "internal static String MethodName()",
