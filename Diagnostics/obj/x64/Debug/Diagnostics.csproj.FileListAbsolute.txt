@@ -1,6 +1,6 @@
+C:\Users\phils\source\repos\ABT\TestExec\Tests\Diagnostics\bin\x64\Debug\Resources\Amphenol.ico
 C:\Users\phils\source\repos\ABT\TestExec\Tests\Diagnostics\bin\x64\Debug\Resources\EmergencyStop.png
 C:\Users\phils\source\repos\ABT\TestExec\Tests\Diagnostics\bin\x64\Debug\Exec.config.xml
-C:\Users\phils\source\repos\ABT\TestExec\Tests\Diagnostics\bin\x64\Debug\Resources\Raytheon.ico
 C:\Users\phils\source\repos\ABT\TestExec\Tests\Diagnostics\bin\x64\Debug\Diagnostics.exe.config
 C:\Users\phils\source\repos\ABT\TestExec\Tests\Diagnostics\bin\x64\Debug\Diagnostics.exe
 C:\Users\phils\source\repos\ABT\TestExec\Tests\Diagnostics\bin\x64\Debug\Diagnostics.pdb
@@ -56,4 +56,3 @@ C:\Users\phils\source\repos\ABT\TestExec\Tests\Diagnostics\obj\x64\Debug\Diagnos
 C:\Users\phils\source\repos\ABT\TestExec\Tests\Diagnostics\obj\x64\Debug\Diagnost.5C3B60D2.Up2Date
 C:\Users\phils\source\repos\ABT\TestExec\Tests\Diagnostics\obj\x64\Debug\Diagnostics.exe
 C:\Users\phils\source\repos\ABT\TestExec\Tests\Diagnostics\obj\x64\Debug\Diagnostics.pdb
-C:\Users\phils\source\repos\ABT\TestExec\Tests\Diagnostics\bin\x64\Debug\Resources\Amphenol.ico
