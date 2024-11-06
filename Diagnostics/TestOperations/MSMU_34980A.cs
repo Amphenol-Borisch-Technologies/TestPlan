@@ -1,15 +1,13 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
-using System.Text;
-using System.Threading.Channels;
-using System.Windows.Forms;
 using ABT.TestExec.Exec;
 using ABT.TestExec.Lib;
 using ABT.TestExec.Lib.AppConfig;
-using ABT.TestExec.Lib.InstrumentDrivers;
 using ABT.TestExec.Lib.InstrumentDrivers.Interfaces;
+using ABT.TestExec.Lib.InstrumentDrivers.Multifunction;
+using ABT.TestExec.Lib.InstrumentDrivers.PowerSupplies;
 using ABT.TestExec.Tests.Diagnostics.InstrumentsDrivers;
-using Windows.Foundation.Metadata;
 
 namespace ABT.TestExec.Tests.Diagnostics.TestOperations {
     internal static partial class TestMeasurements {
@@ -30,6 +28,24 @@ namespace ABT.TestExec.Tests.Diagnostics.TestOperations {
                 CancelNotPassed: false,
                 Arguments: "NotApplicable"));
 
+
+            return Diagnostics_MSMU_34980A_SCPI_NET();
+        }
+
+        internal static String Diagnostics_MSMU_34980A_SCPI_NET() {
+            Boolean passedIndividual;
+            Boolean passedCollective = true;
+            foreach (KeyValuePair<String, Object> kvp in TestLib.InstrumentDrivers) {
+                if (kvp.Value is MSMU_34980A_SCPI_NET msmu_34980a_scpi_net) {
+                    passedIndividual = msmu_34980a_scpi_net.Diagnostics() is DIAGNOSTICS_RESULTS.PASS;
+                    passedCollective &= passedIndividual;
+                    if (passedIndividual) passedCollective &= Diagnostics_MSMU_34980A_SCPI_NET_Extended(); // Skip extended diagnostics if self-test failed.
+                }
+            }
+            return passedCollective ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+        }
+
+        internal static Boolean Diagnostics_MSMU_34980A_SCPI_NET_Extended() {
             ID.MSMU.ResetClear();
             ID.MSMU.SCPI.ROUTe.OPEN.ALL.Command(null);
             ID.MSMU.SCPI.INSTrument.DMM.INSTalled.Query(out Boolean installed);
@@ -37,16 +53,15 @@ namespace ABT.TestExec.Tests.Diagnostics.TestOperations {
             ID.MSMU.SCPI.INSTrument.DMM.CONNect.Command();
             ID.MSMU.SCPI.SENSe.RESistance.RESolution.Command("MAXimum");
             ID.MSMU.SCPI.ROUTe.CLOSe.Command("@1911,1912");
-            Boolean passed = (ID.MSMU.Diagnostics() is DIAGNOSTICS_RESULTS.PASS);
+            Boolean passedExtended = true;
             MeasurementNumeric MN = (MeasurementNumeric)TestLib.MeasurementPresent.ClassObject;
-
 
             String channel;
             for (Int32 i = 1; i < 21; i++) {
                 channel = $"@1{i:D3}";
                 ID.MSMU.SCPI.ROUTe.CLOSe.Command(channel);
                 ID.MSMU.SCPI.MEASure.SCALar.RESistance.Query(25D, "MAXimum", out Double[] resistance);
-                passed &= (MN.Low <= resistance[0] && resistance[0] <= MN.High);
+                passedExtended &= (MN.Low <= resistance[0] && resistance[0] <= MN.High);
                 TestPlan.Only.MessageAppendLine(Label: $"Channel {channel}: ", Message: $"{Math.Round(resistance[0], MN.FD, MidpointRounding.ToEven)}Ω");
                 ID.MSMU.SCPI.ROUTe.OPEN.Command(channel);
 
@@ -60,8 +75,9 @@ namespace ABT.TestExec.Tests.Diagnostics.TestOperations {
                 TestPlan.Only.MessageAppendLine(Label: $"Channel {channel}: ", Message: $"{Math.Round(resistance[0], 4, MidpointRounding.ToEven)}Ω");
                 ID.MSMU.SCPI.ROUTe.OPEN.Command(channel);
             }
-            return passed ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return passedExtended;
         }
-        #endregion GroupID MSMU_34980A
     }
+        #endregion GroupID MSMU_34980A
 }
+

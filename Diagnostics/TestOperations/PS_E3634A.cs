@@ -25,20 +25,27 @@ namespace ABT.TestExec.Tests.Diagnostics.TestOperations {
                 CancelNotPassed: true,
                 Arguments: "NotApplicable"));
 
-            Boolean passed = true;
+            return Diagnostics_PS_E3634A_SCPI_NET();
+        }
+
+        internal static String Diagnostics_PS_E3634A_SCPI_NET() {
+            Boolean passedIndividual;
+            Boolean passedCollective = true;
             foreach (KeyValuePair<String, Object> kvp in TestLib.InstrumentDrivers) {
                 if (kvp.Value is PS_E3634A_SCPI_NET ps_e3634A_scpi_net) {
-                    passed &= ps_e3634A_scpi_net.Diagnostics() is DIAGNOSTICS_RESULTS.PASS;
-                    passed &= Diagnostics_PS_E3634A_SCPI_NET(ps_e3634A_scpi_net);
+                    passedIndividual = ps_e3634A_scpi_net.Diagnostics() is DIAGNOSTICS_RESULTS.PASS;
+                    passedCollective &= passedIndividual;
+                    if (passedIndividual) passedCollective &= Diagnostics_PS_E3634A_SCPI_NET_Extended(); // Skip extended diagnostics if self-test failed.
                 }
             }
+            return passedCollective ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+        }
 
-            return passed ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+        internal static Boolean Diagnostics_PS_E3634A_SCPI_NET_Extended() {
+            Boolean passedExtended = true;
+            // TODO: Add diagnostics that utilize other instruments and/or self-test harnesses, log results.
+            return passedExtended;
         }
         #endregion GroupID PS_E3634A
-
-        private static Boolean Diagnostics_PS_E3634A_SCPI_NET(PS_E3634A_SCPI_NET ps_e3634A_scpi_net) {
-            return true;
-        }
     }
 }

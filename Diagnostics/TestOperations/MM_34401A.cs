@@ -1,18 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Text;
-using System.Threading.Channels;
-using System.Windows.Forms;
-using ABT.TestExec.Exec;
 using ABT.TestExec.Lib;
 using ABT.TestExec.Lib.AppConfig;
-using ABT.TestExec.Lib.InstrumentDrivers;
 using ABT.TestExec.Lib.InstrumentDrivers.Interfaces;
 using ABT.TestExec.Lib.InstrumentDrivers.MultiMeters;
-using ABT.TestExec.Lib.InstrumentDrivers.PowerSupplies;
-using ABT.TestExec.Tests.Diagnostics.InstrumentsDrivers;
-using Windows.Foundation.Metadata;
 
 namespace ABT.TestExec.Tests.Diagnostics.TestOperations {
     internal static partial class TestMeasurements {
@@ -41,20 +33,27 @@ namespace ABT.TestExec.Tests.Diagnostics.TestOperations {
                 CancelNotPassed: false,
                 Arguments: "NotApplicable"));
 
-            Boolean passed = true;
+            return Diagnostics_MM_34401A_SCPI_NET();
+        }
+
+        internal static String Diagnostics_MM_34401A_SCPI_NET() {
+            Boolean passedIndividual;
+            Boolean passedCollective = true;
             foreach (KeyValuePair<String, Object> kvp in TestLib.InstrumentDrivers) {
                 if (kvp.Value is MM_34401A_SCPI_NET mm_34401a_scpi_net) {
-                    passed &= mm_34401a_scpi_net.Diagnostics() is DIAGNOSTICS_RESULTS.PASS;
-                    passed &= Diagnostics_MM_34401A_SCPI_NET(mm_34401a_scpi_net);
+                    passedIndividual = mm_34401a_scpi_net.Diagnostics() is DIAGNOSTICS_RESULTS.PASS;
+                    passedCollective &= passedIndividual;
+                    if (passedIndividual) passedCollective &= Diagnostics_MM_34401A_SCPI_NET_Extended(); // Skip extended diagnostics if self-test failed.
                 }
             }
+            return passedCollective ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+        }
 
-            return passed ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+        internal static Boolean Diagnostics_MM_34401A_SCPI_NET_Extended() {
+            Boolean passedExtended = true;
+            // TODO: Add diagnostics that utilize other instruments and/or self-test harnesses, log results.
+            return passedExtended;
         }
         #endregion GroupID MM_34401A
-
-        private static Boolean Diagnostics_MM_34401A_SCPI_NET(MM_34401A_SCPI_NET mm_34401a_scpi_net) {
-            return true;
-        }
     }
 }

@@ -1,18 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Text;
-using System.Threading.Channels;
-using System.Windows.Forms;
-using ABT.TestExec.Exec;
 using ABT.TestExec.Lib;
 using ABT.TestExec.Lib.AppConfig;
-using ABT.TestExec.Lib.InstrumentDrivers;
 using ABT.TestExec.Lib.InstrumentDrivers.Interfaces;
 using ABT.TestExec.Lib.InstrumentDrivers.Oscilloscopes;
-using ABT.TestExec.Lib.InstrumentDrivers.PowerSupplies;
-using ABT.TestExec.Tests.Diagnostics.InstrumentsDrivers;
-using Windows.Foundation.Metadata;
+
 
 namespace ABT.TestExec.Tests.Diagnostics.TestOperations {
     internal static partial class TestMeasurements {
@@ -37,15 +30,23 @@ namespace ABT.TestExec.Tests.Diagnostics.TestOperations {
         }
 
         internal static String Diagnostics_MSO_3014_IVI_COM() {
-            Boolean passed = true;
+            Boolean passedIndividual;
+            Boolean passedCollective = true;
             foreach (KeyValuePair<String, Object> kvp in TestLib.InstrumentDrivers) {
                 if (kvp.Value is MSO_3014_IVI_COM mso_3014_ivi_com) {
-                    passed &= mso_3014_ivi_com.Diagnostics() is DIAGNOSTICS_RESULTS.PASS;
-                    // TODO: Add diagnostics that utilize other instruments and/or self-test harnesses.
+                    passedIndividual = mso_3014_ivi_com.Diagnostics() is DIAGNOSTICS_RESULTS.PASS;
+                    passedCollective &= passedIndividual;
+                    if (passedIndividual) passedCollective &= Diagnostics_MSO_3014_IVI_COM_Extended(); // Skip extended diagnostics if self-test failed.
                 }
             }
-            return passed ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return passedCollective ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
         }
-        #endregion GroupID PS_E3634A
+
+        internal static Boolean Diagnostics_MSO_3014_IVI_COM_Extended() {
+            Boolean passedExtended = true;
+            // TODO: Add diagnostics that utilize other instruments and/or self-test harnesses, log results.
+            return passedExtended;
+        }
+        #endregion GroupID MSO_3014
     }
 }
