@@ -14,28 +14,20 @@ using Windows.Foundation.Metadata;
 namespace ABT.TestExec.Tests.Diagnostics.TestOperations {
     internal static partial class TestMeasurements {
         // NOTE:  Invocable test methods in this class, defined as TestMeasurement IDs in App.config, require signatures like "internal static String MethodName()".
-        #region GroupID 34921A
-        internal static String MUX_34921A_1() {
-            if (TestLib.ConfigTest.IsOperation) {
-                Debug.Assert(
-                    TestLib.IsOperation(
-                    OperationID: "Diagnostics",
-                    Description: "Keysight 34980A Diagnostics.",
-                    Revision: "0",
-                    GroupsIDs: "34921A"));
-            }
+        #region GroupID MSMU_34980A
+        internal static String MSMU_34980A() {
             Debug.Assert(TestLib.IsGroup(
-                GroupID: "34921A",
-                Description: "Keysight 34921A Diagnostics..",
-                MeasurementIDs: "MUX_34921A_1",
+                GroupID: "MSMU_34980A",
+                Description: "Keysight 34980A Diagnostics.",
+                MeasurementIDs: "MSMU_34980A",
                 Selectable: true,
                 CancelNotPassed: false));
             Debug.Assert(TestLib.IsMeasurement(
-                Description: "34921A Slot 1.",
-                IDPrior: TestLib.NONE,
-                IDNext: "34921A Slot 2.",
+                Description: "Keysight 34980A Multifunction Switch/Measurement Units.",
+                IDPrior: "MM_34401A",
+                IDNext: "MSO_3014",
                 ClassName: nameof(MeasurementCustom),
-                CancelNotPassed: true,
+                CancelNotPassed: false,
                 Arguments: "NotApplicable"));
 
             ID.MSMU.ResetClear();
@@ -45,7 +37,7 @@ namespace ABT.TestExec.Tests.Diagnostics.TestOperations {
             ID.MSMU.SCPI.INSTrument.DMM.CONNect.Command();
             ID.MSMU.SCPI.SENSe.RESistance.RESolution.Command("MAXimum");
             ID.MSMU.SCPI.ROUTe.CLOSe.Command("@1911,1912");
-            Boolean passed = true;
+            Boolean passed = (ID.MSMU.Diagnostics() is DIAGNOSTICS_RESULTS.PASS);
             MeasurementNumeric MN = (MeasurementNumeric)TestLib.MeasurementPresent.ClassObject;
 
 
@@ -68,8 +60,8 @@ namespace ABT.TestExec.Tests.Diagnostics.TestOperations {
                 TestPlan.Only.MessageAppendLine(Label: $"Channel {channel}: ", Message: $"{Math.Round(resistance[0], 4, MidpointRounding.ToEven)}Ω");
                 ID.MSMU.SCPI.ROUTe.OPEN.Command(channel);
             }
-            return EVENTS.PASS.ToString();
+            return passed ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
         }
-        #endregion GroupID 34921A
+        #endregion GroupID MSMU_34980A
     }
 }
