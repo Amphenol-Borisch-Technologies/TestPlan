@@ -33,7 +33,7 @@ namespace ABT.TestExec.Tests.Diagnostics.TestOperations {
             Boolean passedCollective = true;
             foreach (KeyValuePair<String, Object> kvp in TestLib.InstrumentDrivers) {
                 if (kvp.Value is PS_E3634A_SCPI_NET ps_e3634A_scpi_net) {
-                    passedIndividual = ps_e3634A_scpi_net.Diagnostics() is DIAGNOSTICS_RESULTS.PASS;
+                    passedIndividual = ps_e3634A_scpi_net.SelfTests() is SELF_TEST_RESULTS.PASS;
                     passedCollective &= passedIndividual;
                     if (passedIndividual) passedCollective &= Diagnostics_PS_E3634A_SCPI_NET_Extended(); // Skip extended diagnostics if self-test failed.
                 }

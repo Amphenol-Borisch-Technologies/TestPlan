@@ -41,7 +41,7 @@ namespace ABT.TestExec.Tests.Diagnostics.TestOperations {
             Boolean passedCollective = true;
             foreach (KeyValuePair<String, Object> kvp in TestLib.InstrumentDrivers) {
                 if (kvp.Value is MM_34401A_SCPI_NET mm_34401a_scpi_net) {
-                    passedIndividual = mm_34401a_scpi_net.Diagnostics() is DIAGNOSTICS_RESULTS.PASS;
+                    passedIndividual = mm_34401a_scpi_net.SelfTests() is SELF_TEST_RESULTS.PASS;
                     passedCollective &= passedIndividual;
                     if (passedIndividual) passedCollective &= Diagnostics_MM_34401A_SCPI_NET_Extended(); // Skip extended diagnostics if self-test failed.
                 }

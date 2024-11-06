@@ -6,7 +6,6 @@ using ABT.TestExec.Lib;
 using ABT.TestExec.Lib.AppConfig;
 using ABT.TestExec.Lib.InstrumentDrivers.Interfaces;
 using ABT.TestExec.Lib.InstrumentDrivers.Multifunction;
-using ABT.TestExec.Lib.InstrumentDrivers.PowerSupplies;
 using ABT.TestExec.Tests.Diagnostics.InstrumentsDrivers;
 
 namespace ABT.TestExec.Tests.Diagnostics.TestOperations {
@@ -37,7 +36,7 @@ namespace ABT.TestExec.Tests.Diagnostics.TestOperations {
             Boolean passedCollective = true;
             foreach (KeyValuePair<String, Object> kvp in TestLib.InstrumentDrivers) {
                 if (kvp.Value is MSMU_34980A_SCPI_NET msmu_34980a_scpi_net) {
-                    passedIndividual = msmu_34980a_scpi_net.Diagnostics() is DIAGNOSTICS_RESULTS.PASS;
+                    passedIndividual = msmu_34980a_scpi_net.SelfTests() is SELF_TEST_RESULTS.PASS;
                     passedCollective &= passedIndividual;
                     if (passedIndividual) passedCollective &= Diagnostics_MSMU_34980A_SCPI_NET_Extended(); // Skip extended diagnostics if self-test failed.
                 }

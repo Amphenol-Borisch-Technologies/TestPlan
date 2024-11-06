@@ -34,7 +34,7 @@ namespace ABT.TestExec.Tests.Diagnostics.TestOperations {
             Boolean passedCollective = true;
             foreach (KeyValuePair<String, Object> kvp in TestLib.InstrumentDrivers) {
                 if (kvp.Value is MSO_3014_IVI_COM mso_3014_ivi_com) {
-                    passedIndividual = mso_3014_ivi_com.Diagnostics() is DIAGNOSTICS_RESULTS.PASS;
+                    passedIndividual = mso_3014_ivi_com.SelfTests() is SELF_TEST_RESULTS.PASS;
                     passedCollective &= passedIndividual;
                     if (passedIndividual) passedCollective &= Diagnostics_MSO_3014_IVI_COM_Extended(); // Skip extended diagnostics if self-test failed.
                 }
