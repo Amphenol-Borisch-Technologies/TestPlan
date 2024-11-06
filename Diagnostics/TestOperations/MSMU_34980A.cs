@@ -25,7 +25,7 @@ namespace ABT.TestExec.Tests.Diagnostics.TestOperations {
                 IDNext: "MSO_3014",
                 ClassName: nameof(MeasurementCustom),
                 CancelNotPassed: false,
-                Arguments: "NotApplicable"));
+                Arguments: "Low=0|High=3|FD=3|Units_SI=ohms|Units_SI_Modifier=NotApplicable"));
 
 
             return Diagnostics_MSMU_34980A_SCPI_NET();

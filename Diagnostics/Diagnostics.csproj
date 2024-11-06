@@ -149,6 +149,9 @@
     <Folder Include="Firmware\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\Amphenol.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\Raytheon.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

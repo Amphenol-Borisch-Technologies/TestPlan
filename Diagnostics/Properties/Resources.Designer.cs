@@ -61,11 +61,22 @@ namespace ABT.TestExec.Tests.Diagnostics.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static string Raytheon {
+        internal static System.Drawing.Icon Amphenol {
             get {
-                return ResourceManager.GetString("Raytheon", resourceCulture);
+                object obj = ResourceManager.GetObject("Amphenol", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon Raytheon {
+            get {
+                object obj = ResourceManager.GetObject("Raytheon", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
             }
         }
     }
