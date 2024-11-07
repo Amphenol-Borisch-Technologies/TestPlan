@@ -15,7 +15,7 @@ namespace ABT.TestExec.Tests.Diagnostics.TestOperations {
         internal static String PS_E3649A() {
             Debug.Assert(TestLib.IsGroup(
                 GroupID: "PS_E3649A",
-                Description: "Keysight E3634A Diagnostics.",
+                Description: "Keysight E3649A Diagnostics.",
                 MeasurementIDs: "PS_E3649A",
                 Selectable: true,
                 CancelNotPassed: false));
@@ -24,7 +24,7 @@ namespace ABT.TestExec.Tests.Diagnostics.TestOperations {
                 IDPrior: "PS_E3634A",
                 IDNext: TestLib.NONE,
                 ClassName: nameof(MeasurementCustom),
-                CancelNotPassed: true,
+                CancelNotPassed: false,
                 Arguments: "NotApplicable"));
 
             return Diagnostics_PS_E3649A_SCPI_NET();

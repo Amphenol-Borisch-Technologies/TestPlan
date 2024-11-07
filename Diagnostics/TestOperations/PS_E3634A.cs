@@ -24,7 +24,7 @@ namespace ABT.TestExec.Tests.Diagnostics.TestOperations {
                 IDPrior: "MSO_3014",
                 IDNext: "PS_E3649A",
                 ClassName: nameof(MeasurementCustom),
-                CancelNotPassed: true,
+                CancelNotPassed: false,
                 Arguments: "NotApplicable"));
 
             return Diagnostics_PS_E3634A_SCPI_NET();
