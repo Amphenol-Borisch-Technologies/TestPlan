@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 using ABT.TestExec.Lib;
 using ABT.TestExec.Lib.AppConfig;
 using ABT.TestExec.Lib.InstrumentDrivers.Interfaces;
+using ABT.TestExec.Lib.InstrumentDrivers.MultiMeters;
 using ABT.TestExec.Lib.InstrumentDrivers.Oscilloscopes;
 
 
@@ -30,14 +32,15 @@ namespace ABT.TestExec.Tests.Diagnostics.TestOperations {
         }
 
         internal static String Diagnostics_MSO_3014_IVI_COM() {
+            Dictionary<String, MSO_3014_IVI_COM> mso_3014_ivi_com = TestLib.InstrumentDrivers.Where(kvp => kvp.Value is MSO_3014_IVI_COM).ToDictionary(kvp => kvp.Key, kvp => (MSO_3014_IVI_COM)kvp.Value);
+            if (mso_3014_ivi_com.Count() == 0) return EVENTS.UNSET.ToString();
+
             Boolean passedIndividual;
             Boolean passedCollective = true;
-            foreach (KeyValuePair<String, Object> kvp in TestLib.InstrumentDrivers) {
-                if (kvp.Value is MSO_3014_IVI_COM mso_3014_ivi_com) {
-                    passedIndividual = mso_3014_ivi_com.SelfTests() is SELF_TEST_RESULTS.PASS;
-                    passedCollective &= passedIndividual;
-                    if (passedIndividual) passedCollective &= Diagnostics_MSO_3014_IVI_COM_Extended(); // Skip extended diagnostics if self-test failed.
-                }
+            foreach (KeyValuePair<String, MSO_3014_IVI_COM> kvp in mso_3014_ivi_com) {
+                passedIndividual = kvp.Value.SelfTests() is SELF_TEST_RESULTS.PASS;
+                passedCollective &= passedIndividual;
+                if (passedIndividual) passedCollective &= Diagnostics_MM_34401A_SCPI_NET_Extended(); // Skip extended diagnostics if self-test failed.
             }
             return passedCollective ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
         }

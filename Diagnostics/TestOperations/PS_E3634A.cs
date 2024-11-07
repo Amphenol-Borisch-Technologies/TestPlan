@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 using ABT.TestExec.Lib;
 using ABT.TestExec.Lib.AppConfig;
 using ABT.TestExec.Lib.InstrumentDrivers.Interfaces;
+using ABT.TestExec.Lib.InstrumentDrivers.MultiMeters;
 using ABT.TestExec.Lib.InstrumentDrivers.PowerSupplies;
 
 namespace ABT.TestExec.Tests.Diagnostics.TestOperations {
@@ -29,14 +31,15 @@ namespace ABT.TestExec.Tests.Diagnostics.TestOperations {
         }
 
         internal static String Diagnostics_PS_E3634A_SCPI_NET() {
+            Dictionary<String, PS_E3634A_SCPI_NET> ps_e3634A_scpi_net = TestLib.InstrumentDrivers.Where(kvp => kvp.Value is PS_E3634A_SCPI_NET).ToDictionary(kvp => kvp.Key, kvp => (PS_E3634A_SCPI_NET)kvp.Value);
+            if (ps_e3634A_scpi_net.Count() == 0) return EVENTS.UNSET.ToString();
+
             Boolean passedIndividual;
             Boolean passedCollective = true;
-            foreach (KeyValuePair<String, Object> kvp in TestLib.InstrumentDrivers) {
-                if (kvp.Value is PS_E3634A_SCPI_NET ps_e3634A_scpi_net) {
-                    passedIndividual = ps_e3634A_scpi_net.SelfTests() is SELF_TEST_RESULTS.PASS;
-                    passedCollective &= passedIndividual;
-                    if (passedIndividual) passedCollective &= Diagnostics_PS_E3634A_SCPI_NET_Extended(); // Skip extended diagnostics if self-test failed.
-                }
+            foreach (KeyValuePair<String, PS_E3634A_SCPI_NET> kvp in ps_e3634A_scpi_net) {
+                passedIndividual = kvp.Value.SelfTests() is SELF_TEST_RESULTS.PASS;
+                passedCollective &= passedIndividual;
+                if (passedIndividual) passedCollective &= Diagnostics_MM_34401A_SCPI_NET_Extended(); // Skip extended diagnostics if self-test failed.
             }
             return passedCollective ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
         }

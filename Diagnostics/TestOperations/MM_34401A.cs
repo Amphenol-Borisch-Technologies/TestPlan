@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 using ABT.TestExec.Lib;
 using ABT.TestExec.Lib.AppConfig;
 using ABT.TestExec.Lib.InstrumentDrivers.Interfaces;
@@ -37,14 +38,15 @@ namespace ABT.TestExec.Tests.Diagnostics.TestOperations {
         }
 
         internal static String Diagnostics_MM_34401A_SCPI_NET() {
+            Dictionary<String, MM_34401A_SCPI_NET> mm_34401a_scpi_net = TestLib.InstrumentDrivers.Where(kvp => kvp.Value is MM_34401A_SCPI_NET).ToDictionary(kvp => kvp.Key, kvp => (MM_34401A_SCPI_NET)kvp.Value);
+            if (mm_34401a_scpi_net.Count() == 0) return EVENTS.UNSET.ToString();
+
             Boolean passedIndividual;
             Boolean passedCollective = true;
-            foreach (KeyValuePair<String, Object> kvp in TestLib.InstrumentDrivers) {
-                if (kvp.Value is MM_34401A_SCPI_NET mm_34401a_scpi_net) {
-                    passedIndividual = mm_34401a_scpi_net.SelfTests() is SELF_TEST_RESULTS.PASS;
-                    passedCollective &= passedIndividual;
-                    if (passedIndividual) passedCollective &= Diagnostics_MM_34401A_SCPI_NET_Extended(); // Skip extended diagnostics if self-test failed.
-                }
+            foreach (KeyValuePair<String, MM_34401A_SCPI_NET> kvp in mm_34401a_scpi_net) {
+                passedIndividual = kvp.Value.SelfTests() is SELF_TEST_RESULTS.PASS;
+                passedCollective &= passedIndividual;
+                if (passedIndividual) passedCollective &= Diagnostics_MM_34401A_SCPI_NET_Extended(); // Skip extended diagnostics if self-test failed.
             }
             return passedCollective ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
         }
