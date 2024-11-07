@@ -2,13 +2,21 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Net;
+using System.Runtime.Remoting.Channels;
+using System.Threading.Channels;
+using System.Windows.Forms;
 using ABT.TestExec.Exec;
 using ABT.TestExec.Lib;
 using ABT.TestExec.Lib.AppConfig;
+using ABT.TestExec.Lib.InstrumentDrivers;
 using ABT.TestExec.Lib.InstrumentDrivers.Interfaces;
 using ABT.TestExec.Lib.InstrumentDrivers.Multifunction;
 using ABT.TestExec.Lib.InstrumentDrivers.MultiMeters;
 using ABT.TestExec.Tests.Diagnostics.InstrumentsDrivers;
+using Windows.UI;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using static ABT.TestExec.Lib.InstrumentDrivers.Multifunction.MSMU_34980A_SCPI_NET;
 
 namespace ABT.TestExec.Tests.Diagnostics.TestOperations {
     internal static partial class TestMeasurements {
@@ -42,42 +50,47 @@ namespace ABT.TestExec.Tests.Diagnostics.TestOperations {
             foreach (KeyValuePair<String, MSMU_34980A_SCPI_NET> kvp in msmu_34980a_scpi_net) {
                 passedIndividual = kvp.Value.SelfTests() is SELF_TEST_RESULTS.PASS;
                 passedCollective &= passedIndividual;
-                if (passedIndividual) passedCollective &= Diagnostics_MM_34401A_SCPI_NET_Extended(); // Skip extended diagnostics if self-test failed.
+                if (passedIndividual) { // Skip extended diagnostics if self-test failed.
+                    (Boolean Passed, String Message) diagnosticsExtended = Diagnostics_MSMU_34980A_SCPI_NET_Extended(kvp.Key, kvp.Value);
+                    passedCollective &= diagnosticsExtended.Passed;
+                    TestPlan.Only.MessageFormat(Label: $"Channel {channel}: ", Message: $"{Math.Round(resistance[0], MN.FD, MidpointRounding.ToEven)}Ω");
+                }
             }
+            TestPlan.Only.MessageAppendLine(Label: $"Channel {channel}: ", Message: $"{Math.Round(resistance[0], MN.FD, MidpointRounding.ToEven)}Ω");
             return passedCollective ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
         }
 
-        internal static Boolean Diagnostics_MSMU_34980A_SCPI_NET_Extended() {
-            ID.MSMU.ResetClear();
-            ID.MSMU.SCPI.ROUTe.OPEN.ALL.Command(null);
-            ID.MSMU.SCPI.INSTrument.DMM.INSTalled.Query(out Boolean installed);
-            ID.MSMU.SCPI.INSTrument.DMM.STATe.Command(true);
-            ID.MSMU.SCPI.INSTrument.DMM.CONNect.Command();
-            ID.MSMU.SCPI.SENSe.RESistance.RESolution.Command("MAXimum");
-            ID.MSMU.SCPI.ROUTe.CLOSe.Command("@1911,1912");
-            Boolean passedExtended = true;
-            MeasurementNumeric MN = (MeasurementNumeric)TestLib.MeasurementPresent.ClassObject;
-
-            String channel;
-            for (Int32 i = 1; i < 21; i++) {
-                channel = $"@1{i:D3}";
-                ID.MSMU.SCPI.ROUTe.CLOSe.Command(channel);
-                ID.MSMU.SCPI.MEASure.SCALar.RESistance.Query(25D, "MAXimum", out Double[] resistance);
-                passedExtended &= (MN.Low <= resistance[0] && resistance[0] <= MN.High);
-                TestPlan.Only.MessageAppendLine(Label: $"Channel {channel}: ", Message: $"{Math.Round(resistance[0], MN.FD, MidpointRounding.ToEven)}Ω");
-                ID.MSMU.SCPI.ROUTe.OPEN.Command(channel);
-
+        internal static (Boolean Passed, String Message) Diagnostics_MSMU_34980A_SCPI_NET_Extended(String ID, MSMU_34980A_SCPI_NET msmu) {
+            msmu.SCPI.INSTrument.DMM.INSTalled.Query(out Boolean installed);
+            if (!installed) {
+                _ = MessageBox.Show("No internal DMM, skipping Extended Diagnostics.", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return (true, String.Empty);
             }
-            ID.MSMU.SCPI.ROUTe.OPEN.Command("@1911,1912");
-            ID.MSMU.SCPI.ROUTe.CLOSe.Command("@1921,1922");
-            for (Int32 i = 21; i < 41; i++) {
-                channel = $"@1{i:D3}";
-                ID.MSMU.SCPI.ROUTe.CLOSe.Command(channel);
-                ID.MSMU.SCPI.MEASure.SCALar.RESistance.Query(25D, "MAXimum", out Double[] resistance);
-                TestPlan.Only.MessageAppendLine(Label: $"Channel {channel}: ", Message: $"{Math.Round(resistance[0], 4, MidpointRounding.ToEven)}Ω");
-                ID.MSMU.SCPI.ROUTe.OPEN.Command(channel);
+
+            foreach (SLOTS slot in Enum.GetValues(typeof(SLOTS))) {
+                switch(msmu.SystemType(slot)) {
+                    case "34921A":
+                        msmu.Diagnostics_34921A(slot);
+                        break;
+                    case "34922A":
+                        break;
+                    case "34932A":
+                        break;
+                    case "34938A":
+                        break;
+                    case "34939A":
+                        break;
+                    case "34952A":
+                        break;
+                    default:
+                        throw new NotImplementedException(
+                            $"Diagnostics test for module '{msmu.SystemType(slot)}' unimplemented!{Environment.NewLine}{Environment.NewLine}" +
+                            $"ID:      '{ID}'.{Environment.NewLine}" +
+                            $"Address: '{msmu.Address}'.{Environment.NewLine}" +
+                            $"Detail:  '{msmu.Detail}'.{Environment.NewLine}");
+                }
             }
-            return passedExtended;
+            return (false, String.Empty);
         }
     }
         #endregion GroupID MSMU_34980A
