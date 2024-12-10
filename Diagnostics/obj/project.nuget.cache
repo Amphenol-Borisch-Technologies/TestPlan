@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VlqAlwoMpqQ=",
+  "dgSpecHash": "qJ784vc5IuY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\phils\\source\\repos\\ABT\\TestExec\\Tests\\Diagnostics\\Diagnostics.csproj",
+  "projectFilePath": "C:\\Users\\phils\\Source\\Repos\\TestPlan\\Diagnostics\\Diagnostics.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\phils\\.nuget\\packages\\microsoft.netcore.platforms\\7.0.4\\microsoft.netcore.platforms.7.0.4.nupkg.sha512",
     "C:\\Users\\phils\\.nuget\\packages\\microsoft.windows.sdk.contracts\\10.0.26100.1742\\microsoft.windows.sdk.contracts.10.0.26100.1742.nupkg.sha512",

@@ -109,7 +109,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="InstrumentDrivers\ID.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestOperations\MSMU_34980A.cs" />
     <Compile Include="TestOperations\PS_E3649A.cs" />
@@ -142,9 +141,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="TO1.xsd">
-      <SubType>Designer</SubType>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -156,7 +152,6 @@
     <Content Include="Resources\Amphenol.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="TO1.xml" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.Platforms">
@@ -188,7 +183,7 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Exec\Exec.csproj">
+    <ProjectReference Include="..\..\TestExec\Exec.csproj">
       <Project>{314614cb-6e17-4b74-a9f9-ce4699f78c9b}</Project>
       <Name>Exec</Name>
     </ProjectReference>

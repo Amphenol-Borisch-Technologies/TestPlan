@@ -1,0 +1,7 @@
+C:\Users\phils\Source\Repos\TestPlan\Diagnostics\obj\Debug\Diagnostics.csproj.AssemblyReference.cache
+C:\Users\phils\Source\Repos\TestPlan\Diagnostics\obj\Debug\Diagnostics.csproj.SuggestedBindingRedirects.cache
+C:\Users\phils\Source\Repos\TestPlan\Diagnostics\obj\Debug\Diagnostics.exe.config
+C:\Users\phils\Source\Repos\TestPlan\Diagnostics\obj\Debug\ABT.TestExec.Tests.Diagnostics.Properties.Resources.resources
+C:\Users\phils\Source\Repos\TestPlan\Diagnostics\obj\Debug\ABT.TestExec.Exec.TestsMain.resources
+C:\Users\phils\Source\Repos\TestPlan\Diagnostics\obj\Debug\Diagnostics.csproj.GenerateResource.cache
+C:\Users\phils\Source\Repos\TestPlan\Diagnostics\obj\Debug\Diagnostics.csproj.CoreCompileInputs.cache

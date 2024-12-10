@@ -56,3 +56,12 @@ C:\Users\phils\source\repos\ABT\TestExec\Tests\Diagnostics\obj\x64\Debug\Diagnos
 C:\Users\phils\source\repos\ABT\TestExec\Tests\Diagnostics\obj\x64\Debug\Diagnost.5C3B60D2.Up2Date
 C:\Users\phils\source\repos\ABT\TestExec\Tests\Diagnostics\obj\x64\Debug\Diagnostics.exe
 C:\Users\phils\source\repos\ABT\TestExec\Tests\Diagnostics\obj\x64\Debug\Diagnostics.pdb
+C:\Users\phils\source\repos\TestPlan\Diagnostics\obj\x64\Debug\Diagnostics.csproj.AssemblyReference.cache
+C:\Users\phils\source\repos\TestPlan\Diagnostics\obj\x64\Debug\Diagnostics.csproj.SuggestedBindingRedirects.cache
+C:\Users\phils\source\repos\TestPlan\Diagnostics\obj\x64\Debug\Diagnostics.exe.config
+C:\Users\phils\source\repos\TestPlan\Diagnostics\obj\x64\Debug\ABT.TestExec.Tests.Diagnostics.Properties.Resources.resources
+C:\Users\phils\source\repos\TestPlan\Diagnostics\obj\x64\Debug\ABT.TestExec.Exec.TestsMain.resources
+C:\Users\phils\source\repos\TestPlan\Diagnostics\obj\x64\Debug\Diagnostics.csproj.GenerateResource.cache
+C:\Users\phils\source\repos\TestPlan\Diagnostics\obj\x64\Debug\Diagnostics.csproj.CoreCompileInputs.cache
+C:\Users\phils\source\repos\TestPlan\Diagnostics\obj\x64\Debug\Diagnostics.exe
+C:\Users\phils\source\repos\TestPlan\Diagnostics\obj\x64\Debug\Diagnostics.pdb

@@ -3881,8 +3881,8 @@
     },
     "Exec/1.0.0": {
       "type": "project",
-      "path": "../../Exec/Exec.csproj",
-      "msbuildProject": "../../Exec/Exec.csproj"
+      "path": "../../TestExec/Exec.csproj",
+      "msbuildProject": "../../TestExec/Exec.csproj"
     },
     "Lib/1.0.0": {
       "type": "project",
@@ -3912,13 +3912,14 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\phils\\source\\repos\\ABT\\TestExec\\Tests\\Diagnostics\\Diagnostics.csproj",
+      "projectUniqueName": "C:\\Users\\phils\\Source\\Repos\\TestPlan\\Diagnostics\\Diagnostics.csproj",
       "projectName": "Diagnostics",
-      "projectPath": "C:\\Users\\phils\\source\\repos\\ABT\\TestExec\\Tests\\Diagnostics\\Diagnostics.csproj",
+      "projectPath": "C:\\Users\\phils\\Source\\Repos\\TestPlan\\Diagnostics\\Diagnostics.csproj",
       "packagesPath": "C:\\Users\\phils\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\phils\\source\\repos\\ABT\\TestExec\\Tests\\Diagnostics\\obj\\",
+      "outputPath": "C:\\Users\\phils\\Source\\Repos\\TestPlan\\Diagnostics\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
+      "UsingMicrosoftNETSdk": false,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
@@ -3937,11 +3938,11 @@
       "frameworks": {
         "net48": {
           "projectReferences": {
-            "C:\\Users\\phils\\source\\repos\\ABT\\TestExec\\Exec\\Exec.csproj": {
-              "projectPath": "C:\\Users\\phils\\source\\repos\\ABT\\TestExec\\Exec\\Exec.csproj"
+            "C:\\Users\\phils\\Source\\Repos\\Lib\\Lib.csproj": {
+              "projectPath": "C:\\Users\\phils\\Source\\Repos\\Lib\\Lib.csproj"
             },
-            "C:\\Users\\phils\\source\\repos\\ABT\\TestExec\\Lib\\Lib.csproj": {
-              "projectPath": "C:\\Users\\phils\\source\\repos\\ABT\\TestExec\\Lib\\Lib.csproj"
+            "C:\\Users\\phils\\Source\\Repos\\TestExec\\Exec.csproj": {
+              "projectPath": "C:\\Users\\phils\\Source\\Repos\\TestExec\\Exec.csproj"
             }
           }
         }
@@ -3949,7 +3950,7 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "direct"
+        "auditMode": "all"
       }
     },
     "frameworks": {
