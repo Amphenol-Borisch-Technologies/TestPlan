@@ -2,20 +2,14 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Net;
-using System.Windows.Forms;
-using ABT.Test.Plans.Diagnostics;
 using ABT.Test.Lib;
 using ABT.Test.Lib.AppConfig;
-using ABT.Test.Lib.InstrumentDrivers;
 using ABT.Test.Lib.InstrumentDrivers.Interfaces;
 using ABT.Test.Lib.InstrumentDrivers.Multifunction;
 using ABT.Test.Lib.InstrumentDrivers.MultiMeters;
-using ABT.Test.Plans.Diagnostics.InstrumentsDrivers;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using static ABT.Test.Lib.InstrumentDrivers.Multifunction.MSMU_34980A_SCPI_NET;
 
-namespace ABT.Test.Plans.Diagnostics {
+namespace ABT.Test.Plans.Diagnostics.Instruments {
     internal static partial class TestMeasurements {
         // NOTE:  Invocable test methods in this class, defined as TestMeasurement IDs in App.config, require signatures like "internal static String MethodName()".
         #region GroupID MSMU_34980A
