@@ -1,7 +1,5 @@
 ﻿using ABT.Test.Lib;
 using ABT.Test.Lib.InstrumentDrivers.Multifunction;
-using ABT.Test.Lib.InstrumentDrivers.MultiMeters;
-using ABT.Test.Lib.InstrumentDrivers.Oscilloscopes;
 using ABT.Test.Lib.InstrumentDrivers.PowerSupplies;
 
 namespace ABT.Test.Plans.Diagnostics.InstrumentsDrivers {

@@ -89,9 +89,8 @@ using ABT.Test.Lib;
 /// </para>
 /// </summary>
 namespace ABT.Test.Plans.Diagnostics {
-    internal class TestsMain {
-        [STAThread]
-        static void Main() {
+    internal class TestMain {
+        [STAThread] static void Main() {
             TestLib.MutexTest = new Mutex(true, TestLib.MutexTestName, out Boolean onlyInstance);
             if (!onlyInstance) {
                 _ = MessageBox.Show($"Already have one executing instance of a Tests.{Environment.NewLine}{Environment.NewLine}" +
@@ -133,7 +132,7 @@ namespace ABT.Test.Plans.Diagnostics {
         }
 
         protected override async Task<String> MeasurementRun(String measurementID) {
-            Type type = Type.GetType("ABT.Test.Plans.Diagnostics.Instruments");
+            Type type = Type.GetType("ABT.Test.Plans.Diagnostics.TestImplementation");
             // NOTE:  Will only seek invocable measurement methods in class TestMeasurements that are defined as TestMeasurement IDs in App.config & and are part of a Group.
             MethodInfo methodInfo = type.GetMethod(TestLib.MeasurementIDPresent, BindingFlags.Static | BindingFlags.NonPublic);
             // NOTE:  Invocable measurement methods in class TestMeasurements, defined as TestMeasurement IDs in App.config, must have signatures identical to "internal static String MethodName()",

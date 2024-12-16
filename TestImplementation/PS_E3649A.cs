@@ -5,10 +5,9 @@ using System.Linq;
 using ABT.Test.Lib;
 using ABT.Test.Lib.AppConfig;
 using ABT.Test.Lib.InstrumentDrivers.Interfaces;
-using ABT.Test.Lib.InstrumentDrivers.MultiMeters;
 using ABT.Test.Lib.InstrumentDrivers.PowerSupplies;
 
-namespace ABT.Test.Plans.Diagnostics.Instruments {
+namespace ABT.Test.Plans.Diagnostics.TestImplementation {
     internal static partial class TestMeasurements {
         // NOTE:  Invocable test methods in this class, defined as TestMeasurement IDs in App.config, require signatures like "internal static String MethodName()".
         #region GroupID PS_E3649A
