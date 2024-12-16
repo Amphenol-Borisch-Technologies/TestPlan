@@ -2,24 +2,24 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using ABT.Test.Lib;
-using ABT.Test.Lib.AppConfig;
-using ABT.Test.Lib.InstrumentDrivers.Interfaces;
-using ABT.Test.Lib.InstrumentDrivers.Multifunction;
-using static ABT.Test.Lib.InstrumentDrivers.Multifunction.MSMU_34980A_SCPI_NET;
+using ABT.Test.TestLib;
+using ABT.Test.TestLib.AppConfig;
+using ABT.Test.TestLib.InstrumentDrivers.Interfaces;
+using ABT.Test.TestLib.InstrumentDrivers.Multifunction;
+using static ABT.Test.TestLib.InstrumentDrivers.Multifunction.MSMU_34980A_SCPI_NET;
 
-namespace ABT.Test.Plans.Diagnostics.TestImplementation {
+namespace ABT.Test.TestPlans.Diagnostics.TestImplementation {
     internal static partial class TestMeasurements {
         // NOTE:  Invocable test methods in this class, defined as TestMeasurement IDs in App.config, require signatures like "internal static String MethodName()".
         #region GroupID MSMU_34980A
         internal static String MSMU_34980A() {
-            Debug.Assert(TestLib.IsGroup(
+            Debug.Assert(TestLib.TestLib.IsGroup(
                 GroupID: "MSMU_34980A",
                 Description: "Keysight 34980A Diagnostics.",
                 MeasurementIDs: "MSMU_34980A",
                 Selectable: true,
                 CancelNotPassed: false));
-            Debug.Assert(TestLib.IsMeasurement(
+            Debug.Assert(TestLib.TestLib.IsMeasurement(
                 Description: "Keysight 34980A Multifunction Switch/Measurement Units.",
                 IDPrior: "MM_34401A",
                 IDNext: "MSO_3014",
@@ -31,14 +31,14 @@ namespace ABT.Test.Plans.Diagnostics.TestImplementation {
         }
 
         [STAThread] public static void Main() {
-            foreach (KeyValuePair<String, Object> kvp in TestLib.InstrumentDrivers) if (kvp.Value is IDiagnostics id) id.Diagnostics();
+            foreach (KeyValuePair<String, Object> kvp in TestLib.TestLib.InstrumentDrivers) if (kvp.Value is IDiagnostics id) id.Diagnostics();
             MSMU_34980A_SCPI_NET msmu = new MSMU_34980A_SCPI_NET(Address: "GPIB0::2::INSTR", Detail: "Agilent 34980A Multifunction Switch/Measure Unit");
             (Boolean Summary, List<DiagnosticsResult> Details) result_34980A = msmu.Diagnostics();
             Int32 i = 0;
         }
 
         internal static String Diagnostics_MSMU_34980A_SCPI_NET() {
-            Dictionary<String, MSMU_34980A_SCPI_NET> msmu_34980a_scpi_net = TestLib.InstrumentDrivers.Where(kvp => kvp.Value is MSMU_34980A_SCPI_NET).ToDictionary(kvp => kvp.Key, kvp => (MSMU_34980A_SCPI_NET)kvp.Value);
+            Dictionary<String, MSMU_34980A_SCPI_NET> msmu_34980a_scpi_net = TestLib.TestLib.InstrumentDrivers.Where(kvp => kvp.Value is MSMU_34980A_SCPI_NET).ToDictionary(kvp => kvp.Key, kvp => (MSMU_34980A_SCPI_NET)kvp.Value);
             if (msmu_34980a_scpi_net.Count() == 0) return EVENTS.IGNORE.ToString();
 
             (Boolean Summary, List<DiagnosticsResult> Details) result_34980A;

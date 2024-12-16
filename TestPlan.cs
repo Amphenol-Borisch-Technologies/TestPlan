@@ -4,8 +4,8 @@ using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ABT.Test.Exec;
-using ABT.Test.Lib;
+using ABT.Test.TestExec;
+using ABT.Test.TestLib;
 
 // NOTE:  Recommend using Microsoft's Visual Studio Code to develop/debug TestExec based closed source/proprietary projects:
 //        - Visual Studio Code is a co$t free, open-source Integrated Development Environment entirely suitable for textual C# development, like Exec.
@@ -88,28 +88,28 @@ using ABT.Test.Lib;
 ///        inside the Exec.MeasurementsRun() loop.
 /// </para>
 /// </summary>
-namespace ABT.Test.Plans.Diagnostics {
+namespace ABT.Test.TestPlans.Diagnostics {
     internal class TestMain {
         [STAThread] static void Main() {
-            TestLib.MutexTest = new Mutex(true, TestLib.MutexTestName, out Boolean onlyInstance);
+            TestLib.TestLib.MutexTest = new Mutex(true, TestLib.TestLib.MutexTestName, out Boolean onlyInstance);
             if (!onlyInstance) {
                 _ = MessageBox.Show($"Already have one executing instance of a Tests.{Environment.NewLine}{Environment.NewLine}" +
                     $"Cannot have two, as both would control system instruments simultaneously.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            GC.KeepAlive(TestLib.MutexTest);
+            GC.KeepAlive(TestLib.TestLib.MutexTest);
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             try { Application.Run(TestPlan.Only); }
             catch (Exception e) {
-                TestExec.ErrorMessage(e.ToString());
-                TestExec.ErrorMessage(e);
+                TestExec.TestExec.ErrorMessage(e.ToString());
+                TestExec.TestExec.ErrorMessage(e);
             }
         }
     }
 
-    internal sealed partial class TestPlan : TestExec {
+    internal sealed partial class TestPlan : TestExec.TestExec {
         internal static TestPlan Only { get; } = new TestPlan ();
 
         static TestPlan() { }
@@ -132,9 +132,9 @@ namespace ABT.Test.Plans.Diagnostics {
         }
 
         protected override async Task<String> MeasurementRun(String measurementID) {
-            Type type = Type.GetType("ABT.Test.Plans.Diagnostics.TestImplementation");
+            Type type = Type.GetType("ABT.Test.TestPlans.Diagnostics.TestImplementation");
             // NOTE:  Will only seek invocable measurement methods in class TestMeasurements that are defined as TestMeasurement IDs in App.config & and are part of a Group.
-            MethodInfo methodInfo = type.GetMethod(TestLib.MeasurementIDPresent, BindingFlags.Static | BindingFlags.NonPublic);
+            MethodInfo methodInfo = type.GetMethod(TestLib.TestLib.MeasurementIDPresent, BindingFlags.Static | BindingFlags.NonPublic);
             // NOTE:  Invocable measurement methods in class TestMeasurements, defined as TestMeasurement IDs in App.config, must have signatures identical to "internal static String MethodName()",
             // or "private static String MethodName()", though the latter are discouraged for consistency.
             Object task = await Task.Run(() => methodInfo.Invoke(null, null));

@@ -2,23 +2,23 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using ABT.Test.Lib;
-using ABT.Test.Lib.AppConfig;
-using ABT.Test.Lib.InstrumentDrivers.Interfaces;
-using ABT.Test.Lib.InstrumentDrivers.Oscilloscopes;
+using ABT.Test.TestLib;
+using ABT.Test.TestLib.AppConfig;
+using ABT.Test.TestLib.InstrumentDrivers.Interfaces;
+using ABT.Test.TestLib.InstrumentDrivers.Oscilloscopes;
 
-namespace ABT.Test.Plans.Diagnostics.TestImplementation {
+namespace ABT.Test.TestPlans.Diagnostics.TestImplementation {
     internal static partial class TestMeasurements {
         // NOTE:  Invocable test methods in this class, defined as TestMeasurement IDs in App.config, require signatures like "internal static String MethodName()".
         #region GroupID MSO_3014
         internal static String MSO_3014() {
-            Debug.Assert(TestLib.IsGroup(
+            Debug.Assert(TestLib.TestLib.IsGroup(
                 GroupID: "MSO_3014",
                 Description: "Tektronix MSO-3014 Diagnostics.",
                 MeasurementIDs: "MSO_3014",
                 Selectable: true,
                 CancelNotPassed: false));
-            Debug.Assert(TestLib.IsMeasurement(
+            Debug.Assert(TestLib.TestLib.IsMeasurement(
                 Description: "Tektronix MSO-3014 Mixed-Signal Oscilloscopes.",
                 IDPrior: "MSMU_34980A",
                 IDNext: "PS_E3634A",
@@ -30,7 +30,7 @@ namespace ABT.Test.Plans.Diagnostics.TestImplementation {
         }
 
         internal static String Diagnostics_MSO_3014_IVI_COM() {
-            Dictionary<String, MSO_3014_IVI_COM> mso_3014_ivi_com = TestLib.InstrumentDrivers.Where(kvp => kvp.Value is MSO_3014_IVI_COM).ToDictionary(kvp => kvp.Key, kvp => (MSO_3014_IVI_COM)kvp.Value);
+            Dictionary<String, MSO_3014_IVI_COM> mso_3014_ivi_com = TestLib.TestLib.InstrumentDrivers.Where(kvp => kvp.Value is MSO_3014_IVI_COM).ToDictionary(kvp => kvp.Key, kvp => (MSO_3014_IVI_COM)kvp.Value);
             if (mso_3014_ivi_com.Count() == 0) return EVENTS.IGNORE.ToString();
 
             Boolean passedIndividual;
