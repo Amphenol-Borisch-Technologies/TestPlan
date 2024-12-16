@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TO xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xsi:noNamespaceSchemaLocation="file://C://Users//phils//source//repos//ABT//Test//Lib//Config//Sequencer.xsd" 
+    xsi:noNamespaceSchemaLocation="file://C://Users//phils//source//repos//ABT//Test//Lib//TestSpecification//TestSpecification.xsd" 
     Namespace="Instruments" 
     Description="Diagnostics.">
   <TG Class="Measurements" Description="Diagnostics Measurements." CancelIfFail="true" Independent="true">

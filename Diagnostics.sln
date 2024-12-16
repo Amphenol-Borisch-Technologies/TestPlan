@@ -5,9 +5,9 @@ VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestPlan", "TestPlan.csproj", "{5FC19C56-1566-457A-A8AF-A3A69561320C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestLib", "..\..\Lib\TestLib.csproj", "{24D5E99E-185C-4507-81F0-132D8CB8164E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestLib", "..\..\TestLib\TestLib.csproj", "{24D5E99E-185C-4507-81F0-132D8CB8164E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestExec", "..\..\Exec\TestExec.csproj", "{314614CB-6E17-4B74-A9F9-CE4699F78C9B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestExec", "..\..\TestExec\TestExec.csproj", "{314614CB-6E17-4B74-A9F9-CE4699F78C9B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

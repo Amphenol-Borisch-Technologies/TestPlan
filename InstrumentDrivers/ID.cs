@@ -1,5 +1,4 @@
-﻿using ABT.Test.TestLib;
-using ABT.Test.TestLib.InstrumentDrivers.Multifunction;
+﻿using ABT.Test.TestLib.InstrumentDrivers.Multifunction;
 using ABT.Test.TestLib.InstrumentDrivers.PowerSupplies;
 
 namespace ABT.Test.TestPlans.Diagnostics.InstrumentsDrivers {

@@ -181,11 +181,11 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Exec\TestExec.csproj">
+    <ProjectReference Include="..\..\TestExec\TestExec.csproj">
       <Project>{314614cb-6e17-4b74-a9f9-ce4699f78c9b}</Project>
       <Name>TestExec</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Lib\TestLib.csproj">
+    <ProjectReference Include="..\..\TestLib\TestLib.csproj">
       <Project>{24d5e99e-185c-4507-81f0-132d8cb8164e}</Project>
       <Name>TestLib</Name>
     </ProjectReference>
