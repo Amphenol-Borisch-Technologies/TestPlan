@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TO xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xsi:noNamespaceSchemaLocation="file://C://Users//phils//source//repos//ABT//Test//TestLib//TestPlan//TestPlan.xsd" 
-    Namespace="Instruments" 
+    xsi:noNamespaceSchemaLocation="file://C://Users//phils//source//repos//ABT//Test//TestLib//TestConfig//TestPlan.xsd" 
+    Namespace="ABT.Test.TestPlans.Diagnostics.TestOperations" 
     Description="Diagnostics.">
-  <TG Class="Measurements" Description="Diagnostics Measurements." CancelIfFail="true" Independent="true">
+  <TG Class="TestMeasurements" Description="Diagnostics Measurements." CancelIfFail="true" Independent="true">
     <MC Method="MSMU_34980A" Description="Keysight 34980A Multifunction Switch/Measurement Units." CancelIfFail="true"/>
 <!--
     <MC Method="MM_34401A" Description="Keysight 34401A Digital Multi-Meters." CancelIfFail="true"/>
