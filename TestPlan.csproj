@@ -109,11 +109,11 @@
   <ItemGroup>
     <Compile Include="InstrumentDrivers\ID.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TestImplementation\MSMU_34980A.cs" />
-    <Compile Include="TestImplementation\PS_E3649A.cs" />
-    <Compile Include="TestImplementation\PS_E3634A.cs" />
-    <Compile Include="TestImplementation\MSO_3014.cs" />
-    <Compile Include="TestImplementation\MM_34401A.cs" />
+    <Compile Include="TestPlan\MSMU_34980A.cs" />
+    <Compile Include="TestPlan\PS_E3649A.cs" />
+    <Compile Include="TestPlan\PS_E3634A.cs" />
+    <Compile Include="TestPlan\MSO_3014.cs" />
+    <Compile Include="TestPlan\MM_34401A.cs" />
     <Compile Include="TestPlan.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -149,7 +149,7 @@
     <Content Include="Resources\Amphenol.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="TestSpecification.xml" />
+    <Content Include="TestPlan.xml" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.Platforms">

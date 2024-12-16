@@ -8,7 +8,7 @@ using ABT.Test.TestLib.InstrumentDrivers.Interfaces;
 using ABT.Test.TestLib.InstrumentDrivers.Multifunction;
 using static ABT.Test.TestLib.InstrumentDrivers.Multifunction.MSMU_34980A_SCPI_NET;
 
-namespace ABT.Test.TestPlans.Diagnostics.TestImplementation {
+namespace ABT.Test.TestPlans.Diagnostics.TestPlan {
     internal static partial class TestMeasurements {
         // NOTE:  Invocable test methods in this class, defined as TestMeasurement IDs in App.config, require signatures like "internal static String MethodName()".
         #region GroupID MSMU_34980A
