@@ -8,7 +8,7 @@ using ABT.Test.TestLib.InstrumentDrivers.Interfaces;
 using ABT.Test.TestLib.InstrumentDrivers.PowerSupplies;
 
 namespace ABT.Test.TestPlans.Diagnostics.TestOperations {
-    internal static partial class TestMeasurements {
+    internal static partial class TestMeasurementsOld {
         // NOTE:  Invocable test methods in this class, defined as TestMeasurement IDs in App.config, require signatures like "internal static String MethodName()".
         #region GroupID PS_E3634A
         internal static String PS_E3634A() {

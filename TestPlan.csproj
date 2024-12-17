@@ -115,6 +115,7 @@
     <Compile Include="TestOperations\MSO_3014.cs" />
     <Compile Include="TestOperations\MM_34401A.cs" />
     <Compile Include="TestPlan.cs" />
+    <Compile Include="TestPlan.new.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
