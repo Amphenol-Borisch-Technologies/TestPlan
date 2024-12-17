@@ -109,13 +109,8 @@
   <ItemGroup>
     <Compile Include="InstrumentDrivers\ID.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TestOperations\MSMU_34980A.cs" />
-    <Compile Include="TestOperations\PS_E3649A.cs" />
-    <Compile Include="TestOperations\PS_E3634A.cs" />
-    <Compile Include="TestOperations\MSO_3014.cs" />
-    <Compile Include="TestOperations\MM_34401A.cs" />
-    <Compile Include="TestPlan.cs" />
-    <Compile Include="TestPlan.new.cs" />
+    <Compile Include="Diagnostics.cs" />
+    <Compile Include="TestOperations\TestOperations.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -126,8 +121,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="TestPlan.resx">
-      <DependentUpon>TestPlan.cs</DependentUpon>
+    <EmbeddedResource Include="Diagnostics.resx">
+      <DependentUpon>Diagnostics.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
