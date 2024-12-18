@@ -145,6 +145,7 @@
     <Content Include="Resources\Amphenol.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="TestPlan - Copy.xml" />
     <Content Include="TestPlan.xml" />
   </ItemGroup>
   <ItemGroup>
