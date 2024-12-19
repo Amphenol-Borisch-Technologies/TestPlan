@@ -13,7 +13,7 @@
       <MC Method="PS_E3649A" Description="Keysight E3649A Power Supplies." CancelIfFail="true"/>
     </TG>
   </TO>
-  <TO NamespaceLeaf="SCPI_VISA_Instruments"
+  <TO NamespaceLeaf="Miscellaneous"
       Description="Miscellaneous.">
     <TG Class="Miscellaneous" Description="Miscellaneous Measurements." CancelIfFail="true" Independent="true">
       <MC Method="USB_ERB24" Description="USB_ERB24 Diagnostics." CancelIfFail="true"/>
