@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<NS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<TS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="file://C://Users//phils//source//repos//ABT//Test//TestLib//TestConfig//TestSpecification.xsd"
     NamespaceRoot="ABT.Test.TestPlans.Diagnostics.TestOperations"
     Description="Diagnostics, System.">
@@ -19,4 +19,4 @@
       <MC Method="USB_ERB24_SelfTest" Description="USB_ERB24 Diagnostics." CancelIfFail="true"/>
     </TG>
   </TO>
-</NS>
+</TS>
