@@ -5,9 +5,9 @@
     Description="Diagnostics, System.">
   <TO NamespaceLeaf="SCPI_VISA_Instruments"
       Description="Diagnostics, SCPI VISA Instruments.">
-    <TG Class="TestMeasurements" Description="Diagnostics Measurements." CancelIfFail="true" Independent="blue">
+    <TG Class="TestMeasurements" Description="Diagnostics Measurements." CancelIfFail="true" Independent="true">
       <MC Method="MSMU_34980A" Description="Keysight 34980A Multifunction Switch/Measurement Units." CancelIfFail="true"/>
-      <MC Method="MM_34401A" Description="Keysight 34401A Digital Multi-Meters." CancelIfFail="blue"/>
+      <MC Method="MM_34401A" Description="Keysight 34401A Digital Multi-Meters." CancelIfFail="true"/>
       <MC Method="MSO_3014" Description="Tektronix MSO-3014 Mixed-Signal Oscilloscopes." CancelIfFail="true"/>
       <MC Method="PS_E3634A" Description="Keysight E3634A Power Supplies." CancelIfFail="true"/>
       <MC Method="PS_E3649A" Description="Keysight E3649A Power Supplies." CancelIfFail="true"/>
