@@ -15,7 +15,7 @@
     internal class TestMeasurements {
         
         static String MSMU_34980A() {
-			Debug.Assert(TO(Namespace: "ABT.Test.TestPlans.Diagnostics.TestOperations", Description: "Diagnostics.", TestGroups: "TestMeasurements"));
+			Debug.Assert(TO(NamespaceLeaf: "ABT.Test.TestPlans.Diagnostics.TestOperations", Description: "Diagnostics.", TestGroups: "TestMeasurements"));
 			Debug.Assert(TG_Prior(Class: "NONE"));
 			Debug.Assert(TG(Class: "TestMeasurements", Description: "Diagnostics Measurements.", CancelIfFail: "true", Independent: "true", Methods: "MSMU_34980A|MM_34401A|MSO_3014|PS_E3634A|PS_E3649A"));
 			Debug.Assert(TG_Next(Class: "NONE"));

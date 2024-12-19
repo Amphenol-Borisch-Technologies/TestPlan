@@ -14,9 +14,9 @@
     </TG>
   </TO>
   <TO NamespaceLeaf="Miscellaneous"
-      Description="Miscellaneous.">
-    <TG Class="Miscellaneous" Description="Miscellaneous Measurements." CancelIfFail="true" Independent="true">
-      <MC Method="USB_ERB24" Description="USB_ERB24 Diagnostics." CancelIfFail="true"/>
+      Description="Miscellaneous items, including instruments that aren't both SCPI &amp; VISA instruments.">
+    <TG Class="USB_ERB24" Description="USB_ERB24 Relays." CancelIfFail="true" Independent="true">
+      <MC Method="USB_ERB24_SelfTest" Description="USB_ERB24 Diagnostics." CancelIfFail="true"/>
     </TG>
   </TO>
 </NS>
