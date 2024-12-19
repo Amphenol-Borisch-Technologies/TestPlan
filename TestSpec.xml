@@ -1,18 +1,19 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <NS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    NamespaceRoot="ABT.Test.TestPlans.Diagnostics.TestOperations.Diagnostics"
+    xsi:noNamespaceSchemaLocation="file://C://Users//phils//source//repos//ABT//Test//TestLib//TestConfig//TestSpec.xsd"
+    NamespaceRoot="ABT.Test.TestPlans.Diagnostics.TestOperations"
     Description="Diagnostics, System.">
   <TO NamespaceLeaf="SCPI_VISA_Instruments"
       Description="Diagnostics, SCPI VISA Instruments.">
-    <TG Class="TestMeasurements" Description="Diagnostics Measurements." CancelIfFail="true" Independent="true">
+    <TG Class="TestMeasurements" Description="Diagnostics Measurements." CancelIfFail="true" Independent="blue">
       <MC Method="MSMU_34980A" Description="Keysight 34980A Multifunction Switch/Measurement Units." CancelIfFail="true"/>
-      <MC Method="MM_34401A" Description="Keysight 34401A Digital Multi-Meters." CancelIfFail="true"/>
+      <MC Method="MM_34401A" Description="Keysight 34401A Digital Multi-Meters." CancelIfFail="blue"/>
       <MC Method="MSO_3014" Description="Tektronix MSO-3014 Mixed-Signal Oscilloscopes." CancelIfFail="true"/>
       <MC Method="PS_E3634A" Description="Keysight E3634A Power Supplies." CancelIfFail="true"/>
       <MC Method="PS_E3649A" Description="Keysight E3649A Power Supplies." CancelIfFail="true"/>
     </TG>
   </TO>
-  <TO NamespaceLeaf="Miscellaneous"
+  <TO NamespaceLeaf="SCPI_VISA_Instruments"
       Description="Miscellaneous.">
     <TG Class="Miscellaneous" Description="Miscellaneous Measurements." CancelIfFail="true" Independent="true">
       <MC Method="USB_ERB24" Description="USB_ERB24 Diagnostics." CancelIfFail="true"/>
