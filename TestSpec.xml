@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <TS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="file://C://Users//phils//source//repos//ABT//Test//TestLib//TestSpec//TestSpecification.xsd"
+    xsi:noNamespaceSchemaLocation="file://C://Users//phils//source//repos//ABT//Test//TestLib//TestSpec//TestSpec.xsd"
     NamespaceRoot="ABT.Test.TestPlans.Diagnostics.TestOperations"
     Description="Diagnostics, System.">
   <TO NamespaceLeaf="SCPI_VISA_Instruments"

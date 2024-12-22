@@ -110,7 +110,7 @@
     <Compile Include="InstrumentDrivers\ID.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Diagnostics.cs" />
-    <Compile Include="TestImplementation.cs" />
+    <Compile Include="TestProgram.cs" />
     <Compile Include="TestOperations\TestOperations.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -146,7 +146,7 @@
     <Content Include="Resources\Amphenol.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="TestSpecification.xml" />
+    <Content Include="TestSpec.xml" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.Platforms">
