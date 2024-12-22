@@ -11,7 +11,7 @@
 namespace ABT.Test.TestPlans.Diagnostics.TestOperations.SCPI_VISA_Instruments {
     using System;
     using System.Diagnostics;
-    using static ABT.Test.TestLib.TestConfig.Assertions;
+    using static ABT.Test.TestLib.TestSpec.Assertions;
     
     
     internal class TestMeasurements {
@@ -59,7 +59,7 @@ namespace ABT.Test.TestPlans.Diagnostics.TestOperations.SCPI_VISA_Instruments {
 namespace ABT.Test.TestPlans.Diagnostics.TestOperations.Miscellaneous {
     using System;
     using System.Diagnostics;
-    using static ABT.Test.TestLib.TestConfig.Assertions;
+    using static ABT.Test.TestLib.TestSpec.Assertions;
     
     
     internal class USB_ERB24 {
