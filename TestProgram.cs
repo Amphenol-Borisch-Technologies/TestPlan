@@ -19,38 +19,38 @@ namespace ABT.Test.TestPlans.Diagnostics.TestOperations.SCPI_VISA_Instruments {
         internal static string MSMU_34980A() {
 			Debug.Assert(TO(NamespaceLeaf: "SCPI_VISA_Instruments", Description: "Diagnostics, SCPI VISA Instruments.", TestGroups: "TestMeasurements|MoreMeasurements"));
 			Debug.Assert(TG_Prior(Class: "NONE"));
-			Debug.Assert(TG(Class: "TestMeasurements", Description: "Diagnostics Measurements.", CancelNotPassed: "true", Independent: "true", Methods: "MSMU_34980A|MM_34401A|MSO_3014|PS_E3634A|PS_E3649A"));
+			Debug.Assert(TG(Class: "TestMeasurements", Description: "Diagnostics Measurements.", CancelNotPassed: "false", Independent: "true", Methods: "MSMU_34980A|MM_34401A|MSO_3014|PS_E3634A|PS_E3649A"));
 			Debug.Assert(TG_Next(Class: "MoreMeasurements"));
 			Debug.Assert(M_Prior(Method: "NONE"));
-			Debug.Assert(MC(Method: "MSMU_34980A", Description: "Keysight 34980A Multifunction Switch/Measurement Units.", CancelNotPassed: "true"));
+			Debug.Assert(MC(Method: "MSMU_34980A", Description: "Keysight 34980A Multifunction Switch/Measurement Units.", CancelNotPassed: "false"));
 			Debug.Assert(M_Next(Method: "MM_34401A"));
 			return String.Empty;
         }
         
         internal static string MM_34401A() {
 			Debug.Assert(M_Prior(Method: "MSMU_34980A"));
-			Debug.Assert(MC(Method: "MM_34401A", Description: "Keysight 34401A Digital Multi-Meters.", CancelNotPassed: "true"));
+			Debug.Assert(MC(Method: "MM_34401A", Description: "Keysight 34401A Digital Multi-Meters.", CancelNotPassed: "false"));
 			Debug.Assert(M_Next(Method: "MSO_3014"));
 			return String.Empty;
         }
         
         internal static string MSO_3014() {
 			Debug.Assert(M_Prior(Method: "MM_34401A"));
-			Debug.Assert(MC(Method: "MSO_3014", Description: "Tektronix MSO-3014 Mixed-Signal Oscilloscopes.", CancelNotPassed: "true"));
+			Debug.Assert(MC(Method: "MSO_3014", Description: "Tektronix MSO-3014 Mixed-Signal Oscilloscopes.", CancelNotPassed: "false"));
 			Debug.Assert(M_Next(Method: "PS_E3634A"));
 			return String.Empty;
         }
         
         internal static string PS_E3634A() {
 			Debug.Assert(M_Prior(Method: "MSO_3014"));
-			Debug.Assert(MC(Method: "PS_E3634A", Description: "Keysight E3634A Power Supplies.", CancelNotPassed: "true"));
+			Debug.Assert(MC(Method: "PS_E3634A", Description: "Keysight E3634A Power Supplies.", CancelNotPassed: "false"));
 			Debug.Assert(M_Next(Method: "PS_E3649A"));
 			return String.Empty;
         }
         
         internal static string PS_E3649A() {
 			Debug.Assert(M_Prior(Method: "PS_E3634A"));
-			Debug.Assert(MC(Method: "PS_E3649A", Description: "Keysight E3649A Power Supplies.", CancelNotPassed: "true"));
+			Debug.Assert(MC(Method: "PS_E3649A", Description: "Keysight E3649A Power Supplies.", CancelNotPassed: "false"));
 			Debug.Assert(M_Next(Method: "NONE"));
 			return String.Empty;
         }
@@ -60,38 +60,38 @@ namespace ABT.Test.TestPlans.Diagnostics.TestOperations.SCPI_VISA_Instruments {
         
         internal static string MoreMSMU_34980A() {
 			Debug.Assert(TG_Prior(Class: "TestMeasurements"));
-			Debug.Assert(TG(Class: "MoreMeasurements", Description: "Diagnostics Measurements.", CancelNotPassed: "true", Independent: "true", Methods: "MoreMSMU_34980A|MoreMM_34401A|MoreMSO_3014|MorePS_E3634A|MorePS_E3649A"));
+			Debug.Assert(TG(Class: "MoreMeasurements", Description: "Diagnostics Measurements.", CancelNotPassed: "false", Independent: "false", Methods: "MoreMSMU_34980A|MoreMM_34401A|MoreMSO_3014|MorePS_E3634A|MorePS_E3649A"));
 			Debug.Assert(TG_Next(Class: "NONE"));
 			Debug.Assert(M_Prior(Method: "NONE"));
-			Debug.Assert(MC(Method: "MoreMSMU_34980A", Description: "Keysight 34980A Multifunction Switch/Measurement Units.", CancelNotPassed: "true"));
+			Debug.Assert(MC(Method: "MoreMSMU_34980A", Description: "Keysight 34980A Multifunction Switch/Measurement Units.", CancelNotPassed: "false"));
 			Debug.Assert(M_Next(Method: "MoreMM_34401A"));
 			return String.Empty;
         }
         
         internal static string MoreMM_34401A() {
 			Debug.Assert(M_Prior(Method: "MoreMSMU_34980A"));
-			Debug.Assert(MC(Method: "MoreMM_34401A", Description: "Keysight 34401A Digital Multi-Meters.", CancelNotPassed: "true"));
+			Debug.Assert(MC(Method: "MoreMM_34401A", Description: "Keysight 34401A Digital Multi-Meters.", CancelNotPassed: "false"));
 			Debug.Assert(M_Next(Method: "MoreMSO_3014"));
 			return String.Empty;
         }
         
         internal static string MoreMSO_3014() {
 			Debug.Assert(M_Prior(Method: "MoreMM_34401A"));
-			Debug.Assert(MC(Method: "MoreMSO_3014", Description: "Tektronix MSO-3014 Mixed-Signal Oscilloscopes.", CancelNotPassed: "true"));
+			Debug.Assert(MC(Method: "MoreMSO_3014", Description: "Tektronix MSO-3014 Mixed-Signal Oscilloscopes.", CancelNotPassed: "false"));
 			Debug.Assert(M_Next(Method: "MorePS_E3634A"));
 			return String.Empty;
         }
         
         internal static string MorePS_E3634A() {
 			Debug.Assert(M_Prior(Method: "MoreMSO_3014"));
-			Debug.Assert(MC(Method: "MorePS_E3634A", Description: "Keysight E3634A Power Supplies.", CancelNotPassed: "true"));
+			Debug.Assert(MC(Method: "MorePS_E3634A", Description: "Keysight E3634A Power Supplies.", CancelNotPassed: "false"));
 			Debug.Assert(M_Next(Method: "MorePS_E3649A"));
 			return String.Empty;
         }
         
         internal static string MorePS_E3649A() {
 			Debug.Assert(M_Prior(Method: "MorePS_E3634A"));
-			Debug.Assert(MC(Method: "MorePS_E3649A", Description: "Keysight E3649A Power Supplies.", CancelNotPassed: "true"));
+			Debug.Assert(MC(Method: "MorePS_E3649A", Description: "Keysight E3649A Power Supplies.", CancelNotPassed: "false"));
 			Debug.Assert(M_Next(Method: "NONE"));
 			return String.Empty;
         }
@@ -108,10 +108,10 @@ namespace ABT.Test.TestPlans.Diagnostics.TestOperations.Miscellaneous {
         internal static string USB_ERB24_SelfTest() {
 			Debug.Assert(TO(NamespaceLeaf: "Miscellaneous", Description: "Miscellaneous items, including instruments that aren\'t both SCPI & VISA instruments.", TestGroups: "USB_ERB24"));
 			Debug.Assert(TG_Prior(Class: "NONE"));
-			Debug.Assert(TG(Class: "USB_ERB24", Description: "USB_ERB24 Relays.", CancelNotPassed: "true", Independent: "true", Methods: "USB_ERB24_SelfTest"));
+			Debug.Assert(TG(Class: "USB_ERB24", Description: "USB_ERB24 Relays.", CancelNotPassed: "false", Independent: "true", Methods: "USB_ERB24_SelfTest"));
 			Debug.Assert(TG_Next(Class: "NONE"));
 			Debug.Assert(M_Prior(Method: "NONE"));
-			Debug.Assert(MC(Method: "USB_ERB24_SelfTest", Description: "USB_ERB24 Diagnostics.", CancelNotPassed: "true"));
+			Debug.Assert(MC(Method: "USB_ERB24_SelfTest", Description: "USB_ERB24 Diagnostics.", CancelNotPassed: "false"));
 			Debug.Assert(M_Next(Method: "NONE"));
 			return String.Empty;
         }
