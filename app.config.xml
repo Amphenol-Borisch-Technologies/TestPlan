@@ -2,48 +2,29 @@
 
 <Definition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="file://C://Users//phils//source//repos//ABT//Test//TestLib//TestDefinition//app.config.xsd" >
-  <UUTs>
-    <UUT>
-      <Customer Name="Amphenol Corporation" Division="Amphenol Borisch Technologies" Location="Grand Rapids" />
-      <!-- Name is required attribute, Division & Location optional. -->
-      <TestSpecification Document="54321" Date="2014-12-13" Title="Test Specification, 12345 Power Supply CCA" Revision="B" />
-      <Part Number="12345" Description="Power Supply" Revision="D" Type="Circuit Card Assembly" />
-      <!-- Type in set {Component, Harness, CCA, SubUnit, Unit, SubSystem, System}. -->
-      <Documentation eDocs="P:\Test\Workspace\eDocs\D\Diagnostics" Manuals="P:\Test\Engineers\Equipment Manuals\TestExec\Diagnostics" />
-      <!-- Documentation element optional. -->
-    </UUT>
-  </UUTs>
-  <Development>
-    <Developers>
-      <Developer Name="Phillip Smelt" Date="2025-04-01" />
-    </Developers>
-    <Languages>
-      <!-- Language in set {C#, Python, VEE} currently.  Update if needed. -->
-      <Language Name="C#" />
-      <!-- Typically tests developed in only 1 language, but occasionally may utilize 2 or more.  Such info good to know up front. -->
-      <Language Name="VEE" />
-    </Languages>
-    <Modifications>
-      <!-- Obviously, can browse source code control repository for modification details, but a single location for modification summaries is handy. Also VEE & LabView won't have browseable repositories. -->
-      <Modification Who="John Lennon" What="Typographic errors." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method1" Why="Correct spelling and grammer are fundamental!"/>
-      <Modification Who="George Harrison" What="Added meaningful NOTES." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method2" Why="Useful comments are indispensable!"/>
-      <Modification Who="Ringo Starr" What="Improved field, property, method and class names." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method3" Why="Meaningful names are invaluable!"/>
-      <Modification Who="Paul McCartney" What="Improved algorithm." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method4" Why="Good design is essential!"/>
-    </Modifications>
+  <UUT Number="12345" Description="Power Supply" Revision="D" Type="Circuit Card Assembly" >
+    <Customer Name="Amphenol Corporation" Division="Amphenol Borisch Technologies" Location="Grand Rapids" />
+    <TestSpecification Document="54321" Revision="B" Title="Test Specification, 12345 Power Supply CCA" Date="2014-12-13" />
+    <eDocs Folder="P:\Test\Workspace\eDocs\D\Diagnostics" />
+    <Manuals Folder="P:\Test\Engineers\Equipment Manuals\TestExec\Diagnostics" />
+  </UUT>
+  <Development Released="2025-04-01">
+      <Developer Name="Phillip Smelt" Language="C#" Comment="Also TCL."/>
   </Development>
-  <Logger>
-    <File Enabled="true" TDR="P:\Test\TDR\Diagnostics" />
-    <SQL Enabled="false" ConnectionString="" />
-    <SerialNumber Entry="Barcode+Keyboard" RegEx="01BB2-[0-9]{5}" />
-  </Logger>
-  <InstrumentsRequired>
-    <Permanent>
-      <InstrumentP ID="MSMU1_34980A" ClassName="ABT.Test.TestLib.InstrumentDrivers.Multifunction.MSMU_34980A_SCPI_NET" />
-      <InstrumentP ID="PS1ε2_E3649A" ClassName="ABT.Test.TestLib.InstrumentDrivers.PowerSupplies.PS_E3649A_SCPI_NET" />
-      <InstrumentP ID="PS3_E3634A" ClassName="ABT.Test.TestLib.InstrumentDrivers.PowerSupplies.PS_E3634A_SCPI_NET" />
-    </Permanent>
-    <Temporary>
-      <InstrumentT ID="MSO1_3014" ClassName="ABT.Test.TestLib.InstrumentDrivers.Oscilloscopes.MSO_3014_IVI_COM" Detail="Tektronix MSO3014 Mixed Signal Oscilloscope" Address="USB0::0x0699::0x0421::C021373::INSTR" />
-    </Temporary>
-  </InstrumentsRequired>
+  <Modifications>
+    <Modification Who="Katara" What="Typographic errors." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method1" Why="Correct spelling and grammer are fundamental!"/>
+    <Modification Who="Aang" What="Added meaningful NOTES." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method2" Why="Useful comments are indispensable!"/>
+    <Modification Who="Toph" What="Improved field, property, method and class names." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method3" Why="Meaningful names are invaluable!"/>
+    <Modification Who="Sokka" What="Improved algorithm." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method4" Why="Good design is essential!"/>
+  </Modifications>
+  <TestData Enabled="true" SerialEntry="Barcode+Keyboard" SerialRegEx="01BB2-[0-9]{5}">
+    <TDR Folder="P:\Test\TDR\Diagnostics" />
+    <SQL ConnectionString="" />
+  </TestData>
+  <Instruments>
+    <Stationary ID="MSMU1_34980A" ClassName="ABT.Test.TestLib.InstrumentDrivers.Multifunction.MSMU_34980A_SCPI_NET" />
+    <Stationary ID="PS1ε2_E3649A" ClassName="ABT.Test.TestLib.InstrumentDrivers.PowerSupplies.PS_E3649A_SCPI_NET" />
+    <Stationary ID="PS3_E3634A" ClassName="ABT.Test.TestLib.InstrumentDrivers.PowerSupplies.PS_E3634A_SCPI_NET" />
+    <Mobile ID="MSO1_3014" ClassName="ABT.Test.TestLib.InstrumentDrivers.Oscilloscopes.MSO_3014_IVI_COM" Detail="Tektronix MSO3014 Mixed Signal Oscilloscope" Address="USB0::0x0699::0x0421::C021373::INSTR" />
+  </Instruments>
 </Definition>
