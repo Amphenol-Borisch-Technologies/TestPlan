@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 
 <TestDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="file://C://Users//phils//source//repos//ABT//Test//TestLib//TestDefinition//app.config.xsd" >
-  <UUT Number="12345-1" Description="Power Supply" Revision="D" Type="Circuit Card" >
-    <Customer Name="Amphenol Corporation" Division="Amphenol Borisch Technologies" Location="Grand Rapids" />
-    <TestSpecification Document="54321-1" Revision="B" Title="Test Specification, 12345-1 Power Supply CCA" Date="2023-12-13" />
-    <Documentation Folder="P:\Test\Workspace\eDocs\D\Diagnostics" />
+    xsi:noNamespaceSchemaLocation="file://C://Users//phils//source//repos//ABT//Test//TestLib//TestDefinition//app.config.xsd">
+  <UUT Number="12345-1" Description="Power Supply" Revision="D" Type="Circuit Card">
+    <Customer Name="Amphenol Corporation" Division="Amphenol Borisch Technologies" Location="Grand Rapids"/>
+    <TestSpecification Document="54321-1" Revision="B" Title="Test Specification, 12345-1 Power Supply CCA" Date="2023-12-13"/>
+    <Documentation Folder="P:\Test\Workspace\eDocs\D\Diagnostics"/>
   </UUT>
   <Development Released="2025-04-01">
     <Developer Name="Phillip Smelt" Language="C#" Comment="Also TCL."/>
-    <Documentation Folder="P:\Test\Engineers\Equipment Manuals\TestExec\Diagnostics" />
-    <Repository URL="file://P://Test//Engineers//Source//TestExec//Diagnostics" />
-    <Repository URL="https://github.com/Amphenol-Borisch-Technologies/TestExec" />
-    <Repository URL="https://github.com/Amphenol-Borisch-Technologies/TestLib" />
-    <Repository URL="https://github.com/Amphenol-Borisch-Technologies/TestPlan" />
+    <Documentation Folder="P:\Test\Engineers\Equipment Manuals\TestExec\Diagnostics"/>
+    <Repository URL="file://P://Test//Engineers//Source//TestExec//Diagnostics"/>
+    <Repository URL="https://github.com/Amphenol-Borisch-Technologies/TestExec"/>
+    <Repository URL="https://github.com/Amphenol-Borisch-Technologies/TestLib"/>
+    <Repository URL="https://github.com/Amphenol-Borisch-Technologies/TestPlan"/>
   </Development>
   <Modifications>
     <Modification Who="Aang" What="Typographic errors." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method1" Why="Correct spelling and grammer are fundamental!"/>
@@ -25,9 +25,9 @@
     <TDR Folder="P:\Test\TDR\Diagnostics" SerialEntry="Barcode+Keyboard" SerialRegEx="01BB2-[0-9]{5}"/>
   </TestData>
   <Instruments>
-    <Stationary ID="MSMU1_34980A" ClassName="ABT.Test.TestLib.InstrumentDrivers.Multifunction.MSMU_34980A_SCPI_NET" />
-    <Stationary ID="PS1ε2_E3649A" ClassName="ABT.Test.TestLib.InstrumentDrivers.PowerSupplies.PS_E3649A_SCPI_NET" />
-    <Stationary ID="PS3_E3634A" ClassName="ABT.Test.TestLib.InstrumentDrivers.PowerSupplies.PS_E3634A_SCPI_NET" />
-    <Mobile ID="MSO1_3014" ClassName="ABT.Test.TestLib.InstrumentDrivers.Oscilloscopes.MSO_3014_IVI_COM" Detail="Tektronix MSO3014 Mixed Signal Oscilloscope" Address="USB0::0x0699::0x0421::C021373::INSTR" />
+    <Stationary ID="MSMU1_34980A" ClassName="ABT.Test.TestLib.InstrumentDrivers.Multifunction.MSMU_34980A_SCPI_NET"/>
+    <Stationary ID="PS1ε2_E3649A" ClassName="ABT.Test.TestLib.InstrumentDrivers.PowerSupplies.PS_E3649A_SCPI_NET"/>
+    <Stationary ID="PS3_E3634A" ClassName="ABT.Test.TestLib.InstrumentDrivers.PowerSupplies.PS_E3634A_SCPI_NET"/>
+    <Mobile ID="MSO1_3014" ClassName="ABT.Test.TestLib.InstrumentDrivers.Oscilloscopes.MSO_3014_IVI_COM" Detail="Tektronix MSO3014 Mixed Signal Oscilloscope" Address="USB0::0x0699::0x0421::C021373::INSTR"/>
   </Instruments>
 </TestDefinition>
