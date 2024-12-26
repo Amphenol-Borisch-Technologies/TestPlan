@@ -2,7 +2,7 @@
 
 <TestDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="file://C://Users//phils//source//repos//ABT//Test//TestLib//TestDefinition//app.config.xsd" >
-  <UUT Number="12345-1" Description="Power Supply" Revision="D" Type="Circuit Card Assembly" >
+  <UUT Number="12345-1" Description="Power Supply" Revision="D" Type="Circuit Card" >
     <Customer Name="Amphenol Corporation" Division="Amphenol Borisch Technologies" Location="Grand Rapids" />
     <TestSpecification Document="54321-1" Revision="B" Title="Test Specification, 12345-1 Power Supply CCA" Date="2023-12-13" />
     <Documentation Folder="P:\Test\Workspace\eDocs\D\Diagnostics" />
@@ -21,9 +21,8 @@
     <Modification Who="Sokka" What="Improved field, property, method and class names." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method3" Why="Meaningful names are invaluable!"/>
     <Modification Who="Toph" What="Improved algorithm." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method4" Why="Good design is essential!"/>
   </Modifications>
-  <TestData Enabled="true" SerialEntry="Barcode+Keyboard" SerialRegEx="01BB2-[0-9]{5}">
-    <TDR Folder="P:\Test\TDR\Diagnostics" />
-    <SQL ConnectionString="" />
+  <TestData>
+    <TDR Folder="P:\Test\TDR\Diagnostics"  SerialEntry="Barcode+Keyboard" SerialRegEx="01BB2-[0-9]{5}"/>
   </TestData>
   <Instruments>
     <Stationary ID="MSMU1_34980A" ClassName="ABT.Test.TestLib.InstrumentDrivers.Multifunction.MSMU_34980A_SCPI_NET" />
