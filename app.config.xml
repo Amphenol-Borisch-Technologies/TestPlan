@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 
-<Definition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<TestDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="file://C://Users//phils//source//repos//ABT//Test//TestLib//TestDefinition//app.config.xsd" >
   <UUT Number="12345-1" Description="Power Supply" Revision="D" Type="Circuit Card Assembly" >
     <Customer Name="Amphenol Corporation" Division="Amphenol Borisch Technologies" Location="Grand Rapids" />
@@ -16,10 +16,10 @@
     <Repository URL="https://github.com/Amphenol-Borisch-Technologies/TestPlan" />
   </Development>
   <Modifications>
-    <Modification Who="Katara" What="Typographic errors." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method1" Why="Correct spelling and grammer are fundamental!"/>
-    <Modification Who="Aang" What="Added meaningful NOTES." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method2" Why="Useful comments are indispensable!"/>
-    <Modification Who="Toph" What="Improved field, property, method and class names." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method3" Why="Meaningful names are invaluable!"/>
-    <Modification Who="Sokka" What="Improved algorithm." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method4" Why="Good design is essential!"/>
+    <Modification Who="Aang" What="Typographic errors." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method1" Why="Correct spelling and grammer are fundamental!"/>
+    <Modification Who="Katara" What="Added meaningful NOTES." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method2" Why="Useful comments are indispensable!"/>
+    <Modification Who="Sokka" What="Improved field, property, method and class names." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method3" Why="Meaningful names are invaluable!"/>
+    <Modification Who="Toph" What="Improved algorithm." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method4" Why="Good design is essential!"/>
   </Modifications>
   <TestData Enabled="true" SerialEntry="Barcode+Keyboard" SerialRegEx="01BB2-[0-9]{5}">
     <TDR Folder="P:\Test\TDR\Diagnostics" />
@@ -31,4 +31,4 @@
     <Stationary ID="PS3_E3634A" ClassName="ABT.Test.TestLib.InstrumentDrivers.PowerSupplies.PS_E3634A_SCPI_NET" />
     <Mobile ID="MSO1_3014" ClassName="ABT.Test.TestLib.InstrumentDrivers.Oscilloscopes.MSO_3014_IVI_COM" Detail="Tektronix MSO3014 Mixed Signal Oscilloscope" Address="USB0::0x0699::0x0421::C021373::INSTR" />
   </Instruments>
-</Definition>
+</TestDefinition>
