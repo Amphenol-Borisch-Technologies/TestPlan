@@ -9,7 +9,7 @@
     using ABT.Test.TestLib.InstrumentDrivers.MultiMeters;
     using ABT.Test.TestLib.InstrumentDrivers.Oscilloscopes;
     using ABT.Test.TestLib.InstrumentDrivers.PowerSupplies;
-    using static ABT.Test.TestLib.TestSpec.Assertions;
+    using static ABT.Test.TestLib.TestDefinition.Assertions;
     using static ABT.Test.TestLib.InstrumentDrivers.Multifunction.MSMU_34980A_SCPI_NET;
 
     internal class TestMeasurements {
