@@ -1,10 +1,16 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 
 <TestDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="file://C://Users//phils//source//repos//ABT//Test//TestLib//TestDefinition//ABT_TestDefinition.xsd">
+
+<!--
+<TestDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                 xmlns:abt_test="ABT_Test"
                 xmlns:abt_test_definition="ABT_TestDefinition"
                 xsi:schemaLocation="ABT_Test file://C://Users//phils//source//repos//ABT//Test//TestLib//TestDefinition//ABT_Test.xsd
                                     ABT_TestDefinition file://C://Users//phils//source//repos//ABT//Test//TestLib//TestDefinition//ABT_TestDefinition.xsd">
+-->  
+
   <UUT Number="12345-1" Description="Power Supply" Revision="D" Type="Circuit Card">
     <Customer Name="Amphenol Corporation" Division="Amphenol Borisch Technologies" Location="Grand Rapids"/>
     <TestSpecification Document="54321-1" Revision="B" Title="Test Specification, 12345-1 Power Supply CCA" Date="2023-12-13"/>
