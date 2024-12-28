@@ -140,7 +140,6 @@
     <Folder Include="Firmware\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ABT_TestDefinition.xml" />
     <Content Include="Resources\Amphenol.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

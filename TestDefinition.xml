@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 
 <TestDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="file://C://Users//phils//source//repos//ABT//Test//TestLib//TestDefinition//ABT_TestDefinition.xsd">
+            xsi:noNamespaceSchemaLocation="file://C://Users//phils//source//repos//ABT//Test//TestLib//TestDefinition//TestDefinition.xsd">
+
   <UUT Number="12345-1" Description="Power Supply" Revision="D" Type="Circuit Card">
     <Customer Name="Amphenol Corporation" Division="Amphenol Borisch Technologies" Location="Grand Rapids"/>
     <TestSpecification Document="54321-1" Revision="B" Title="Test Specification, 12345-1 Power Supply CCA" Date="2023-12-13"/>
@@ -25,10 +26,10 @@
     <TDR Folder="P:\Test\TDR\Diagnostics" SerialEntry="Barcode+Keyboard" SerialRegEx="01BB2-[0-9]{5}"/>
   </TestData>
   <Instruments>
-    <Stationary ID="ABT#346" FullyQualifiedMethod="ABT.Test.TestLib.InstrumentDrivers.Multifunction.MSMU_34980A_SCPI_NET"/>
-    <Stationary ID="ABT#6317" FullyQualifiedMethod="ABT.Test.TestLib.InstrumentDrivers.PowerSupplies.PS_E3649A_SCPI_NET"/>
-    <Stationary ID="ABT#17346" FullyQualifiedMethod="ABT.Test.TestLib.InstrumentDrivers.PowerSupplies.PS_E3634A_SCPI_NET"/>
-    <Mobile ID="ABT#6275" FullyQualifiedMethod="ABT.Test.TestLib.InstrumentDrivers.Oscilloscopes.MSO_3014_IVI_COM" Detail="Tektronix MSO3014 Mixed Signal Oscilloscope" Address="USB0::0x0699::0x0421::C021373::INSTR"/>
+    <Stationary ID="ABT346" FullyQualifiedMethod="ABT.Test.TestLib.InstrumentDrivers.Multifunction.MSMU_34980A_SCPI_NET"/>
+    <Stationary ID="ABT6317" FullyQualifiedMethod="ABT.Test.TestLib.InstrumentDrivers.PowerSupplies.PS_E3649A_SCPI_NET"/>
+    <Stationary ID="ABT17346" FullyQualifiedMethod="ABT.Test.TestLib.InstrumentDrivers.PowerSupplies.PS_E3634A_SCPI_NET"/>
+    <Mobile ID="ABT6275" FullyQualifiedMethod="ABT.Test.TestLib.InstrumentDrivers.Oscilloscopes.MSO_3014_IVI_COM" Detail="Tektronix MSO3014 Mixed Signal Oscilloscope" Address="USB0::0x0699::0x0421::C021373::INSTR"/>
   </Instruments>
   <TS NamespaceRoot="ABT.Test.TestPlans.Diagnostics.TestOperations" Description="Diagnostics, System.">
     <TO NamespaceTrunk="SCPI_VISA_Instruments"
@@ -55,4 +56,5 @@
       </TG>
     </TO>
   </TS>
+
 </TestDefinition>
