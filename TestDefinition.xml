@@ -31,7 +31,7 @@
     <Stationary ID="ABT17346" FullyQualifiedMethod="ABT.Test.TestLib.InstrumentDrivers.PowerSupplies.PS_E3634A_SCPI_NET"/>
     <Mobile ID="ABT6275" FullyQualifiedMethod="ABT.Test.TestLib.InstrumentDrivers.Oscilloscopes.MSO_3014_IVI_COM" Detail="Tektronix MSO3014 Mixed Signal Oscilloscope" Address="USB0::0x0699::0x0421::C021373::INSTR"/>
   </Instruments>
-  <TS NamespaceRoot="ABT.Test.TestPlans.Diagnostics.TestOperations" Description="Diagnostics, System.">
+  <TS NamespaceRoot="ABT.Test.TestPlans.Diagnostics.TestOperations" Description="Diagnostics, System." Simulate="true">
     <TO NamespaceTrunk="SCPI_VISA_Instruments"
         Description="Diagnostics, SCPI VISA Instruments.">
       <TG Class="TestMeasurements" Description="Diagnostics Measurements." CancelNotPassed="false" Independent="true">
