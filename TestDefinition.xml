@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 
 <TestDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-            xsi:noNamespaceSchemaLocation="file://C://Users//phils//source//repos//ABT//Test//TestLib//TestDefinition//TestDefinition.xsd">
+                xsi:noNamespaceSchemaLocation="file://C://Users//phils//source//repos//ABT//Test//TestLib//TestDefinition//TestDefinition.xsd">
 
-  <UUT Number="12345-1" Description="Power Supply" Revision="D" Type="Circuit Card">
+  <UUT Number="12345-1" Description="Power Supply" Revision="D" Category="CircuitCard">
     <Customer Name="Amphenol Corporation" Division="Amphenol Borisch Technologies" Location="Grand Rapids"/>
     <TestSpecification Document="54321-1" Revision="B" Title="Test Specification, 12345-1 Power Supply CCA" Date="2023-12-13"/>
     <Documentation Folder="P:\Test\Workspace\eDocs\D\Diagnostics"/>
   </UUT>
   <Development Released="2025-04-01">
-    <Developer Name="Phillip Smelt" Language="C#" Comment="Also TCL."/>
+    <Developer Name="Phillip Smelt" Language="CSharp" Comment="Also TCL."/>
     <Documentation Folder="P:\Test\Engineers\Equipment Manuals\TestExec\Diagnostics"/>
     <Repository URL="file://P://Test//Engineers//Source//TestExec//Diagnostics"/>
     <Repository URL="https://github.com/Amphenol-Borisch-Technologies/TestExec"/>
@@ -23,7 +23,7 @@
     <Modification Who="Toph" What="Improved algorithm." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method4" Why="Good design is essential!"/>
   </Modifications>
   <TestData>
-    <TDR Folder="P:\Test\TDR\Diagnostics" SerialEntry="Barcode+Keyboard" SerialRegEx="01BB2-[0-9]{5}"/>
+    <TDR Folder="P:\Test\TDR\Diagnostics" SerialEntry="BarcodeεKeyboard" SerialRegEx="01BB2-[0-9]{5}"/>
   </TestData>
   <Instruments>
     <Stationary ID="ABT346" FullyQualifiedMethod="ABT.Test.TestLib.InstrumentDrivers.Multifunction.MSMU_34980A_SCPI_NET"/>
@@ -56,5 +56,4 @@
       </TG>
     </TO>
   </TS>
-
 </TestDefinition>
