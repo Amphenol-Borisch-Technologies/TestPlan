@@ -34,9 +34,9 @@
     <TDR Folder="P:\Test\TDR\Diagnostics" SerialEntry="Barcode+Keyboard" SerialRegEx="01BB2-[0-9]{5}"/>
   </TestData>
   <Instruments>
-    <Stationary ID="MSMU1_34980A" ClassName="ABT.Test.TestLib.InstrumentDrivers.Multifunction.MSMU_34980A_SCPI_NET"/>
-    <Stationary ID="PS1ε2_E3649A" ClassName="ABT.Test.TestLib.InstrumentDrivers.PowerSupplies.PS_E3649A_SCPI_NET"/>
-    <Stationary ID="PS3_E3634A" ClassName="ABT.Test.TestLib.InstrumentDrivers.PowerSupplies.PS_E3634A_SCPI_NET"/>
-    <Mobile ID="MSO1_3014" ClassName="ABT.Test.TestLib.InstrumentDrivers.Oscilloscopes.MSO_3014_IVI_COM" Detail="Tektronix MSO3014 Mixed Signal Oscilloscope" Address="USB0::0x0699::0x0421::C021373::INSTR"/>
+    <Stationary ID="ABT#346" FullyQualifiedMethod="ABT.Test.TestLib.InstrumentDrivers.Multifunction.MSMU_34980A_SCPI_NET"/>
+    <Stationary ID="ABT#6317" FullyQualifiedMethod="ABT.Test.TestLib.InstrumentDrivers.PowerSupplies.PS_E3649A_SCPI_NET"/>
+    <Stationary ID="ABT#17346" FullyQualifiedMethod="ABT.Test.TestLib.InstrumentDrivers.PowerSupplies.PS_E3634A_SCPI_NET"/>
+    <Mobile ID="ABT#6275" FullyQualifiedMethod="ABT.Test.TestLib.InstrumentDrivers.Oscilloscopes.MSO_3014_IVI_COM" Detail="Tektronix MSO3014 Mixed Signal Oscilloscope" Address="USB0::0x0699::0x0421::C021373::INSTR"/>
   </Instruments>
 </TestDefinition>

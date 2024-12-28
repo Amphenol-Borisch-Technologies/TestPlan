@@ -1,49 +1,37 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 
-<Definition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="file://C://Users//phils//source//repos//ABT//Test//TestLib//TestDefinition//TestDefinition.xsd">
-  <UUTs>
-    <UUT>
-      <Customer Name="Amphenol Corporation" Division="Amphenol Borisch Technologies" Location="Grand Rapids" />
-      <TestSpecification Document="54321" Date="2014-12-13" Title="Test Specification, 12345 Power Supply CCA" Revision="B" />
-      <Part Number="12345" Description="Power Supply" Revision="D" Type="Circuit Card Assembly" />
-      <!-- Type in set {Component, Harness, CCA, SubUnit, Unit, SubSystem, System}. -->
-      <Documentation eDocs="P:\Test\Workspace\eDocs\D\Diagnostics" Manuals="P:\Test\Engineers\Equipment Manuals\TestExec\Diagnostics" />
-      <!-- Documentation element optional. -->
-    </UUT>
-  </UUTs>
-  <Development>
-    <Developers>
-      <Developer Name="Phillip Smelt" Date="2025-04-01" />
-    </Developers>
-    <Languages>
-      <Language Name="C#" />
-      <Language Name="VEE" />
-    </Languages>
-    <Modifications>
-      <Modification Who="John Lennon" What="Typographic errors." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method1" Why="Correct spelling and grammer are fundamental!"/>
-      <Modification Who="George Harrison" What="Added meaningful NOTES." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method2" Why="Useful comments are indispensable!"/>
-      <Modification Who="Ringo Starr" What="Improved field, property, method and class names." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method3" Why="Meaningful names are invaluable!"/>
-      <Modification Who="Paul McCartney" What="Improved algorithm." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method4" Why="Good design is essential!"/>
-    </Modifications>
+<TestDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="file://C://Users//phils//source//repos//ABT//Test//TestLib//TestDefinition//ABT_TestDefinition.xsd">
+  <UUT Number="12345-1" Description="Power Supply" Revision="D" Type="Circuit Card">
+    <Customer Name="Amphenol Corporation" Division="Amphenol Borisch Technologies" Location="Grand Rapids"/>
+    <TestSpecification Document="54321-1" Revision="B" Title="Test Specification, 12345-1 Power Supply CCA" Date="2023-12-13"/>
+    <Documentation Folder="P:\Test\Workspace\eDocs\D\Diagnostics"/>
+  </UUT>
+  <Development Released="2025-04-01">
+    <Developer Name="Phillip Smelt" Language="C#" Comment="Also TCL."/>
+    <Documentation Folder="P:\Test\Engineers\Equipment Manuals\TestExec\Diagnostics"/>
+    <Repository URL="file://P://Test//Engineers//Source//TestExec//Diagnostics"/>
+    <Repository URL="https://github.com/Amphenol-Borisch-Technologies/TestExec"/>
+    <Repository URL="https://github.com/Amphenol-Borisch-Technologies/TestLib"/>
+    <Repository URL="https://github.com/Amphenol-Borisch-Technologies/TestPlan"/>
   </Development>
-  <Logger>
-    <File Enabled="true" TDR="P:\Test\TDR\Diagnostics" />
-    <SQL Enabled="false" ConnectionString="" />
-    <SerialNumber Entry="Barcode+Keyboard" RegEx="01BB2-[0-9]{5}" />
-  </Logger>
-  <InstrumentsRequired>
-    <Permanent>
-      <InstrumentP ID="MSMU1_34980A" ClassName="ABT.Test.TestLib.InstrumentDrivers.Multifunction.MSMU_34980A_SCPI_NET" />
-      <InstrumentP ID="PS1ε2_E3649A" ClassName="ABT.Test.TestLib.InstrumentDrivers.PowerSupplies.PS_E3649A_SCPI_NET" />
-      <InstrumentP ID="PS3_E3634A" ClassName="ABT.Test.TestLib.InstrumentDrivers.PowerSupplies.PS_E3634A_SCPI_NET" />
-    </Permanent>
-    <Temporary>
-      <InstrumentT ID="MSO1_3014" ClassName="ABT.Test.TestLib.InstrumentDrivers.Oscilloscopes.MSO_3014_IVI_COM" Detail="Tektronix MSO3014 Mixed Signal Oscilloscope" Address="USB0::0x0699::0x0421::C021373::INSTR" />
-    </Temporary>
-  </InstrumentsRequired>
+  <Modifications>
+    <Modification Who="Aang" What="Typographic errors." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method1" Why="Correct spelling and grammer are fundamental!"/>
+    <Modification Who="Katara" What="Added meaningful NOTES." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method2" Why="Useful comments are indispensable!"/>
+    <Modification Who="Sokka" What="Improved field, property, method and class names." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method3" Why="Meaningful names are invaluable!"/>
+    <Modification Who="Toph" What="Improved algorithm." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method4" Why="Good design is essential!"/>
+  </Modifications>
+  <TestData>
+    <TDR Folder="P:\Test\TDR\Diagnostics" SerialEntry="Barcode+Keyboard" SerialRegEx="01BB2-[0-9]{5}"/>
+  </TestData>
+  <Instruments>
+    <Stationary ID="ABT#346" FullyQualifiedMethod="ABT.Test.TestLib.InstrumentDrivers.Multifunction.MSMU_34980A_SCPI_NET"/>
+    <Stationary ID="ABT#6317" FullyQualifiedMethod="ABT.Test.TestLib.InstrumentDrivers.PowerSupplies.PS_E3649A_SCPI_NET"/>
+    <Stationary ID="ABT#17346" FullyQualifiedMethod="ABT.Test.TestLib.InstrumentDrivers.PowerSupplies.PS_E3634A_SCPI_NET"/>
+    <Mobile ID="ABT#6275" FullyQualifiedMethod="ABT.Test.TestLib.InstrumentDrivers.Oscilloscopes.MSO_3014_IVI_COM" Detail="Tektronix MSO3014 Mixed Signal Oscilloscope" Address="USB0::0x0699::0x0421::C021373::INSTR"/>
+  </Instruments>
   <TS NamespaceRoot="ABT.Test.TestPlans.Diagnostics.TestOperations" Description="Diagnostics, System.">
-    <TO NamespaceLeaf="SCPI_VISA_Instruments"
+    <TO NamespaceTrunk="SCPI_VISA_Instruments"
         Description="Diagnostics, SCPI VISA Instruments.">
       <TG Class="TestMeasurements" Description="Diagnostics Measurements." CancelNotPassed="false" Independent="true">
         <MC Method="MSMU_34980A" Description="Keysight 34980A Multifunction Switch/Measurement Units." CancelNotPassed="false"/>
@@ -60,11 +48,11 @@
         <MC Method="MorePS_E3649A" Description="Keysight E3649A Power Supplies." CancelNotPassed="false"/>
       </TG>
     </TO>
-    <TO NamespaceLeaf="Miscellaneous"
+    <TO NamespaceTrunk="Miscellaneous"
         Description="Miscellaneous items, including instruments that aren't both SCPI &amp; VISA instruments.">
       <TG Class="USB_ERB24" Description="USB_ERB24 Relays." CancelNotPassed="false" Independent="true">
         <MC Method="USB_ERB24_SelfTest" Description="USB_ERB24 Diagnostics." CancelNotPassed="false"/>
       </TG>
     </TO>
   </TS>
-</Definition>
+</TestDefinition>
