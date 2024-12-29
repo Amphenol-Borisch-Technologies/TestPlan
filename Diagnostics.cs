@@ -133,7 +133,7 @@ namespace ABT.Test.TestPlans.Diagnostics {
         protected override async Task<String> MeasurementRun(TestLib.TestDefinition.M m) {
             Type type = Type.GetType($"{TestSelection.TestSpace.NamespaceRoot}.{TestIndex.TestOperation.NamespaceTrunk}.{TestIndex.TestGroup.Class}");
             // NOTE:  Will only seek invocable measurement methods in class TestMeasurements that are defined as TestMeasurement IDs in App.config & and are part of a Group.
-            MethodInfo methodInfo = type.GetMethod(m.Method, BindingFlags.Static | BindingFlags.NonPublic);
+            MethodInfo methodInfo = type.GetMethod(m.Name, BindingFlags.Static | BindingFlags.NonPublic);
             // NOTE:  Invocable measurement methods in class TestMeasurements, defined as TestMeasurement IDs in App.config, must have signatures identical to "internal static String MethodName()",
             // or "private static String MethodName()", though the latter are discouraged for consistency.
             Object task = await Task.Run(() => methodInfo.Invoke(null, null));
