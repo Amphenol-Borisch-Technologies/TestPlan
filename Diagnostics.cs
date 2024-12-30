@@ -130,7 +130,7 @@ namespace ABT.Test.TestPlans.Diagnostics {
             WindowState = FormWindowState.Maximized;
         }
 
-        protected override async Task<String> MeasurementRun(TestLib.TestDefinition.Method method) {
+        protected override async Task<String> MeasurementRun(testDefinition.Method method) {
             Type type = Type.GetType($"{TestSelection.TestSpace.NamespaceRoot}.{TestIndex.TestOperation.NamespaceTrunk}.{TestIndex.TestGroup.Class}");
             // NOTE:  Will only seek invocable measurement methods in class TestMeasurements that are defined as TestMeasurement IDs in App.config & and are part of a Group.
             MethodInfo methodInfo = type.GetMethod(method.Name, BindingFlags.Static | BindingFlags.NonPublic);
