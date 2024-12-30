@@ -23,13 +23,13 @@
     <Modification Who="Toph" What="Improved algorithm." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method4" Why="Good design is essential!"/>
   </Modifications>
   <TestData>
-    <TextFiles Folder="P:\Test\TDR\Diagnostics" SerialNumberEntry="BarcodeεKeyboard" SerialNumberRegEx="01BB2-[0-9]{5}"/>
+    <TextFiles Folder="P:\Test\TDR\Diagnostics" SerialNumberEntry="Barcode" SerialNumberRegEx="01BB2-[0-9]{5}"/>
   </TestData>
   <Instruments>
-    <Stationary ID="ABT346" NameSpaceClassName="ABT.Test.TestLib.InstrumentDrivers.Multifunction.MSMU_34980A_SCPI_NET"/>
-    <Stationary ID="ABT6317" NameSpaceClassName="ABT.Test.TestLib.InstrumentDrivers.PowerSupplies.PS_E3649A_SCPI_NET"/>
-    <Stationary ID="ABT17346" NameSpaceClassName="ABT.Test.TestLib.InstrumentDrivers.PowerSupplies.PS_E3634A_SCPI_NET"/>
-    <Mobile ID="ABT6275" NameSpaceClassName="ABT.Test.TestLib.InstrumentDrivers.Oscilloscopes.MSO_3014_IVI_COM" Detail="Tektronix MSO3014 Mixed Signal Oscilloscope" Address="USB0::0x0699::0x0421::C021373::INSTR"/>
+    <Stationary ID="MSMU1_34980A" NameSpacedClassName="ABT.Test.TestLib.InstrumentDrivers.Multifunction.MSMU_34980A_SCPI_NET"/>
+    <Stationary ID="PS1ε2_E3649A" NameSpacedClassName="ABT.Test.TestLib.InstrumentDrivers.PowerSupplies.PS_E3649A_SCPI_NET"/>
+    <Stationary ID="PS3_E3634A" NameSpacedClassName="ABT.Test.TestLib.InstrumentDrivers.PowerSupplies.PS_E3634A_SCPI_NET"/>
+    <Mobile ID="MSO1_3014" NameSpacedClassName="ABT.Test.TestLib.InstrumentDrivers.Oscilloscopes.MSO_3014_IVI_COM" Detail="Tektronix MSO3014 Mixed Signal Oscilloscope" Address="USB0::0x0699::0x0421::C021373::INSTR"/>
   </Instruments>
   <TestSpace NamespaceRoot="ABT.Test.TestPlans.Diagnostics.TestOperations" Description="Diagnostics, System." Simulate="true">
     <TestOperation NamespaceTrunk="SCPI_VISA_Instruments"

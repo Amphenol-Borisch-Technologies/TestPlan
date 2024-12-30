@@ -5,6 +5,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ABT.Test.TestLib;
+using ABT.Test.TestLib.TestConfiguration;
 
 // NOTE:  Recommend using Microsoft's Visual Studio Code to develop/debug TestExec based closed source/proprietary projects:
 //        - Visual Studio Code is a co$t free, open-source Integrated Development Environment entirely suitable for textual C# development, like Exec.
@@ -130,7 +131,7 @@ namespace ABT.Test.TestPlans.Diagnostics {
             WindowState = FormWindowState.Maximized;
         }
 
-        protected override async Task<String> MeasurementRun(testDefinition.Method method) {
+        protected override async Task<String> MeasurementRun(Method method) {
             Type type = Type.GetType($"{TestSelection.TestSpace.NamespaceRoot}.{TestIndex.TestOperation.NamespaceTrunk}.{TestIndex.TestGroup.Class}");
             // NOTE:  Will only seek invocable measurement methods in class TestMeasurements that are defined as TestMeasurement IDs in App.config & and are part of a Group.
             MethodInfo methodInfo = type.GetMethod(method.Name, BindingFlags.Static | BindingFlags.NonPublic);
