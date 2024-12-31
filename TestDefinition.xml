@@ -32,8 +32,7 @@
     <Mobile ID="MSO1_3014" NameSpacedClassName="ABT.Test.TestLib.InstrumentDrivers.Oscilloscopes.MSO_3014_IVI_COM" Detail="Tektronix MSO3014 Mixed Signal Oscilloscope" Address="USB0::0x0699::0x0421::C021373::INSTR"/>
   </Instruments>
   <TestSpace NamespaceRoot="ABT.Test.TestPlans.Diagnostics.TestOperations" Description="Diagnostics, System." Simulate="true">
-    <TestOperation NamespaceTrunk="SCPI_VISA_Instruments"
-        Description="Diagnostics, SCPI VISA Instruments.">
+    <TestOperation NamespaceTrunk="SCPI_VISA_Instruments" Description="Diagnostics, SCPI VISA Instruments.">
       <TestGroup Class="TestMeasurements" Description="Diagnostics Measurements." CancelNotPassed="false" Independent="true">
         <MethodCustom Name="MSMU_34980A" Description="Keysight 34980A Multifunction Switch/Measurement Units." CancelNotPassed="false"/>
         <MethodCustom Name="MM_34401A" Description="Keysight 34401A Digital Multi-Meters." CancelNotPassed="false"/>
@@ -49,8 +48,7 @@
         <MethodCustom Name="MorePS_E3649A" Description="Keysight E3649A Power Supplies." CancelNotPassed="false"/>
       </TestGroup>
     </TestOperation>
-    <TestOperation NamespaceTrunk="Miscellaneous"
-        Description="Miscellaneous items, including instruments that aren't both SCPI &amp; VISA instruments.">
+    <TestOperation NamespaceTrunk="Miscellaneous" Description="Miscellaneous items, including instruments that aren't both SCPI &amp; VISA instruments.">
       <TestGroup Class="USB_ERB24" Description="USB_ERB24 Relays." CancelNotPassed="false" Independent="true">
         <MethodCustom Name="USB_ERB24_SelfTest" Description="USB_ERB24 Diagnostics." CancelNotPassed="false"/>
       </TestGroup>
