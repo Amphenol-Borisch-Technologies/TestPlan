@@ -1,4 +1,4 @@
-﻿namespace ABT.Test.TestPlans.Diagnostics.TestOperations {
+﻿namespace ABT.Test.TestPlans.Diagnostics.TestOperations.SCPI_VISA_Instruments {
     using System;
     using System.Collections.Generic;
     using System.Diagnostics;
