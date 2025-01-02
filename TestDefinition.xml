@@ -1,54 +1,53 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-
+﻿<?xml version="1.0" encoding="utf-8"?>
 <TestDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file://C://Users//phils//source//repos//ABT//Test//TestLib//TestConfiguration//TestDefinition.xsd">
   <UUT Number="12345-1" Description="Power Supply" Revision="D" Category="CircuitCard">
-    <Customer Name="Amphenol Corporation" Division="Amphenol Borisch Technologies" Location="Grand Rapids"/>
-    <TestSpecification Document="54321-1" Revision="B" Title="Test Specification, 12345-1 Power Supply CCA" Date="2023-12-13"/>
-    <Documentation Folder="P:\Test\Workspace\eDocs\D\Diagnostics"/>
+    <Customer Name="Amphenol Corporation" Division="Amphenol Borisch Technologies" Location="Grand Rapids" />
+    <TestSpecification Document="54321-1" Revision="B" Title="Test Specification, 12345-1 Power Supply CCA" Date="2023-12-13" />
+    <Documentation Folder="P:\Test\Workspace\eDocs\D\Diagnostics" />
   </UUT>
   <Development Released="2025-04-01">
-    <Developer Name="Phillip Smelt" Language="CSharp" Comment="Also TCL."/>
-    <Documentation Folder="P:\Test\Engineers\Equipment Manuals\TestExec\Diagnostics"/>
-    <Repository URL="file://P://Test//Engineers//Source//TestExec//Diagnostics"/>
-    <Repository URL="https://github.com/Amphenol-Borisch-Technologies/TestExec"/>
-    <Repository URL="https://github.com/Amphenol-Borisch-Technologies/TestLib"/>
-    <Repository URL="https://github.com/Amphenol-Borisch-Technologies/TestPlan"/>
+    <Developer Name="Phillip Smelt" Language="CSharp" Comment="Also TCL." />
+    <Documentation Folder="P:\Test\Engineers\Equipment Manuals\TestExec\Diagnostics" />
+    <Repository URL="file://P://Test//Engineers//Source//TestExec//Diagnostics" />
+    <Repository URL="https://github.com/Amphenol-Borisch-Technologies/TestExec" />
+    <Repository URL="https://github.com/Amphenol-Borisch-Technologies/TestLib" />
+    <Repository URL="https://github.com/Amphenol-Borisch-Technologies/TestPlan" />
   </Development>
   <Modifications>
-    <Modification Who="Aang" What="Typographic errors." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method1" Why="Correct spelling and grammer are fundamental!"/>
-    <Modification Who="Katara" What="Added meaningful NOTES." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method2" Why="Useful comments are indispensable!"/>
-    <Modification Who="Sokka" What="Improved field, property, method and class names." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method3" Why="Meaningful names are invaluable!"/>
-    <Modification Who="Toph" What="Improved algorithm." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method4" Why="Good design is essential!"/>
+    <Modification Who="Aang" What="Typographic errors." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method1" Why="Correct spelling and grammer are fundamental!" />
+    <Modification Who="Katara" What="Added meaningful NOTES." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method2" Why="Useful comments are indispensable!" />
+    <Modification Who="Sokka" What="Improved field, property, method and class names." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method3" Why="Meaningful names are invaluable!" />
+    <Modification Who="Toph" What="Improved algorithm." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method4" Why="Good design is essential!" />
   </Modifications>
   <TestData>
-    <TextFiles Folder="P:\Test\TDR\Diagnostics" SerialNumberEntry="Barcode" SerialNumberRegEx="01BB2-[0-9]{5}"/>
+    <TextFiles Folder="P:\Test\TDR\Diagnostics" SerialNumberEntry="Barcode" SerialNumberRegEx="01BB2-[0-9]{5}" />
   </TestData>
   <Instruments>
-    <Stationary ID="MSMU1_34980A" NameSpacedClassName="ABT.Test.TestLib.InstrumentDrivers.Multifunction.MSMU_34980A_SCPI_NET"/>
-    <Stationary ID="PS1ε2_E3649A" NameSpacedClassName="ABT.Test.TestLib.InstrumentDrivers.PowerSupplies.PS_E3649A_SCPI_NET"/>
-    <Stationary ID="PS3_E3634A" NameSpacedClassName="ABT.Test.TestLib.InstrumentDrivers.PowerSupplies.PS_E3634A_SCPI_NET"/>
-    <Mobile ID="MSO1_3014" NameSpacedClassName="ABT.Test.TestLib.InstrumentDrivers.Oscilloscopes.MSO_3014_IVI_COM" Detail="Tektronix MSO3014 Mixed Signal Oscilloscope" Address="USB0::0x0699::0x0421::C021373::INSTR"/>
+    <Stationary ID="MSMU1_34980A" NameSpacedClassName="ABT.Test.TestLib.InstrumentDrivers.Multifunction.MSMU_34980A_SCPI_NET" />
+    <Stationary ID="PS1ε2_E3649A" NameSpacedClassName="ABT.Test.TestLib.InstrumentDrivers.PowerSupplies.PS_E3649A_SCPI_NET" />
+    <Stationary ID="PS3_E3634A" NameSpacedClassName="ABT.Test.TestLib.InstrumentDrivers.PowerSupplies.PS_E3634A_SCPI_NET" />
+    <Mobile ID="MSO1_3014" NameSpacedClassName="ABT.Test.TestLib.InstrumentDrivers.Oscilloscopes.MSO_3014_IVI_COM" Detail="Tektronix MSO3014 Mixed Signal Oscilloscope" Address="USB0::0x0699::0x0421::C021373::INSTR" />
   </Instruments>
   <TestSpace NamespaceRoot="ABT.Test.TestPlans.Diagnostics.TestOperations" Description="Diagnostics, System." Simulate="true">
     <TestOperation NamespaceTrunk="SCPI_VISA_Instruments" Description="Diagnostics, SCPI VISA Instruments.">
       <TestGroup Class="TestMeasurements" Description="Diagnostics Measurements." CancelNotPassed="false" Independent="true">
-        <MethodCustom Name="MSMU_34980A" Description="Keysight 34980A Multifunction Switch/Measurement Units." CancelNotPassed="false"/>
-        <MethodCustom Name="MM_34401A" Description="Keysight 34401A Digital Multi-Meters." CancelNotPassed="false"/>
-        <MethodCustom Name="MSO_3014" Description="Tektronix MSO-3014 Mixed-Signal Oscilloscopes." CancelNotPassed="false"/>
-        <MethodCustom Name="PS_E3634A" Description="Keysight E3634A Power Supplies." CancelNotPassed="false"/>
-        <MethodCustom Name="PS_E3649A" Description="Keysight E3649A Power Supplies." CancelNotPassed="false"/>
+        <MethodCustom Name="MSMU_34980A" Description="Keysight 34980A Multifunction Switch/Measurement Units." CancelNotPassed="false" />
+        <MethodCustom Name="MM_34401A" Description="Keysight 34401A Digital Multi-Meters." CancelNotPassed="false" />
+        <MethodCustom Name="MSO_3014" Description="Tektronix MSO-3014 Mixed-Signal Oscilloscopes." CancelNotPassed="false" />
+        <MethodCustom Name="PS_E3634A" Description="Keysight E3634A Power Supplies." CancelNotPassed="true" />
+        <MethodCustom Name="PS_E3649A" Description="Keysight E3649A Power Supplies." CancelNotPassed="false" />
       </TestGroup>
       <TestGroup Class="MoreMeasurements" Description="Diagnostics Measurements." CancelNotPassed="false" Independent="true">
-        <MethodCustom Name="MoreMSMU_34980A" Description="Keysight 34980A Multifunction Switch/Measurement Units." CancelNotPassed="false"/>
-        <MethodCustom Name="MoreMM_34401A" Description="Keysight 34401A Digital Multi-Meters." CancelNotPassed="false"/>
-        <MethodCustom Name="MoreMSO_3014" Description="Tektronix MSO-3014 Mixed-Signal Oscilloscopes." CancelNotPassed="false"/>
-        <MethodCustom Name="MorePS_E3634A" Description="Keysight E3634A Power Supplies." CancelNotPassed="false"/>
-        <MethodCustom Name="MorePS_E3649A" Description="Keysight E3649A Power Supplies." CancelNotPassed="false"/>
+        <MethodCustom Name="MoreMSMU_34980A" Description="Keysight 34980A Multifunction Switch/Measurement Units." CancelNotPassed="false" />
+        <MethodCustom Name="MoreMM_34401A" Description="Keysight 34401A Digital Multi-Meters." CancelNotPassed="false" />
+        <MethodCustom Name="MoreMSO_3014" Description="Tektronix MSO-3014 Mixed-Signal Oscilloscopes." CancelNotPassed="false" />
+        <MethodCustom Name="MorePS_E3634A" Description="Keysight E3634A Power Supplies." CancelNotPassed="false" />
+        <MethodCustom Name="MorePS_E3649A" Description="Keysight E3649A Power Supplies." CancelNotPassed="false" />
       </TestGroup>
     </TestOperation>
     <TestOperation NamespaceTrunk="Miscellaneous" Description="Miscellaneous items, including instruments that aren't both SCPI &amp; VISA instruments.">
       <TestGroup Class="USB_ERB24" Description="USB_ERB24 Relays." CancelNotPassed="false" Independent="true">
-        <MethodCustom Name="USB_ERB24_SelfTest" Description="USB_ERB24 Diagnostics." CancelNotPassed="false"/>
+        <MethodCustom Name="USB_ERB24_SelfTest" Description="USB_ERB24 Diagnostics." CancelNotPassed="false" />
       </TestGroup>
     </TestOperation>
   </TestSpace>
