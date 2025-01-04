@@ -122,7 +122,7 @@ namespace ABT.Test.TestPlans.Diagnostics {
         ///    - Realize both mayn't be optimal practices, and may refactor Tests to a non-Singleton class, and resume explicitly passing Tests object into methods.
         /// </para>
         /// </summary>
-        private Diagnostics() : base(new Icon(@"Resources\Amphenol.ico"), AppDomain.CurrentDomain.BaseDirectory.Remove(AppDomain.CurrentDomain.BaseDirectory.IndexOf(@"\bin\")) + @"\") {
+        private Diagnostics() : base(new Icon(@"Resources\Amphenol.ico"), AppDomain.CurrentDomain.BaseDirectory.Remove(AppDomain.CurrentDomain.BaseDirectory.IndexOf(@"\bin\"))) {
             // NOTE:  Change base constructor's Icon as applicable, depending on customer.
             // https://stackoverflow.com/questions/40933304/how-to-create-an-icon-for-visual-studio-with-just-mspaint-and-visual-studio
             // TODO:  Eventually; dynamically create custom TestExec menu items, allowing non-standard Apps & UUT menu choices.
