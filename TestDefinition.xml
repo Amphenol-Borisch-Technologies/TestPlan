@@ -56,7 +56,7 @@
         <MethodCustom Name="MSMU_34980A" Description="Keysight 34980A Multifunction Switch/Measurement Units." CancelNotPassed="false" />
         <MethodCustom Name="MM_34401A" Description="Keysight 34401A Digital Multi-Meters." CancelNotPassed="false" />
         <MethodCustom Name="MSO_3014" Description="Tektronix MSO-3014 Mixed-Signal Oscilloscopes." CancelNotPassed="false" />
-        <MethodCustom Name="PS_E3634A" Description="Keysight E3634A Power Supplies." CancelNotPassed="true" />
+        <MethodCustom Name="PS_E3634A" Description="Keysight E3634A Power Supplies." CancelNotPassed="false" />
         <MethodCustom Name="PS_E3649A" Description="Keysight E3649A Power Supplies." CancelNotPassed="false" />
       </TestGroup>
       <TestGroup Class="MoreMeasurements" Description="Diagnostics Measurements." CancelNotPassed="false" Independent="true">
