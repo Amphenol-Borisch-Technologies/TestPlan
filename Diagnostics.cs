@@ -90,6 +90,7 @@ using ABT.Test.TestLib.TestConfiguration;
 /// </summary>
 namespace ABT.Test.TestPlans.Diagnostics {
     internal class TestMain {
+        // TODO:  Eventually; mitigate or eliminate writeable global objects; change their access to pass by reference.
         [STAThread] static void Main() {
             TestLib.TestLib.MutexTest = new Mutex(true, TestLib.TestLib.MutexTestName, out Boolean onlyInstance);
             if (!onlyInstance) {
