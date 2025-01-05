@@ -14,7 +14,7 @@ namespace ABT.Test.TestPlans.Diagnostics.TestOperations.SCPI_VISA_Instruments {
     using static ABT.Test.TestLib.TestConfiguration.Assertions;
     
     
-    internal class TestMeasurements2 {
+    internal class TestMeasurements {
         
         internal static string MSMU_34980A() {
 			Debug.Assert(TestOperation(NamespaceTrunk: "SCPI_VISA_Instruments", Description: "Diagnostics, SCPI VISA Instruments.", TestGroups: "TestMeasurements|MoreMeasurements"));

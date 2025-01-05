@@ -12,7 +12,7 @@
     using static ABT.Test.TestLib.TestConfiguration.Assertions;
     using static ABT.Test.TestLib.InstrumentDrivers.Multifunction.MSMU_34980A_SCPI_NET;
 
-    internal class TestMeasurements {
+    internal class TestMeasurementsOriginal {
         
         static String MSMU_34980A() {
 			Debug.Assert(TestOperation(NamespaceTrunk: "SCPI_VISA_Instruments", Description: "Diagnostics, SCPI VISA Instruments.", TestGroups: "TestMeasurements|MoreMeasurements"));
