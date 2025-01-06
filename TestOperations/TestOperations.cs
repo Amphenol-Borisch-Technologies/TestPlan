@@ -12,13 +12,13 @@
     using static ABT.Test.TestLib.TestConfiguration.Assertions;
     using static ABT.Test.TestLib.InstrumentDrivers.Multifunction.MSMU_34980A_SCPI_NET;
 
-    internal class TestMeasurementsOriginal {
+    internal class TestMethodsOriginal {
         
         static String MSMU_34980A() {
-			Debug.Assert(TestOperation(NamespaceTrunk: "SCPI_VISA_Instruments", Description: "Diagnostics, SCPI VISA Instruments.", TestGroups: "TestMeasurements|MoreMeasurements"));
+			Debug.Assert(TestOperation(NamespaceTrunk: "SCPI_VISA_Instruments", Description: "Diagnostics, SCPI VISA Instruments.", TestGroups: "TestMethods|MoreMethods"));
 			Debug.Assert(TestGroupPrior(Class: "NONE"));
-			Debug.Assert(TestGroup(Class: "TestMeasurements", Description: "Diagnostics Measurements.", CancelNotPassed: "false", Independent: "true", Methods: "MSMU_34980A|MM_34401A|MSO_3014|PS_E3634A|PS_E3649A"));
-			Debug.Assert(TestGroupNext(Class: "MoreMeasurements"));
+			Debug.Assert(TestGroup(Class: "TestMethods", Description: "Diagnostics.", CancelNotPassed: "false", Independent: "true", Methods: "MSMU_34980A|MM_34401A|MSO_3014|PS_E3634A|PS_E3649A"));
+			Debug.Assert(TestGroupNext(Class: "MoreMethods"));
 			Debug.Assert( MethodPrior ( Name :  "NONE"));
 			Debug.Assert(MethodCustom(Name: "MSMU_34980A", Description: "Keysight 34980A Multifunction Switch/Measurement Units.", CancelNotPassed: "false"));
 			Debug.Assert(MethodNext(Name: "MM_34401A"));

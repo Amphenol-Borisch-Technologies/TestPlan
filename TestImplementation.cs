@@ -9,21 +9,23 @@
 //------------------------------------------------------------------------------
 
 namespace ABT.Test.TestPlans.Diagnostics.TestOperations.SCPI_VISA_Instruments {
+    using Serilog;
     using System;
     using System.Diagnostics;
     using static ABT.Test.TestLib.TestConfiguration.Assertions;
     
     
-    internal class TestMeasurements {
+    internal class TestMethods {
         
         internal static string MSMU_34980A() {
-			Debug.Assert(TestOperation(NamespaceTrunk: "SCPI_VISA_Instruments", Description: "Diagnostics, SCPI VISA Instruments.", TestGroups: "TestMeasurements|MoreMeasurements"));
+			Debug.Assert(TestOperation(NamespaceTrunk: "SCPI_VISA_Instruments", Description: "Diagnostics, SCPI VISA Instruments.", TestGroups: "TestMethods|MoreMethods"));
 			Debug.Assert(TestGroupPrior(Class: "NONE"));
-			Debug.Assert(TestGroup(Class: "TestMeasurements", Description: "Diagnostics Measurements.", CancelNotPassed: "false", Independent: "true", Methods: "MSMU_34980A|MM_34401A|MSO_3014|PS_E3634A|PS_E3649A"));
-			Debug.Assert(TestGroupNext(Class: "MoreMeasurements"));
+			Debug.Assert(TestGroup(Class: "TestMethods", Description: "Diagnostics.", CancelNotPassed: "false", Independent: "true", Methods: "MSMU_34980A|MM_34401A|MSO_3014|PS_E3634A|PS_E3649A"));
+			Debug.Assert(TestGroupNext(Class: "MoreMethods"));
 			Debug.Assert( MethodPrior ( Name :  "NONE"));
 			Debug.Assert(MethodCustom(Name: "MSMU_34980A", Description: "Keysight 34980A Multifunction Switch/Measurement Units.", CancelNotPassed: "false"));
 			Debug.Assert(MethodNext(Name: "MM_34401A"));
+            
 			return "EVENTS.UNSET";
         }
         
@@ -56,11 +58,11 @@ namespace ABT.Test.TestPlans.Diagnostics.TestOperations.SCPI_VISA_Instruments {
         }
     }
     
-    internal class MoreMeasurements {
+    internal class MoreMethods {
         
         internal static string MoreMSMU_34980A() {
-			Debug.Assert(TestGroupPrior(Class: "TestMeasurements"));
-			Debug.Assert(TestGroup(Class: "MoreMeasurements", Description: "Diagnostics Measurements.", CancelNotPassed: "false", Independent: "true", Methods: "MoreMSMU_34980A|MoreMM_34401A|MoreMSO_3014|MorePS_E3634A|MorePS_E3649A"));
+			Debug.Assert(TestGroupPrior(Class: "TestMethods"));
+			Debug.Assert(TestGroup(Class: "MoreMethods", Description: "Diagnostics.", CancelNotPassed: "false", Independent: "true", Methods: "MoreMSMU_34980A|MoreMM_34401A|MoreMSO_3014|MorePS_E3634A|MorePS_E3649A"));
 			Debug.Assert(TestGroupNext(Class: "NONE"));
 			Debug.Assert( MethodPrior ( Name :  "NONE"));
 			Debug.Assert(MethodCustom(Name: "MoreMSMU_34980A", Description: "Keysight 34980A Multifunction Switch/Measurement Units.", CancelNotPassed: "false"));

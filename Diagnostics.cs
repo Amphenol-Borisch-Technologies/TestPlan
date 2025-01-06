@@ -39,10 +39,10 @@ using ABT.Test.TestLib.TestConfiguration;
 ///  </para>
 
 /// <summary>
-/// NOTE:  Test Developer is responsible for ensuring Measurements can be both safely & correctly called in sequence defined in App.config:
+/// NOTE:  Test Developer is responsible for ensuring Methods can be both safely & correctly called in sequence defined in TestDefinition.xml:
 /// <para>
-///        - That is, if Measurements execute sequentially as (M1, M2, M3, M4, M5), Test Developer is responsible for ensuring all equipment is
-///          configured safely & correctly between each Measurement step.
+///        - That is, if Methods execute sequentially as (M1, M2, M3, M4, M5), Test Developer is responsible for ensuring all equipment is
+///          configured safely & correctly between each Methods step.
 ///          - If:
 ///            - M1 is unpowered Shorts & Opens measurements.
 ///            - M2 is powered voltage measurements.
@@ -58,34 +58,34 @@ using ABT.Test.TestLib.TestConfiguration;
 /// A) Spontaneous Operator Initiated Cancellations:
 ///      1)  Operator Proactive:
 ///          - Microsoft's recommended CancellationTokenSource technique, permitting Operator to proactively
-///            cancel currently executing Measurement.
+///            cancel currently executing Methods.
 ///          - Requires Test project implementation by the Test Developer, but is initiated by Operator, so categorized as such.
-///          - Implementation necessary if the *currently* executing Measurement must be cancellable during execution by the Operator.
+///          - Implementation necessary if the *currently* executing Method must be cancellable during execution by the Operator.
 ///          - https://learn.microsoft.com/en-us/dotnet/standard/threading/cancellation-in-managed-threads
 ///          - https://learn.microsoft.com/en-us/dotnet/standard/parallel-programming/task-cancellation
 ///          - https://learn.microsoft.com/en-us/dotnet/standard/threading/canceling-threads-cooperatively
 ///      2)  Operator Reactive:
 ///          - TestExec's already implemented, always available & default reactive "Cancel before next Test" technique,
 ///            which simply invokes CT_Cancel.Cancel().
-///          - If CT_Cancel.IsCancellationRequested, TestExec.MeasurementsRun()'s foreach loop is broken, causing reactive cancellation
-///            prior to the next Measurement's execution.
-///          - Note: This doesn't proactively cancel the *currently* executing Measurement, which runs to completion.
+///          - If CT_Cancel.IsCancellationRequested, TestExec.MethodsRun()'s foreach loop is broken, causing reactive cancellation
+///            prior to the next Method's execution.
+///          - Note: This doesn't proactively cancel the *currently* executing Method, which runs to completion.
 /// B) PrePlanned Developer Programmed Cancellations:
 ///      3)  TestExec Developer initiated cancellations:
-///          - Any Test project's Measurement can initiate a cancellation programmatically by simply throwing an OperationCanceledException:
-///          - Permits immediate cancellation if specific condition(s) occur in a Measurement; perhaps to prevent UUT or equipment damage,
+///          - Any Test project's Methods can initiate a cancellation programmatically by simply throwing an OperationCanceledException:
+///          - Permits immediate cancellation if specific condition(s) occur in a Method; perhaps to prevent UUT or equipment damage,
 ///            or simply because futher execution is pointless.
 ///          - Simply throw an OperationCanceledException if the specific condition(s) occcur.
-///      4)  App.config's CancelNotPassed:
-///          - App.config's TestMeasurement element has a Boolean "CancelNotPassed" field:
-///          - If the current Test.MeasurementRun() has CancelNotPassed=true and it's resulting EvaluateEventMeasurement() doesn't return EVENTS.PASS,
-///            TestExec.MeasurementsRun() will break/exit, stopping further testing.
-///		    - Do not pass Go, do not collect $200, go directly to TestExec.MeasurementsPostRun().
+///      4)  TestDefinition.xml's CancelNotPassed:
+///          - TestDefinition.xml's Method element has a Boolean "CancelNotPassed" field:
+///          - If the current Test.Run() has CancelNotPassed=true and it's resulting EvaluateEvent() doesn't return EVENTS.PASS,
+///            TestExec.sRun() will break/exit, stopping further testing.
+///		    - Do not pass Go, do not collect $200, go directly to TestExec.sPostRun().
 ///
-/// NOTE:  The Operator Proactive & TestExec Developer initiated cancellations both occur while the currently executing Test.MeasurementRun() conpletes, via 
+/// NOTE:  The Operator Proactive & TestExec Developer initiated cancellations both occur while the currently executing Test.Run() conpletes, via 
 ///        thrown OperationCanceledExceptions.
-/// NOTE:  The Operator Reactive & App.config's CancelNotPassed cancellations both occur after the currently executing Test.MeasurementRun() completes, via checks
-///        inside the Exec.MeasurementsRun() loop.
+/// NOTE:  The Operator Reactive & TestDefinition.xml's CancelNotPassed cancellations both occur after the currently executing Test.Run() completes, via checks
+///        inside the Exec.sRun() loop.
 /// </para>
 /// </summary>
 namespace ABT.Test.TestPlans.Diagnostics {
@@ -132,11 +132,11 @@ namespace ABT.Test.TestPlans.Diagnostics {
             WindowState = FormWindowState.Maximized;
         }
 
-        protected override async Task<String> MeasurementRun(Method method) {
-            Type type = Type.GetType($"{TestLib.TestLib.testDefinition.TestSpace.NamespaceRoot}.{TestIndex.TestOperation.NamespaceTrunk}.{TestIndex.TestGroup.Class}");
-            // NOTE:  Will only seek invocable measurement methods in class TestMeasurements that are defined as TestMeasurement IDs in App.config & and are part of a Group.
+        protected override async Task<String> MethodRun(Method method) {
+            Type type = Type.GetType($"{TestLib.TestLib.testDefinition.TestSpace.NamespaceRoot}.{TestIndices.TestOperation.NamespaceTrunk}.{TestIndices.TestGroup.Class}");
+            // NOTE:  Will only seek invocable methods in TestIndices.TestGroup.Class that are defined as Method IDs in TestDefinition.xml & and are part of a Group.
             MethodInfo methodInfo = type.GetMethod(method.Name, BindingFlags.Static | BindingFlags.NonPublic);
-            // NOTE:  Invocable measurement methods in class TestMeasurements, defined as TestMeasurement IDs in App.config, must have signatures identical to "internal static String MethodName()",
+            // NOTE:  Invocable methods in TestIndices.TestGroup.Class, defined as Method IDs in TestDefinition.xml, must have signatures identical to "internal static String MethodName()",
             // or "private static String MethodName()", though the latter are discouraged for consistency.
             Object task = await Task.Run(() => methodInfo.Invoke(null, null));
             return (String)task;
