@@ -45,10 +45,10 @@
     -->
   </TestData>
   <Instruments>
-    <Stationary ID="MSMU1_34980A" NameSpacedClassName="ABT.Test.TestLib.InstrumentDrivers.Multifunction.MSMU_34980A_SCPI_NET" />
-    <Stationary ID="PS1ε2_E3649A" NameSpacedClassName="ABT.Test.TestLib.InstrumentDrivers.PowerSupplies.PS_E3649A_SCPI_NET" />
-    <Stationary ID="PS3_E3634A" NameSpacedClassName="ABT.Test.TestLib.InstrumentDrivers.PowerSupplies.PS_E3634A_SCPI_NET" />
-    <Mobile ID="MSO1_3014" NameSpacedClassName="ABT.Test.TestLib.InstrumentDrivers.Oscilloscopes.MSO_3014_IVI_COM" Detail="Tektronix MSO3014 Mixed Signal Oscilloscope" Address="USB0::0x0699::0x0421::C021373::INSTR" />
+    <Stationary Name="MSMU1_34980A" NameSpacedClassName="ABT.Test.TestLib.InstrumentDrivers.Multifunction.MSMU_34980A_SCPI_NET" />
+    <Stationary Name="PS1ε2_E3649A" NameSpacedClassName="ABT.Test.TestLib.InstrumentDrivers.PowerSupplies.PS_E3649A_SCPI_NET" />
+    <Stationary Name="PS3_E3634A" NameSpacedClassName="ABT.Test.TestLib.InstrumentDrivers.PowerSupplies.PS_E3634A_SCPI_NET" />
+    <Mobile Name="MSO1_3014" NameSpacedClassName="ABT.Test.TestLib.InstrumentDrivers.Oscilloscopes.MSO_3014_IVI_COM" Detail="Tektronix MSO3014 Mixed Signal Oscilloscope" Address="USB0::0x0699::0x0421::C021373::INSTR" />
   </Instruments>
   <TestSpace NamespaceRoot="ABT.Test.TestPlans.Diagnostics.TestOperations" Description="Diagnostics, System." Simulate="true">
     <TestOperation NamespaceTrunk="SCPI_VISA_Instruments" Description="Diagnostics, SCPI VISA Instruments.">
