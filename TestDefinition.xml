@@ -45,10 +45,10 @@
     -->
   </TestData>
   <Instruments>
-    <Stationary Name="MSMU1_34980A" NameSpacedClassName="ABT.Test.TestLib.InstrumentDrivers.Multifunction.MSMU_34980A_SCPI_NET" />
-    <Stationary Name="PS1ε2_E3649A" NameSpacedClassName="ABT.Test.TestLib.InstrumentDrivers.PowerSupplies.PS_E3649A_SCPI_NET" />
-    <Stationary Name="PS3_E3634A" NameSpacedClassName="ABT.Test.TestLib.InstrumentDrivers.PowerSupplies.PS_E3634A_SCPI_NET" />
-    <Mobile Name="MSO1_3014" NameSpacedClassName="ABT.Test.TestLib.InstrumentDrivers.Oscilloscopes.MSO_3014_IVI_COM" Detail="Tektronix MSO3014 Mixed Signal Oscilloscope" Address="USB0::0x0699::0x0421::C021373::INSTR" />
+    <Stationary ID="MSMU1_34980A" Alias="MSMU" NameSpacedClassName="ABT.Test.TestLib.InstrumentDrivers.Multifunction.MSMU_34980A_SCPI_NET" />
+    <Stationary ID="PS1ε2_E3649A" Alias="P12V_N12V" NameSpacedClassName="ABT.Test.TestLib.InstrumentDrivers.PowerSupplies.PS_E3649A_SCPI_NET" />
+    <Stationary ID="PS3_E3634A" Alias="P28V" NameSpacedClassName="ABT.Test.TestLib.InstrumentDrivers.PowerSupplies.PS_E3634A_SCPI_NET" />
+    <Mobile ID="MSO1_3014" Alias="MSO" NameSpacedClassName="ABT.Test.TestLib.InstrumentDrivers.Oscilloscopes.MSO_3014_IVI_COM" Detail="Tektronix MSO3014 Mixed Signal Oscilloscope" Address="USB0::0x0699::0x0421::C021373::INSTR" />
   </Instruments>
   <TestSpace NamespaceRoot="ABT.Test.TestPlans.Diagnostics.TestOperations" Description="Diagnostics, System." Simulate="true">
     <TestOperation NamespaceTrunk="SCPI_VISA_Instruments" Description="Diagnostics, SCPI VISA Instruments.">
@@ -63,7 +63,7 @@
           <Parameter Key="Key3" Value="Value3"/>
         </MethodCustom>
       </TestGroup>
-      <TestGroup Class="MoreTestMethods" Description="Diagnostics." CancelNotPassed="false" Independent="true">
+      <TestGroup Class="MoreMethods" Description="Diagnostics." CancelNotPassed="false" Independent="true">
         <MethodInterval Name="MoreMSMU_34980A" Description="Keysight 34980A Multifunction Switch/Measurement Units." CancelNotPassed="false" LowComparator="GToE" Low="5.0" High="10.0" HighComparator="LT" FractionalDigits="2" UnitPrefix="mega" Units="Volts" UnitSuffix="DC" />
         <MethodProcess Name="MoreMM_34401A" Description="Keysight 34401A Digital Multi-Meters." CancelNotPassed="false" Folder="C:\Test" File="Temp.exe" Parameters="" Expected="0"/>
         <MethodTextual Name="MoreMSO_3014" Description="Tektronix MSO-3014 Mixed-Signal Oscilloscopes." CancelNotPassed="false" Text="Hi There!"/>

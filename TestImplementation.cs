@@ -106,7 +106,7 @@ namespace ABT.Test.TestPlans.Diagnostics.TestOperations.SCPI_VISA_Instruments {
 			Debug.Assert(MethodNext(Name: "MorePS_E3649A"));
 
             TestIndices.Method.Log.AppendLine(nameof(MorePS_E3634A));
-			return nameof(EVENTS.FAIL);
+			return nameof(EVENTS.CANCEL);
         }
         
         internal static string MorePS_E3649A() {
