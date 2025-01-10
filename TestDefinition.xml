@@ -52,7 +52,7 @@
   </Instruments>
   <TestSpace NamespaceRoot="ABT.Test.TestPlans.Diagnostics.TestOperations" Description="Diagnostics, System." Simulate="true">
     <TestOperation NamespaceTrunk="SCPI_VISA_Instruments" Description="Diagnostics, SCPI VISA Instruments.">
-      <TestGroup Class="TestMethods" Description="Diagnostics." CancelNotPassed="false" Independent="true">
+      <TestGroup Classname="TestMethods" Description="Diagnostics." CancelNotPassed="false" Independent="true">
         <MethodInterval Name="MSMU_34980A" Description="Keysight 34980A Multifunction Switch/Measurement Units." CancelNotPassed="false" LowComparator="GToE" Low="5.0" High="10.0" HighComparator="LT" FractionalDigits="2" UnitPrefix="mega" Units="Volts" UnitSuffix="DC" />
         <MethodProcess Name="MM_34401A" Description="Keysight 34401A Digital Multi-Meters." CancelNotPassed="false" Folder="C:\Test" File="Temp.exe" Parameters="" Expected="0"/>
         <MethodTextual Name="MSO_3014" Description="Tektronix MSO-3014 Mixed-Signal Oscilloscopes." CancelNotPassed="false" Text="Hi There!"/>
@@ -63,7 +63,7 @@
           <Parameter Key="Key3" Value="Value3"/>
         </MethodCustom>
       </TestGroup>
-      <TestGroup Class="MoreMethods" Description="Diagnostics." CancelNotPassed="false" Independent="true">
+      <TestGroup Classname="MoreMethods" Description="Diagnostics." CancelNotPassed="false" Independent="true">
         <MethodInterval Name="MoreMSMU_34980A" Description="Keysight 34980A Multifunction Switch/Measurement Units." CancelNotPassed="false" LowComparator="GToE" Low="5.0" High="10.0" HighComparator="LT" FractionalDigits="2" UnitPrefix="mega" Units="Volts" UnitSuffix="DC" />
         <MethodProcess Name="MoreMM_34401A" Description="Keysight 34401A Digital Multi-Meters." CancelNotPassed="false" Folder="C:\Test" File="Temp.exe" Parameters="" Expected="0"/>
         <MethodTextual Name="MoreMSO_3014" Description="Tektronix MSO-3014 Mixed-Signal Oscilloscopes." CancelNotPassed="false" Text="Hi There!"/>
@@ -76,7 +76,7 @@
       </TestGroup>
     </TestOperation>
     <TestOperation NamespaceTrunk="Miscellaneous" Description="Miscellaneous items, including instruments that aren't both SCPI &amp; VISA instruments.">
-      <TestGroup Class="USB_ERB24" Description="USB_ERB24 Relays." CancelNotPassed="false" Independent="true">
+      <TestGroup Classname="USB_ERB24" Description="USB_ERB24 Relays." CancelNotPassed="false" Independent="true">
         <MethodCustom Name="USB_ERB24_SelfTest" Description="USB_ERB24 Diagnostics." CancelNotPassed="false" />
       </TestGroup>
     </TestOperation>

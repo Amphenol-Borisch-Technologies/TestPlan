@@ -133,10 +133,10 @@ namespace ABT.Test.TestPlans.Diagnostics {
         }
 
         protected override async Task<String> MethodRun(Method method) {
-            Type type = Type.GetType($"{TestLib.TestLib.testDefinition.TestSpace.NamespaceRoot}.{TestIndices.TestOperation.NamespaceTrunk}.{TestIndices.TestGroup.Class}");
-            // NOTE:  Will only seek invocable methods in TestIndices.TestGroup.Class that are defined as Method IDs in TestDefinition.xml & and are part of a Group.
+            Type type = Type.GetType($"{TestLib.TestLib.testDefinition.TestSpace.NamespaceRoot}.{TestIndices.TestOperation.NamespaceTrunk}.{TestIndices.TestGroup.Classname}");
+            // NOTE:  Will only seek invocable methods in TestIndices.TestGroup.Classname that are defined as Method IDs in TestDefinition.xml & and are part of a Group.
             MethodInfo methodInfo = type.GetMethod(method.Name, BindingFlags.Static | BindingFlags.NonPublic);
-            // NOTE:  Invocable methods in TestIndices.TestGroup.Class, defined as Method IDs in TestDefinition.xml, must have signatures identical to "internal static String MethodName()",
+            // NOTE:  Invocable methods in TestIndices.TestGroup.Classname, defined as Method IDs in TestDefinition.xml, must have signatures identical to "internal static String MethodName()",
             // or "private static String MethodName()", though the latter are discouraged for consistency.
             Object task = await Task.Run(() => methodInfo.Invoke(null, null));
             return (String)task;
