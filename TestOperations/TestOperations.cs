@@ -26,7 +26,7 @@
             // TODO: foreach (KeyValuePair<String, Object> kvp in TestLib.TestLib.InstrumentDrivers) if (kvp.Value is IDiagnostics id) id.Diagnostics();
 
             Dictionary<String, MSMU_34980A_SCPI_NET> msmu_34980a_scpi_net = TestLib.InstrumentDrivers.Where(kvp => kvp.Value is MSMU_34980A_SCPI_NET).ToDictionary(kvp => kvp.Key, kvp => (MSMU_34980A_SCPI_NET)kvp.Value);
-            if (msmu_34980a_scpi_net.Count() == 0) return EVENTS.IGNORE.ToString();
+            if (msmu_34980a_scpi_net.Count() == 0) return EVENTS.INFORMATION.ToString();
 
             (Boolean Summary, List<DiagnosticsResult> Details) resultDiagnostics;
             Boolean passedCollective = true;
@@ -45,13 +45,13 @@
 			Debug.Assert(MethodNext(Name: "MSO_3014"));
 
             Dictionary<String, MM_34401A_SCPI_NET> mm_34401a_scpi_net = TestLib.InstrumentDrivers.Where(kvp => kvp.Value is MM_34401A_SCPI_NET).ToDictionary(kvp => kvp.Key, kvp => (MM_34401A_SCPI_NET)kvp.Value);
-            if (mm_34401a_scpi_net.Count() == 0) return EVENTS.IGNORE.ToString();
+            if (mm_34401a_scpi_net.Count() == 0) return EVENTS.INFORMATION.ToString();
 
             (Boolean Summary, List<DiagnosticsResult> Details) resultDiagnostics;
             Boolean passedCollective = true;
             foreach (KeyValuePair<String, MM_34401A_SCPI_NET> kvp in mm_34401a_scpi_net) {
                 // TODO: resultDiagnostics = kvp.Value.Diagnostics();
-                resultDiagnostics = (false, new List<DiagnosticsResult>() { new DiagnosticsResult(Label: $"Diagnostic '{nameof(MM_34401A_SCPI_NET)}'", Message: "Not Implemented yet.", Event: EVENTS.IGNORE) });
+                resultDiagnostics = (false, new List<DiagnosticsResult>() { new DiagnosticsResult(Label: $"Diagnostic '{nameof(MM_34401A_SCPI_NET)}'", Message: "Not Implemented yet.", Event: EVENTS.INFORMATION) });
                 passedCollective &= resultDiagnostics.Summary;
                 Diagnostics.Only.MessageAppendLine(Label: $"{nameof(MM_34401A_SCPI_NET)} ID {kvp.Key}:", Message: $"Result: {(resultDiagnostics.Summary ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString())}");
                 foreach (DiagnosticsResult dr in resultDiagnostics.Details) Diagnostics.Only.MessageAppendLine(Label: $"{dr.Label}", Message: $"{dr.Message}, {dr.Event}.");
@@ -65,13 +65,13 @@
 			Debug.Assert(MethodNext(Name: "PS_E3634A"));
 
             Dictionary<String, MSO_3014_IVI_COM> mso_3014_ivi_com = TestLib.InstrumentDrivers.Where(kvp => kvp.Value is MSO_3014_IVI_COM).ToDictionary(kvp => kvp.Key, kvp => (MSO_3014_IVI_COM)kvp.Value);
-            if (mso_3014_ivi_com.Count() == 0) return EVENTS.IGNORE.ToString();
+            if (mso_3014_ivi_com.Count() == 0) return EVENTS.INFORMATION.ToString();
 
             (Boolean Summary, List<DiagnosticsResult> Details) resultDiagnostics;
             Boolean passedCollective = true;
             foreach (KeyValuePair<String, MSO_3014_IVI_COM> kvp in mso_3014_ivi_com) {
                 // TODO: resultDiagnostics = kvp.Value.Diagnostics();
-                resultDiagnostics = (false, new List<DiagnosticsResult>() { new DiagnosticsResult(Label: $"Diagnostic '{nameof(MSO_3014_IVI_COM)}'", Message: "Not Implemented yet.", Event: EVENTS.IGNORE) });
+                resultDiagnostics = (false, new List<DiagnosticsResult>() { new DiagnosticsResult(Label: $"Diagnostic '{nameof(MSO_3014_IVI_COM)}'", Message: "Not Implemented yet.", Event: EVENTS.INFORMATION) });
                 passedCollective &= resultDiagnostics.Summary;
                 Diagnostics.Only.MessageAppendLine(Label: $"{nameof(MSO_3014_IVI_COM)} ID {kvp.Key}:", Message: $"Result: {(resultDiagnostics.Summary ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString())}");
                 foreach (DiagnosticsResult dr in resultDiagnostics.Details) Diagnostics.Only.MessageAppendLine(Label: $"{dr.Label}", Message: $"{dr.Message}, {dr.Event}.");
@@ -85,13 +85,13 @@
 			Debug.Assert(MethodNext(Name: "PS_E3649A"));
 
             Dictionary<String, PS_E3634A_SCPI_NET> ps_e3634A_scpi_net = TestLib.InstrumentDrivers.Where(kvp => kvp.Value is PS_E3634A_SCPI_NET).ToDictionary(kvp => kvp.Key, kvp => (PS_E3634A_SCPI_NET)kvp.Value);
-            if (ps_e3634A_scpi_net.Count() == 0) return EVENTS.IGNORE.ToString();
+            if (ps_e3634A_scpi_net.Count() == 0) return EVENTS.INFORMATION.ToString();
 
             (Boolean Summary, List<DiagnosticsResult> Details) resultDiagnostics;
             Boolean passedCollective = true;
             foreach (KeyValuePair<String, PS_E3634A_SCPI_NET> kvp in ps_e3634A_scpi_net) {
                 // TODO: resultDiagnostics = kvp.Value.Diagnostics();
-                resultDiagnostics = (false, new List<DiagnosticsResult>() { new DiagnosticsResult(Label: $"Diagnostic '{nameof(PS_E3634A_SCPI_NET)}'", Message: "Not Implemented yet.", Event: EVENTS.IGNORE) });
+                resultDiagnostics = (false, new List<DiagnosticsResult>() { new DiagnosticsResult(Label: $"Diagnostic '{nameof(PS_E3634A_SCPI_NET)}'", Message: "Not Implemented yet.", Event: EVENTS.INFORMATION) });
                 passedCollective &= resultDiagnostics.Summary;
                 Diagnostics.Only.MessageAppendLine(Label: $"{nameof(PS_E3634A_SCPI_NET)} ID {kvp.Key}:", Message: $"Result: {(resultDiagnostics.Summary ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString())}");
                 foreach (DiagnosticsResult dr in resultDiagnostics.Details) Diagnostics.Only.MessageAppendLine(Label: $"{dr.Label}", Message: $"{dr.Message}, {dr.Event}.");
@@ -105,13 +105,13 @@
 			Debug.Assert(MethodNext(Name: "NONE"));
 
             Dictionary<String, PS_E3649A_SCPI_NET> ps_e3649A_scpi_net = TestLib.InstrumentDrivers.Where(kvp => kvp.Value is PS_E3649A_SCPI_NET).ToDictionary(kvp => kvp.Key, kvp => (PS_E3649A_SCPI_NET)kvp.Value);
-            if (ps_e3649A_scpi_net.Count() == 0) return EVENTS.IGNORE.ToString();
+            if (ps_e3649A_scpi_net.Count() == 0) return EVENTS.INFORMATION.ToString();
 
             (Boolean Summary, List<DiagnosticsResult> Details) resultDiagnostics;
             Boolean passedCollective = true;
             foreach (KeyValuePair<String, PS_E3649A_SCPI_NET> kvp in ps_e3649A_scpi_net) {
                 // TODO: resultDiagnostics = kvp.Value.Diagnostics();
-                resultDiagnostics = (false, new List<DiagnosticsResult>() { new DiagnosticsResult(Label: $"Diagnostic '{nameof(PS_E3649A_SCPI_NET)}'", Message: "Not Implemented yet.", Event: EVENTS.IGNORE) });
+                resultDiagnostics = (false, new List<DiagnosticsResult>() { new DiagnosticsResult(Label: $"Diagnostic '{nameof(PS_E3649A_SCPI_NET)}'", Message: "Not Implemented yet.", Event: EVENTS.INFORMATION) });
                 passedCollective &= resultDiagnostics.Summary;
                 Diagnostics.Only.MessageAppendLine(Label: $"{nameof(PS_E3649A_SCPI_NET)} ID {kvp.Key}:", Message: $"Result: {(resultDiagnostics.Summary ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString())}");
                 foreach (DiagnosticsResult dr in resultDiagnostics.Details) Diagnostics.Only.MessageAppendLine(Label: $"{dr.Label}", Message: $"{dr.Message}, {dr.Event}.");

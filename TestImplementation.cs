@@ -64,7 +64,7 @@ namespace ABT.Test.TestPlans.Diagnostics.TestOperations.SCPI_VISA_Instruments {
 			Debug.Assert(MethodNext(Name: "NONE"));
 
             TestIndices.Method.Log.AppendLine(nameof(PS_E3649A));
-			return nameof(EVENTS.IGNORE);
+			return nameof(EVENTS.INFORMATION);
         }
     }
     
@@ -115,7 +115,7 @@ namespace ABT.Test.TestPlans.Diagnostics.TestOperations.SCPI_VISA_Instruments {
 			Debug.Assert(MethodNext(Name: "NONE"));
 
             TestIndices.Method.Log.AppendLine(nameof(MorePS_E3649A));
-			return nameof(EVENTS.IGNORE);
+			return nameof(EVENTS.INFORMATION);
         }
     }
 }
@@ -139,7 +139,7 @@ namespace ABT.Test.TestPlans.Diagnostics.TestOperations.Miscellaneous {
 			Debug.Assert(MethodNext(Name: "NONE"));
 
             TestIndices.Method.Log.AppendLine(nameof(USB_ERB24_SelfTest));
-			return nameof(EVENTS.IGNORE);
+			return nameof(EVENTS.INFORMATION);
         }
     }
 }
