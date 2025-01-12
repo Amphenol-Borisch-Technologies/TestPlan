@@ -104,6 +104,7 @@ namespace ABT.Test.TestPlans.Diagnostics {
             Application.SetCompatibleTextRenderingDefault(false);
             try { Application.Run(Diagnostics.Only); }
             catch (Exception e) {
+                TestExec.TestExec.StatusTimer.Stop();
                 TestExec.TestExec.ErrorMessage(e.ToString());
                 TestExec.TestExec.ErrorMessage(e);
             }
