@@ -10,13 +10,11 @@
 
 namespace ABT.Test.TestPlans.Diagnostics.InstrumentsDrivers {
     using ABT.Test.TestLib.InstrumentDrivers.Multifunction;
-    using ABT.Test.TestLib.InstrumentDrivers.Oscilloscopes;
     using ABT.Test.TestLib.InstrumentDrivers.PowerSupplies;
     
     internal class ID {
         internal static MSMU_34980A_SCPI_NET MSMU = ((MSMU_34980A_SCPI_NET)(TestLib.TestLib.InstrumentDrivers["MSMU1_34980A"]));
         internal static PS_E3649A_SCPI_NET P12V_N12V = ((PS_E3649A_SCPI_NET)(TestLib.TestLib.InstrumentDrivers["PS1ε2_E3649A"]));
         internal static PS_E3634A_SCPI_NET P28V = ((PS_E3634A_SCPI_NET)(TestLib.TestLib.InstrumentDrivers["PS3_E3634A"]));
-        internal static MSO_3014_IVI_COM MSO = ((MSO_3014_IVI_COM)(TestLib.TestLib.InstrumentDrivers["MSO1_3014"]));
     }
 }
