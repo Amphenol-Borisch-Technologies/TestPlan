@@ -8,7 +8,7 @@
   <Development Released="2025-04-01">
     <Developer Name="Phillip Smelt" Language="CSharp" Comment="Also TCL." />
     <Documentation Folder="P:\Test\Engineers\Equipment Manuals\TestExec\Diagnostics" />
-    <Repository URL="file://C://Users//phils//source//repos//ABT//Test//TestPlans//Diagnostics" />
+    <Repository URL="file://C://Users//phils//source//repos//ABT//Test//TestPlans//Diagnostics" /> 
   </Development>
   <Modifications>
     <Modification Who="Aang" What="Typographic errors." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method1" Why="Correct spelling and grammer are fundamental!" />
