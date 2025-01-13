@@ -11,7 +11,7 @@
     <Repository URL="https://github.com/Amphenol-Borisch-Technologies/TestExec" />
     <Repository URL="https://github.com/Amphenol-Borisch-Technologies/TestLib" />
     <Repository URL="https://github.com/Amphenol-Borisch-Technologies/TestPlan" />
-    <Repository URL="file://C://Users//phils//source//repos//ABT//Test//TestPlans//Diagnostics/" />
+    <Repository URL="file://C://Users//phils//source//repos//ABT//Test//TestPlans//Diagnostics" />
   </Development>
   <Modifications>
     <Modification Who="Aang" What="Typographic errors." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method1" Why="Correct spelling and grammer are fundamental!" />
