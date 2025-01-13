@@ -7,7 +7,7 @@
   </UUT>
   <Development Released="2025-04-01">
     <Developer Name="Phillip Smelt" Language="CSharp" Comment="Also TCL." />
-    <Documentation Folder="P:\Test\Engineers\Equipment_Manuals\TestExec\Diagnostics" />
+    <Documentation Folder="C:\Users\phils\source\repos\ABT\Test\TestPlans\Diagnostics\Documentation" />
     <Repository URL="file://C://Users//phils//source//repos//ABT//Test//TestPlans//Diagnostics" /> 
   </Development>
   <Modifications>
