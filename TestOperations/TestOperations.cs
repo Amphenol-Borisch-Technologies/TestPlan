@@ -12,15 +12,15 @@
     using static ABT.Test.TestLib.TestConfiguration.Assertions;
     using static ABT.Test.TestLib.InstrumentDrivers.Multifunction.MSMU_34980A_SCPI_NET;
 
-    internal class TestMethodsOriginal {
+    internal class TestMethods {
         
         static String MSMU_34980A() {
-			Debug.Assert(TestOperation(NamespaceTrunk: "SCPI_VISA_Instruments", Description: "Diagnostics, SCPI VISA Instruments.", TestGroups: "TestMethods|MoreMethods"));
+			if (TestLib.testSequence.IsOperation) Debug.Assert(TestOperation(NamespaceTrunk: "SCPI_VISA_Instruments", Description: "Diagnostics, SCPI VISA Instruments.", TestGroups: "TestMethods|MoreMethods"));
 			Debug.Assert(TestGroupPrior(Classname: "NONE"));
 			Debug.Assert(TestGroup(Classname: "TestMethods", Description: "Diagnostics.", CancelNotPassed: "false", Independent: "true", Methods: "MSMU_34980A|MM_34401A|MSO_3014|PS_E3634A|PS_E3649A"));
-			Debug.Assert(TestGroupNext(Classname: "MoreMethods"));
-			Debug.Assert( MethodPrior ( Name :  "NONE"));
-			Debug.Assert(MethodCustom(Name: "MSMU_34980A", Description: "Keysight 34980A Multifunction Switch/Measurement Units.", CancelNotPassed: "false"));
+			if (TestLib.testSequence.IsOperation) Debug.Assert(TestGroupNext(Classname: "MoreMethods"));
+			Debug.Assert(MethodPrior(Name: "NONE"));
+			Debug.Assert(MethodInterval(Name: "MSMU_34980A", Description: "Keysight 34980A Multifunction Switch/Measurement Units.", CancelNotPassed: "false", LowComparator: "GToE", Low: "5", High: "10", HighComparator: "LT", FractionalDigits: "2", UnitPrefix: "mega", Units: "Volts", UnitSuffix: "DC"));
 			Debug.Assert(MethodNext(Name: "MM_34401A"));
 
             // TODO: foreach (KeyValuePair<String, Object> kvp in TestLib.TestLib.InstrumentDrivers) if (kvp.Value is IDiagnostics id) id.Diagnostics();
@@ -41,7 +41,7 @@
         
         static String MM_34401A() {
 			Debug.Assert(MethodPrior(Name: "MSMU_34980A"));
-			Debug.Assert(MethodCustom(Name: "MM_34401A", Description: "Keysight 34401A Digital Multi-Meters.", CancelNotPassed: "false"));
+			Debug.Assert(MethodProcess(Name: "MM_34401A", Description: "Keysight 34401A Digital Multi-Meters.", CancelNotPassed: "false", Folder: "C:\\Test", File: "Temp.exe", Parameters: "", Expected: "0"));
 			Debug.Assert(MethodNext(Name: "MSO_3014"));
 
             Dictionary<String, MM_34401A_SCPI_NET> mm_34401a_scpi_net = TestLib.InstrumentDrivers.Where(kvp => kvp.Value is MM_34401A_SCPI_NET).ToDictionary(kvp => kvp.Key, kvp => (MM_34401A_SCPI_NET)kvp.Value);
@@ -61,7 +61,7 @@
         
         static String MSO_3014() {
 			Debug.Assert(MethodPrior(Name: "MM_34401A"));
-			Debug.Assert(MethodCustom(Name: "MSO_3014", Description: "Tektronix MSO-3014 Mixed-Signal Oscilloscopes.", CancelNotPassed: "false"));
+			Debug.Assert(MethodTextual(Name: "MSO_3014", Description: "Tektronix MSO-3014 Mixed-Signal Oscilloscopes.", CancelNotPassed: "false", Text: "Hi There!"));
 			Debug.Assert(MethodNext(Name: "PS_E3634A"));
 
             Dictionary<String, MSO_3014_IVI_COM> mso_3014_ivi_com = TestLib.InstrumentDrivers.Where(kvp => kvp.Value is MSO_3014_IVI_COM).ToDictionary(kvp => kvp.Key, kvp => (MSO_3014_IVI_COM)kvp.Value);
@@ -101,7 +101,7 @@
         
         static String PS_E3649A() {
 			Debug.Assert(MethodPrior(Name: "PS_E3634A"));
-			Debug.Assert(MethodCustom(Name: "PS_E3649A", Description: "Keysight E3649A Power Supplies.", CancelNotPassed: "false"));
+			Debug.Assert(MethodCustom(Name: "PS_E3649A", Description: "Keysight E3649A Power Supplies.", CancelNotPassed: "false", Parameters: "Key1=Value1|Key2=Value2|Key3=Value3"));
 			Debug.Assert(MethodNext(Name: "NONE"));
 
             Dictionary<String, PS_E3649A_SCPI_NET> ps_e3649A_scpi_net = TestLib.InstrumentDrivers.Where(kvp => kvp.Value is PS_E3649A_SCPI_NET).ToDictionary(kvp => kvp.Key, kvp => (PS_E3649A_SCPI_NET)kvp.Value);
