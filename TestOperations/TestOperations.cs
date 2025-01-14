@@ -90,8 +90,7 @@ namespace ABT.Test.TestPlans.Diagnostics.TestOperations.SCPI_VISA_Instruments {
             (Boolean Summary, List<DiagnosticsResult> Details) resultDiagnostics;
             Boolean passedCollective = true;
             foreach (KeyValuePair<String, PS_E3649A_SCPI_NET> kvp in ps_e3649A_scpi_net) {
-                // TODO: resultDiagnostics = kvp.Value.Diagnostics();
-                resultDiagnostics = (false, new List<DiagnosticsResult>() { new DiagnosticsResult(Label: $"Diagnostic '{nameof(PS_E3649A_SCPI_NET)}'", Message: "Not Implemented yet.", Event: EVENTS.INFORMATION) });
+                resultDiagnostics = kvp.Value.Diagnostics();
                 passedCollective &= resultDiagnostics.Summary;
                 Diagnostics.Only.MessageAppendLine(Label: $"{nameof(PS_E3649A_SCPI_NET)} ID {kvp.Key}:", Message: $"Result: {(resultDiagnostics.Summary ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString())}");
                 foreach (DiagnosticsResult dr in resultDiagnostics.Details) Diagnostics.Only.MessageAppendLine(Label: $"{dr.Label}", Message: $"{dr.Message}, {dr.Event}.");
