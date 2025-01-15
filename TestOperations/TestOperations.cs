@@ -67,7 +67,6 @@
         private static String DiagnosticsT<T>() where T : IDiagnostics {
             Dictionary<String, T> instrumentDriversT = InstrumentDriversSystem.Where(kvp => kvp.Value is T).ToDictionary(kvp => kvp.Key, kvp => (T)kvp.Value);
             if (instrumentDriversT.Count() == 0) {
-                Diagnostics.Only.MessageAppendLine(Label: $"{nameof(T)}:", Message: $"No configured Instruments of type '{nameof(T)}'.");
                 TestIndices.Method.Log.AppendLine($"No configured Instruments of type '{nameof(T)}'.");
                 return EVENTS.INFORMATION.ToString();
             }
@@ -77,10 +76,8 @@
             foreach (KeyValuePair<String, T> kvp in instrumentDriversT) {
                 resultDiagnostics = kvp.Value.Diagnostics();
                 passedCollective &= resultDiagnostics.Summary;
-                Diagnostics.Only.MessageAppendLine(Label: $"{nameof(T)} ID {kvp.Key}:", Message: $"Result: {(resultDiagnostics.Summary ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString())}");
                 TestIndices.Method.Log.AppendLine($"{nameof(T)}: ID '{kvp.Key}', Result '{(resultDiagnostics.Summary ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString())}'");
                 foreach (DiagnosticsResult dr in resultDiagnostics.Details) {
-                    Diagnostics.Only.MessageAppendLine(Label: $"{dr.Label}", Message: $"{dr.Message}, {dr.Event}.");
                     TestIndices.Method.Log.AppendLine($"{dr.Label} : {dr.Message}, {dr.Event}.");
                 }
             }
