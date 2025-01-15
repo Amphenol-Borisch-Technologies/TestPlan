@@ -1,11 +1,12 @@
-﻿using ABT.Test.TestLib;
-using System.Diagnostics;
-
-namespace ABT.Test.TestPlans.Diagnostics.TestOperations.SCPI_VISA_Instruments {
+﻿namespace ABT.Test.TestPlans.Diagnostics.TestOperations.SCPI_VISA_Instruments {
     using System;
     using System.Collections.Generic;
     using System.Diagnostics;
     using System.Linq;
+    using System.Xml.Linq;
+    using Ivi.Scope.Interop;
+    using Ivi.Driver.Interop;
+    using Tektronix.Tkdpo2k3k4k.Interop;
     using ABT.Test.TestLib;
     using ABT.Test.TestLib.InstrumentDrivers.Interfaces;
     using ABT.Test.TestLib.InstrumentDrivers.Multifunction;
@@ -15,13 +16,11 @@ namespace ABT.Test.TestPlans.Diagnostics.TestOperations.SCPI_VISA_Instruments {
     using ABT.Test.TestLib.TestConfiguration;
     using static ABT.Test.TestLib.TestLib;
     using static ABT.Test.TestLib.TestConfiguration.Assertions;
-    using static ABT.Test.TestLib.InstrumentDrivers.Multifunction.MSMU_34980A_SCPI_NET;
-    using System.Xml.Linq;
 
     internal class TestMethods {
-        public static Dictionary<String, Object> InstrumentDriversSystem = GetInstrumentDriversSystem();
+        public static Dictionary<String, Object> InstrumentDriversSystem = GetInstrumentDriversSystemOnly();
 
-        private static Dictionary<String, Object> GetInstrumentDriversSystem() {
+        private static Dictionary<String, Object> GetInstrumentDriversSystemOnly() {
             Dictionary<String, Object> instrumentDrivers = new Dictionary<String, Object>();
             IEnumerable<XElement> iexe = XElement.Load(SystemDefinitionXML).Elements("Instruments");
             foreach (XElement xElement in iexe) {
@@ -30,6 +29,29 @@ namespace ABT.Test.TestPlans.Diagnostics.TestOperations.SCPI_VISA_Instruments {
                             new Object[] { xElement.Attribute("Address").Value, xElement.Attribute("Detail").Value }));
             }
             return instrumentDrivers;
+        }
+
+        private static String DiagnosticsT<T>() where T : IDiagnostics {
+            Dictionary<String, T> instrumentDriversT = InstrumentDriversSystem.Where(kvp => kvp.Value is T).ToDictionary(kvp => kvp.Key, kvp => (T)kvp.Value);
+            if (instrumentDriversT.Count() == 0) {
+                Diagnostics.Only.MessageAppendLine(Label: $"{nameof(T)}:", Message: $"No configured Instruments of type '{nameof(T)}'.");
+                TestIndices.Method.Log.AppendLine($"No configured Instruments of type '{nameof(T)}'.");
+                return EVENTS.INFORMATION.ToString();
+            }
+
+            (Boolean Summary, List<DiagnosticsResult> Details) resultDiagnostics;
+            Boolean passedCollective = true;
+            foreach (KeyValuePair<String, T> kvp in instrumentDriversT) {
+                resultDiagnostics = kvp.Value.Diagnostics();
+                passedCollective &= resultDiagnostics.Summary;
+                Diagnostics.Only.MessageAppendLine(Label: $"{nameof(T)} ID {kvp.Key}:", Message: $"Result: {(resultDiagnostics.Summary ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString())}");
+                TestIndices.Method.Log.AppendLine($"{nameof(T)}: ID '{kvp.Key}', Result '{(resultDiagnostics.Summary ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString())}'");
+                foreach (DiagnosticsResult dr in resultDiagnostics.Details) {
+                    Diagnostics.Only.MessageAppendLine(Label: $"{dr.Label}", Message: $"{dr.Message}, {dr.Event}.");
+                    TestIndices.Method.Log.AppendLine($"{dr.Label} : {dr.Message}, {dr.Event}.");
+                }
+            }
+            return passedCollective ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
         }
 
         static String MM_34401A() {
@@ -41,21 +63,7 @@ namespace ABT.Test.TestPlans.Diagnostics.TestOperations.SCPI_VISA_Instruments {
             Debug.Assert(MethodCustom(Name: "MM_34401A", Description: "Keysight 34401A Digital Multi-Meters.", CancelNotPassed: "false"));
             Debug.Assert(MethodNext(Name: "MSO_3014"));
 
-            Dictionary<String, MM_34401A_SCPI_NET> mm_34401a_scpi_net = InstrumentDriversSystem.Where(kvp => kvp.Value is MM_34401A_SCPI_NET).ToDictionary(kvp => kvp.Key, kvp => (MM_34401A_SCPI_NET)kvp.Value);
-            if (mm_34401a_scpi_net.Count() == 0) {
-                TestIndices.Method.Log.AppendLine($"No configured Instruments of type '{nameof(MM_34401A_SCPI_NET)}'.");
-                return EVENTS.INFORMATION.ToString();
-            }
-
-            (Boolean Summary, List<DiagnosticsResult> Details) resultDiagnostics;
-            Boolean passedCollective = true;
-            foreach (KeyValuePair<String, MM_34401A_SCPI_NET> kvp in mm_34401a_scpi_net) {
-                resultDiagnostics = kvp.Value.Diagnostics();
-                passedCollective &= resultDiagnostics.Summary;
-                Diagnostics.Only.MessageAppendLine(Label: $"{nameof(MM_34401A_SCPI_NET)} ID {kvp.Key}:", Message: $"Result: {(resultDiagnostics.Summary ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString())}");
-                foreach (DiagnosticsResult dr in resultDiagnostics.Details) Diagnostics.Only.MessageAppendLine(Label: $"{dr.Label}", Message: $"{dr.Message}, {dr.Event}.");
-            }
-            return passedCollective ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return DiagnosticsT<MM_34401A_SCPI_NET>();
         }
 
         static String MSO_3014() {
@@ -63,18 +71,7 @@ namespace ABT.Test.TestPlans.Diagnostics.TestOperations.SCPI_VISA_Instruments {
             Debug.Assert(MethodCustom(Name: "MSO_3014", Description: "Tektronix MSO-3014 Mixed-Signal Oscilloscopes.", CancelNotPassed: "false"));
             Debug.Assert(MethodNext(Name: "PS_E3634A"));
 
-            Dictionary<String, MSO_3014_IVI_COM> mso_3014_ivi_com = InstrumentDriversSystem.Where(kvp => kvp.Value is MSO_3014_IVI_COM).ToDictionary(kvp => kvp.Key, kvp => (MSO_3014_IVI_COM)kvp.Value);
-            if (mso_3014_ivi_com.Count() == 0) return EVENTS.INFORMATION.ToString();
-
-            (Boolean Summary, List<DiagnosticsResult> Details) resultDiagnostics;
-            Boolean passedCollective = true;
-            foreach (KeyValuePair<String, MSO_3014_IVI_COM> kvp in mso_3014_ivi_com) {
-                resultDiagnostics = kvp.Value.Diagnostics();
-                passedCollective &= resultDiagnostics.Summary;
-                Diagnostics.Only.MessageAppendLine(Label: $"{nameof(MSO_3014_IVI_COM)} ID {kvp.Key}:", Message: $"Result: {(resultDiagnostics.Summary ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString())}");
-                foreach (DiagnosticsResult dr in resultDiagnostics.Details) Diagnostics.Only.MessageAppendLine(Label: $"{dr.Label}", Message: $"{dr.Message}, {dr.Event}.");
-            }
-            return passedCollective ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return DiagnosticsT<MSO_3014_IVI_COM>();
         }
 
         static String PS_E3634A() {
@@ -82,18 +79,7 @@ namespace ABT.Test.TestPlans.Diagnostics.TestOperations.SCPI_VISA_Instruments {
             Debug.Assert(MethodCustom(Name: "PS_E3634A", Description: "Keysight E3634A Power Supplies.", CancelNotPassed: "false"));
             Debug.Assert(MethodNext(Name: "PS_E3649A"));
 
-            Dictionary<String, PS_E3634A_SCPI_NET> ps_e3634A_scpi_net = InstrumentDriversSystem.Where(kvp => kvp.Value is PS_E3634A_SCPI_NET).ToDictionary(kvp => kvp.Key, kvp => (PS_E3634A_SCPI_NET)kvp.Value);
-            if (ps_e3634A_scpi_net.Count() == 0) return EVENTS.INFORMATION.ToString();
-
-            (Boolean Summary, List<DiagnosticsResult> Details) resultDiagnostics;
-            Boolean passedCollective = true;
-            foreach (KeyValuePair<String, PS_E3634A_SCPI_NET> kvp in ps_e3634A_scpi_net) {
-                resultDiagnostics = kvp.Value.Diagnostics();
-                passedCollective &= resultDiagnostics.Summary;
-                Diagnostics.Only.MessageAppendLine(Label: $"{nameof(PS_E3634A_SCPI_NET)} ID {kvp.Key}:", Message: $"Result: {(resultDiagnostics.Summary ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString())}");
-                foreach (DiagnosticsResult dr in resultDiagnostics.Details) Diagnostics.Only.MessageAppendLine(Label: $"{dr.Label}", Message: $"{dr.Message}, {dr.Event}.");
-            }
-            return passedCollective ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return DiagnosticsT<PS_E3634A_SCPI_NET>();
         }
 
         static String PS_E3649A() {
@@ -101,18 +87,7 @@ namespace ABT.Test.TestPlans.Diagnostics.TestOperations.SCPI_VISA_Instruments {
             Debug.Assert(MethodCustom(Name: "PS_E3649A", Description: "Keysight E3649A Power Supplies.", CancelNotPassed: "false"));
             Debug.Assert(MethodNext(Name: "MSMU_34980A"));
 
-            Dictionary<String, PS_E3649A_SCPI_NET> ps_e3649A_scpi_net = InstrumentDriversSystem.Where(kvp => kvp.Value is PS_E3649A_SCPI_NET).ToDictionary(kvp => kvp.Key, kvp => (PS_E3649A_SCPI_NET)kvp.Value);
-            if (ps_e3649A_scpi_net.Count() == 0) return EVENTS.INFORMATION.ToString();
-
-            (Boolean Summary, List<DiagnosticsResult> Details) resultDiagnostics;
-            Boolean passedCollective = true;
-            foreach (KeyValuePair<String, PS_E3649A_SCPI_NET> kvp in ps_e3649A_scpi_net) {
-                resultDiagnostics = kvp.Value.Diagnostics();
-                passedCollective &= resultDiagnostics.Summary;
-                Diagnostics.Only.MessageAppendLine(Label: $"{nameof(PS_E3649A_SCPI_NET)} ID {kvp.Key}:", Message: $"Result: {(resultDiagnostics.Summary ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString())}");
-                foreach (DiagnosticsResult dr in resultDiagnostics.Details) Diagnostics.Only.MessageAppendLine(Label: $"{dr.Label}", Message: $"{dr.Message}, {dr.Event}.");
-            }
-            return passedCollective ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return DiagnosticsT<PS_E3649A_SCPI_NET>();
         }
 
         static String MSMU_34980A() {
@@ -120,18 +95,7 @@ namespace ABT.Test.TestPlans.Diagnostics.TestOperations.SCPI_VISA_Instruments {
             Debug.Assert(MethodCustom(Name: "MSMU_34980A", Description: "Keysight 34980A Multifunction Switch/Measurement Units.", CancelNotPassed: "false"));
             Debug.Assert(MethodNext(Name: NONE));
 
-            Dictionary<String, MSMU_34980A_SCPI_NET> msmu_34980a_scpi_net = InstrumentDriversSystem.Where(kvp => kvp.Value is MSMU_34980A_SCPI_NET).ToDictionary(kvp => kvp.Key, kvp => (MSMU_34980A_SCPI_NET)kvp.Value);
-            if (msmu_34980a_scpi_net.Count() == 0) return EVENTS.INFORMATION.ToString();
-
-            (Boolean Summary, List<DiagnosticsResult> Details) resultDiagnostics;
-            Boolean passedCollective = true;
-            foreach (KeyValuePair<String, MSMU_34980A_SCPI_NET> kvp in msmu_34980a_scpi_net) {
-                resultDiagnostics = kvp.Value.Diagnostics(new DiagnosticParameter_34980A(Ω: 3));
-                passedCollective &= resultDiagnostics.Summary;
-                Diagnostics.Only.MessageAppendLine(Label: $"{nameof(MSMU_34980A_SCPI_NET)} ID {kvp.Key}:", Message: $"Result: {(resultDiagnostics.Summary ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString())}");
-                foreach (DiagnosticsResult dr in resultDiagnostics.Details) Diagnostics.Only.MessageAppendLine(Label: $"{dr.Label}", Message: $"{dr.Message}, {dr.Event}.");
-            }
-            return passedCollective ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+            return DiagnosticsT<MSMU_34980A_SCPI_NET>();
         }
     }
 }
@@ -139,7 +103,6 @@ namespace ABT.Test.TestPlans.Diagnostics.TestOperations.Miscellaneous {
     using System;
     using System.Diagnostics;
     using ABT.Test.TestLib;
-    using ABT.Test.TestLib.TestConfiguration;
     using static ABT.Test.TestLib.TestLib;
     using static ABT.Test.TestLib.TestConfiguration.Assertions;
 
