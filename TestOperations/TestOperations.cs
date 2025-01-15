@@ -67,7 +67,7 @@
         private static String DiagnosticsT<T>() where T : IDiagnostics {
             Dictionary<String, T> instrumentDriversT = InstrumentDriversSystem.Where(kvp => kvp.Value is T).ToDictionary(kvp => kvp.Key, kvp => (T)kvp.Value);
             if (instrumentDriversT.Count() == 0) {
-                TestIndices.Method.Log.AppendLine($"No configured Instruments of type '{nameof(T)}'.");
+                TestIndices.Method.Log.AppendLine($"No configured Instruments of type '{typeof(T).Name}'.");
                 return EVENTS.INFORMATION.ToString();
             }
 
