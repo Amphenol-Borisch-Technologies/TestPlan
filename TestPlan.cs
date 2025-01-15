@@ -13,6 +13,7 @@ namespace ABT.Test.TestPlans.Diagnostics.TestOperations.SCPI_VISA_Instruments {
     using System.Diagnostics;
     using ABT.Test.TestLib;
     using ABT.Test.TestLib.TestConfiguration;
+    using static ABT.Test.TestLib.TestLib;
     using static ABT.Test.TestLib.TestConfiguration.Assertions;
     
     
@@ -20,10 +21,10 @@ namespace ABT.Test.TestPlans.Diagnostics.TestOperations.SCPI_VISA_Instruments {
         
         internal static string MM_34401A() {
 			if (TestLib.testSequence.IsOperation) Debug.Assert(TestOperation(NamespaceTrunk: "SCPI_VISA_Instruments", Description: "Diagnostics, SCPI VISA Instruments.", TestGroups: "TestMethods"));
-			Debug.Assert(TestGroupPrior(Classname: "NONE"));
+			Debug.Assert(TestGroupPrior(Classname: NONE));
 			Debug.Assert(TestGroup(Classname: "TestMethods", Description: "Diagnostics.", CancelNotPassed: "false", Independent: "true", Methods: "MM_34401A|MSO_3014|PS_E3634A|PS_E3649A|MSMU_34980A"));
-			Debug.Assert(TestGroupNext(Classname: "NONE"));
-			Debug.Assert(MethodPrior(Name: "NONE"));
+			Debug.Assert(TestGroupNext(Classname: NONE));
+			Debug.Assert(MethodPrior(Name: NONE));
 			Debug.Assert(MethodCustom(Name: "MM_34401A", Description: "Keysight 34401A Digital Multi-Meters.", CancelNotPassed: "false"));
 			Debug.Assert(MethodNext(Name: "MSO_3014"));
 			return nameof(EVENTS.UNSET);
@@ -53,7 +54,7 @@ namespace ABT.Test.TestPlans.Diagnostics.TestOperations.SCPI_VISA_Instruments {
         internal static string MSMU_34980A() {
 			Debug.Assert(MethodPrior(Name: "PS_E3649A"));
 			Debug.Assert(MethodCustom(Name: "MSMU_34980A", Description: "Keysight 34980A Multifunction Switch/Measurement Units.", CancelNotPassed: "false"));
-			Debug.Assert(MethodNext(Name: "NONE"));
+			Debug.Assert(MethodNext(Name: NONE));
 			return nameof(EVENTS.UNSET);
         }
     }
@@ -63,6 +64,7 @@ namespace ABT.Test.TestPlans.Diagnostics.TestOperations.Miscellaneous {
     using System.Diagnostics;
     using ABT.Test.TestLib;
     using ABT.Test.TestLib.TestConfiguration;
+    using static ABT.Test.TestLib.TestLib;
     using static ABT.Test.TestLib.TestConfiguration.Assertions;
     
     
@@ -70,10 +72,10 @@ namespace ABT.Test.TestPlans.Diagnostics.TestOperations.Miscellaneous {
         
         internal static string MoreMM_34401A() {
 			if (TestLib.testSequence.IsOperation) Debug.Assert(TestOperation(NamespaceTrunk: "Miscellaneous", Description: "Miscellaneous items, including instruments that aren\'t both SCPI & VISA instruments.", TestGroups: "MoreMethods"));
-			Debug.Assert(TestGroupPrior(Classname: "NONE"));
+			Debug.Assert(TestGroupPrior(Classname: NONE));
 			Debug.Assert(TestGroup(Classname: "MoreMethods", Description: "Diagnostics.", CancelNotPassed: "false", Independent: "true", Methods: "MoreMM_34401A|MoreMSO_3014|MorePS_E3634A|MorePS_E3649A|MoreMSMU_34980A"));
-			Debug.Assert(TestGroupNext(Classname: "NONE"));
-			Debug.Assert(MethodPrior(Name: "NONE"));
+			Debug.Assert(TestGroupNext(Classname: NONE));
+			Debug.Assert(MethodPrior(Name: NONE));
 			Debug.Assert(MethodProcess(Name: "MoreMM_34401A", Description: "Keysight 34401A Digital Multi-Meters.", CancelNotPassed: "false", Folder: "C:\\Test", File: "Temp.exe", Parameters: "", Expected: "0"));
 			Debug.Assert(MethodNext(Name: "MoreMSO_3014"));
 			return "-1";
@@ -102,8 +104,8 @@ namespace ABT.Test.TestPlans.Diagnostics.TestOperations.Miscellaneous {
         
         internal static string MoreMSMU_34980A() {
 			Debug.Assert(MethodPrior(Name: "MorePS_E3649A"));
-			Debug.Assert(MethodInterval(Name: "MoreMSMU_34980A", Description: "Keysight 34980A Multifunction Switch/Measurement Units.", CancelNotPassed: "false", LowComparator: "GToE", Low: "5", High: "10", HighComparator: "LT", FractionalDigits: "2", UnitPrefix: "mega", Units: "Volts", UnitSuffix: "DC"));
-			Debug.Assert(MethodNext(Name: "NONE"));
+			Debug.Assert(MethodInterval(Name: "MoreMSMU_34980A", Description: "Keysight 34980A Multifunction Switch/Measurement Units.", CancelNotPassed: "false", LowComparator: "GToE", Low: "5", High: "10", HighComparator: "LT", FractionalDigits: "2", UnitPrefix: "NONE", Units: "NONE", UnitSuffix: "NONE"));
+			Debug.Assert(MethodNext(Name: NONE));
 			return "NaN";
         }
     }

@@ -49,7 +49,7 @@
     <Stationary ID="PS1ε2_E3649A" Alias="P12V_N12V" />
     <Stationary ID="PS3_E3634A" Alias="P28V" />
   </Instruments>
-  <TestSpace NamespaceRoot="ABT.Test.TestPlans.Diagnostics.TestOperations" Description="Diagnostics, System." Simulate="false">
+  <TestSpace NamespaceRoot="ABT.Test.TestPlans.Diagnostics.TestOperations" Description="Diagnostics, System." Simulate="true">
     <TestOperation NamespaceTrunk="SCPI_VISA_Instruments" Description="Diagnostics, SCPI VISA Instruments.">
       <TestGroup Classname="TestMethods" Description="Diagnostics." CancelNotPassed="false" Independent="true">
         <MethodCustom Name="MM_34401A" Description="Keysight 34401A Digital Multi-Meters." CancelNotPassed="false"  />
@@ -69,7 +69,7 @@
           <Parameter Key="Key2" Value="Value2" />
           <Parameter Key="Key3" Value="Value3" />
         </MethodCustom>
-        <MethodInterval Name="MoreMSMU_34980A" Description="Keysight 34980A Multifunction Switch/Measurement Units." CancelNotPassed="false" LowComparator="GToE" Low="5.0" High="10.0" HighComparator="LT" FractionalDigits="2" UnitPrefix="mega" Units="Volts" UnitSuffix="DC" />
+        <MethodInterval Name="MoreMSMU_34980A" Description="Keysight 34980A Multifunction Switch/Measurement Units." CancelNotPassed="false" LowComparator="GToE" Low="5.0" High="10.0" HighComparator="LT" FractionalDigits="2" UnitPrefix="NONE" Units="NONE" UnitSuffix="NONE" />
       </TestGroup>
     </TestOperation>
   </TestSpace>
