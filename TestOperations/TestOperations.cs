@@ -16,6 +16,7 @@
     using ABT.Test.TestLib.TestConfiguration;
     using static ABT.Test.TestLib.TestLib;
     using static ABT.Test.TestLib.TestConfiguration.Assertions;
+    using ABT.Test.TestExec.Logging;
 
     internal class TestMethods {
         public static Dictionary<String, Object> InstrumentDriversSystem = GetInstrumentDriversSystemDefinition();
@@ -76,10 +77,8 @@
             foreach (KeyValuePair<String, T> kvp in instrumentDriversT) {
                 resultDiagnostics = kvp.Value.Diagnostics();
                 passedCollective &= resultDiagnostics.Summary;
-                TestIndices.Method.Log.AppendLine($"{nameof(T)}: ID '{kvp.Key}', Result '{(resultDiagnostics.Summary ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString())}'");
-                foreach (DiagnosticsResult dr in resultDiagnostics.Details) {
-                    TestIndices.Method.Log.AppendLine($"{dr.Label} : {dr.Message}, {dr.Event}.");
-                }
+                TestIndices.Method.Log.AppendLine($"ID '{kvp.Key}', Driver '{typeof(T).Name}', Result '{(resultDiagnostics.Summary ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString())}'.");
+                foreach (DiagnosticsResult dr in resultDiagnostics.Details) TestIndices.Method.Log.AppendLine($"{dr.Label}{dr.Message}, Result '{dr.Event}'.");
             }
             return passedCollective ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
         }
