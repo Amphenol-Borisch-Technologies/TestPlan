@@ -20,40 +20,6 @@
     internal class TestMethods {
         public static Dictionary<String, Object> InstrumentDriversSystem = GetInstrumentDriversSystemOnly();
 
-        private static Dictionary<String, Object> GetInstrumentDriversSystemOnly() {
-            Dictionary<String, Object> instrumentDrivers = new Dictionary<String, Object>();
-            IEnumerable<XElement> iexe = XElement.Load(SystemDefinitionXML).Elements("Instruments");
-            foreach (XElement xElement in iexe) {
-                instrumentDrivers.Add((String)xElement.Attribute("ID"),
-                        Activator.CreateInstance(Type.GetType(xElement.Attribute("NameSpacedClassName").Value),
-                            new Object[] { xElement.Attribute("Address").Value, xElement.Attribute("Detail").Value }));
-            }
-            return instrumentDrivers;
-        }
-
-        private static String DiagnosticsT<T>() where T : IDiagnostics {
-            Dictionary<String, T> instrumentDriversT = InstrumentDriversSystem.Where(kvp => kvp.Value is T).ToDictionary(kvp => kvp.Key, kvp => (T)kvp.Value);
-            if (instrumentDriversT.Count() == 0) {
-                Diagnostics.Only.MessageAppendLine(Label: $"{nameof(T)}:", Message: $"No configured Instruments of type '{nameof(T)}'.");
-                TestIndices.Method.Log.AppendLine($"No configured Instruments of type '{nameof(T)}'.");
-                return EVENTS.INFORMATION.ToString();
-            }
-
-            (Boolean Summary, List<DiagnosticsResult> Details) resultDiagnostics;
-            Boolean passedCollective = true;
-            foreach (KeyValuePair<String, T> kvp in instrumentDriversT) {
-                resultDiagnostics = kvp.Value.Diagnostics();
-                passedCollective &= resultDiagnostics.Summary;
-                Diagnostics.Only.MessageAppendLine(Label: $"{nameof(T)} ID {kvp.Key}:", Message: $"Result: {(resultDiagnostics.Summary ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString())}");
-                TestIndices.Method.Log.AppendLine($"{nameof(T)}: ID '{kvp.Key}', Result '{(resultDiagnostics.Summary ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString())}'");
-                foreach (DiagnosticsResult dr in resultDiagnostics.Details) {
-                    Diagnostics.Only.MessageAppendLine(Label: $"{dr.Label}", Message: $"{dr.Message}, {dr.Event}.");
-                    TestIndices.Method.Log.AppendLine($"{dr.Label} : {dr.Message}, {dr.Event}.");
-                }
-            }
-            return passedCollective ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
-        }
-
         static String MM_34401A() {
             if (testSequence.IsOperation) Debug.Assert(TestOperation(NamespaceTrunk: "SCPI_VISA_Instruments", Description: "Diagnostics, SCPI VISA Instruments.", TestGroups: "TestMethods"));
             Debug.Assert(TestGroupPrior(Classname: NONE));
@@ -97,8 +63,45 @@
 
             return DiagnosticsT<MSMU_34980A_SCPI_NET>();
         }
+
+        private static Dictionary<String, Object> GetInstrumentDriversSystemOnly() {
+            Dictionary<String, Object> instrumentDrivers = new Dictionary<String, Object>();
+            IEnumerable<XElement> iexe = XElement.Load(SystemDefinitionXML).Elements("Instruments").Elements("Instrument");
+            foreach (XElement xElement in iexe) {
+                if (xElement.NodeType != System.Xml.XmlNodeType.Comment) {
+                    instrumentDrivers.Add(xElement.Attribute("ID").Value,
+                            Activator.CreateInstance(Type.GetType(xElement.Attribute("NameSpacedClassName").Value),
+                                new Object[] { xElement.Attribute("Address").Value, xElement.Attribute("Detail").Value }));
+                }
+            }
+            return instrumentDrivers;
+        }
+
+        private static String DiagnosticsT<T>() where T : IDiagnostics {
+            Dictionary<String, T> instrumentDriversT = InstrumentDriversSystem.Where(kvp => kvp.Value is T).ToDictionary(kvp => kvp.Key, kvp => (T)kvp.Value);
+            if (instrumentDriversT.Count() == 0) {
+                Diagnostics.Only.MessageAppendLine(Label: $"{nameof(T)}:", Message: $"No configured Instruments of type '{nameof(T)}'.");
+                TestIndices.Method.Log.AppendLine($"No configured Instruments of type '{nameof(T)}'.");
+                return EVENTS.INFORMATION.ToString();
+            }
+
+            (Boolean Summary, List<DiagnosticsResult> Details) resultDiagnostics;
+            Boolean passedCollective = true;
+            foreach (KeyValuePair<String, T> kvp in instrumentDriversT) {
+                resultDiagnostics = kvp.Value.Diagnostics();
+                passedCollective &= resultDiagnostics.Summary;
+                Diagnostics.Only.MessageAppendLine(Label: $"{nameof(T)} ID {kvp.Key}:", Message: $"Result: {(resultDiagnostics.Summary ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString())}");
+                TestIndices.Method.Log.AppendLine($"{nameof(T)}: ID '{kvp.Key}', Result '{(resultDiagnostics.Summary ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString())}'");
+                foreach (DiagnosticsResult dr in resultDiagnostics.Details) {
+                    Diagnostics.Only.MessageAppendLine(Label: $"{dr.Label}", Message: $"{dr.Message}, {dr.Event}.");
+                    TestIndices.Method.Log.AppendLine($"{dr.Label} : {dr.Message}, {dr.Event}.");
+                }
+            }
+            return passedCollective ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString();
+        }
     }
 }
+
 namespace ABT.Test.TestPlans.Diagnostics.TestOperations.Miscellaneous {
     using System;
     using System.Diagnostics;
