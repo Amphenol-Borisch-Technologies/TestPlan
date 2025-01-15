@@ -18,7 +18,7 @@
     using static ABT.Test.TestLib.TestConfiguration.Assertions;
 
     internal class TestMethods {
-        public static Dictionary<String, Object> InstrumentDriversSystem = GetInstrumentDriversSystemOnly();
+        public static Dictionary<String, Object> InstrumentDriversSystem = GetInstrumentDriversSystemDefinition();
 
         static String MM_34401A() {
             if (testSequence.IsOperation) Debug.Assert(TestOperation(NamespaceTrunk: "SCPI_VISA_Instruments", Description: "Diagnostics, SCPI VISA Instruments.", TestGroups: "TestMethods"));
@@ -62,19 +62,6 @@
             Debug.Assert(MethodNext(Name: NONE));
 
             return DiagnosticsT<MSMU_34980A_SCPI_NET>();
-        }
-
-        private static Dictionary<String, Object> GetInstrumentDriversSystemOnly() {
-            Dictionary<String, Object> instrumentDrivers = new Dictionary<String, Object>();
-            IEnumerable<XElement> iexe = XElement.Load(SystemDefinitionXML).Elements("Instruments").Elements("Instrument");
-            foreach (XElement xElement in iexe) {
-                if (xElement.NodeType != System.Xml.XmlNodeType.Comment) {
-                    instrumentDrivers.Add(xElement.Attribute("ID").Value,
-                            Activator.CreateInstance(Type.GetType(xElement.Attribute("NameSpacedClassName").Value),
-                                new Object[] { xElement.Attribute("Address").Value, xElement.Attribute("Detail").Value }));
-                }
-            }
-            return instrumentDrivers;
         }
 
         private static String DiagnosticsT<T>() where T : IDiagnostics {
