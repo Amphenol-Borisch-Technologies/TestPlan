@@ -3,10 +3,6 @@
     using System.Collections.Generic;
     using System.Diagnostics;
     using System.Linq;
-    using System.Xml.Linq;
-    using Ivi.Scope.Interop;
-    using Ivi.Driver.Interop;
-    using Tektronix.Tkdpo2k3k4k.Interop;
     using ABT.Test.TestLib;
     using ABT.Test.TestLib.InstrumentDrivers.Interfaces;
     using ABT.Test.TestLib.InstrumentDrivers.Multifunction;
@@ -14,9 +10,8 @@
     using ABT.Test.TestLib.InstrumentDrivers.Oscilloscopes;
     using ABT.Test.TestLib.InstrumentDrivers.PowerSupplies;
     using ABT.Test.TestLib.TestConfiguration;
-    using static ABT.Test.TestLib.TestLib;
+    using static ABT.Test.TestLib.Data;
     using static ABT.Test.TestLib.TestConfiguration.Assertions;
-    using ABT.Test.TestExec.Logging;
 
     internal class TestMethods {
         public static Dictionary<String, Object> InstrumentDriversSystem = GetInstrumentDriversSystemDefinition();
@@ -89,7 +84,7 @@ namespace ABT.Test.TestPlans.Diagnostics.TestOperations.Miscellaneous {
     using System;
     using System.Diagnostics;
     using ABT.Test.TestLib;
-    using static ABT.Test.TestLib.TestLib;
+    using static ABT.Test.TestLib.Data;
     using static ABT.Test.TestLib.TestConfiguration.Assertions;
 
 

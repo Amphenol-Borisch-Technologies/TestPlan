@@ -13,14 +13,14 @@ namespace ABT.Test.TestPlans.Diagnostics.TestOperations.SCPI_VISA_Instruments {
     using System.Diagnostics;
     using ABT.Test.TestLib;
     using ABT.Test.TestLib.TestConfiguration;
-    using static ABT.Test.TestLib.TestLib;
+    using static ABT.Test.TestLib.Data;
     using static ABT.Test.TestLib.TestConfiguration.Assertions;
     
     
     internal class TestMethodsNew {
         
         internal static string MM_34401A() {
-			if (TestLib.testSequence.IsOperation) Debug.Assert(TestOperation(NamespaceTrunk: "SCPI_VISA_Instruments", Description: "Diagnostics, SCPI VISA Instruments.", TestGroups: "TestMethods"));
+			if (Data.testSequence.IsOperation) Debug.Assert(TestOperation(NamespaceTrunk: "SCPI_VISA_Instruments", Description: "Diagnostics, SCPI VISA Instruments.", TestGroups: "TestMethods"));
 			Debug.Assert(TestGroupPrior(Classname: NONE));
 			Debug.Assert(TestGroup(Classname: "TestMethods", Description: "Diagnostics.", CancelNotPassed: "false", Independent: "true", Methods: "MM_34401A|MSO_3014|PS_E3634A|PS_E3649A|MSMU_34980A"));
 			Debug.Assert(TestGroupNext(Classname: NONE));
@@ -64,14 +64,14 @@ namespace ABT.Test.TestPlans.Diagnostics.TestOperations.Miscellaneous {
     using System.Diagnostics;
     using ABT.Test.TestLib;
     using ABT.Test.TestLib.TestConfiguration;
-    using static ABT.Test.TestLib.TestLib;
+    using static ABT.Test.TestLib.Data;
     using static ABT.Test.TestLib.TestConfiguration.Assertions;
     
     
     internal class MoreMethodsNew {
         
         internal static string MoreMM_34401A() {
-			if (TestLib.testSequence.IsOperation) Debug.Assert(TestOperation(NamespaceTrunk: "Miscellaneous", Description: "Miscellaneous items, including instruments that aren\'t both SCPI & VISA instruments.", TestGroups: "MoreMethods"));
+			if (testSequence.IsOperation) Debug.Assert(TestOperation(NamespaceTrunk: "Miscellaneous", Description: "Miscellaneous items, including instruments that aren\'t both SCPI & VISA instruments.", TestGroups: "MoreMethods"));
 			Debug.Assert(TestGroupPrior(Classname: NONE));
 			Debug.Assert(TestGroup(Classname: "MoreMethods", Description: "Diagnostics.", CancelNotPassed: "false", Independent: "true", Methods: "MoreMM_34401A|MoreMSO_3014|MorePS_E3634A|MorePS_E3649A|MoreMSMU_34980A"));
 			Debug.Assert(TestGroupNext(Classname: NONE));

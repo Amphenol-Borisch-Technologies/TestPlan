@@ -91,13 +91,13 @@ namespace ABT.Test.TestPlans.Diagnostics {
     internal class TestMain {
     // TODO:  Eventually; mitigate or eliminate writeable global objects; change their access to pass by value or reference.
         [STAThread] static void Main() {
-            TestLib.TestLib.MutexTest = new Mutex(true, TestLib.TestLib.MutexTestName, out Boolean onlyInstance);
+            TestLib.Data.MutexTest = new Mutex(true, TestLib.Data.MutexTestName, out Boolean onlyInstance);
             if (!onlyInstance) {
                 _ = MessageBox.Show($"Already have one executing instance of a Tests.{Environment.NewLine}{Environment.NewLine}" +
-                    $"Cannot have two, as both would control system instruments simultaneously.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    $"Cannot have two, as both would control system instruments simultaneously.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
                 return;
             }
-            GC.KeepAlive(TestLib.TestLib.MutexTest);
+            GC.KeepAlive(TestLib.Data.MutexTest);
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
@@ -133,7 +133,7 @@ namespace ABT.Test.TestPlans.Diagnostics {
         }
 
         protected override async Task<String> MethodRun(Method method) {
-            Type type = Type.GetType($"{TestLib.TestLib.testDefinition.TestSpace.NamespaceRoot}.{TestIndices.TestOperation.NamespaceTrunk}.{TestIndices.TestGroup.Classname}");
+            Type type = Type.GetType($"{TestLib.Data.testDefinition.TestSpace.NamespaceRoot}.{TestIndices.TestOperation.NamespaceTrunk}.{TestIndices.TestGroup.Classname}");
             // NOTE:  Will only seek invocable methods in TestIndices.TestGroup.Classname that are defined as Method IDs in TestDefinition.xml & and are part of a Group.
             MethodInfo methodInfo = type.GetMethod(method.Name, BindingFlags.Static | BindingFlags.NonPublic);
             // NOTE:  Invocable methods in TestIndices.TestGroup.Classname, defined as Method IDs in TestDefinition.xml, must have signatures identical to "internal static String MethodName()",
