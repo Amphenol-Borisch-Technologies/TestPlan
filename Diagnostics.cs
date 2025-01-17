@@ -92,8 +92,8 @@ namespace ABT.Test.TestPlans.Diagnostics {
         [STAThread] static void Main() {
             TestLib.Data.MutexTest = new Mutex(true, TestLib.Data.MutexTestName, out Boolean onlyInstance);
             if (!onlyInstance) {
-                _ = MessageBox.Show($"Already have one executing instance of a Tests.{Environment.NewLine}{Environment.NewLine}" +
-                    $"Cannot have two, as both would control system instruments simultaneously.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+                _ = MessageBox.Show($"Already have one executing instance of TestExec.{Environment.NewLine}{Environment.NewLine}" +
+                    $"Cannot have two, as both would attempt to control system instruments simultaneously.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
                 return;
             }
             GC.KeepAlive(TestLib.Data.MutexTest);
@@ -135,7 +135,7 @@ namespace ABT.Test.TestPlans.Diagnostics {
             Type type = Type.GetType($"{TestLib.Data.testDefinition.TestSpace.NamespaceRoot}.{TestIndices.TestOperation.NamespaceTrunk}.{TestIndices.TestGroup.Classname}");
             // NOTE:  Will only seek invocable methods in TestIndices.TestGroup.Classname that are defined as Method IDs in TestDefinition.xml & and are part of a Group.
             MethodInfo methodInfo = type.GetMethod(method.Name, BindingFlags.Static | BindingFlags.NonPublic);
-            // NOTE:  Invocable methods in TestIndices.TestGroup.Classname, defined as Method IDs in TestDefinition.xml, must have signatures identical to "internal static String MethodName()",
+            // NOTE:  Invocable methods in TestIndices.TestGroup.Classname, defined as Method Names in TestDefinition.xml, must have signatures identical to "internal static String MethodName()",
             // or "private static String MethodName()", though the latter are discouraged for consistency.
             Object task = await Task.Run(() => methodInfo.Invoke(null, null));
             return (String)task;
