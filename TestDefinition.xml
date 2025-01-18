@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+
 <TestDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file://C://Users//phils//source//repos//ABT//Test//TestLib//TestConfiguration//TestDefinition.xsd">
+  <Versions TestDefinition="1.0.0" TestPlan="1.0.0" />
   <UUT Number="12345-1" Description="Power Supply" Revision="D" Category="CircuitCard">
     <Customer Name="Amphenol Corporation" Division="Amphenol Borisch Technologies" Location="Grand Rapids" />
     <TestSpecification Document="54321-1" Revision="B" Title="Test Specification, 12345-1 Power Supply CCA" Date="2023-12-13" />
@@ -49,7 +51,7 @@
     <Stationary ID="PS1ε2_E3649A" Alias="P12V_N12V" />
     <Stationary ID="PS3_E3634A" Alias="P28V" />
   </Instruments>
-  <TestSpace NamespaceRoot="ABT.Test.TestPlans.Diagnostics.TestOperations" Description="System Diagnostics." Simulate="false">
+  <TestSpace NamespaceRoot="ABT.Test.TestPlans.Diagnostics.TestOperations" Description="System Diagnostics." Simulate="true">
     <TestOperation NamespaceTrunk="System" Description="Diagnostics of instruments exclusively defined in configuration file SystemDefinition.xml.">
       <TestGroup Classname="TestMethods" Description="Comprised of manufacturer provided instrument self-tests + optional ABT diagnostics." CancelNotPassed="false" Independent="true">
         <MethodCustom Name="MM_34401A" Description="Keysight 34401A Digital Multi-Meters." CancelNotPassed="false"  />
