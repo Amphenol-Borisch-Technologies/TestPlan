@@ -1,7 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <TestDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file://C://Users//phils//source//repos//ABT//Test//TestLib//TestConfiguration//TestDefinition.xsd">
-  <Versions TestDefinition="1.0.0" TestPlan="1.0.0" />
+  <Revisions>
+    <Definition Number="1.0" Date="2025-10-18" />
+    <Program Number="1.0" Date="2025-10-18" />
+  </Revisions>
   <UUT Number="12345-1" Description="Power Supply" Revision="D" Category="CircuitCard">
     <Customer Name="Amphenol Corporation" Division="Amphenol Borisch Technologies" Location="Grand Rapids" />
     <TestSpecification Document="54321-1" Revision="B" Title="Test Specification, 12345-1 Power Supply CCA" Date="2023-12-13" />
@@ -13,10 +16,10 @@
     <Repository URL="file://C://Users//phils//source//repos//ABT//Test//TestPlans//Diagnostics" /> 
   </Development>
   <Modifications>
-    <Modification Who="Aang" What="Typographic errors." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method1" Why="Correct spelling and grammer are fundamental!" />
-    <Modification Who="Katara" What="Added meaningful NOTES." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method2" Why="Useful comments are indispensable!" />
-    <Modification Who="Sokka" What="Improved field, property, method and class names." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method3" Why="Meaningful names are invaluable!" />
-    <Modification Who="Toph" What="Improved algorithm." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method4" Why="Good design is essential!" />
+    <Modification Who="John" What="Typographic errors." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method1" Why="Correct spelling and grammer are fundamental!" />
+    <Modification Who="George" What="Added meaningful NOTES." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method2" Why="Useful comments are indispensable!" />
+    <Modification Who="Paul" What="Improved field, property, method and class names." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method3" Why="Meaningful names are invaluable!" />
+    <Modification Who="Ringo" What="Improved algorithm." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method4" Why="Good design is essential!" />
   </Modifications>
   <TestData>
     <XML Folder="P:\Test\TDR\Diagnostics" SerialNumberEntry="Keyboard" SerialNumberRegEx="01BB2-[0-9]{5}" SerialNumberFormat="'01BB2-XXXXX' where X is any digit in range [0,9].&#xA;Examples:  '01BB2-12345' ε '01BB2-00001'." />
@@ -46,8 +49,8 @@
   <Instruments>
     <!--
     <Mobile ID="MSO1_3014" Alias="MSO" Detail="Tektronix MSO3014 Mixed Signal Oscilloscope" Address="USB0::0x0699::0x0421::C021373::INSTR" NameSpacedClassName="ABT.Test.TestLib.InstrumentDrivers.Oscilloscopes.MSO_3014_IVI_COM" />
-    <Stationary ID="MSMU1_34980A" Alias="MSMU" />
     -->
+    <Stationary ID="MSMU1_34980A" Alias="MSMU" />
     <Stationary ID="PS1ε2_E3649A" Alias="P12V_N12V" />
     <Stationary ID="PS3_E3634A" Alias="P28V" />
   </Instruments>
