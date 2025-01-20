@@ -1,10 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
-<TestDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file://C://Users//phils//source//repos//ABT//Test//TestLib//TestConfiguration//TestDefinition.xsd">
-  <Revisions>
-    <Definition Number="1.0" Date="2025-10-18" />
-    <Program Number="1.0" Date="2025-10-18" />
-  </Revisions>
+<TestDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:noNamespaceSchemaLocation="file://C://Users//phils//source//repos//ABT//Test//TestLib//TestConfiguration//TestDefinition.xsd"
+                Revision="1.0"
+                Date="2025-10-18" >
   <UUT Number="12345-1" Description="Power Supply" Revision="D" Category="CircuitCard">
     <Customer Name="Amphenol Corporation" Division="Amphenol Borisch Technologies" Location="Grand Rapids" />
     <TestSpecification Document="54321-1" Revision="B" Title="Test Specification, 12345-1 Power Supply CCA" Date="2023-12-13" />
@@ -13,7 +12,7 @@
   <Development Released="2025-04-01">
     <Developer Name="Phillip Smelt" Language="CSharp" Comment="Also TCL." />
     <Documentation Folder="C:\Users\phils\source\repos\ABT\Test\TestPlans\Diagnostics\Documentation" />
-    <Repository URL="file://C://Users//phils//source//repos//ABT//Test//TestPlans//Diagnostics" /> 
+    <Repository URL="file://C://Users//phils//source//repos//ABT//Test//TestPlans//Diagnostics" />
   </Development>
   <Modifications>
     <Modification Who="John" What="Typographic errors." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method1" Why="Correct spelling and grammer are fundamental!" />
