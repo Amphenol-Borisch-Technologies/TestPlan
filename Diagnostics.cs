@@ -92,7 +92,7 @@ namespace ABT.Test.TestPlans.Diagnostics {
         [STAThread] static void Main() {
             TestLib.Data.MutexTest = new Mutex(true, TestLib.Data.MutexTestName, out Boolean onlyInstance);
             if (!onlyInstance) {
-                _ = MessageBox.Show($"Already have one executing instance of TestExec.{Environment.NewLine}{Environment.NewLine}" +
+                _ = MessageBox.Show($"Already have one executing instance of {nameof(TestExec)}.{Environment.NewLine}{Environment.NewLine}" +
                     $"Cannot have two, as both would attempt to control system instruments simultaneously.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
                 return;
             }
