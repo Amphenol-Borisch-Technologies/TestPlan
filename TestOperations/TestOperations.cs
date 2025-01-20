@@ -17,9 +17,9 @@
         public static Dictionary<String, Object> InstrumentDriversSystem = GetInstrumentDriversSystemDefinition();
 
         static String MM_34401A() {
-            if (testSequence.IsOperation) Debug.Assert(TestOperation(NamespaceTrunk: "SCPI_VISA_Instruments", Description: "Diagnostics, SCPI VISA Instruments.", TestGroups: "TestMethods"));
+            if (testSequence.IsOperation) Debug.Assert(TestOperation(NamespaceTrunk: "SCPI_VISA_Instruments", Description: "Diagnostics of instruments exclusively defined in configuration file SystemDefinition.xml.", TestGroups: "TestMethods"));
             Debug.Assert(TestGroupPrior(Classname: NONE));
-            Debug.Assert(TestGroup(Classname: "TestMethods", Description: "Diagnostics.", CancelNotPassed: "false", Independent: "true", Methods: "MM_34401A|MSO_3014|PS_E3634A|PS_E3649A|MSMU_34980A"));
+            Debug.Assert(TestGroup(Classname: "TestMethods", Description: "Comprised of manufacturer provided instrument self-tests + optional ABT diagnostics.", CancelNotPassed: "false", Independent: "true", Methods: "MM_34401A|MSO_3014|PS_E3634A|PS_E3649A|MSMU_34980A"));
             Debug.Assert(TestGroupNext(Classname: NONE));
             Debug.Assert(MethodPrior(Name: NONE));
             Debug.Assert(MethodCustom(Name: "MM_34401A", Description: "Keysight 34401A Digital Multi-Meters.", CancelNotPassed: "false"));
