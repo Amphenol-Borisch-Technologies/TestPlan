@@ -26,8 +26,7 @@
             Debug.Assert(MethodNext(Name: "MSO_3014"));
 
             TestIndices.Method.Event = DiagnosticsT<MM_34401A_SCPI_NET>();
-
-            return TestIndices.Method.Log.ToString();
+            return TestIndices.Method.LogFetchAndClear();
         }
 
         static String MSO_3014() {
@@ -36,7 +35,7 @@
             Debug.Assert(MethodNext(Name: "PS_E3634A"));
 
             TestIndices.Method.Event =  DiagnosticsT<MSO_3014_IVI_COM>();
-            return TestIndices.Method.Log.ToString();
+            return TestIndices.Method.LogFetchAndClear();
         }
 
         static String PS_E3634A() {
@@ -45,7 +44,7 @@
             Debug.Assert(MethodNext(Name: "PS_E3649A"));
 
             TestIndices.Method.Event =  DiagnosticsT<PS_E3634A_SCPI_NET>();
-            return TestIndices.Method.Log.ToString();
+            return TestIndices.Method.LogFetchAndClear();
         }
 
         static String PS_E3649A() {
@@ -54,7 +53,7 @@
             Debug.Assert(MethodNext(Name: "MSMU_34980A"));
 
             TestIndices.Method.Event =  DiagnosticsT<PS_E3649A_SCPI_NET>();
-            return TestIndices.Method.Log.ToString();
+            return TestIndices.Method.LogFetchAndClear();
         }
 
         static String MSMU_34980A() {
@@ -63,7 +62,7 @@
             Debug.Assert(MethodNext(Name: NONE));
 
             TestIndices.Method.Event =  DiagnosticsT<MSMU_34980A_SCPI_NET>();
-            return TestIndices.Method.Log.ToString();
+            return TestIndices.Method.LogFetchAndClear();
         }
 
         private static EVENTS DiagnosticsT<T>() where T : IDiagnostics {
