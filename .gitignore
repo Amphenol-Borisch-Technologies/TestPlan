@@ -3,6 +3,9 @@
 ################################################################################
 
 /.vs/Lib/FileContentIndex
+/.vs/Diagnostics/FileContentIndex
+/.vs/TestExec/FileContentIndex
+*.vsidx
 
 # Ignore compiled files
 *.dll
@@ -14,6 +17,8 @@
 # Ignore build directories
 /bin
 /obj
+/bin/x64/Debug
+/obj/x64/Debug
 
 # Ignore user-specific files
 *.user
@@ -40,7 +45,3 @@
 *.tmp
 *.temp
 
-/.vs/Diagnostics/FileContentIndex/70643955-39db-4abb-8cc1-b409023e9ec8.vsidx
-/.vs/Diagnostics/FileContentIndex/8e73df37-cd89-4960-8ba1-b80cb2e42617.vsidx
-/.vs/Diagnostics/FileContentIndex/f4442e65-e876-4e73-bbdf-7600b4e23d66.vsidx
-*.vsidx
