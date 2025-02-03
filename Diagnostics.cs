@@ -5,6 +5,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ABT.Test.TestLib.TestConfiguration;
+using Microsoft.Win32;
 
 // NOTE:  Recommend using Microsoft's Visual Studio Code to develop/debug TestExec based closed source/proprietary projects:
 //        - Visual Studio Code is a co$t free, open-source Integrated Development Environment entirely suitable for textual C# development, like Exec.
@@ -129,7 +130,15 @@ namespace ABT.Test.TestPlans.Diagnostics {
             //        - https://stackoverflow.com/questions/1757574/dynamically-adding-toolstripmenuitems-to-a-menustrip-c-winforms
             //        - https://learn.microsoft.com/en-us/dotnet/desktop/winforms/controls/how-to-add-toolstrip-items-dynamically?view=netframeworkdesktop-4.8
             WindowState = FormWindowState.Maximized;
+            SystemEvents.SessionEnding += OnSessionEnding;
         }
+
+        protected override void OnFormClosed(FormClosedEventArgs e) {
+            base.OnFormClosed(e);
+            SystemEvents.SessionEnding -= OnSessionEnding;
+        }
+
+        private void OnSessionEnding(Object sender, SessionEndingEventArgs e) { Application.Exit(); }
 
         protected override async Task<String> MethodRun(Method method) {
             Type type = Type.GetType($"{TestLib.Data.testDefinition.TestSpace.NamespaceRoot}.{TestIndices.TestOperation.NamespaceTrunk}.{TestIndices.TestGroup.Classname}");
