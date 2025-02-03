@@ -2,11 +2,11 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/.vs/Diagnostics/CopilotIndices/
-/.vs/Diagnostics/copilot-chat/
-/.vs/Diagnostics/FileContentIndex/
-/.vs/TestExec/FileContentIndex/
-/.vs/Lib/FileContentIndex/
+.vs/Diagnostics/CopilotIndices/
+.vs/Diagnostics/copilot-chat/
+.vs/Diagnostics/FileContentIndex/
+.vs/TestExec/FileContentIndex/
+.vs/Lib/FileContentIndex/
 *.vsidx
 
 # Ignore compiled files
