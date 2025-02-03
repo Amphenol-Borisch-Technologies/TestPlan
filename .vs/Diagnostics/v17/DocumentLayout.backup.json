@@ -6,7 +6,7 @@
       "AbsoluteMoniker": "D:0:0:{5F67F305-A6D3-4E89-A423-ADD7724800B2}|..\\..\\TestChanger\\TestChanger.csproj|c:\\users\\phils\\source\\repos\\abt\\test\\testchanger\\testchanger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|c:\\users\\phils\\source\\repos\\abt\\test\\testplans\\diagnostics\\diagnostics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\diagnostics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|solutionrelative:diagnostics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -186,7 +186,7 @@
               "RelativeDocumentMoniker": "..\\..\\TestChanger\\TestChanger.cs",
               "ToolTip": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestChanger\\TestChanger.cs",
               "RelativeToolTip": "..\\..\\TestChanger\\TestChanger.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-03T20:45:41.896Z",
               "EditorCaption": ""
@@ -213,8 +213,7 @@
               "RelativeToolTip": "Diagnostics.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T14:46:05.309Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-03T14:46:05.309Z"
             }
           ]
         }
