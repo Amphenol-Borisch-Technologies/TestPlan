@@ -17,7 +17,7 @@
         public static Dictionary<String, Object> InstrumentDriversSystem = GetInstrumentDriversSystemDefinition();
 
         static String MM_34401A() {
-            if (testSequence.IsOperation) Debug.Assert(TestOperation(NamespaceTrunk: "SCPI_VISA_Instruments", Description: "Diagnostics of instruments exclusively defined in configuration file SystemDefinition.xml.", TestGroups: "TestMethods"));
+            if (testSequence.IsOperation) Debug.Assert(TestOperation(NamespaceTrunk: "SCPI_VISA_Instruments", DebugOnly: false, Description: "Diagnostics of instruments exclusively defined in configuration file SystemDefinition.xml.", TestGroups: "TestMethods"));
             Debug.Assert(TestGroupPrior(Classname: NONE));
             Debug.Assert(TestGroup(Classname: "TestMethods", Description: "Comprised of manufacturer provided instrument self-tests + optional ABT diagnostics.", CancelNotPassed: "false", Independent: "true", Methods: "MM_34401A|MSO_3014|PS_E3634A|PS_E3649A|MSMU_34980A"));
             Debug.Assert(TestGroupNext(Classname: NONE));
@@ -97,7 +97,7 @@ namespace ABT.Test.TestPlans.Diagnostics.TestOperations.Miscellaneous {
     internal class MoreMethods {
 
         internal static String MoreMM_34401A() {
-            if (testSequence.IsOperation) Debug.Assert(TestOperation(NamespaceTrunk: "Miscellaneous", Description: "Miscellaneous items, including instruments that aren\'t both SCPI & VISA instruments.", TestGroups: "MoreMethods"));
+            if (testSequence.IsOperation) Debug.Assert(TestOperation(NamespaceTrunk: "Miscellaneous", DebugOnly: false, Description: "Miscellaneous items, including instruments that aren\'t both SCPI & VISA instruments.", TestGroups: "MoreMethods"));
             Debug.Assert(TestGroupPrior(Classname: NONE));
             Debug.Assert(TestGroup(Classname: "MoreMethods", Description: "Diagnostics.", CancelNotPassed: "false", Independent: "true", Methods: "MoreMM_34401A|MoreMSO_3014|MorePS_E3634A|MorePS_E3649A|MoreMSMU_34980A"));
             Debug.Assert(TestGroupNext(Classname: NONE));
