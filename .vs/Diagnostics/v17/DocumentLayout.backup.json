@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 108,
-          "SelectedChildIndex": 39,
+          "SelectedChildIndex": 41,
           "Children": [
             {
               "$type": "Bookmark",
@@ -182,28 +182,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Diagnostics.cs",
-              "DocumentMoniker": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\Diagnostics.cs",
-              "RelativeDocumentMoniker": "Diagnostics.cs",
-              "ToolTip": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\Diagnostics.cs",
-              "RelativeToolTip": "Diagnostics.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T18:02:52.402Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "TestOperations.cs",
               "DocumentMoniker": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\TestOperations\\TestOperations.cs",
               "RelativeDocumentMoniker": "TestOperations\\TestOperations.cs",
               "ToolTip": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\TestOperations\\TestOperations.cs",
               "RelativeToolTip": "TestOperations\\TestOperations.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAIkAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T18:02:27.547Z",
+              "WhenOpened": "2025-02-09T18:07:20.466Z",
               "EditorCaption": ""
             },
             {
@@ -214,9 +201,22 @@
               "RelativeDocumentMoniker": "TestProgram.cs",
               "ToolTip": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\TestProgram.cs",
               "RelativeToolTip": "TestProgram.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAAsAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T18:02:05.875Z",
+              "WhenOpened": "2025-02-09T18:06:32.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Diagnostics.cs",
+              "DocumentMoniker": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\Diagnostics.cs",
+              "RelativeDocumentMoniker": "Diagnostics.cs",
+              "ToolTip": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\Diagnostics.cs",
+              "RelativeToolTip": "Diagnostics.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T18:05:53.264Z",
               "EditorCaption": ""
             }
           ]

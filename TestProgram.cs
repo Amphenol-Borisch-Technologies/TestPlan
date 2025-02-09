@@ -17,30 +17,22 @@ namespace ABT.Test.TestPlans.Diagnostics.TestOperations.SCPI_VISA_Instruments {
     using static ABT.Test.TestLib.TestConfiguration.Assertions;
     
     
-    internal class TestMethodsNew {
+    internal class TestMethodsOther {
         
-        internal static string MM_34401A() {
-			if (Data.testSequence.IsOperation) Debug.Assert(TestOperation(NamespaceTrunk: "SCPI_VISA_Instruments", ProductionTest: "false", Description: "Diagnostics of instruments exclusively defined in configuration file SystemDefinition.xml.", TestGroups: "TestMethods"));
+        internal static string MSMU_34980A() {
+			if (Data.testSequence.IsOperation) Debug.Assert(TestOperation(NamespaceTrunk: "SCPI_VISA_Instruments", ProductionTest: "true", Description: "Diagnostics of instruments exclusively defined in configuration file SystemDefinition.xml.", TestGroups: "TestMethods"));
 			Debug.Assert(TestGroupPrior(Classname: NONE));
-			Debug.Assert(TestGroup(Classname: "TestMethods", Description: "Comprised of manufacturer provided instrument self-tests + optional ABT diagnostics.", CancelNotPassed: "false", Independent: "true", Methods: "MM_34401A|MSO_3014|PS_E3634A|PS_E3649A|MSMU_34980A"));
+			Debug.Assert(TestGroup(Classname: "TestMethods", Description: "Comprised of manufacturer provided instrument self-tests + optional ABT diagnostics.", CancelNotPassed: "false", Independent: "true", Methods: "MSMU_34980A|PS_E3634A|PS_E3649A|MM_34401A|MSO_3014"));
 			Debug.Assert(TestGroupNext(Classname: NONE));
 			Debug.Assert(MethodPrior(Name: NONE));
-			Debug.Assert(MethodCustom(Name: "MM_34401A", Description: "Keysight 34401A Digital Multi-Meters.", CancelNotPassed: "false"));
-			Debug.Assert(MethodNext(Name: "MSO_3014"));
-			TestIndices.Method.Event = EVENTS.UNSET;
-			return String.Empty;
-        }
-        
-        internal static string MSO_3014() {
-			Debug.Assert(MethodPrior(Name: "MM_34401A"));
-			Debug.Assert(MethodCustom(Name: "MSO_3014", Description: "Tektronix MSO-3014 Mixed-Signal Oscilloscopes.", CancelNotPassed: "false"));
+			Debug.Assert(MethodCustom(Name: "MSMU_34980A", Description: "Keysight 34980A Multifunction Switch/Measurement Units.", CancelNotPassed: "false"));
 			Debug.Assert(MethodNext(Name: "PS_E3634A"));
 			TestIndices.Method.Event = EVENTS.UNSET;
 			return String.Empty;
         }
         
         internal static string PS_E3634A() {
-			Debug.Assert(MethodPrior(Name: "MSO_3014"));
+			Debug.Assert(MethodPrior(Name: "MSMU_34980A"));
 			Debug.Assert(MethodCustom(Name: "PS_E3634A", Description: "Keysight E3634A Power Supplies.", CancelNotPassed: "false"));
 			Debug.Assert(MethodNext(Name: "PS_E3649A"));
 			TestIndices.Method.Event = EVENTS.UNSET;
@@ -50,14 +42,22 @@ namespace ABT.Test.TestPlans.Diagnostics.TestOperations.SCPI_VISA_Instruments {
         internal static string PS_E3649A() {
 			Debug.Assert(MethodPrior(Name: "PS_E3634A"));
 			Debug.Assert(MethodCustom(Name: "PS_E3649A", Description: "Keysight E3649A Power Supplies.", CancelNotPassed: "false"));
-			Debug.Assert(MethodNext(Name: "MSMU_34980A"));
+			Debug.Assert(MethodNext(Name: "MM_34401A"));
 			TestIndices.Method.Event = EVENTS.UNSET;
 			return String.Empty;
         }
         
-        internal static string MSMU_34980A() {
+        internal static string MM_34401A() {
 			Debug.Assert(MethodPrior(Name: "PS_E3649A"));
-			Debug.Assert(MethodCustom(Name: "MSMU_34980A", Description: "Keysight 34980A Multifunction Switch/Measurement Units.", CancelNotPassed: "false"));
+			Debug.Assert(MethodCustom(Name: "MM_34401A", Description: "Keysight 34401A Digital Multi-Meters.", CancelNotPassed: "false"));
+			Debug.Assert(MethodNext(Name: "MSO_3014"));
+			TestIndices.Method.Event = EVENTS.UNSET;
+			return String.Empty;
+        }
+        
+        internal static string MSO_3014() {
+			Debug.Assert(MethodPrior(Name: "MM_34401A"));
+			Debug.Assert(MethodCustom(Name: "MSO_3014", Description: "Tektronix MSO-3014 Mixed-Signal Oscilloscopes.", CancelNotPassed: "false"));
 			Debug.Assert(MethodNext(Name: NONE));
 			TestIndices.Method.Event = EVENTS.UNSET;
 			return String.Empty;
@@ -73,28 +73,21 @@ namespace ABT.Test.TestPlans.Diagnostics.TestOperations.Miscellaneous {
     using static ABT.Test.TestLib.TestConfiguration.Assertions;
     
     
-    internal class MoreMethodsNew {
+    internal class MoreMethodsOther {
         
-        internal static string MoreMM_34401A() {
-			if (Data.testSequence.IsOperation) Debug.Assert(TestOperation(NamespaceTrunk: "Miscellaneous", ProductionTest: "false", Description: "Miscellaneous items, including instruments that aren\'t both SCPI & VISA instruments.", TestGroups: "MoreMethods"));
+        internal static string MoreMSMU_34980A() {
+			if (Data.testSequence.IsOperation) Debug.Assert(TestOperation(NamespaceTrunk: "Miscellaneous", ProductionTest: "true", Description: "Miscellaneous items, including instruments that aren\'t both SCPI & VISA instruments.", TestGroups: "MoreMethods"));
 			Debug.Assert(TestGroupPrior(Classname: NONE));
-			Debug.Assert(TestGroup(Classname: "MoreMethods", Description: "Diagnostics.", CancelNotPassed: "false", Independent: "true", Methods: "MoreMM_34401A|MoreMSO_3014|MorePS_E3634A|MorePS_E3649A|MoreMSMU_34980A"));
+			Debug.Assert(TestGroup(Classname: "MoreMethods", Description: "Diagnostics.", CancelNotPassed: "false", Independent: "true", Methods: "MoreMSMU_34980A|MorePS_E3634A|MorePS_E3649A|MoreMM_34401A|MoreMSO_3014"));
 			Debug.Assert(TestGroupNext(Classname: NONE));
 			Debug.Assert(MethodPrior(Name: NONE));
-			Debug.Assert(MethodProcess(Name: "MoreMM_34401A", Description: "Keysight 34401A Digital Multi-Meters.", CancelNotPassed: "false", Folder: "C:\\Test", File: "Temp.exe", Parameters: "", Expected: "0"));
-			Debug.Assert(MethodNext(Name: "MoreMSO_3014"));
-			return "-1";
-        }
-        
-        internal static string MoreMSO_3014() {
-			Debug.Assert(MethodPrior(Name: "MoreMM_34401A"));
-			Debug.Assert(MethodTextual(Name: "MoreMSO_3014", Description: "Tektronix MSO-3014 Mixed-Signal Oscilloscopes.", CancelNotPassed: "false", Text: "Hi There!"));
+			Debug.Assert(MethodInterval(Name: "MoreMSMU_34980A", Description: "Keysight 34980A Multifunction Switch/Measurement Units.", CancelNotPassed: "false", LowComparator: "GToE", Low: "5", High: "10", HighComparator: "LT", FractionalDigits: "2", UnitPrefix: "NONE", Units: "NONE", UnitSuffix: "NONE"));
 			Debug.Assert(MethodNext(Name: "MorePS_E3634A"));
-			return String.Empty;
+			return Double.NaN.ToString();
         }
         
         internal static string MorePS_E3634A() {
-			Debug.Assert(MethodPrior(Name: "MoreMSO_3014"));
+			Debug.Assert(MethodPrior(Name: "MoreMSMU_34980A"));
 			Debug.Assert(MethodCustom(Name: "MorePS_E3634A", Description: "Keysight E3634A Power Supplies.", CancelNotPassed: "false"));
 			Debug.Assert(MethodNext(Name: "MorePS_E3649A"));
 			TestIndices.Method.Event = EVENTS.UNSET;
@@ -104,16 +97,23 @@ namespace ABT.Test.TestPlans.Diagnostics.TestOperations.Miscellaneous {
         internal static string MorePS_E3649A() {
 			Debug.Assert(MethodPrior(Name: "MorePS_E3634A"));
 			Debug.Assert(MethodCustom(Name: "MorePS_E3649A", Description: "Keysight E3649A Power Supplies.", CancelNotPassed: "false", Parameters: "Key1=Value1|Key2=Value2|Key3=Value3"));
-			Debug.Assert(MethodNext(Name: "MoreMSMU_34980A"));
+			Debug.Assert(MethodNext(Name: "MoreMM_34401A"));
 			TestIndices.Method.Event = EVENTS.UNSET;
 			return String.Empty;
         }
         
-        internal static string MoreMSMU_34980A() {
+        internal static string MoreMM_34401A() {
 			Debug.Assert(MethodPrior(Name: "MorePS_E3649A"));
-			Debug.Assert(MethodInterval(Name: "MoreMSMU_34980A", Description: "Keysight 34980A Multifunction Switch/Measurement Units.", CancelNotPassed: "false", LowComparator: "GToE", Low: "5", High: "10", HighComparator: "LT", FractionalDigits: "2", UnitPrefix: "NONE", Units: "NONE", UnitSuffix: "NONE"));
+			Debug.Assert(MethodProcess(Name: "MoreMM_34401A", Description: "Keysight 34401A Digital Multi-Meters.", CancelNotPassed: "false", Folder: "C:\\Test", File: "Temp.exe", Parameters: "", Expected: "0"));
+			Debug.Assert(MethodNext(Name: "MoreMSO_3014"));
+			return "-1";
+        }
+        
+        internal static string MoreMSO_3014() {
+			Debug.Assert(MethodPrior(Name: "MoreMM_34401A"));
+			Debug.Assert(MethodTextual(Name: "MoreMSO_3014", Description: "Tektronix MSO-3014 Mixed-Signal Oscilloscopes.", CancelNotPassed: "false", Text: "Hi There!"));
 			Debug.Assert(MethodNext(Name: NONE));
-			return Double.NaN.ToString();
+			return String.Empty;
         }
     }
 }

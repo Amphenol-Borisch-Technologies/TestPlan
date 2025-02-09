@@ -17,7 +17,7 @@
         public static Dictionary<String, Object> InstrumentDriversSystem = GetInstrumentDriversSystemDefinition();
 
         internal static String MSMU_34980A() {
-			if (Data.testSequence.IsOperation) Debug.Assert(TestOperation(NamespaceTrunk: "SCPI_VISA_Instruments", ProductionTest: "False", Description: "Diagnostics of instruments exclusively defined in configuration file SystemDefinition.xml.", TestGroups: "TestMethods"));
+			if (Data.testSequence.IsOperation) Debug.Assert(TestOperation(NamespaceTrunk: "SCPI_VISA_Instruments", ProductionTest: "true", Description: "Diagnostics of instruments exclusively defined in configuration file SystemDefinition.xml.", TestGroups: "TestMethods"));
 			Debug.Assert(TestGroupPrior(Classname: NONE));
 			Debug.Assert(TestGroup(Classname: "TestMethods", Description: "Comprised of manufacturer provided instrument self-tests + optional ABT diagnostics.", CancelNotPassed: "false", Independent: "true", Methods: "MSMU_34980A|PS_E3634A|PS_E3649A|MM_34401A|MSO_3014"));
 			Debug.Assert(TestGroupNext(Classname: NONE));
@@ -98,7 +98,7 @@ namespace ABT.Test.TestPlans.Diagnostics.TestOperations.Miscellaneous {
     internal class MoreMethods {
         
         internal static String MoreMSMU_34980A() {
-			if (Data.testSequence.IsOperation) Debug.Assert(TestOperation(NamespaceTrunk: "Miscellaneous", ProductionTest: "False", Description: "Miscellaneous items, including instruments that aren\'t both SCPI & VISA instruments.", TestGroups: "MoreMethods"));
+			if (Data.testSequence.IsOperation) Debug.Assert(TestOperation(NamespaceTrunk: "Miscellaneous", ProductionTest: "true", Description: "Miscellaneous items, including instruments that aren\'t both SCPI & VISA instruments.", TestGroups: "MoreMethods"));
 			Debug.Assert(TestGroupPrior(Classname: NONE));
 			Debug.Assert(TestGroup(Classname: "MoreMethods", Description: "Diagnostics.", CancelNotPassed: "false", Independent: "true", Methods: "MoreMSMU_34980A|MorePS_E3634A|MorePS_E3649A|MoreMM_34401A|MoreMSO_3014"));
 			Debug.Assert(TestGroupNext(Classname: NONE));
