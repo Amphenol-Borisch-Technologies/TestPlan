@@ -186,7 +186,7 @@
               "RelativeDocumentMoniker": "..\\..\\TestChooser\\TestChooser.cs",
               "ToolTip": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestChooser\\TestChooser.cs",
               "RelativeToolTip": "..\\..\\TestChooser\\TestChooser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAYwBYAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACQAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-12T20:46:27.938Z",
               "EditorCaption": ""
@@ -199,9 +199,10 @@
               "RelativeDocumentMoniker": "..\\..\\TestExec\\TestExec.cs",
               "ToolTip": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestExec\\TestExec.cs",
               "RelativeToolTip": "..\\..\\TestExec\\TestExec.cs",
-              "ViewState": "AgIAAKIAAAAAAAAAAAAIwOsBAABLAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAIwJgAAABmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T20:40:16.019Z"
+              "WhenOpened": "2025-02-12T20:40:16.019Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -213,7 +214,8 @@
               "RelativeToolTip": "Diagnostics.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T20:39:17.796Z"
+              "WhenOpened": "2025-02-12T20:39:17.796Z",
+              "EditorCaption": ""
             }
           ]
         }
