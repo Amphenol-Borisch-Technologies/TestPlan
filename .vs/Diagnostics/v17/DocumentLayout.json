@@ -22,7 +22,7 @@
       "RelativeMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|solutionrelative:testdefinition.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|c:\\users\\phils\\source\\repos\\abt\\test\\testplans\\diagnostics\\diagnostics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\diagnostics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|solutionrelative:diagnostics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -36,34 +36,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 108,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 40,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Logger.cs",
-              "DocumentMoniker": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestExec\\Logging\\Logger.cs",
-              "RelativeDocumentMoniker": "..\\..\\TestExec\\Logging\\Logger.cs",
-              "ToolTip": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestExec\\Logging\\Logger.cs",
-              "RelativeToolTip": "..\\..\\TestExec\\Logging\\Logger.cs",
-              "ViewState": "AgIAAJgAAAAAAAAAAAAAALIAAABSAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T15:36:28.813Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TestSelect.cs",
-              "DocumentMoniker": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestLib\\TestConfiguration\\TestSelect.cs",
-              "RelativeDocumentMoniker": "..\\..\\TestLib\\TestConfiguration\\TestSelect.cs",
-              "ToolTip": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestLib\\TestConfiguration\\TestSelect.cs",
-              "RelativeToolTip": "..\\..\\TestLib\\TestConfiguration\\TestSelect.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAswEcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T15:34:53.753Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -222,6 +196,31 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Logger.cs",
+              "DocumentMoniker": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestExec\\Logging\\Logger.cs",
+              "RelativeDocumentMoniker": "..\\..\\TestExec\\Logging\\Logger.cs",
+              "ToolTip": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestExec\\Logging\\Logger.cs",
+              "RelativeToolTip": "..\\..\\TestExec\\Logging\\Logger.cs",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAAALIAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T15:36:28.813Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TestSelect.cs",
+              "DocumentMoniker": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestLib\\TestConfiguration\\TestSelect.cs",
+              "RelativeDocumentMoniker": "..\\..\\TestLib\\TestConfiguration\\TestSelect.cs",
+              "ToolTip": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestLib\\TestConfiguration\\TestSelect.cs",
+              "RelativeToolTip": "..\\..\\TestLib\\TestConfiguration\\TestSelect.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAswEcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T15:34:53.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "TestDefinition.xsd",
               "DocumentMoniker": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestLib\\TestConfiguration\\TestDefinition.xsd",
@@ -230,8 +229,7 @@
               "RelativeToolTip": "..\\..\\TestLib\\TestConfiguration\\TestDefinition.xsd",
               "ViewState": "AgIAAKsEAAAAAAAAAIAwwEUFAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
-              "WhenOpened": "2025-02-18T15:14:17.609Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-18T15:14:17.609Z"
             },
             {
               "$type": "Document",
@@ -243,8 +241,7 @@
               "RelativeToolTip": "..\\..\\TestLib\\TestConfiguration\\TestDefinition.cs",
               "ViewState": "AgIAAC8CAAAAAAAAAAAWwEACAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T13:32:27.902Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-18T13:32:27.902Z"
             },
             {
               "$type": "Document",
@@ -256,8 +253,7 @@
               "RelativeToolTip": "..\\..\\TestExec\\TestExec.cs",
               "ViewState": "AgIAAFECAAAAAAAAAAAswGwCAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T13:45:14.319Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T13:45:14.319Z"
             },
             {
               "$type": "Document",
@@ -281,8 +277,7 @@
               "RelativeToolTip": "Diagnostics.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAGwAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T16:50:21.43Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-13T16:50:21.43Z"
             }
           ]
         },
