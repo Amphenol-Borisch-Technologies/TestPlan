@@ -3,6 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{24D5E99E-185C-4507-81F0-132D8CB8164E}|..\\..\\TestLib\\TestLib.csproj|c:\\users\\phils\\source\\repos\\abt\\test\\testlib\\testconfiguration\\testdefinition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24D5E99E-185C-4507-81F0-132D8CB8164E}|..\\..\\TestLib\\TestLib.csproj|c:\\users\\phils\\source\\repos\\abt\\test\\testlib\\instrumentdrivers\\oscilloscopes\\mso_3014_ivi_com.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\diagnostics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|solutionrelative:diagnostics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -175,6 +181,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "TestDefinition.cs",
+              "DocumentMoniker": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestLib\\TestConfiguration\\TestDefinition.cs",
+              "RelativeDocumentMoniker": "..\\..\\TestLib\\TestConfiguration\\TestDefinition.cs",
+              "ToolTip": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestLib\\TestConfiguration\\TestDefinition.cs",
+              "RelativeToolTip": "..\\..\\TestLib\\TestConfiguration\\TestDefinition.cs",
+              "ViewState": "AgIAAMUBAAAAAAAAAAAAAP8BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T17:46:23.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MSO_3014_IVI_COM.cs",
+              "DocumentMoniker": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestLib\\InstrumentDrivers\\Oscilloscopes\\MSO_3014_IVI_COM.cs",
+              "RelativeDocumentMoniker": "..\\..\\TestLib\\InstrumentDrivers\\Oscilloscopes\\MSO_3014_IVI_COM.cs",
+              "ToolTip": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestLib\\InstrumentDrivers\\Oscilloscopes\\MSO_3014_IVI_COM.cs",
+              "RelativeToolTip": "..\\..\\TestLib\\InstrumentDrivers\\Oscilloscopes\\MSO_3014_IVI_COM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T21:04:28.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Diagnostics.cs",
               "DocumentMoniker": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\Diagnostics.cs",
               "RelativeDocumentMoniker": "Diagnostics.cs",
@@ -182,8 +214,7 @@
               "RelativeToolTip": "Diagnostics.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAGEAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T16:50:21.43Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-13T16:50:21.43Z"
             }
           ]
         },
