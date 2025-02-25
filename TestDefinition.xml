@@ -54,7 +54,7 @@
     -->
     <Stationary ID="WG1_33120A" Alias="WG" />
   </Instruments>
-  <TestSpace NamespaceRoot="ABT.Test.TestPlans.Diagnostics.TestOperations" Description="System Diagnostics." Simulate="false">
+  <TestSpace NamespaceRoot="ABT.Test.TestPlans.Diagnostics.TestOperations" Description="System Diagnostics." Simulate="true">
     <TestOperation NamespaceTrunk="SCPI_VISA_Instruments" ProductionTest="true" Description="Diagnostics of instruments exclusively defined in configuration file SystemDefinition.xml.">
       <TestGroup Classname="TestMethods" Description="Comprised of manufacturer provided instrument self-tests + optional ABT diagnostics." CancelNotPassed="false" Independent="true">
 <!--
