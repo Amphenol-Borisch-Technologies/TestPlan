@@ -2,8 +2,8 @@
 
 <TestDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                 xsi:noNamespaceSchemaLocation="file://C://Users//phils//source//repos//ABT//Test//TestLib//TestConfiguration//TestDefinition.xsd"
-                Revision="1.0"
-                Date="2025-10-18" >
+                GUID="938a8efd-dbca-4245-b0ec-c3e3c4846c55"
+                Date="2025-02-18" >
   <UUT Number="12345-1" Description="Power Supply" Revision="D" Category="CircuitCard">
     <Customer Name="Amphenol Corporation" Division="Amphenol Borisch Technologies" Location="Grand Rapids" />
     <TestSpecification Document="54321-1" Revision="B" Title="Test Specification, 12345-1 Power Supply CCA" Date="2023-12-13" />
