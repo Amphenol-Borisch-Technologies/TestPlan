@@ -2,7 +2,6 @@
 
 <TestDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                 xsi:noNamespaceSchemaLocation="file://C://Users//phils//source//repos//ABT//Test//TestLib//TestConfiguration//TestDefinition.xsd"
-                GUID="938a8efd-dbca-4245-b0ec-c3e3c4846c55"
                 Date="2025-02-18" >
   <UUT Number="12345-1" Description="Power Supply" Revision="D" Category="CircuitCard">
     <Customer Name="Amphenol Corporation" Division="Amphenol Borisch Technologies" Location="Grand Rapids" />
