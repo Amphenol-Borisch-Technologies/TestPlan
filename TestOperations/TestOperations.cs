@@ -3,13 +3,18 @@
     using System.Collections.Generic;
     using System.Diagnostics;
     using System.Linq;
+    using System.Windows.Forms;
     using ABT.Test.TestLib;
+    using ABT.Test.TestLib.InstrumentDrivers;
+    using ABT.Test.TestLib.InstrumentDrivers.Generic;
     using ABT.Test.TestLib.InstrumentDrivers.Interfaces;
     using ABT.Test.TestLib.InstrumentDrivers.Multifunction;
     using ABT.Test.TestLib.InstrumentDrivers.MultiMeters;
     using ABT.Test.TestLib.InstrumentDrivers.Oscilloscopes;
     using ABT.Test.TestLib.InstrumentDrivers.PowerSupplies;
     using ABT.Test.TestLib.TestConfiguration;
+    using ABT.Test.TestPlans.Diagnostics.InstrumentsDrivers;
+    using Agilent.CommandExpert.ScpiNet.AgSCPI99_1_0;
     using static ABT.Test.TestLib.Data;
     using static ABT.Test.TestLib.TestConfiguration.Assertions;
 
@@ -64,6 +69,21 @@
 			Debug.Assert(MethodNext(Name: NONE));
 
             TestIndices.Method.Event =  DiagnosticsT<MSO_3014_IVI_COM>();
+            return TestIndices.Method.LogFetchAndClear();
+        }
+
+        internal static String WG1_33120A() {
+			if (Data.testSequence.IsOperation) Debug.Assert(TestOperation(NamespaceTrunk: "SCPI_VISA_Instruments", ProductionTest: "true", Description: "Diagnostics of instruments exclusively defined in configuration file SystemDefinition.xml.", TestGroups: "TestMethods"));
+			Debug.Assert(TestGroupPrior(Classname: NONE));
+			Debug.Assert(TestGroup(Classname: "TestMethods", Description: "Comprised of manufacturer provided instrument self-tests + optional ABT diagnostics.", CancelNotPassed: "false", Independent: "true", Methods: "WG1_33120A"));
+			Debug.Assert(TestGroupNext(Classname: NONE));
+			Debug.Assert(MethodPrior(Name: NONE));
+			Debug.Assert(MethodCustom(Name: "WG1_33120A", Description: "Keysight 33120A 15MHz Function/Arbitray Waveform Generator", CancelNotPassed: "false"));
+			Debug.Assert(MethodNext(Name: NONE));
+
+            TestIndices.Method.Event =  DiagnosticsT<SCPI_NET>();
+            ID.WG.Transport.Command.Invoke("APPLy:SQUare 10E+6, 5.0, -2.5");
+            _ = MessageBox.Show("Press OK to continue.", "Waveform Generator", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
             return TestIndices.Method.LogFetchAndClear();
         }
 
