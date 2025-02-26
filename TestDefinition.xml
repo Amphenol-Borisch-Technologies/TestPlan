@@ -20,7 +20,10 @@
     <Modification Who="Ringo" What="Improved algorithm." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method4" Why="Good design is essential!" />
   </Modifications>
   <TestData>
+    <!--
     <XML Folder="P:\Test\TDR\Diagnostics" SerialNumberEntry="Keyboard" SerialNumberRegEx="01BB2-[0-9]{5}" SerialNumberFormat="'01BB2-XXXXX' where X is any digit in range [0,9].&#xA;Examples:  '01BB2-12345' ε '01BB2-00001'." />
+    -->
+    <SQL ConnectionString="Server=ABT002780\SQLEXPRESS;Database=TestData;Integrated Security=true;" SerialNumberEntry="Keyboard" SerialNumberRegEx="01BB2-[0-9]{5}" SerialNumberFormat="'01BB2-XXXXX' where X is any digit in range [0,9].&#xA;Examples:  '01BB2-12345' ε '01BB2-00001'." />
     <!--
         SerialNumberRegEx="[0-9]{4}" accepts only Serial Numbers of form "XXXX" where X is any digit in range [0,9].
           - Valid:   "1234", "0246" & "1357".
