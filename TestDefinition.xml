@@ -18,34 +18,30 @@
     <Modification Who="Paul" What="Improved field, property, method and class names." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method3" Why="Meaningful names are invaluable!" />
     <Modification Who="Ringo" What="Improved algorithm." When="2025-04-03" Where="ABT.Test.Diagnostics.SCPI_VISA_Instruments.Method4" Why="Good design is essential!" />
   </Modifications>
-  <TestData>
-    <!--
-    <XML Folder="P:\Test\TDR\Diagnostics" SerialNumberEntry="Keyboard" SerialNumberRegEx="01BB2-[0-9]{5}" SerialNumberFormat="'01BB2-XXXXX' where X is any digit in range [0,9].&#xA;Examples:  '01BB2-12345' ε '01BB2-00001'." />
-    -->
-    <SQL ConnectionString="Server=ABT002780\SQLEXPRESS;Database=TestData;Integrated Security=true;" SerialNumberEntry="Keyboard" SerialNumberRegEx="01BB2-[0-9]{5}" SerialNumberFormat="'01BB2-XXXXX' where X is any digit in range [0,9].&#xA;Examples:  '01BB2-12345' ε '01BB2-00001'." />
-    <!--
-        SerialNumberRegEx="[0-9]{4}" accepts only Serial Numbers of form "XXXX" where X is any digit in range [0,9].
+  <SerialNumber Entry="Keyboard" RegularEx="01BB2-[0-9]{5}" Format="'01BB2-XXXXX' where X is any digit in range [0,9].&#xA;Examples:  '01BB2-12345' ε '01BB2-00001'." />
+  <!--
+        RegularEx="[0-9]{4}" accepts only Serial Numbers of form "XXXX" where X is any digit in range [0,9].
           - Valid:   "1234", "0246" & "1357".
           - Invalid: "123"; "123" doesn't have 4 digits.
           - Invalid: "12345"; "12345" doesn't have 4 digits.
           - Invalid: "O234"; "O" ≠ "0".
 
-        SerialNumberRegEx="[0-9]{5}" accepts only Serial Numbers of form "XXXXX" where X is any digit in range [0,9].
+        RegularEx="[0-9]{5}" accepts only Serial Numbers of form "XXXXX" where X is any digit in range [0,9].
         
-        SerialNumberRegEx="01BB2-[0-9]{5}" accepts only Serial Numbers of form "01BB2-XXXXX" where X is any digit in range [0,9].
+        RegularEx="01BB2-[0-9]{5}" accepts only Serial Numbers of form "01BB2-XXXXX" where X is any digit in range [0,9].
           - Valid:   "01BB2-12345".
           - Invalid: "01BB212345"; missing "-"
           - Invalid: "BRH-12345"; "BRH" ≠ "01BB2".
           
-        SerialNumberRegEx= "BRH[0-9]{2}((0[1-9])|([1-4][0-9])|(5[0-2]))-[0-9]{3}" accepts only Serial Numbers of form "BRHYYWW-XXX where YY is a 2-digit year, WW is a 2-digit week in range [01,52] and X is any digit in range [0,9].
+        RegularEx= "BRH[0-9]{2}((0[1-9])|([1-4][0-9])|(5[0-2]))-[0-9]{3}" accepts only Serial Numbers of form "BRHYYWW-XXX where YY is a 2-digit year, WW is a 2-digit week in range [01,52] and X is any digit in range [0,9].
           - Valid:   "BRH2449-123", representing Serial Number 123 in the 49th week of year 2024.
           - Invalid: "2449-123"; missing "BRH"
           - Invalid: "BRH-2449-123"; "BRH-" ≠ "BRH".
           - Invalid: "BRH2200-123"; week must be "01" to "52", not "00".
         
-        See https://regex101.com/ for help in creating & understanding RegExs.
+        See https://regex101.com/ for help in creating & understanding Regular Expressions.
     -->
-  </TestData>
+  
   <Instruments>
     <Mobile ID="MSO1_3014" Alias="MSO" Detail="Tektronix MSO3014 Mixed Signal Oscilloscope" Address="USB0::0x0699::0x0421::C021373::INSTR" NameSpacedClassName="ABT.Test.TestLib.InstrumentDrivers.Oscilloscopes.MSO_3014_IVI_COM" />
     <Stationary ID="MSMU1_34980A" Alias="MSMU" />
