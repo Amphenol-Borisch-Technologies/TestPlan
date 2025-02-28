@@ -12,11 +12,11 @@
     using ABT.Test.TestLib.InstrumentDrivers.MultiMeters;
     using ABT.Test.TestLib.InstrumentDrivers.Oscilloscopes;
     using ABT.Test.TestLib.InstrumentDrivers.PowerSupplies;
-    using ABT.Test.TestLib.TestConfiguration;
+    using ABT.Test.TestLib.Configuration;
     using ABT.Test.TestPlans.Diagnostics.InstrumentsDrivers;
     using Agilent.CommandExpert.ScpiNet.AgSCPI99_1_0;
     using static ABT.Test.TestLib.Data;
-    using static ABT.Test.TestLib.TestConfiguration.Assertions;
+    using static ABT.Test.TestLib.Configuration.Assertions;
 
     internal class TestMethods {
         public static Dictionary<String, Object> InstrumentDriversSystem = GetInstrumentDriversSystemDefinition();
@@ -111,9 +111,9 @@ namespace ABT.Test.TestPlans.Diagnostics.TestOperations.Miscellaneous {
     using System;
     using System.Diagnostics;
     using ABT.Test.TestLib;
-    using ABT.Test.TestLib.TestConfiguration;
+    using ABT.Test.TestLib.Configuration;
     using static ABT.Test.TestLib.Data;
-    using static ABT.Test.TestLib.TestConfiguration.Assertions;
+    using static ABT.Test.TestLib.Configuration.Assertions;
     
     internal class MoreMethods {
         

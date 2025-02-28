@@ -4,7 +4,7 @@ using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ABT.Test.TestLib.TestConfiguration;
+using ABT.Test.TestLib.Configuration;
 using Microsoft.Win32;
 
 // NOTE:  Recommend using Microsoft's Visual Studio Code to develop/debug TestExec based closed source/proprietary projects:
