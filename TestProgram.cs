@@ -12,9 +12,9 @@ namespace ABT.Test.TestPlans.Diagnostics.TestOperations.SCPI_VISA_Instruments {
     using System;
     using System.Diagnostics;
     using ABT.Test.TestLib;
-    using ABT.Test.TestLib.TestConfiguration;
+    using ABT.Test.TestLib.Configuration;
     using static ABT.Test.TestLib.Data;
-    using static ABT.Test.TestLib.TestConfiguration.Assertions;
+    using static ABT.Test.TestLib.Configuration.Assertions;
     
     
     internal class TestMethodsOther {
@@ -68,9 +68,9 @@ namespace ABT.Test.TestPlans.Diagnostics.TestOperations.Miscellaneous {
     using System;
     using System.Diagnostics;
     using ABT.Test.TestLib;
-    using ABT.Test.TestLib.TestConfiguration;
+    using ABT.Test.TestLib.Configuration;
     using static ABT.Test.TestLib.Data;
-    using static ABT.Test.TestLib.TestConfiguration.Assertions;
+    using static ABT.Test.TestLib.Configuration.Assertions;
     
     
     internal class MoreMethodsOther {
