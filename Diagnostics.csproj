@@ -143,7 +143,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Documentation\" />
-    <Folder Include="Firmware\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\Amphenol.ico">
