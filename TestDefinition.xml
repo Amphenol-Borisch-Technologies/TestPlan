@@ -59,7 +59,7 @@
         <MethodCustom Name="MM_34401A" Description="Keysight 34401A Digital Multi-Meters." CancelNotPassed="false"  />
         <MethodCustom Name="MSO_3014" Description="Tektronix MSO-3014 Mixed-Signal Oscilloscopes." CancelNotPassed="false" />
         <!--
-        <MethodCustom Name="WG1_33120A" Description="Keysight 33120A 15MHz Function/Arbitray Waveform Generator" CancelNotPassed="false" />
+        <MethodCustom Name="WG1_33120A" Description="Keysight 33120A 15MHz Function/Arbitrary Waveform Generator" CancelNotPassed="false" />
         -->
       </TestGroup>
     </TestOperation>
