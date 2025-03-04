@@ -41,7 +41,7 @@
                   Why="App.Config custom System.Configuration classes don't handle hierachical XML directly." />
     <Modification Who="Phillip Smelt" What="Converted TestExecDefinition access from XML reads to De-Serialized classes." When="2025-02-28" Where="TestExecDefinition.xsd, TestExecDefinition.xml &amp; TestExecDefinition.cs." Why="Consistency with TestPlanDefinition.*." />
   </Modifications>  
-  <Instruments>
+  <InstrumentsTestPlan>
     <Mobile ID="MSO1_3014" Alias="MSO" Detail="Tektronix MSO3014 Mixed Signal Oscilloscope" Address="USB0::0x0699::0x0421::C021373::INSTR" NameSpacedClassName="ABT.Test.TestLib.InstrumentDrivers.Oscilloscopes.MSO_3014_IVI_COM" />
     <Stationary ID="MSMU1_34980A" Alias="MSMU" />
     <Stationary ID="PS1ε2_E3649A" Alias="P12V_N12V" />
@@ -49,7 +49,7 @@
     <!--
     <Stationary ID="WG1_33120A" Alias="WG" />
     -->
-  </Instruments>
+  </InstrumentsTestPlan>
   <TestSpace NamespaceRoot="ABT.Test.TestPlans.Diagnostics.TestOperations" Description="System Diagnostics." Simulate="true">
     <TestOperation NamespaceTrunk="SCPI_VISA_Instruments" ProductionTest="true" Description="Diagnostics of instruments exclusively defined in configuration file TestExecDefinition.xml.">
       <TestGroup Classname="TestMethods" Description="Comprised of manufacturer provided instrument self-tests + optional ABT diagnostics." CancelNotPassed="false" Independent="true">
