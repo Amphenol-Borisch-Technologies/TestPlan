@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
-<TestDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                xsi:noNamespaceSchemaLocation="file://C://Users//phils//source//repos//ABT//Test//TestLib//Configuration//TestDefinition.xsd" >
+<TestPlanDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:noNamespaceSchemaLocation="file://C://Users//phils//source//repos//ABT//Test//TestLib//Configuration//TestPlanDefinition.xsd" >
   <UUT Number="Diagnostics" Description="Diagnostics of TestExec Functional Test System." Revision="-" Category="System">
     <Customer Name="Amphenol Corporation" Division="Amphenol Borisch Technologies" Location="Grand Rapids" />
     <TestSpecification Document="None" Revision="None" Title="None" Date="2025-04-01" />
@@ -37,9 +37,9 @@
   </Development>
   <Modifications>
     <Modification Who="Phillip Smelt" What="Adapted prior TestExecutive &amp; TestExecutor into TestExec, TestLib &amp; TestPlan." When="2024-10-01" Where="Most Namespaces &amp; files updated." Why="Many major improvements." />
-    <Modification Who="Phillip Smelt" What="Replaced App.Config with TestDefinition.xsd, TestDefinition.xml &amp; TestDefinition.cs." When="2024-12-28" Where="ABT.Test.TestLib.Configuration &amp; ABT.Test.Test.Testplans" 
+    <Modification Who="Phillip Smelt" What="Replaced App.Config with TestPlanDefinition.xsd, TestPlanDefinition.xml &amp; TestPlanDefinition.cs." When="2024-12-28" Where="ABT.Test.TestLib.Configuration &amp; ABT.Test.Test.Testplans" 
                   Why="App.Config custom System.Configuration classes don't handle hierachical XML directly." />
-    <Modification Who="Phillip Smelt" What="Converted SystemDefinition access from XML reads to De-Serialized classes." When="2025-02-28" Where="SystemDefinition.xsd, SystemDefinition.xml &amp; SystemDefinition.cs." Why="Consistency with TestDefinition.*." />
+    <Modification Who="Phillip Smelt" What="Converted TestExecDefinition access from XML reads to De-Serialized classes." When="2025-02-28" Where="TestExecDefinition.xsd, TestExecDefinition.xml &amp; TestExecDefinition.cs." Why="Consistency with TestPlanDefinition.*." />
   </Modifications>  
   <Instruments>
     <Mobile ID="MSO1_3014" Alias="MSO" Detail="Tektronix MSO3014 Mixed Signal Oscilloscope" Address="USB0::0x0699::0x0421::C021373::INSTR" NameSpacedClassName="ABT.Test.TestLib.InstrumentDrivers.Oscilloscopes.MSO_3014_IVI_COM" />
@@ -51,7 +51,7 @@
     -->
   </Instruments>
   <TestSpace NamespaceRoot="ABT.Test.TestPlans.Diagnostics.TestOperations" Description="System Diagnostics." Simulate="true">
-    <TestOperation NamespaceTrunk="SCPI_VISA_Instruments" ProductionTest="true" Description="Diagnostics of instruments exclusively defined in configuration file SystemDefinition.xml.">
+    <TestOperation NamespaceTrunk="SCPI_VISA_Instruments" ProductionTest="true" Description="Diagnostics of instruments exclusively defined in configuration file TestExecDefinition.xml.">
       <TestGroup Classname="TestMethods" Description="Comprised of manufacturer provided instrument self-tests + optional ABT diagnostics." CancelNotPassed="false" Independent="true">
         <MethodCustom Name="MSMU_34980A" Description="Keysight 34980A Multifunction Switch/Measurement Units." CancelNotPassed="false" />
         <MethodCustom Name="PS_E3634A" Description="Keysight E3634A Power Supplies." CancelNotPassed="false" />
@@ -77,4 +77,4 @@
       </TestGroup>
     </TestOperation>
   </TestSpace>
-</TestDefinition>
+</TestPlanDefinition>

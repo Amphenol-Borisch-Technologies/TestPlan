@@ -148,7 +148,7 @@
     <Content Include="Resources\Amphenol.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="TestDefinition.xml" />
+    <Content Include="TestPlanDefinition.xml" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft-WindowsAPICodePack-ShellExtensions" Version="1.1.5" />

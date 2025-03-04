@@ -19,10 +19,10 @@
     using static ABT.Test.TestLib.Configuration.Assertions;
 
     internal class TestMethods {
-        public static Dictionary<String, Object> InstrumentDriversSystem = GetInstrumentDriversSystemDefinition();
+        public static Dictionary<String, Object> InstrumentDriversSystem = GetInstrumentDriversTestExecDefinition();
 
         internal static String MSMU_34980A() {
-			if (Data.testSequence.IsOperation) Debug.Assert(TestOperation(NamespaceTrunk: "SCPI_VISA_Instruments", ProductionTest: "true", Description: "Diagnostics of instruments exclusively defined in configuration file SystemDefinition.xml.", TestGroups: "TestMethods"));
+			if (Data.testSequence.IsOperation) Debug.Assert(TestOperation(NamespaceTrunk: "SCPI_VISA_Instruments", ProductionTest: "true", Description: "Diagnostics of instruments exclusively defined in configuration file TestExecDefinition.xml.", TestGroups: "TestMethods"));
 			Debug.Assert(TestGroupPrior(Classname: NONE));
 			Debug.Assert(TestGroup(Classname: "TestMethods", Description: "Comprised of manufacturer provided instrument self-tests + optional ABT diagnostics.", CancelNotPassed: "false", Independent: "true", Methods: "MSMU_34980A|PS_E3634A|PS_E3649A|MM_34401A|MSO_3014"));
 			Debug.Assert(TestGroupNext(Classname: NONE));
@@ -73,7 +73,7 @@
         }
 
         internal static String WG1_33120A() {
-			if (Data.testSequence.IsOperation) Debug.Assert(TestOperation(NamespaceTrunk: "SCPI_VISA_Instruments", ProductionTest: "true", Description: "Diagnostics of instruments exclusively defined in configuration file SystemDefinition.xml.", TestGroups: "TestMethods"));
+			if (Data.testSequence.IsOperation) Debug.Assert(TestOperation(NamespaceTrunk: "SCPI_VISA_Instruments", ProductionTest: "true", Description: "Diagnostics of instruments exclusively defined in configuration file TestExecDefinition.xml.", TestGroups: "TestMethods"));
 			Debug.Assert(TestGroupPrior(Classname: NONE));
 			Debug.Assert(TestGroup(Classname: "TestMethods", Description: "Comprised of manufacturer provided instrument self-tests + optional ABT diagnostics.", CancelNotPassed: "false", Independent: "true", Methods: "WG1_33120A"));
 			Debug.Assert(TestGroupNext(Classname: NONE));
@@ -90,7 +90,7 @@
         private static EVENTS DiagnosticsT<T>() where T : IDiagnostics {
             Dictionary<String, T> instrumentDriversT = InstrumentDriversSystem.Where(kvp => kvp.Value is T).ToDictionary(kvp => kvp.Key, kvp => (T)kvp.Value);
             if (instrumentDriversT.Count() == 0) {
-                TestIndices.Method.Log.AppendLine($"No instruments of type '{typeof(T).Name}' defined in '{SystemDefinitionXML}'.");
+                TestIndices.Method.Log.AppendLine($"No instruments of type '{typeof(T).Name}' defined in '{TestExecDefinitionXML}'.");
                 return EVENTS.INFORMATION;
             }
 

@@ -39,7 +39,7 @@ using Microsoft.Win32;
 ///  </para>
 
 /// <summary>
-/// NOTE:  Test Developer is responsible for ensuring Methods can be both safely & correctly called in sequence defined in TestDefinition.xml:
+/// NOTE:  Test Developer is responsible for ensuring Methods can be both safely & correctly called in sequence defined in TestPlanDefinition.xml:
 /// <para>
 ///        - That is, if Methods execute sequentially as (M1, M2, M3, M4, M5), Test Developer is responsible for ensuring all equipment is
 ///          configured safely & correctly between each Methods step.
@@ -76,15 +76,15 @@ using Microsoft.Win32;
 ///          - Permits immediate cancellation if specific condition(s) occur in a Method; perhaps to prevent UUT or equipment damage,
 ///            or simply because futher execution is pointless.
 ///          - Simply throw an OperationCanceledException if the specific condition(s) occcur.
-///      4)  TestDefinition.xml's CancelNotPassed:
-///          - TestDefinition.xml's Method element has a Boolean "CancelNotPassed" field:
+///      4)  TestPlanDefinition.xml's CancelNotPassed:
+///          - TestPlanDefinition.xml's Method element has a Boolean "CancelNotPassed" field:
 ///          - If the current Test.Run() has CancelNotPassed=true and it's resulting EvaluateEvent() doesn't return EVENTS.PASS,
 ///            TestExec.sRun() will break/exit, stopping further testing.
 ///		    - Do not pass Go, do not collect $200, go directly to TestExec.sPostRun().
 ///
 /// NOTE:  The Operator Proactive & TestExec Developer initiated cancellations both occur while the currently executing Test.Run() conpletes, via 
 ///        thrown OperationCanceledExceptions.
-/// NOTE:  The Operator Reactive & TestDefinition.xml's CancelNotPassed cancellations both occur after the currently executing Test.Run() completes, via checks
+/// NOTE:  The Operator Reactive & TestPlanDefinition.xml's CancelNotPassed cancellations both occur after the currently executing Test.Run() completes, via checks
 ///        inside the Exec.sRun() loop.
 /// </para>
 /// </summary>
@@ -141,10 +141,10 @@ namespace ABT.Test.TestPlans.Diagnostics {
         private void OnSessionEnding(Object sender, SessionEndingEventArgs e) { Application.Exit(); }
 
         protected override async Task<String> MethodRun(Method method) {
-            Type type = Type.GetType($"{TestLib.Data.testDefinition.TestSpace.NamespaceRoot}.{TestIndices.TestOperation.NamespaceTrunk}.{TestIndices.TestGroup.Classname}");
-            // NOTE:  Will only seek invocable methods in TestIndices.TestGroup.Classname that are defined as Method IDs in TestDefinition.xml & and are part of a Group.
+            Type type = Type.GetType($"{TestLib.Data.testPlanDefinition.TestSpace.NamespaceRoot}.{TestIndices.TestOperation.NamespaceTrunk}.{TestIndices.TestGroup.Classname}");
+            // NOTE:  Will only seek invocable methods in TestIndices.TestGroup.Classname that are defined as Method IDs in TestPlanDefinition.xml & and are part of a Group.
             MethodInfo methodInfo = type.GetMethod(method.Name, BindingFlags.Static | BindingFlags.NonPublic);
-            // NOTE:  Invocable methods in TestIndices.TestGroup.Classname, defined as Method Names in TestDefinition.xml, must have signatures identical to "internal static String MethodName()",
+            // NOTE:  Invocable methods in TestIndices.TestGroup.Classname, defined as Method Names in TestPlanDefinition.xml, must have signatures identical to "internal static String MethodName()",
             // or "private static String MethodName()", though the latter are discouraged for consistency.
             Object task = await Task.Run(() => methodInfo.Invoke(null, null));
             return (String)task;
