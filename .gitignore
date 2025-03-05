@@ -38,3 +38,8 @@ idea/
 *.tmp
 *.temp
 
+/bin/x64/Debug/Diagnostics.pdb
+/bin/x64/Debug/TestExec.pdb
+/bin/x64/Debug/TestLib.pdb
+/obj/x64/Debug/Diagnostics.csproj.AssemblyReference.cache
+/obj/x64/Debug/Diagnostics.pdb
