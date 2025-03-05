@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|c:\\users\\phils\\source\\repos\\abt\\test\\testplans\\diagnostics\\diagnostics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|solutionrelative:diagnostics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|c:\\users\\phils\\source\\repos\\abt\\test\\testplans\\diagnostics\\testmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|solutionrelative:testmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -183,12 +183,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Diagnostics.cs",
-              "DocumentMoniker": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\Diagnostics.cs",
-              "RelativeDocumentMoniker": "Diagnostics.cs",
-              "ToolTip": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\Diagnostics.cs",
-              "RelativeToolTip": "Diagnostics.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAG8AAAAAAAAAAAAAAA==",
+              "Title": "TestMain.cs",
+              "DocumentMoniker": "C:\\Users\\phils\\Source\\Repos\\ABT\\Test\\TestPlans\\Diagnostics\\TestMain.cs",
+              "RelativeDocumentMoniker": "TestMain.cs",
+              "ToolTip": "C:\\Users\\phils\\Source\\Repos\\ABT\\Test\\TestPlans\\Diagnostics\\TestMain.cs*",
+              "RelativeToolTip": "TestMain.cs*",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAAFsAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-28T19:22:31.972Z",
               "EditorCaption": ""

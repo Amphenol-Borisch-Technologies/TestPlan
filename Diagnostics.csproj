@@ -114,7 +114,7 @@
   <ItemGroup>
     <Compile Include="InstrumentDrivers\ID.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Diagnostics.cs" />
+    <Compile Include="TestMain.cs" />
     <Compile Include="TestOperations\TestOperations.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -126,8 +126,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Diagnostics.resx">
-      <DependentUpon>Diagnostics.cs</DependentUpon>
+    <EmbeddedResource Include="TestMain.resx">
+      <DependentUpon>TestMain.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
