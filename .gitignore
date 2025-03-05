@@ -1,5 +1,5 @@
 vs/
-/.vs
+/vs
 
 # Ignore compiled files
 *.dll
@@ -11,8 +11,8 @@ vs/
 # Ignore build directories
 bin/
 obj/
-/.bin
-/.obj
+/bin
+/obj
 
 # Ignore user-specific files
 *.user
@@ -43,3 +43,4 @@ idea/
 /bin/x64/Debug/TestLib.pdb
 /obj/x64/Debug/Diagnostics.csproj.AssemblyReference.cache
 /obj/x64/Debug/Diagnostics.pdb
+/.vs
