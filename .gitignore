@@ -1,9 +1,9 @@
-﻿################################################################################
+################################################################################
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
+/vs/
 .vs/
-/.vs/
 
 # Ignore compiled files
 *.dll
@@ -15,6 +15,8 @@
 # Ignore build directories
 /bin/
 /obj/
+.bin/
+.obj/
 
 # Ignore user-specific files
 *.user
@@ -26,6 +28,7 @@
 .vscode/
 
 # Ignore Rider files
+/idea/
 .idea/
 *.sln.iml
 
@@ -40,10 +43,3 @@
 *.tmp
 *.temp
 
-/.vs/Diagnostics/CopilotIndices/17.12.53.23981/CodeChunks.db-shm
-/.vs/Diagnostics/CopilotIndices/17.12.53.23981/CodeChunks.db-wal
-/.vs/Diagnostics/CopilotIndices/17.12.53.23981/SemanticSymbols.db-shm
-/.vs/Diagnostics/CopilotIndices/17.12.53.23981/SemanticSymbols.db-wal
-/.vs/Diagnostics/CopilotIndices/17.12.53.23981/CodeChunks.db-shm
-/.vs/Diagnostics/CopilotIndices/17.12.53.23981/CodeChunks.db-wal
-/.vs/Diagnostics/v17/DocumentLayout.json
