@@ -1,4 +1,4 @@
-﻿namespace ABT.Test.TestPlans.Diagnostics.TestOperations.SCPI_VISA_Instruments {
+﻿namespace ABT.Test.TestPlans.Diagnostics.TestPlan {
     using System;
     using System.Collections.Generic;
     using System.Diagnostics;
@@ -22,9 +22,9 @@
         public static Dictionary<String, Object> InstrumentDriversSystem = GetInstrumentDriversTestExecDefinition();
 
         internal static String MSMU_34980A() {
-			if (Data.testSequence.IsOperation) Debug.Assert(TestOperation(NamespaceTrunk: "SCPI_VISA_Instruments", ProductionTest: "true", Description: "Diagnostics of instruments exclusively defined in configuration file TestExecDefinition.xml.", TestGroups: "TestMethods"));
+			if (Data.testSequence.IsOperation) Debug.Assert(TestOperation(NamespaceTrunk: "TestPlan", ProductionTest: "true", Description: "Diagnostics of SCPI/VISA instruments defined in configuration file TestExecDefinition.xml.", TestGroups: "TestMethods"));
 			Debug.Assert(TestGroupPrior(Classname: NONE));
-			Debug.Assert(TestGroup(Classname: "TestMethods", Description: "Comprised of manufacturer provided instrument self-tests + optional ABT diagnostics.", CancelNotPassed: "false", Independent: "true", Methods: "MSMU_34980A|PS_E3634A|PS_E3649A|MM_34401A|MSO_3014"));
+			Debug.Assert(TestGroup(Classname: "TestMethods", Description: "Manufacturer provided instrument self-tests + optional ABT diagnostics.", CancelNotPassed: "false", Independent: "true", Methods: "MSMU_34980A|PS_E3634A|PS_E3649A|MM_34401A|MSO_3014"));
 			Debug.Assert(TestGroupNext(Classname: NONE));
 			Debug.Assert(MethodPrior(Name: NONE));
 			Debug.Assert(MethodCustom(Name: "MSMU_34980A", Description: "Keysight 34980A Multifunction Switch/Measurement Units.", CancelNotPassed: "false"));
@@ -73,12 +73,8 @@
         }
 
         internal static String WG1_33120A() {
-			if (Data.testSequence.IsOperation) Debug.Assert(TestOperation(NamespaceTrunk: "SCPI_VISA_Instruments", ProductionTest: "true", Description: "Diagnostics of instruments exclusively defined in configuration file TestExecDefinition.xml.", TestGroups: "TestMethods"));
-			Debug.Assert(TestGroupPrior(Classname: NONE));
-			Debug.Assert(TestGroup(Classname: "TestMethods", Description: "Comprised of manufacturer provided instrument self-tests + optional ABT diagnostics.", CancelNotPassed: "false", Independent: "true", Methods: "WG1_33120A"));
-			Debug.Assert(TestGroupNext(Classname: NONE));
-			Debug.Assert(MethodPrior(Name: NONE));
-			Debug.Assert(MethodCustom(Name: "WG1_33120A", Description: "Keysight 33120A 15MHz Function/Arbitray Waveform Generator", CancelNotPassed: "false"));
+			Debug.Assert(MethodPrior(Name: "MSO_3014"));
+			Debug.Assert(MethodCustom(Name: "WG1_33120A", Description: "Keysight 33120A 15MHz Function/Arbitrary Waveform Generator", CancelNotPassed: "false"));
 			Debug.Assert(MethodNext(Name: NONE));
 
             TestIndices.Method.Event =  DiagnosticsT<SCPI_NET>();
@@ -103,59 +99,6 @@
                 foreach (DiagnosticsResult dr in resultDiagnostics.Details) TestIndices.Method.Log.AppendLine($"{dr.Label}{dr.Message}, Result '{dr.Event}'.");
             }
             return passedCollective ? EVENTS.PASS : EVENTS.FAIL;
-        }
-    }
-}
-
-namespace ABT.Test.TestPlans.Diagnostics.TestOperations.Miscellaneous {
-    using System;
-    using System.Diagnostics;
-    using ABT.Test.TestLib;
-    using ABT.Test.TestLib.Configuration;
-    using static ABT.Test.TestLib.Data;
-    using static ABT.Test.TestLib.Configuration.Assertions;
-    
-    internal class MoreMethods {
-        
-        internal static String MoreMSMU_34980A() {
-			if (Data.testSequence.IsOperation) Debug.Assert(TestOperation(NamespaceTrunk: "Miscellaneous", ProductionTest: "true", Description: "Miscellaneous items, including instruments that aren\'t both SCPI & VISA instruments.", TestGroups: "MoreMethods"));
-			Debug.Assert(TestGroupPrior(Classname: NONE));
-			Debug.Assert(TestGroup(Classname: "MoreMethods", Description: "Diagnostics.", CancelNotPassed: "false", Independent: "true", Methods: "MoreMSMU_34980A|MorePS_E3634A|MorePS_E3649A|MoreMM_34401A|MoreMSO_3014"));
-			Debug.Assert(TestGroupNext(Classname: NONE));
-			Debug.Assert(MethodPrior(Name: NONE));
-			Debug.Assert(MethodInterval(Name: "MoreMSMU_34980A", Description: "Keysight 34980A Multifunction Switch/Measurement Units.", CancelNotPassed: "false", LowComparator: "GToE", Low: "5", High: "10", HighComparator: "LT", FractionalDigits: "2", UnitPrefix: "NONE", Units: "NONE", UnitSuffix: "NONE"));
-			Debug.Assert(MethodNext(Name: "MorePS_E3634A"));
-			return Double.NaN.ToString();
-        }
-        
-        internal static String MorePS_E3634A() {
-			Debug.Assert(MethodPrior(Name: "MoreMSMU_34980A"));
-			Debug.Assert(MethodCustom(Name: "MorePS_E3634A", Description: "Keysight E3634A Power Supplies.", CancelNotPassed: "false"));
-			Debug.Assert(MethodNext(Name: "MorePS_E3649A"));
-			TestIndices.Method.Event = EVENTS.UNSET;
-			return String.Empty;
-        }
-        
-        internal static String MorePS_E3649A() {
-			Debug.Assert(MethodPrior(Name: "MorePS_E3634A"));
-			Debug.Assert(MethodCustom(Name: "MorePS_E3649A", Description: "Keysight E3649A Power Supplies.", CancelNotPassed: "false", Parameters: "Key1=Value1|Key2=Value2|Key3=Value3"));
-			Debug.Assert(MethodNext(Name: "MoreMM_34401A"));
-			TestIndices.Method.Event = EVENTS.UNSET;
-			return String.Empty;
-        }
-        
-        internal static String MoreMM_34401A() {
-			Debug.Assert(MethodPrior(Name: "MorePS_E3649A"));
-			Debug.Assert(MethodProcess(Name: "MoreMM_34401A", Description: "Keysight 34401A Digital Multi-Meters.", CancelNotPassed: "false", Folder: "C:\\Test", File: "Temp.exe", Parameters: "", Expected: "0"));
-			Debug.Assert(MethodNext(Name: "MoreMSO_3014"));
-			return "-1";
-        }
-        
-        internal static String MoreMSO_3014() {
-			Debug.Assert(MethodPrior(Name: "MoreMM_34401A"));
-			Debug.Assert(MethodTextual(Name: "MoreMSO_3014", Description: "Tektronix MSO-3014 Mixed-Signal Oscilloscopes.", CancelNotPassed: "false", Text: "Hi There!"));
-			Debug.Assert(MethodNext(Name: NONE));
-			return String.Empty;
         }
     }
 }
