@@ -20,13 +20,13 @@
 
     internal class SwitchingUnits {
         internal static String MSMU_34980A() {
-			Debug.Assert(TestGroup(Classname: "SwitchingUnits", Description: "Keysight 34980As.", CancelNotPassed: "false", Independent: "true", Methods: "MSMU_34980A"));
-			Debug.Assert(MethodCustom(Name: "MSMU_34980A", Description: "Keysight 34980A Multifunction Switch/Measurement Units.", CancelNotPassed: "false"));
+            Debug.Assert(TestGroup(Classname: "SwitchingUnits", Description: "Keysight 34980As.", CancelNotPassed: "false", Independent: "true", Methods: "MSMU_34980A"));
+            Debug.Assert(MethodCustom(Name: "MSMU_34980A", Description: "Keysight 34980A Multifunction Switch/Measurement Units.", CancelNotPassed: "false"));
             Debug.Assert(TestGroupPrior(Classname: NONE));
             Debug.Assert(MethodPrior(Name: NONE));
             if (Data.testSequence.IsOperation) {
-                Debug.Assert(TestOperation(NamespaceTrunk: "InstrumentsTestPlan", ProductionTest: "true", Description: "Manufacturer\'s self-tests + ABT tests of TestPlanDefinition\'s InstrumentsTestPlan.", TestGroups: "SwitchingUnits|PowerSupplies|DigitalMultiMeters|Oscilloscopes|WaveformGenerators"));                Debug.Assert(TestGroupNext(Classname: "PowerSupplies"));
-			    Debug.Assert(TestGroupNext(Classname: "PowerSupplies"));
+                Debug.Assert(TestOperation(NamespaceTrunk: "InstrumentsTestPlan", ProductionTest: "true", Description: "Manufacturer\'s self-tests + ABT tests of TestPlanDefinition\'s InstrumentsTestPlan.", TestGroups: "SwitchingUnits|PowerSupplies|DigitalMultiMeters|Oscilloscopes|WaveformGenerators")); Debug.Assert(TestGroupNext(Classname: "PowerSupplies"));
+                Debug.Assert(TestGroupNext(Classname: "PowerSupplies"));
                 Debug.Assert(MethodNext(Name: "PS_E3634A"));
             } else {
                 Debug.Assert(TestGroupNext(Classname: NONE));
@@ -40,8 +40,8 @@
 
     internal class PowerSupplies {
         internal static String PS_E3634A() {
-			Debug.Assert(TestGroup(Classname: "PowerSupplies", Description: "Keysight E3634As & E3649As.", CancelNotPassed: "false", Independent: "true", Methods: "PS_E3634A|PS_E3649A"));
-			Debug.Assert(MethodCustom(Name: "PS_E3634A", Description: "Keysight E3634A Power Supplies.", CancelNotPassed: "false"));
+            Debug.Assert(TestGroup(Classname: "PowerSupplies", Description: "Keysight E3634As & E3649As.", CancelNotPassed: "false", Independent: "true", Methods: "PS_E3634A|PS_E3649A"));
+            Debug.Assert(MethodCustom(Name: "PS_E3634A", Description: "Keysight E3634A Power Supplies.", CancelNotPassed: "false"));
             Debug.Assert(MethodNext(Name: "PS_E3649A"));
             if (Data.testSequence.IsOperation) {
                 Debug.Assert(TestGroupPrior(Classname: "SwitchingUnits"));
@@ -59,7 +59,7 @@
         }
 
         internal static String PS_E3649A() {
-			Debug.Assert(MethodCustom(Name: "PS_E3649A", Description: "Keysight E3649A Power Supplies.", CancelNotPassed: "false"));
+            Debug.Assert(MethodCustom(Name: "PS_E3649A", Description: "Keysight E3649A Power Supplies.", CancelNotPassed: "false"));
             Debug.Assert(MethodPrior(Name: "PS_E3634A"));
             if (Data.testSequence.IsOperation) {
                 Debug.Assert(MethodNext(Name: "MM_34401A"));
@@ -74,8 +74,8 @@
 
     internal class DigitalMultiMeters {
         internal static String MM_34401A() {
-			Debug.Assert(TestGroup(Classname: "DigitalMultiMeters", Description: "Keysight 34401As.", CancelNotPassed: "false", Independent: "true", Methods: "MM_34401A"));
-			Debug.Assert(MethodCustom(Name: "MM_34401A", Description: "Keysight 34401A Digital Multi-Meters.", CancelNotPassed: "false"));
+            Debug.Assert(TestGroup(Classname: "DigitalMultiMeters", Description: "Keysight 34401As.", CancelNotPassed: "false", Independent: "true", Methods: "MM_34401A"));
+            Debug.Assert(MethodCustom(Name: "MM_34401A", Description: "Keysight 34401A Digital Multi-Meters.", CancelNotPassed: "false"));
             if (Data.testSequence.IsOperation) {
                 Debug.Assert(TestGroupPrior(Classname: "PowerSupplies"));
                 Debug.Assert(TestGroupNext(Classname: "Oscilloscopes"));
@@ -95,8 +95,8 @@
 
     internal class Oscilloscopes {
         internal static String MSO_3014() {
-			Debug.Assert(TestGroup(Classname: "Oscilloscopes", Description: "Tektronix MSO-3014s.", CancelNotPassed: "false", Independent: "true", Methods: "MSO_3014"));
-			Debug.Assert(MethodCustom(Name: "MSO_3014", Description: "Tektronix MSO-3014 Mixed-Signal Oscilloscopes.", CancelNotPassed: "false"));
+            Debug.Assert(TestGroup(Classname: "Oscilloscopes", Description: "Tektronix MSO-3014s.", CancelNotPassed: "false", Independent: "true", Methods: "MSO_3014"));
+            Debug.Assert(MethodCustom(Name: "MSO_3014", Description: "Tektronix MSO-3014 Mixed-Signal Oscilloscopes.", CancelNotPassed: "false"));
             if (Data.testSequence.IsOperation) {
                 Debug.Assert(TestGroupPrior(Classname: "DigitalMultiMeters"));
                 Debug.Assert(TestGroupNext(Classname: "WaveformGenerators"));
@@ -116,8 +116,8 @@
 
     internal class WaveformGenerators {
         internal static String WG1_33120A() {
-			Debug.Assert(TestGroup(Classname: "WaveformGenerators", Description: "Keysight 33120As.", CancelNotPassed: "false", Independent: "true", Methods: "WG1_33120A"));
-			Debug.Assert(MethodCustom(Name: "WG1_33120A", Description: "Keysight 33120A 15MHz Function/Arbitrary Waveform Generators.", CancelNotPassed: "false"));
+            Debug.Assert(TestGroup(Classname: "WaveformGenerators", Description: "Keysight 33120As.", CancelNotPassed: "false", Independent: "true", Methods: "WG1_33120A"));
+            Debug.Assert(MethodCustom(Name: "WG1_33120A", Description: "Keysight 33120A 15MHz Function/Arbitrary Waveform Generators.", CancelNotPassed: "false"));
             Debug.Assert(TestGroupNext(Classname: NONE));
             Debug.Assert(MethodNext(Name: NONE));
             if (Data.testSequence.IsOperation) {
@@ -129,8 +129,10 @@
             }
 
             TestIndices.Method.Event = DiagnosticsT<SCPI_NET>();
-            IA.WG.Transport.Command.Invoke("APPLy:SQUare 10E+6, 5.0, -2.5");
-            _ = MessageBox.Show("Press OK to continue.", "Waveform Generator", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+            if (TestIndices.Method.Event != EVENTS.INFORMATION) { // No SCPI_NET instruments defined in TestExecDefinition.xml.
+                IA.WG.Transport.Command.Invoke("APPLy:SQUare 10E+6, 5.0, -2.5");
+                _ = MessageBox.Show("Press OK to continue.", "Waveform Generator", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+            }
             return TestIndices.Method.LogFetchAndClear();
         }
     }
