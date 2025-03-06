@@ -89,7 +89,7 @@ using Microsoft.Win32;
 /// </para>
 /// </summary>
 namespace ABT.Test.TestPlans.Diagnostics {
-    internal class TestPlan {
+    internal class TestMain {
         [STAThread] static void Main() {
             TestLib.Data.MutexTest = new Mutex(true, TestLib.Data.MutexTestName, out Boolean onlyInstance);
             if (!onlyInstance) {
@@ -101,7 +101,7 @@ namespace ABT.Test.TestPlans.Diagnostics {
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            try { Application.Run(TestPlan.Only); }
+            try { Application.Run(TestEx.Only); }
             catch (Exception e) {
                 TestExec.TestExec.StatusTimer.Stop();
                 TestExec.TestExec.ErrorMessage(e.ToString());
@@ -110,20 +110,20 @@ namespace ABT.Test.TestPlans.Diagnostics {
         }
     }
 
-    internal sealed partial class TestPlan : TestExec.TestExec {
-        internal static TestPlan Only { get; } = new TestPlan ();
+    internal sealed partial class TestEx : TestExec.TestExec {
+        internal static TestEx Only { get; } = new TestEx ();
 
-        static TestPlan() { }
+        static TestEx() { }
         /// <summary>
         /// Singleton pattern requires explicit static constructor to tell C# compiler not to mark type as beforefieldinit.
         /// https://csharpindepth.com/articles/singleton
         /// <para>
-        ///  - Utilized Singleton for TestPlan class because there should only ever be 1 instance of TestPlan.
-        ///  - Also, TestPlan being a Singleton eliminates needing to pass it's instance to all TestPlan methods, most which don't require it, which generates annoying compiler warnings.
-        ///    - Realize both mayn't be optimal practices, and may refactor TestPlan to a non-Singleton class, and resume explicitly passing TestPlan object into methods.
+        ///  - Utilized Singleton for TestEx class because there should only ever be 1 instance of TestEx.
+        ///  - Also, TestEx being a Singleton eliminates needing to pass it's instance to all TestPlan methods, most which don't require it, which generates annoying compiler warnings.
+        ///    - Realize both mayn't be optimal practices, and may refactor TestEx to a non-Singleton class, and resume explicitly passing TestEx object into methods.
         /// </para>
         /// </summary>
-        private TestPlan() : base(new Icon(@"Resources\Amphenol.ico"), AppDomain.CurrentDomain.BaseDirectory.Remove(AppDomain.CurrentDomain.BaseDirectory.IndexOf(@"\bin\"))) {
+        private TestEx() : base(new Icon(@"Resources\Amphenol.ico"), AppDomain.CurrentDomain.BaseDirectory.Remove(AppDomain.CurrentDomain.BaseDirectory.IndexOf(@"\bin\"))) {
             // NOTE:  Change base constructor's Icon as applicable, depending on customer.
             // https://stackoverflow.com/questions/40933304/how-to-create-an-icon-for-visual-studio-with-just-mspaint-and-visual-studio
             // TODO:  Eventually; dynamically create custom TestExec menu items, allowing non-standard Apps & UUT menu choices.

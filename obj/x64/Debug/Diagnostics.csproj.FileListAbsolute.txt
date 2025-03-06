@@ -50,7 +50,6 @@ C:\Users\phils\source\repos\ABT\Test\TestPlans\Diagnostics\obj\x64\Debug\Diagnos
 C:\Users\phils\source\repos\ABT\Test\TestPlans\Diagnostics\obj\x64\Debug\Diagnostics.csproj.SuggestedBindingRedirects.cache
 C:\Users\phils\source\repos\ABT\Test\TestPlans\Diagnostics\obj\x64\Debug\Diagnostics.exe.config
 C:\Users\phils\source\repos\ABT\Test\TestPlans\Diagnostics\obj\x64\Debug\ABT.Test.TestPlans.Diagnostics.Properties.Resources.resources
-C:\Users\phils\source\repos\ABT\Test\TestPlans\Diagnostics\obj\x64\Debug\ABT.Test.TestPlans.Diagnostics.TestMain.resources
 C:\Users\phils\source\repos\ABT\Test\TestPlans\Diagnostics\obj\x64\Debug\Diagnostics.csproj.GenerateResource.cache
 C:\Users\phils\source\repos\ABT\Test\TestPlans\Diagnostics\obj\x64\Debug\Diagnostics.csproj.CoreCompileInputs.cache
 C:\Users\phils\source\repos\ABT\Test\TestPlans\Diagnostics\obj\x64\Debug\Diagnost.5C3B60D2.Up2Date
