@@ -48,22 +48,22 @@
     <Stationary ID="PS3_E3634A" Alias="P28V" />
     <Stationary ID="WG1_33120A" Alias="WG" />
   </InstrumentsTestPlan>
-  <TestSpace NamespaceRoot="ABT.Test.TestPlans.Diagnostics" Description="System Diagnostics." Simulate="true">
-    <TestOperation NamespaceTrunk="TestPlan" ProductionTest="true" Description="Diagnostics of SCPI instruments defined in configuration file TestExecDefinition.xml.">
-      <TestGroup Classname="SwitchingUnits" Description="Manufacturer provided SCPI instrument self-tests + ABT diagnostics." CancelNotPassed="false" Independent="true">
+  <TestSpace NamespaceRoot="ABT.Test.TestPlans.Diagnostics.TestPlan" Description="System Diagnostics." Simulate="true">
+    <TestOperation NamespaceTrunk="InstrumentsTestPlan" ProductionTest="true" Description="Manufacturer's self-tests + ABT tests of TestPlanDefinition's InstrumentsTestPlan.">
+      <TestGroup Classname="SwitchingUnits" Description="Keysight 34980As." CancelNotPassed="false" Independent="true">
         <MethodCustom Name="MSMU_34980A" Description="Keysight 34980A Multifunction Switch/Measurement Units." CancelNotPassed="false" />
       </TestGroup>
-      <TestGroup Classname="PowerSupplies" Description="Manufacturer provided SCPI instrument self-tests + ABT diagnostics." CancelNotPassed="false" Independent="true">
+      <TestGroup Classname="PowerSupplies" Description="Keysight E3634As &amp; E3649As." CancelNotPassed="false" Independent="true">
         <MethodCustom Name="PS_E3634A" Description="Keysight E3634A Power Supplies." CancelNotPassed="false" />
         <MethodCustom Name="PS_E3649A" Description="Keysight E3649A Power Supplies." CancelNotPassed="false" />
       </TestGroup>
-      <TestGroup Classname="DigitalMultiMeters" Description="Manufacturer provided SCPI instrument self-tests + ABT diagnostics." CancelNotPassed="false" Independent="true">
+      <TestGroup Classname="DigitalMultiMeters" Description="Keysight 34401As." CancelNotPassed="false" Independent="true">
         <MethodCustom Name="MM_34401A" Description="Keysight 34401A Digital Multi-Meters." CancelNotPassed="false"  />
       </TestGroup>
-      <TestGroup Classname="Oscilloscopes" Description="Manufacturer provided SCPI instrument self-tests + ABT diagnostics." CancelNotPassed="false" Independent="true">
+      <TestGroup Classname="Oscilloscopes" Description="Tektronix MSO-3014s." CancelNotPassed="false" Independent="true">
         <MethodCustom Name="MSO_3014" Description="Tektronix MSO-3014 Mixed-Signal Oscilloscopes." CancelNotPassed="false" />
       </TestGroup>
-      <TestGroup Classname="WaveformGenerators" Description="Manufacturer provided SCPI instrument self-tests + ABT diagnostics." CancelNotPassed="false" Independent="true">
+      <TestGroup Classname="WaveformGenerators" Description="Keysight 33120As." CancelNotPassed="false" Independent="true">
         <MethodCustom Name="WG1_33120A" Description="Keysight 33120A 15MHz Function/Arbitrary Waveform Generators." CancelNotPassed="false" />
       </TestGroup>
     </TestOperation>

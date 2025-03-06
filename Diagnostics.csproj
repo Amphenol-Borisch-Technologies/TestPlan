@@ -118,7 +118,7 @@
     <Compile Include="InstrumentDrivers\InstrumentAliases.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestMain.cs" />
-    <Compile Include="TestPlan\TestPlan.cs" />
+    <Compile Include="TestPlan\SCPI_VISA_Instruments.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

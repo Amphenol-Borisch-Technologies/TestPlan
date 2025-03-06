@@ -1,4 +1,4 @@
-﻿namespace ABT.Test.TestPlans.Diagnostics.TestPlan {
+﻿namespace ABT.Test.TestPlans.Diagnostics.TestPlan.InstrumentsTestPlan {
     using System;
     using System.Collections.Generic;
     using System.Diagnostics;
@@ -15,7 +15,7 @@
     using ABT.Test.TestLib.Configuration;
     using static ABT.Test.TestLib.Data;
     using static ABT.Test.TestLib.Configuration.Assertions;
-    using static ABT.Test.TestPlans.Diagnostics.TestPlan.TestMethods;
+    using static ABT.Test.TestPlans.Diagnostics.TestPlan.InstrumentsTestPlan.TestMethods;
 
 
     internal class SwitchingUnits {
@@ -24,7 +24,7 @@
             Debug.Assert(MethodCustom(Name: "MSMU_34980A", Description: "Keysight 34980A Multifunction Switch/Measurement Units.", CancelNotPassed: "false"));
             Debug.Assert(TestGroupPrior(Classname: NONE));
             if (Data.testSequence.IsOperation) {
-                Debug.Assert(TestOperation(NamespaceTrunk: "TestPlan", ProductionTest: "true", Description: "Diagnostics of SCPI instruments defined in configuration file TestExecDefinition.xml.", TestGroups: "SwitchingUnits|PowerSupplies|DigitalMultiMeters|Oscilloscopes|WaveformGenerators"));
+                Debug.Assert(TestOperation(NamespaceTrunk: "SCPI_VISA_Instruments", ProductionTest: "true", Description: "Diagnostics of SCPI instruments defined in configuration file TestExecDefinition.xml.", TestGroups: "SwitchingUnits|PowerSupplies|DigitalMultiMeters|Oscilloscopes|WaveformGenerators"));
                 Debug.Assert(TestGroupNext(Classname: "PowerSupplies"));
                 Debug.Assert(MethodPrior(Name: NONE));
                 Debug.Assert(MethodNext(Name: "PS_E3634A"));
