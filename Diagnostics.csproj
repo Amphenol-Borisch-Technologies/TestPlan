@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ABT.Test.TestPlans.Diagnostics.TestMain</StartupObject>
+    <StartupObject>ABT.Test.TestPlans.Diagnostics.TestPlan</StartupObject>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
     <DebugSymbols>true</DebugSymbols>
@@ -114,7 +114,9 @@
   <ItemGroup>
     <Compile Include="InstrumentDrivers\ID.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TestMain.cs" />
+    <Compile Include="TestPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TestOperations\TestOperations.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -126,8 +128,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="TestMain.resx">
-      <DependentUpon>TestMain.cs</DependentUpon>
+    <EmbeddedResource Include="TestPlan.resx">
+      <DependentUpon>TestPlan.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
