@@ -128,7 +128,7 @@
             }
 
             TestIndices.Method.Event = DiagnosticsT<SCPI_NET>();
-            ID.WG.Transport.Command.Invoke("APPLy:SQUare 10E+6, 5.0, -2.5");
+            IA.WG.Transport.Command.Invoke("APPLy:SQUare 10E+6, 5.0, -2.5");
             _ = MessageBox.Show("Press OK to continue.", "Waveform Generator", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
             return TestIndices.Method.LogFetchAndClear();
         }

@@ -112,7 +112,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="InstrumentDrivers\ID.cs" />
+    <Compile Include="InstrumentDrivers\InstrumentAliases.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestMain.cs" />
     <Compile Include="TestPlan\TestPlan.cs" />
