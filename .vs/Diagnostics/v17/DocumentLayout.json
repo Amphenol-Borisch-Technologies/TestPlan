@@ -6,7 +6,7 @@
       "AbsoluteMoniker": "D:0:0:{24D5E99E-185C-4507-81F0-132D8CB8164E}|..\\..\\TestLib\\TestLib.csproj|c:\\users\\phils\\source\\repos\\abt\\test\\testlib\\testlib.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|c:\\users\\phils\\source\\repos\\abt\\test\\testplans\\diagnostics\\testmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\testmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|solutionrelative:testmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -191,7 +191,7 @@
               "RelativeDocumentMoniker": "..\\..\\TestLib\\TestLib.cs",
               "ToolTip": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestLib\\TestLib.cs",
               "RelativeToolTip": "..\\..\\TestLib\\TestLib.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-05T19:35:12.587Z",
               "EditorCaption": ""
@@ -200,14 +200,13 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "TestMain.cs",
-              "DocumentMoniker": "C:\\Users\\phils\\Source\\Repos\\ABT\\Test\\TestPlans\\Diagnostics\\TestMain.cs",
+              "DocumentMoniker": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\TestMain.cs",
               "RelativeDocumentMoniker": "TestMain.cs",
-              "ToolTip": "C:\\Users\\phils\\Source\\Repos\\ABT\\Test\\TestPlans\\Diagnostics\\TestMain.cs",
+              "ToolTip": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\TestMain.cs",
               "RelativeToolTip": "TestMain.cs",
               "ViewState": "AgIAAIUAAAAAAAAAAAAAAIwAAABlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T19:22:31.972Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-28T19:22:31.972Z"
             }
           ]
         }
