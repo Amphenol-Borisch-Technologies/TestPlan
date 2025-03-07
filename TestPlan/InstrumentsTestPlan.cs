@@ -23,7 +23,7 @@
             Debug.Assert(TestGroup(Classname: "SwitchingUnits", Description: "Keysight 34980As.", CancelNotPassed: "false", Independent: "true", Methods: "MSMU_34980A"));
             Debug.Assert(MethodCustom(Name: "MSMU_34980A", Description: "Keysight 34980A Multifunction Switch/Measurement Units.", CancelNotPassed: "false"));
             if (Data.testSequence.IsOperation) {
-                Debug.Assert(TestOperation(NamespaceTrunk: "InstrumentsTestPlan", ProductionTest: "true", Description: "Manufacturer\'s self-tests + ABT tests of TestPlanDefinition\'s InstrumentsTestPlan.", TestGroups: "SwitchingUnits|PowerSupplies|DigitalMultiMeters|Oscilloscopes|WaveformGenerators"));
+                Debug.Assert(TestOperation(NamespaceTrunk: "InstrumentsTestPlan", ProductionTest: "true", Description: "Manufacturer\'s self-tests + ABT tests of TestPlanDefinition\'s InstrumentsTestPlan.", TestGroups: "SwitchingUnits|PowerSupplies|DigitalMultiMeters|Oscilloscopes"));
                 Debug.Assert(TestGroupPrior(Classname: NONE));
                 Debug.Assert(TestGroupNext(Classname: "PowerSupplies"));
                 Debug.Assert(MethodPrior(Name: NONE));
@@ -102,9 +102,9 @@
             Debug.Assert(MethodCustom(Name: "MSO_3014", Description: "Tektronix MSO-3014 Mixed-Signal Oscilloscopes.", CancelNotPassed: "false"));
             if (Data.testSequence.IsOperation) {
                 Debug.Assert(TestGroupPrior(Classname: "DigitalMultiMeters"));
-                Debug.Assert(TestGroupNext(Classname: "WaveformGenerators"));
+                Debug.Assert(TestGroupNext(Classname: NONE));
                 Debug.Assert(MethodPrior(Name: "MM_34401A"));
-                Debug.Assert(MethodNext(Name: "WG1_33120A"));
+                Debug.Assert(MethodNext(Name: NONE));
             } else {
                 Debug.Assert(TestGroupPrior(Classname: NONE));
                 Debug.Assert(TestGroupNext(Classname: NONE));
@@ -113,31 +113,6 @@
             }
 
             TestIndices.Method.Event = DiagnosticsT<MSO_3014_IVI_COM>();
-            return TestIndices.Method.LogFetchAndClear();
-        }
-    }
-
-    internal class WaveformGenerators {
-        internal static String WG1_33120A() {
-            Debug.Assert(TestGroup(Classname: "WaveformGenerators", Description: "Keysight 33120As.", CancelNotPassed: "false", Independent: "true", Methods: "WG1_33120A"));
-            Debug.Assert(MethodCustom(Name: "WG1_33120A", Description: "Keysight 33120A 15MHz Function/Arbitrary Waveform Generators.", CancelNotPassed: "false"));
-            if (Data.testSequence.IsOperation) {
-                Debug.Assert(TestGroupPrior(Classname: "Oscilloscopes"));
-                Debug.Assert(TestGroupNext(Classname: NONE));
-                Debug.Assert(MethodPrior(Name: "MSO_3014"));
-                Debug.Assert(MethodNext(Name: NONE));
-            } else {
-                Debug.Assert(TestGroupPrior(Classname: NONE));
-                Debug.Assert(TestGroupNext(Classname: NONE));
-                Debug.Assert(MethodPrior(Name: NONE));
-                Debug.Assert(MethodNext(Name: NONE));
-            }
-
-            TestIndices.Method.Event = DiagnosticsT<SCPI_NET>();
-            if (TestIndices.Method.Event != EVENTS.INFORMATION) { // No SCPI_NET instruments defined in TestExecDefinition.xml.
-                IA.WG.Transport.Command.Invoke("APPLy:SQUare 10E+6, 5.0, -2.5");
-                _ = MessageBox.Show("Press OK to continue.", "Waveform Generator", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
-            }
             return TestIndices.Method.LogFetchAndClear();
         }
     }
