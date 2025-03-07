@@ -37,43 +37,34 @@
   </Development>
   <Modifications>
     <Modification Who="Phillip Smelt" What="Adapted prior TestExecutive &amp; TestExecutor into TestExec, TestLib &amp; TestPlan." When="2024-10-01" Where="Most Namespaces &amp; files updated." Why="Many major improvements." />
-    <Modification Who="Phillip Smelt" What="Replaced App.Config with TestPlanDefinition.xsd, TestPlanDefinition.xml &amp; TestPlanDefinition.cs." When="2024-12-28" Where="ABT.Test.TestLib.Configuration &amp; ABT.Test.Test.Testplans" 
+    <Modification Who="Phillip Smelt" What="Replaced App.Config with TestPlanDefinition.xsd, TestPlanDefinition.xml &amp; TestPlanDefinition.cs." When="2024-12-28" Where="ABT.Test.TestLib.Configuration &amp; ABT.Test.Test.Testplans"
                   Why="App.Config custom System.Configuration classes don't handle hierachical XML directly." />
     <Modification Who="Phillip Smelt" What="Converted TestExecDefinition access from XML reads to De-Serialized classes." When="2025-02-28" Where="TestExecDefinition.xsd, TestExecDefinition.xml &amp; TestExecDefinition.cs." Why="Consistency with TestPlanDefinition.*." />
-  </Modifications>  
+  </Modifications>
   <InstrumentsTestPlan>
     <Mobile ID="MSO1_3014" Alias="MSO" Detail="Tektronix MSO3014 Mixed Signal Oscilloscope" Address="USB0::0x0699::0x0421::C021373::INSTR" NameSpacedClassName="ABT.Test.TestLib.InstrumentDrivers.Oscilloscopes.MSO_3014_IVI_COM" />
     <Stationary ID="MSMU1_34980A" Alias="MSMU" />
     <Stationary ID="PS1ε2_E3649A" Alias="P12V_N12V" />
     <Stationary ID="PS3_E3634A" Alias="P28V" />
-    <!--
     <Stationary ID="WG1_33120A" Alias="WG" />
-    -->
   </InstrumentsTestPlan>
-  <TestSpace NamespaceRoot="ABT.Test.TestPlans.Diagnostics.TestOperations" Description="System Diagnostics." Simulate="true">
-    <TestOperation NamespaceTrunk="SCPI_VISA_Instruments" ProductionTest="true" Description="Diagnostics of instruments exclusively defined in configuration file TestExecDefinition.xml.">
-      <TestGroup Classname="TestMethods" Description="Comprised of manufacturer provided instrument self-tests + optional ABT diagnostics." CancelNotPassed="false" Independent="true">
+  <TestSpace NamespaceRoot="ABT.Test.TestPlans.Diagnostics" Description="System Diagnostics." Simulate="true">
+    <TestOperation NamespaceTrunk="TestPlan" ProductionTest="true" Description="Diagnostics of SCPI instruments defined in configuration file TestExecDefinition.xml.">
+      <TestGroup Classname="SwitchingUnits" Description="Manufacturer provided SCPI instrument self-tests + ABT diagnostics." CancelNotPassed="false" Independent="true">
         <MethodCustom Name="MSMU_34980A" Description="Keysight 34980A Multifunction Switch/Measurement Units." CancelNotPassed="false" />
+      </TestGroup>
+      <TestGroup Classname="PowerSupplies" Description="Manufacturer provided SCPI instrument self-tests + ABT diagnostics." CancelNotPassed="false" Independent="true">
         <MethodCustom Name="PS_E3634A" Description="Keysight E3634A Power Supplies." CancelNotPassed="false" />
         <MethodCustom Name="PS_E3649A" Description="Keysight E3649A Power Supplies." CancelNotPassed="false" />
-        <MethodCustom Name="MM_34401A" Description="Keysight 34401A Digital Multi-Meters." CancelNotPassed="false"  />
-        <MethodCustom Name="MSO_3014" Description="Tektronix MSO-3014 Mixed-Signal Oscilloscopes." CancelNotPassed="false" />
-        <!--
-        <MethodCustom Name="WG1_33120A" Description="Keysight 33120A 15MHz Function/Arbitrary Waveform Generator" CancelNotPassed="false" />
-        -->
       </TestGroup>
-    </TestOperation>
-    <TestOperation NamespaceTrunk="Miscellaneous" ProductionTest="true" Description="Miscellaneous items, including instruments that aren't both SCPI &amp; VISA instruments.">
-      <TestGroup Classname="MoreMethods" Description="Diagnostics." CancelNotPassed="false" Independent="true">
-        <MethodInterval Name="MoreMSMU_34980A" Description="Keysight 34980A Multifunction Switch/Measurement Units." CancelNotPassed="false" LowComparator="GToE" Low="5.0" High="10.0" HighComparator="LT" FractionalDigits="2" UnitPrefix="NONE" Units="NONE" UnitSuffix="NONE" />
-        <MethodCustom Name="MorePS_E3634A" Description="Keysight E3634A Power Supplies." CancelNotPassed="false" />
-        <MethodCustom Name="MorePS_E3649A" Description="Keysight E3649A Power Supplies." CancelNotPassed="false">
-          <Parameter Key="Key1" Value="Value1" />
-          <Parameter Key="Key2" Value="Value2" />
-          <Parameter Key="Key3" Value="Value3" />
-        </MethodCustom>
-        <MethodProcess Name="MoreMM_34401A" Description="Keysight 34401A Digital Multi-Meters." CancelNotPassed="false" Folder="C:\Test" File="Temp.exe" Parameters="" Expected="0" />
-        <MethodTextual Name="MoreMSO_3014" Description="Tektronix MSO-3014 Mixed-Signal Oscilloscopes." CancelNotPassed="false" Text="Hi There!" />
+      <TestGroup Classname="DigitalMultiMeters" Description="Manufacturer provided SCPI instrument self-tests + ABT diagnostics." CancelNotPassed="false" Independent="true">
+        <MethodCustom Name="MM_34401A" Description="Keysight 34401A Digital Multi-Meters." CancelNotPassed="false"  />
+      </TestGroup>
+      <TestGroup Classname="Oscilloscopes" Description="Manufacturer provided SCPI instrument self-tests + ABT diagnostics." CancelNotPassed="false" Independent="true">
+        <MethodCustom Name="MSO_3014" Description="Tektronix MSO-3014 Mixed-Signal Oscilloscopes." CancelNotPassed="false" />
+      </TestGroup>
+      <TestGroup Classname="WaveformGenerators" Description="Manufacturer provided SCPI instrument self-tests + ABT diagnostics." CancelNotPassed="false" Independent="true">
+        <MethodCustom Name="WG1_33120A" Description="Keysight 33120A 15MHz Function/Arbitrary Waveform Generators." CancelNotPassed="false" />
       </TestGroup>
     </TestOperation>
   </TestSpace>

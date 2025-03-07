@@ -1,9 +1,6 @@
-﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
-
-.vs/
-/.vs/
+vs/
+/vs
+/.vs
 
 # Ignore compiled files
 *.dll
@@ -13,8 +10,12 @@
 *.dll
 
 # Ignore build directories
-/bin/
-/obj/
+bin/
+obj/
+/bin
+/obj
+/.bin
+/.obj
 
 # Ignore user-specific files
 *.user
@@ -23,10 +24,10 @@
 *.suo
 
 # Ignore Visual Studio Code files
-.vscode/
+vscode/
 
 # Ignore Rider files
-.idea/
+idea/
 *.sln.iml
 
 # Ignore packaging
@@ -40,10 +41,9 @@
 *.tmp
 *.temp
 
-/.vs/Diagnostics/CopilotIndices/17.12.53.23981/CodeChunks.db-shm
-/.vs/Diagnostics/CopilotIndices/17.12.53.23981/CodeChunks.db-wal
-/.vs/Diagnostics/CopilotIndices/17.12.53.23981/SemanticSymbols.db-shm
-/.vs/Diagnostics/CopilotIndices/17.12.53.23981/SemanticSymbols.db-wal
-/.vs/Diagnostics/CopilotIndices/17.12.53.23981/CodeChunks.db-shm
-/.vs/Diagnostics/CopilotIndices/17.12.53.23981/CodeChunks.db-wal
-/.vs/Diagnostics/v17/DocumentLayout.json
+/bin/x64/Debug/Diagnostics.pdb
+/bin/x64/Debug/TestExec.pdb
+/bin/x64/Debug/TestLib.pdb
+/obj/x64/Debug/Diagnostics.csproj.AssemblyReference.cache
+/obj/x64/Debug/Diagnostics.pdb
+
