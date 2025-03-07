@@ -48,3 +48,4 @@ idea/
 /obj/x64/Debug/Diagnostics.pdb
 
 /obj/x64/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+/obj/x64/Debug/Diagnostics.csproj.CoreCompileInputs.cache
