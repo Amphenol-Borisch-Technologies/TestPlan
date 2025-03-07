@@ -49,3 +49,5 @@ idea/
 
 /obj/x64/Debug/DesignTimeResolveAssemblyReferencesInput.cache
 /obj/x64/Debug/Diagnostics.csproj.CoreCompileInputs.cache
+/obj/x64/Debug/Diagnostics.csproj.FileListAbsolute.txt
+/.vs/Diagnostics/v17/DocumentLayout.backup.json
