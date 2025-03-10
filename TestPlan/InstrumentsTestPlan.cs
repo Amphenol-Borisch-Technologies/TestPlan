@@ -16,7 +16,7 @@
     using static ABT.Test.TestLib.Data;
     using static ABT.Test.TestLib.Configuration.Assertions;
     using static ABT.Test.TestPlans.Diagnostics.TestPlan.InstrumentsTestPlan.TestMethods;
-
+    using Windows.Media.Devices;
 
     internal class SwitchingUnits {
         internal static String MSMU_34980A() {
@@ -82,7 +82,7 @@
 
 
     internal static class TestMethods {
-        internal static EVENTS DiagnosticsT<T>() where T : IDiagnostics {
+        internal static EVENTS DiagnosticsT<T>(Object o = null) where T : IDiagnostics {
             Dictionary<String, T> instrumentDriversT = Data.InstrumentDrivers.Where(kvp => kvp.Value is T).ToDictionary(kvp => kvp.Key, kvp => (T)kvp.Value);
             if (instrumentDriversT.Count() == 0) {
                 TestIndices.Method.Log.AppendLine($"No instruments of type '{typeof(T).Name}' defined in '{TestExecDefinitionXML}'.");
@@ -92,7 +92,7 @@
             (Boolean Summary, List<DiagnosticsResult> Details) resultDiagnostics;
             Boolean passedCollective = true;
             foreach (KeyValuePair<String, T> kvp in instrumentDriversT) {
-                resultDiagnostics = kvp.Value.Diagnostics();
+                resultDiagnostics = kvp.Value.Diagnostics(o);
                 passedCollective &= resultDiagnostics.Summary;
                 TestIndices.Method.Log.AppendLine($"ID '{kvp.Key}', Driver '{typeof(T).Name}', Result '{(resultDiagnostics.Summary ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString())}'.");
                 foreach (DiagnosticsResult dr in resultDiagnostics.Details) TestIndices.Method.Log.AppendLine($"{dr.Label}{dr.Message}, Result '{dr.Event}'.");
