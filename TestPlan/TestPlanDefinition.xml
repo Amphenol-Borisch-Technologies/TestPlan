@@ -7,7 +7,8 @@
     <TestSpecification Document="None" Revision="None" Title="None" Date="2025-04-01" />
     <Documentation Folder="P:\Test\Workspace\eDocs\D\Diagnostics" />
   </UUT>
-  <SerialNumberEntry EntryType="Keyboard" RegularEx="01BB2-[0-9]{5}" Format="'01BB2-XXXXX' where X is any digit in range [0,9].&#xA;Examples:  '01BB2-12345' ε '01BB2-00001'." />
+  <SerialNumberEntry EntryType="None"/>
+  <!--<SerialNumberEntry EntryType="Keyboard" RegularEx="01BB2-[0-9]{5}" Format="'01BB2-XXXXX' where X is any digit in range [0,9].&#xA;Examples:  '01BB2-12345' ε '01BB2-00001'." />-->
   <!--
         RegularEx="[0-9]{4}" accepts only Serial Numbers of form "XXXX" where X is any digit in range [0,9].
           - Valid:   "1234", "0246" & "1357".
