@@ -68,18 +68,18 @@
         <MethodCustom Name="WG_33120A" Description="Keysight 33120A 15MHz Function/Arbitrary Waveform Generators." CancelNotPassed="false" />
       </TestGroup>
     </TestOperation>
-    <TestOperation NamespaceTrunk="Keysight34980A" ProductionTest="false" Description="Keysight 34980A Individual Module Tests.">
-      <TestGroup Classname="Keysight34921A" Description="Keysight 34921A Modules." CancelNotPassed="false" Independent="true">
-        <MethodCustom Name="Keysight34921A" Description="Keysight 34921A 40-Channel Armature Multiplexer." CancelNotPassed="false" />
+    <TestOperation NamespaceTrunk="Keysight_34980A" ProductionTest="false" Description="Keysight 34980A Module Tests.">
+      <TestGroup Classname="Keysight_34921A" Description="Keysight 34921A Modules." CancelNotPassed="false" Independent="true">
+        <MethodCustom Name="Keysight_34921A" Description="Keysight 34921A 40-Channel Armature Multiplexer." CancelNotPassed="false" />
       </TestGroup>
-      <TestGroup Classname="Keysight34932A" Description="Keysight 34932A Modules." CancelNotPassed="false" Independent="true">
-        <MethodCustom Name="Keysight34932A" Description="Keysight 34032A Dual 4x16 Armature Matrix." CancelNotPassed="false" />
+      <TestGroup Classname="Keysight_34932A" Description="Keysight 34932A Modules." CancelNotPassed="false" Independent="true">
+        <MethodCustom Name="Keysight_34932A" Description="Keysight 34032A Dual 4x16 Armature Matrix." CancelNotPassed="false" />
       </TestGroup>
-      <TestGroup Classname="Keysight34938A" Description="Keysight 34938A Modules." CancelNotPassed="false" Independent="true">
-        <MethodCustom Name="Keysight34938A" Description="Keysight 34938A 20-Channel High-Current GP Switch Module." CancelNotPassed="false" />
+      <TestGroup Classname="Keysight_34938A" Description="Keysight 34938A Modules." CancelNotPassed="false" Independent="true">
+        <MethodCustom Name="Keysight_34938A" Description="Keysight 34938A 20-Channel High-Current GP Switch Module." CancelNotPassed="false" />
       </TestGroup>
-      <TestGroup Classname="Keysight34952A" Description="Keysight 34952A Modules." CancelNotPassed="false" Independent="true">
-        <MethodCustom Name="Keysight34952A" Description="Keysight 34952A Multifunction Module." CancelNotPassed="false" />
+      <TestGroup Classname="Keysight_34952A" Description="Keysight 34952A Modules." CancelNotPassed="false" Independent="true">
+        <MethodCustom Name="Keysight_34952A" Description="Keysight 34952A Multifunction Module." CancelNotPassed="false" />
       </TestGroup>
     </TestOperation>
   </TestSpace>
