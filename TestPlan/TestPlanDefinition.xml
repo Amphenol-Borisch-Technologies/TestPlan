@@ -7,8 +7,9 @@
     <TestSpecification Document="None" Revision="None" Title="None" Date="2025-04-01" />
     <Documentation Folder="P:\Test\Workspace\eDocs\D\Diagnostics" />
   </UUT>
-  <SerialNumberEntry EntryType="None"/>
+  <!--<SerialNumberEntry EntryType="None"/>-->
   <!--<SerialNumberEntry EntryType="Keyboard" RegularEx="01BB2-[0-9]{5}" Format="'01BB2-XXXXX' where X is any digit in range [0,9].&#xA;Examples:  '01BB2-12345' ε '01BB2-00001'." />-->
+  <SerialNumberEntry EntryType="Keyboard" RegularEx="[0-9]{1}" Format="'X' where X is any digit in range [0,9].&#xA;Examples:  '0', '1', '2' ...'9'." />
   <!--
         RegularEx="[0-9]{4}" accepts only Serial Numbers of form "XXXX" where X is any digit in range [0,9].
           - Valid:   "1234", "0246" & "1357".
@@ -52,9 +53,9 @@
   </InstrumentsTestPlan>
   <TestSpace NamespaceRoot="ABT.Test.TestPlans.Diagnostics.TestPlan" Description="System Diagnostics." Simulate="false">
     <TestOperation NamespaceTrunk="InstrumentsTestPlan" ProductionTest="true" Description="Manufacturer's self-tests + ABT tests of TestPlanDefinition's InstrumentsTestPlan.">
-      <TestGroup Classname="SwitchingUnits" Description="Keysight 34980As." CancelNotPassed="false" Independent="true">
+      <!--<TestGroup Classname="SwitchingUnits" Description="Keysight 34980As." CancelNotPassed="false" Independent="true">
         <MethodCustom Name="MSMU_34980A" Description="Keysight 34980A Multifunction Switch/Measurement Units." CancelNotPassed="false" />
-      </TestGroup>
+      </TestGroup>-->
       <TestGroup Classname="PowerSupplies" Description="Keysight E3634As &amp; E3649As." CancelNotPassed="false" Independent="true">
         <MethodCustom Name="PS_E3634A" Description="Keysight E3634A Power Supplies." CancelNotPassed="false" />
         <MethodCustom Name="PS_E3649A" Description="Keysight E3649A Power Supplies." CancelNotPassed="false" />

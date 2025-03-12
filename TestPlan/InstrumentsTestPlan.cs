@@ -16,7 +16,6 @@
     using static ABT.Test.TestLib.Data;
     using static ABT.Test.TestLib.Configuration.Assertions;
     using static ABT.Test.TestPlans.Diagnostics.TestPlan.InstrumentsTestPlan.TestMethods;
-    using Windows.Media.Devices;
 
     internal class SwitchingUnits {
         internal static String MSMU_34980A() {
