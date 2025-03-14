@@ -1,10 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ABT.Test.TestLib.Configuration;
+using ABT.Test.TestLib.InstrumentDrivers.Interfaces;
 using Microsoft.Win32;
 
 // NOTE:  Recommend using Microsoft's Visual Studio Code to develop/debug TestExec based closed source/proprietary projects:
@@ -90,7 +92,8 @@ using Microsoft.Win32;
 /// </summary>
 namespace ABT.Test.TestPlans.Diagnostics {
     internal class TestMain {
-        [STAThread] static void Main() {
+        [STAThread]
+        static void Main() {
             TestLib.Data.MutexTest = new Mutex(true, TestLib.Data.MutexTestName, out Boolean onlyInstance);
             if (!onlyInstance) {
                 _ = MessageBox.Show($"Already have one executing instance of {nameof(TestExec)}.{Environment.NewLine}{Environment.NewLine}" +
@@ -101,8 +104,7 @@ namespace ABT.Test.TestPlans.Diagnostics {
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            try { Application.Run(TestEx.Only); }
-            catch (Exception e) {
+            try { Application.Run(TestEx.Only); } catch (Exception e) {
                 TestExec.TestExec.StatusTimer.Stop();
                 TestExec.TestExec.ErrorMessage(e.ToString());
                 TestExec.TestExec.ErrorMessage(e);
@@ -110,8 +112,8 @@ namespace ABT.Test.TestPlans.Diagnostics {
         }
     }
 
-    internal sealed partial class TestEx : TestExec.TestExec {
-        internal static TestEx Only { get; } = new TestEx ();
+    internal sealed class TestEx : TestExec.TestExec {
+        internal static TestEx Only { get; } = new TestEx();
 
         static TestEx() { }
         /// <summary>
@@ -123,8 +125,9 @@ namespace ABT.Test.TestPlans.Diagnostics {
         ///    - Realize both mayn't be optimal practices, and may refactor TestEx to a non-Singleton class, and resume explicitly passing TestEx object into methods.
         /// </para>
         /// </summary>
-        private TestEx() : base(new Icon(@"Resources\Amphenol.ico"), AppDomain.CurrentDomain.BaseDirectory.Remove(AppDomain.CurrentDomain.BaseDirectory.IndexOf(@"\bin\"))) {
-            // NOTE:  Change base constructor's Icon as applicable, depending on customer.
+        private TestEx() : base(new Icon(Assembly.GetExecutingAssembly().Location), AppDomain.CurrentDomain.BaseDirectory.Remove(AppDomain.CurrentDomain.BaseDirectory.IndexOf(@"\bin\"))) {
+            // NOTE: The icon for the application is extracted from the executable itself.
+            // NOTE:  Create base constructor's Icon as applicable, depending on customer.
             // https://stackoverflow.com/questions/40933304/how-to-create-an-icon-for-visual-studio-with-just-mspaint-and-visual-studio
             // TODO:  Eventually; dynamically create custom TestExec menu items, allowing non-standard Apps & UUT menu choices.
             //        - https://stackoverflow.com/questions/1757574/dynamically-adding-toolstripmenuitems-to-a-menustrip-c-winforms
@@ -132,6 +135,35 @@ namespace ABT.Test.TestPlans.Diagnostics {
             WindowState = FormWindowState.Maximized;
             SystemEvents.SessionEnding += OnSessionEnding;
         }
+
+        // TODO: Move TestEx class to TestExec project, as methods can be overridden regardless of project location.
+        //
+        // Class TestEx could be located in the TestExec project, but is placed in TestPlan projects so TestPlans can
+        // override methods such as SystemReset(), IInstrumentsResetClear(), IPowerSuppliesOutputsOff() & IRelaysOpenAll().
+        // This is necessary for TestPlans that utilize custom equipment or require special handling.
+        // Any equipment that isn't SCPI compliant, or requires special handling, can be handled in the TestPlan project.
+        // An example would be Digilent's USB-ERB24 relay board, which requires special handling to open all relays, as it's not SCPI compliant.
+        //public virtual void SystemReset() {
+        //     if (testPlanDefinition.TestSpace.Simulate) return;
+        //     IPowerSuppliesOutputsOff();
+        //     IInstrumentsResetClear();
+        //     IRelaysOpenAll();
+        // }
+
+        // public virtual void IInstrumentsResetClear() {
+        //     if (testPlanDefinition.TestSpace.Simulate) return;
+        //     foreach (KeyValuePair<String, Object> kvp in InstrumentDrivers) if (kvp.Value is IInstruments iInstruments) iInstruments.ResetClear();
+        // }
+
+        // public virtual void IPowerSuppliesOutputsOff() {
+        //     if (testPlanDefinition.TestSpace.Simulate) return;
+        //     foreach (KeyValuePair<String, Object> kvp in InstrumentDrivers) if (kvp.Value is IPowerSupply iIPowerSupply) iIPowerSupply.OutputsOff();
+        // }
+
+        // public virtual void IRelaysOpenAll() {
+        //     if (testPlanDefinition.TestSpace.Simulate) return;
+        //     foreach (KeyValuePair<String, Object> kvp in InstrumentDrivers) if (kvp.Value is IRelays iRelays) iRelays.OpenAll();
+        // }
 
         protected override void OnFormClosed(FormClosedEventArgs e) {
             base.OnFormClosed(e);
@@ -145,7 +177,6 @@ namespace ABT.Test.TestPlans.Diagnostics {
             // NOTE:  Will only seek invocable methods in TestIndices.TestGroup.Classname that are defined as Method IDs in TestPlanDefinition.xml & and are part of a Group.
             MethodInfo methodInfo = type.GetMethod(method.Name, BindingFlags.Static | BindingFlags.NonPublic);
             // NOTE:  Invocable methods in TestIndices.TestGroup.Classname, defined as Method Names in TestPlanDefinition.xml, must have signatures identical to "internal static String MethodName()",
-            // or "private static String MethodName()", though the latter are discouraged for consistency.
             Object task = await Task.Run(() => methodInfo.Invoke(null, null));
             return (String)task;
         }
