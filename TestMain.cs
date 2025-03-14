@@ -136,33 +136,35 @@ namespace ABT.Test.TestPlans.Diagnostics {
             SystemEvents.SessionEnding += OnSessionEnding;
         }
 
-        // TODO: Move TestEx class to TestExec project, as methods can be overridden regardless of project location.
-        //
-        // Class TestEx could be located in the TestExec project, but is placed in TestPlan projects so TestPlans can
-        // override methods such as SystemReset(), IInstrumentsResetClear(), IPowerSuppliesOutputsOff() & IRelaysOpenAll().
-        // This is necessary for TestPlans that utilize custom equipment or require special handling.
-        // Any equipment that isn't SCPI compliant, or requires special handling, can be handled in the TestPlan project.
-        // An example would be Digilent's USB-ERB24 relay board, which requires special handling to open all relays, as it's not SCPI compliant.
-        //public virtual void SystemReset() {
-        //     if (testPlanDefinition.TestSpace.Simulate) return;
-        //     IPowerSuppliesOutputsOff();
-        //     IInstrumentsResetClear();
-        //     IRelaysOpenAll();
+        // Class TestEx's could be located in the TestExec project, but is placed in TestPlan projects so TestPlans can
+        // conveniently override methods such as SystemReset(), IInstrumentsResetClear(), IPowerSuppliesOutputsOff() & IRelaysOpenAll().
+        // This is necessary for TestPlans that utilize custom equipment or require special handling:
+        // - Any non-SCPI equipment exclusively utilized by individual TestPlan's can be initialized/reset in their TestPlan projects.
+        //   - Portable SCPI equipment that's not part of a system's TestExecDefinition.xml configuration is automatically handled by TestExec.
+        //   - Stationary non-SCPI equipment that's permanently part of a test system should also be initialized/reset in TestExec, by modifying it's SystemReset() and other applicable methods.
+        // - Only non-SCPI equipment that's portable and not a permanent part of a test system requires initialization/reset in TestPlan projects that utilize it.
+        //public override void SystemReset() {
+        //    if (TestLib.Data.testPlanDefinition.TestSpace.Simulate) return;
+        //    base.SystemReset();
+        //    // Custom TestPlan specific System Reset Code Here.
         // }
 
-        // public virtual void IInstrumentsResetClear() {
-        //     if (testPlanDefinition.TestSpace.Simulate) return;
-        //     foreach (KeyValuePair<String, Object> kvp in InstrumentDrivers) if (kvp.Value is IInstruments iInstruments) iInstruments.ResetClear();
+        //public override void IInstrumentsResetClear() {
+        //    if (TestLib.Data.testPlanDefinition.TestSpace.Simulate) return;
+        //    base.IInstrumentsResetClear();
+        //    // Custom TestPlan specific Instrument Reset / Clear Code Here.
         // }
 
-        // public virtual void IPowerSuppliesOutputsOff() {
-        //     if (testPlanDefinition.TestSpace.Simulate) return;
-        //     foreach (KeyValuePair<String, Object> kvp in InstrumentDrivers) if (kvp.Value is IPowerSupply iIPowerSupply) iIPowerSupply.OutputsOff();
+        //public override void IPowerSuppliesOutputsOff() {
+        //    if (TestLib.Data.testPlanDefinition.TestSpace.Simulate) return;
+        //    base.IPowerSuppliesOutputsOff();
+        //    // Custom TestPlan specific Power Supply Outputs Off Code Here.
         // }
 
-        // public virtual void IRelaysOpenAll() {
-        //     if (testPlanDefinition.TestSpace.Simulate) return;
-        //     foreach (KeyValuePair<String, Object> kvp in InstrumentDrivers) if (kvp.Value is IRelays iRelays) iRelays.OpenAll();
+        //public override void IRelaysOpenAll() {
+        //    if (TestLib.Data.testPlanDefinition.TestSpace.Simulate) return;
+        //    base.IRelaysOpenAll();
+        //    // Custom TestPlan specific Relay Open All Code Here.
         // }
 
         protected override void OnFormClosed(FormClosedEventArgs e) {
