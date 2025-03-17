@@ -3,7 +3,17 @@
   "WorkspaceRootPath": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{24D5E99E-185C-4507-81F0-132D8CB8164E}|..\\..\\TestLib\\TestLib.csproj|c:\\users\\phils\\source\\repos\\abt\\test\\testlib\\instrumentdrivers\\multifunction\\msmu_34980a_scpi_net.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{24D5E99E-185C-4507-81F0-132D8CB8164E}|..\\..\\TestLib\\TestLib.csproj|c:\\users\\phils\\source\\repos\\abt\\test\\testlib\\instrumentdrivers\\powersupplies\\ps_e3634a_scpi_net.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24D5E99E-185C-4507-81F0-132D8CB8164E}|..\\..\\TestLib\\TestLib.csproj|c:\\users\\phils\\source\\repos\\abt\\test\\testlib\\instrumentdrivers\\powersupplies\\ps_e3649a_scpi_net.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|c:\\users\\phils\\source\\repos\\abt\\test\\testplans\\diagnostics\\testplan\\instrumentstestplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|solutionrelative:testplan\\instrumentstestplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -13,7 +23,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 41,
+          "SelectedChildIndex": 45,
           "Children": [
             {
               "$type": "Bookmark",
@@ -181,15 +191,75 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "PS_E3649A_SCPI_NET.cs",
+              "DocumentMoniker": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestLib\\InstrumentDrivers\\PowerSupplies\\PS_E3649A_SCPI_NET.cs",
+              "RelativeDocumentMoniker": "..\\..\\TestLib\\InstrumentDrivers\\PowerSupplies\\PS_E3649A_SCPI_NET.cs",
+              "ToolTip": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestLib\\InstrumentDrivers\\PowerSupplies\\PS_E3649A_SCPI_NET.cs",
+              "RelativeToolTip": "..\\..\\TestLib\\InstrumentDrivers\\PowerSupplies\\PS_E3649A_SCPI_NET.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAE8AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T15:39:06.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InstrumentsTestPlan.cs",
+              "DocumentMoniker": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\TestPlan\\InstrumentsTestPlan.cs",
+              "RelativeDocumentMoniker": "TestPlan\\InstrumentsTestPlan.cs",
+              "ToolTip": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\TestPlan\\InstrumentsTestPlan.cs",
+              "RelativeToolTip": "TestPlan\\InstrumentsTestPlan.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAFEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T15:05:27.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "PS_E3634A_SCPI_NET.cs",
               "DocumentMoniker": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestLib\\InstrumentDrivers\\PowerSupplies\\PS_E3634A_SCPI_NET.cs",
               "RelativeDocumentMoniker": "..\\..\\TestLib\\InstrumentDrivers\\PowerSupplies\\PS_E3634A_SCPI_NET.cs",
               "ToolTip": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestLib\\InstrumentDrivers\\PowerSupplies\\PS_E3634A_SCPI_NET.cs",
               "RelativeToolTip": "..\\..\\TestLib\\InstrumentDrivers\\PowerSupplies\\PS_E3634A_SCPI_NET.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAnwF4AAABGAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAEoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T18:25:50.946Z",
+              "WhenOpened": "2025-03-17T14:57:02.875Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "05b4b71c-d6a6-4d33-89ca-0a81fb8f5c8c",
+        "Display": 1,
+        "X": 306,
+        "Y": 128,
+        "Width": 1496,
+        "Height": 837,
+        "WindowState": 2
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MSMU_34980A_SCPI_NET.cs",
+              "DocumentMoniker": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestLib\\InstrumentDrivers\\Multifunction\\MSMU_34980A_SCPI_NET.cs",
+              "RelativeDocumentMoniker": "..\\..\\TestLib\\InstrumentDrivers\\Multifunction\\MSMU_34980A_SCPI_NET.cs",
+              "ToolTip": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestLib\\InstrumentDrivers\\Multifunction\\MSMU_34980A_SCPI_NET.cs",
+              "RelativeToolTip": "..\\..\\TestLib\\InstrumentDrivers\\Multifunction\\MSMU_34980A_SCPI_NET.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAAEwAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T15:34:06.066Z",
               "EditorCaption": ""
             }
           ]

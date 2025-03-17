@@ -125,8 +125,7 @@ namespace ABT.Test.TestPlans.Diagnostics {
         ///    - Realize both mayn't be optimal practices, and may refactor TestEx to a non-Singleton class, and resume explicitly passing TestEx object into methods.
         /// </para>
         /// </summary>
-        private TestEx() : base(new Icon(Assembly.GetExecutingAssembly().Location), AppDomain.CurrentDomain.BaseDirectory.Remove(AppDomain.CurrentDomain.BaseDirectory.IndexOf(@"\bin\"))) {
-            // NOTE: The icon for the application is extracted from the executable itself.
+        private TestEx() : base(Icon.ExtractAssociatedIcon(Assembly.GetExecutingAssembly().Location), AppDomain.CurrentDomain.BaseDirectory.Remove(AppDomain.CurrentDomain.BaseDirectory.IndexOf(@"\bin\"))) {
             // NOTE:  Create base constructor's Icon as applicable, depending on customer.
             // https://stackoverflow.com/questions/40933304/how-to-create-an-icon-for-visual-studio-with-just-mspaint-and-visual-studio
             // TODO:  Eventually; dynamically create custom TestExec menu items, allowing non-standard Apps & UUT menu choices.
@@ -146,25 +145,25 @@ namespace ABT.Test.TestPlans.Diagnostics {
         //public override void SystemReset() {
         //    if (TestLib.Data.testPlanDefinition.TestSpace.Simulate) return;
         //    base.SystemReset();
-        //    // Custom TestPlan specific System Reset Code Here.
+        //    // Custom TestPlan specific System Reset code here.
         // }
 
         //public override void IInstrumentsResetClear() {
         //    if (TestLib.Data.testPlanDefinition.TestSpace.Simulate) return;
         //    base.IInstrumentsResetClear();
-        //    // Custom TestPlan specific Instrument Reset / Clear Code Here.
+        //    // Custom TestPlan specific Instrument Reset/Clear code here.
         // }
 
         //public override void IPowerSuppliesOutputsOff() {
         //    if (TestLib.Data.testPlanDefinition.TestSpace.Simulate) return;
         //    base.IPowerSuppliesOutputsOff();
-        //    // Custom TestPlan specific Power Supply Outputs Off Code Here.
+        //    // Custom TestPlan specific Power Supply Outputs Off code here.
         // }
 
         //public override void IRelaysOpenAll() {
         //    if (TestLib.Data.testPlanDefinition.TestSpace.Simulate) return;
         //    base.IRelaysOpenAll();
-        //    // Custom TestPlan specific Relay Open All Code Here.
+        //    // Custom TestPlan specific Relay Open All code here.
         // }
 
         protected override void OnFormClosed(FormClosedEventArgs e) {
