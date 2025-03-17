@@ -54,14 +54,24 @@
   <TestSpace NamespaceRoot="ABT.Test.TestPlans.Diagnostics.TestPlan" Description="System Diagnostics." Simulate="false">
     <TestOperation NamespaceTrunk="InstrumentsTestPlan" ProductionTest="true" Description="Manufacturer's self-tests + ABT tests of TestPlanDefinition's InstrumentsTestPlan.">
       <!--<TestGroup Classname="SwitchingUnits" Description="Keysight 34980As." CancelNotPassed="false" Independent="true">
-        <MethodCustom Name="MSMU_34980A" Description="Keysight 34980A Multifunction Switch/Measurement Units." CancelNotPassed="false" />
+        <MethodCustom Name="MSMU_34980A" Description="Keysight 34980A Multifunction Switch/Measurement Units." CancelNotPassed="false" >
+          <Parameter Name="ResistanceRelay_34921A_ClosedΩ" Value="3"/>
+          <Parameter Name="ResistanceRelay_34921A_OpenedΩ" Value="1E9"/>
+          <Parameter Name="ResistanceRelay_34932A_ClosedΩ" Value="3"/>
+          <Parameter Name="ResistanceRelay_34932A_OpenedΩ" Value="1E9"/>
+          <Parameter Name="ResistanceRelay_34938A_ClosedΩ" Value="3"/>
+          <Parameter Name="ResistanceRelay_34938A_OpenedΩ" Value="1E9"/>
+          <Parameter Name="ResistanceRelay_34939A_ClosedΩ" Value="3"/>
+          <Parameter Name="ResistanceRelay_34939A_OpenedΩ" Value="1E9"/>
+          <Parameter Name="AccuracyDAC_34952A_VDC" Value="0.1"/>
+        </MethodCustom>
       </TestGroup>-->
       <TestGroup Classname="PowerSupplies" Description="Keysight E3634As &amp; E3649As." CancelNotPassed="false" Independent="true">
         <MethodCustom Name="PS_E3634A" Description="Keysight E3634A Power Supplies." CancelNotPassed="false" >
-          <Parameter Name="AccuracyVDC" Value="0.1"/>
+          <Parameter Name="Accuracy_E3634A_VDC" Value="0.1"/>
         </MethodCustom>
         <MethodCustom Name="PS_E3649A" Description="Keysight E3649A Power Supplies." CancelNotPassed="false" >
-          <Parameter Name="AccuracyVDC" Value="0.1"/>
+          <Parameter Name="Accuracy_E3649A_VDC" Value="0.1"/>
         </MethodCustom>
       </TestGroup>
       <TestGroup Classname="DigitalMultiMeters" Description="Keysight 34401As." CancelNotPassed="false" Independent="true">
@@ -76,16 +86,38 @@
     </TestOperation>
     <TestOperation NamespaceTrunk="Keysight_34980A" ProductionTest="false" Description="Keysight 34980A Module Tests.">
       <TestGroup Classname="Keysight_34921As" Description="Keysight 34921A Modules." CancelNotPassed="false" Independent="true">
-        <MethodCustom Name="Keysight_34921A" Description="Keysight 34921A 40-Channel Armature Multiplexer." CancelNotPassed="false" />
+        <MethodCustom Name="Keysight_34921A" Description="Keysight 34921A 40-Channel Armature Multiplexer." CancelNotPassed="false" >
+          <Parameter Name="ModuleType" Value="34921A"/>
+          <Parameter Name="ResistanceRelay_34921A_ClosedΩ" Value="3"/>
+          <Parameter Name="ResistanceRelay_34921A_OpenedΩ" Value="1E9"/>
+        </MethodCustom>
       </TestGroup>
       <TestGroup Classname="Keysight_34932As" Description="Keysight 34932A Modules." CancelNotPassed="false" Independent="true">
-        <MethodCustom Name="Keysight_34932A" Description="Keysight 34032A Dual 4x16 Armature Matrix." CancelNotPassed="false" />
+        <MethodCustom Name="Keysight_34932A" Description="Keysight 34032A Dual 4x16 Armature Matrix." CancelNotPassed="false" >
+          <Parameter Name="ModuleType" Value="34932A"/>
+          <Parameter Name="ResistanceRelay_34932A_ClosedΩ" Value="3"/>
+          <Parameter Name="ResistanceRelay_34932A_OpenedΩ" Value="1E9"/>
+        </MethodCustom>
       </TestGroup>
       <TestGroup Classname="Keysight_34938As" Description="Keysight 34938A Modules." CancelNotPassed="false" Independent="true">
-        <MethodCustom Name="Keysight_34938A" Description="Keysight 34938A 20-Channel High-Current GP Switch Module." CancelNotPassed="false" />
+        <MethodCustom Name="Keysight_34938A" Description="Keysight 34938A 20-Channel 5 Amp Form A General Purpose Switch Module." CancelNotPassed="false" >
+          <Parameter Name="ModuleType" Value="34938A"/>
+          <Parameter Name="ResistanceRelay_34938A_ClosedΩ" Value="3"/>
+          <Parameter Name="ResistanceRelay_34938A_OpenedΩ" Value="1E9"/>
+        </MethodCustom>
+      </TestGroup>
+      <TestGroup Classname="Keysight_34939As" Description="Keysight 34939A Modules." CancelNotPassed="false" Independent="true">
+        <MethodCustom Name="Keysight_34939A" Description="Keysight 34939A 64-Channel 1 Amp Form A General Purpose Switch Module." CancelNotPassed="false" >
+          <Parameter Name="ModuleType" Value="34939A"/>
+          <Parameter Name="ResistanceRelay_34939A_ClosedΩ" Value="3"/>
+          <Parameter Name="ResistanceRelay_34939A_OpenedΩ" Value="1E9"/>
+        </MethodCustom>
       </TestGroup>
       <TestGroup Classname="Keysight_34952As" Description="Keysight 34952A Modules." CancelNotPassed="false" Independent="true">
-        <MethodCustom Name="Keysight_34952A" Description="Keysight 34952A Multifunction Module." CancelNotPassed="false" />
+        <MethodCustom Name="Keysight_34952A" Description="Keysight 34952A Multifunction Module." CancelNotPassed="false" >
+          <Parameter Name="ModuleType" Value="34952A"/>
+          <Parameter Name="AccuracyDAC_34952A_VDC" Value="0.1"/>
+        </MethodCustom>
       </TestGroup>
     </TestOperation>
   </TestSpace>

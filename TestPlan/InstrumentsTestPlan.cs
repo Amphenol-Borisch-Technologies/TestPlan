@@ -91,7 +91,7 @@
             (Boolean Summary, List<DiagnosticsResult> Details) resultDiagnostics;
             Boolean passedCollective = true;
             foreach (KeyValuePair<String, T> kvp in instrumentDriversT) {
-                resultDiagnostics = kvp.Value.Diagnostics(o);
+                resultDiagnostics = kvp.Value.Diagnostics(Parameters);
                 passedCollective &= resultDiagnostics.Summary;
                 TestIndices.Method.Log.AppendLine($"ID '{kvp.Key}', Driver '{typeof(T).Name}', Result '{(resultDiagnostics.Summary ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString())}'.");
                 foreach (DiagnosticsResult dr in resultDiagnostics.Details) TestIndices.Method.Log.AppendLine($"{dr.Label}{dr.Message}, Result '{dr.Event}'.");
