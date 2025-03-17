@@ -4,7 +4,6 @@
     using ABT.Test.TestLib;
     using ABT.Test.TestLib.Configuration;
     using ABT.Test.TestLib.InstrumentDrivers.Multifunction;
-    using static ABT.Test.TestLib.Data;
     using static ABT.Test.TestLib.Configuration.Assertions;
     using static ABT.Test.TestPlans.Diagnostics.TestPlan.InstrumentsTestPlan.TestMethods;
 
@@ -14,7 +13,7 @@
 			Debug.Assert(TestGroup(Classname: "Keysight_34921As", Description: "Keysight 34921A Modules.", CancelNotPassed: "false", Independent: "true", Methods: "Keysight_34921A"));
 			Debug.Assert(MethodCustom(Name: "Keysight_34921A", Description: "Keysight 34921A 40-Channel Armature Multiplexer.", CancelNotPassed: "false"));
 
-            TestIndices.Method.Event = DiagnosticsT<MSMU_34980A_SCPI_NET>(new MSMU_34980A_SCPI_NET.DiagnosticParameter_34980A(MSMU_34980A_SCPI_NET.Modules.M34921A));
+            TestIndices.Method.Event = DiagnosticsT<MSMU_34980A_SCPI_NET>(((MethodCustom)TestIndices.Method).Parameters);
             return TestIndices.Method.LogFetchAndClear();
         }
     }
@@ -25,7 +24,7 @@
 			Debug.Assert(TestGroup(Classname: "Keysight_34932As", Description: "Keysight 34932A Modules.", CancelNotPassed: "false", Independent: "true", Methods: "Keysight_34932A"));
 			Debug.Assert(MethodCustom(Name: "Keysight_34932A", Description: "Keysight 34032A Dual 4x16 Armature Matrix.", CancelNotPassed: "false"));
 
-            TestIndices.Method.Event = DiagnosticsT<MSMU_34980A_SCPI_NET>(new MSMU_34980A_SCPI_NET.DiagnosticParameter_34980A(MSMU_34980A_SCPI_NET.Modules.M34932A));
+            TestIndices.Method.Event = DiagnosticsT<MSMU_34980A_SCPI_NET>(((MethodCustom)TestIndices.Method).Parameters);
             return TestIndices.Method.LogFetchAndClear();
         }
     }
@@ -34,9 +33,20 @@
         
         internal static String Keysight_34938A() {
 			Debug.Assert(TestGroup(Classname: "Keysight_34938As", Description: "Keysight 34938A Modules.", CancelNotPassed: "false", Independent: "true", Methods: "Keysight_34938A"));
-			Debug.Assert(MethodCustom(Name: "Keysight_34938A", Description: "Keysight 34938A 20-Channel High-Current GP Switch Module.", CancelNotPassed: "false"));
+			Debug.Assert(MethodCustom(Name: "Keysight_34938A", Description: "Keysight 34938A 20-Channel 5 Amp Form A General Purpose Switch Module.", CancelNotPassed: "false"));
 
-            TestIndices.Method.Event = DiagnosticsT<MSMU_34980A_SCPI_NET>(new MSMU_34980A_SCPI_NET.DiagnosticParameter_34980A(MSMU_34980A_SCPI_NET.Modules.M34938A));
+            TestIndices.Method.Event = DiagnosticsT<MSMU_34980A_SCPI_NET>(((MethodCustom)TestIndices.Method).Parameters);
+            return TestIndices.Method.LogFetchAndClear();
+        }
+    }
+    
+    internal class Keysight_34939As {
+        
+        internal static String Keysight_34939A() {
+			Debug.Assert(TestGroup(Classname: "Keysight_34930As", Description: "Keysight 34939A Modules.", CancelNotPassed: "false", Independent: "true", Methods: "Keysight_34939A"));
+			Debug.Assert(MethodCustom(Name: "Keysight_34939A", Description: "Keysight 34939A 64-Channel 1 Amp Form A General Purpose Switch Module.", CancelNotPassed: "false"));
+
+            TestIndices.Method.Event = DiagnosticsT<MSMU_34980A_SCPI_NET>(((MethodCustom)TestIndices.Method).Parameters);
             return TestIndices.Method.LogFetchAndClear();
         }
     }
@@ -47,7 +57,7 @@
 			Debug.Assert(TestGroup(Classname: "Keysight_34952As", Description: "Keysight 34952A Modules.", CancelNotPassed: "false", Independent: "true", Methods: "Keysight_34952A"));
 			Debug.Assert(MethodCustom(Name: "Keysight_34952A", Description: "Keysight 34952A Multifunction Module.", CancelNotPassed: "false"));
 
-            TestIndices.Method.Event = DiagnosticsT<MSMU_34980A_SCPI_NET>(new MSMU_34980A_SCPI_NET.DiagnosticParameter_34980A(MSMU_34980A_SCPI_NET.Modules.M34952A));
+            TestIndices.Method.Event = DiagnosticsT<MSMU_34980A_SCPI_NET>(((MethodCustom)TestIndices.Method).Parameters);
             return TestIndices.Method.LogFetchAndClear();
         }
     }

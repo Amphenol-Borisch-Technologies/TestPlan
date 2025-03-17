@@ -23,7 +23,7 @@
             Debug.Assert(TestGroup(Classname: "SwitchingUnits", Description: "Keysight 34980As.", CancelNotPassed: "false", Independent: "true", Methods: "MSMU_34980A"));
             Debug.Assert(MethodCustom(Name: "MSMU_34980A", Description: "Keysight 34980A Multifunction Switch/Measurement Units.", CancelNotPassed: "false"));
 
-            TestIndices.Method.Event = DiagnosticsT<MSMU_34980A_SCPI_NET>();
+            TestIndices.Method.Event = DiagnosticsT<MSMU_34980A_SCPI_NET>(((MethodCustom)TestIndices.Method).Parameters);
             return TestIndices.Method.LogFetchAndClear();
         }
     }
@@ -33,14 +33,14 @@
             Debug.Assert(TestGroup(Classname: "PowerSupplies", Description: "Keysight E3634As & E3649As.", CancelNotPassed: "false", Independent: "true", Methods: "PS_E3634A|PS_E3649A"));
             Debug.Assert(MethodCustom(Name: "PS_E3634A", Description: "Keysight E3634A Power Supplies.", CancelNotPassed: "false"));
 
-            TestIndices.Method.Event = DiagnosticsT<PS_E3634A_SCPI_NET>();
+            TestIndices.Method.Event = DiagnosticsT<PS_E3634A_SCPI_NET>(((MethodCustom)TestIndices.Method).Parameters);
             return TestIndices.Method.LogFetchAndClear();
         }
 
         internal static String PS_E3649A() {
             Debug.Assert(MethodCustom(Name: "PS_E3649A", Description: "Keysight E3649A Power Supplies.", CancelNotPassed: "false"));
 
-            TestIndices.Method.Event = DiagnosticsT<PS_E3649A_SCPI_NET>();
+            TestIndices.Method.Event = DiagnosticsT<PS_E3649A_SCPI_NET>(((MethodCustom)TestIndices.Method).Parameters);
             return TestIndices.Method.LogFetchAndClear();
         }
     }
@@ -50,7 +50,7 @@
             Debug.Assert(TestGroup(Classname: "DigitalMultiMeters", Description: "Keysight 34401As.", CancelNotPassed: "false", Independent: "true", Methods: "MM_34401A"));
             Debug.Assert(MethodCustom(Name: "MM_34401A", Description: "Keysight 34401A Digital Multi-Meters.", CancelNotPassed: "false"));
 
-            TestIndices.Method.Event = DiagnosticsT<MM_34401A_SCPI_NET>();
+            TestIndices.Method.Event = DiagnosticsT<MM_34401A_SCPI_NET>(((MethodCustom)TestIndices.Method).Parameters);
             return TestIndices.Method.LogFetchAndClear();
         }
     }
@@ -60,7 +60,7 @@
             Debug.Assert(TestGroup(Classname: "Oscilloscopes", Description: "Tektronix MSO-3014s.", CancelNotPassed: "false", Independent: "true", Methods: "MSO_3014"));
             Debug.Assert(MethodCustom(Name: "MSO_3014", Description: "Tektronix MSO-3014 Mixed-Signal Oscilloscopes.", CancelNotPassed: "false"));
 
-            TestIndices.Method.Event = DiagnosticsT<MSO_3014_IVI_COM>();
+            TestIndices.Method.Event = DiagnosticsT<MSO_3014_IVI_COM>(((MethodCustom)TestIndices.Method).Parameters);
             return TestIndices.Method.LogFetchAndClear();
         }
     }
@@ -70,7 +70,7 @@
             Debug.Assert(TestGroup(Classname: "WaveformGenerators", Description: "Keysight 33120As.", CancelNotPassed: "false", Independent: "true", Methods: "WG_33120A"));
             Debug.Assert(MethodCustom(Name: "WG_33120A", Description: "Keysight 33120A 15MHz Function/Arbitrary Waveform Generators.", CancelNotPassed: "false"));
 
-            TestIndices.Method.Event = DiagnosticsT<SCPI_NET>();
+            TestIndices.Method.Event = DiagnosticsT<SCPI_NET>(((MethodCustom)TestIndices.Method).Parameters);
             if (TestIndices.Method.Event != EVENTS.INFORMATION) { // No SCPI_NET instruments defined in TestPlanDefinition.xml.
                 IA.WG.Transport.Command.Invoke("APPLy:SQUare 10E+6, 5.0, -2.5");
                 _ = MessageBox.Show("Press OK to continue.", "Waveform Generator", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
@@ -81,7 +81,7 @@
 
 
     internal static class TestMethods {
-        internal static EVENTS DiagnosticsT<T>(Object o = null) where T : IDiagnostics {
+        internal static EVENTS DiagnosticsT<T>(List<Parameter> Parameters) where T : IDiagnostics {
             Dictionary<String, T> instrumentDriversT = Data.InstrumentDrivers.Where(kvp => kvp.Value is T).ToDictionary(kvp => kvp.Key, kvp => (T)kvp.Value);
             if (instrumentDriversT.Count() == 0) {
                 TestIndices.Method.Log.AppendLine($"No instruments of type '{typeof(T).Name}' defined in '{TestExecDefinitionXML}'.");
@@ -91,7 +91,7 @@
             (Boolean Summary, List<DiagnosticsResult> Details) resultDiagnostics;
             Boolean passedCollective = true;
             foreach (KeyValuePair<String, T> kvp in instrumentDriversT) {
-                resultDiagnostics = kvp.Value.Diagnostics(o);
+                resultDiagnostics = kvp.Value.Diagnostics(Parameters);
                 passedCollective &= resultDiagnostics.Summary;
                 TestIndices.Method.Log.AppendLine($"ID '{kvp.Key}', Driver '{typeof(T).Name}', Result '{(resultDiagnostics.Summary ? EVENTS.PASS.ToString() : EVENTS.FAIL.ToString())}'.");
                 foreach (DiagnosticsResult dr in resultDiagnostics.Details) TestIndices.Method.Log.AppendLine($"{dr.Label}{dr.Message}, Result '{dr.Event}'.");
