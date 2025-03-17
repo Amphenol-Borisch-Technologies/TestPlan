@@ -1,10 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ABT.Test.TestLib.Configuration;
+using ABT.Test.TestLib.InstrumentDrivers.Interfaces;
 using Microsoft.Win32;
 
 // NOTE:  Recommend using Microsoft's Visual Studio Code to develop/debug TestExec based closed source/proprietary projects:
@@ -90,7 +92,8 @@ using Microsoft.Win32;
 /// </summary>
 namespace ABT.Test.TestPlans.Diagnostics {
     internal class TestMain {
-        [STAThread] static void Main() {
+        [STAThread]
+        static void Main() {
             TestLib.Data.MutexTest = new Mutex(true, TestLib.Data.MutexTestName, out Boolean onlyInstance);
             if (!onlyInstance) {
                 _ = MessageBox.Show($"Already have one executing instance of {nameof(TestExec)}.{Environment.NewLine}{Environment.NewLine}" +
@@ -101,8 +104,7 @@ namespace ABT.Test.TestPlans.Diagnostics {
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            try { Application.Run(TestEx.Only); }
-            catch (Exception e) {
+            try { Application.Run(TestEx.Only); } catch (Exception e) {
                 TestExec.TestExec.StatusTimer.Stop();
                 TestExec.TestExec.ErrorMessage(e.ToString());
                 TestExec.TestExec.ErrorMessage(e);
@@ -110,8 +112,8 @@ namespace ABT.Test.TestPlans.Diagnostics {
         }
     }
 
-    internal sealed partial class TestEx : TestExec.TestExec {
-        internal static TestEx Only { get; } = new TestEx ();
+    internal sealed class TestEx : TestExec.TestExec {
+        internal static TestEx Only { get; } = new TestEx();
 
         static TestEx() { }
         /// <summary>
@@ -123,8 +125,9 @@ namespace ABT.Test.TestPlans.Diagnostics {
         ///    - Realize both mayn't be optimal practices, and may refactor TestEx to a non-Singleton class, and resume explicitly passing TestEx object into methods.
         /// </para>
         /// </summary>
-        private TestEx() : base(new Icon(@"Resources\Amphenol.ico"), AppDomain.CurrentDomain.BaseDirectory.Remove(AppDomain.CurrentDomain.BaseDirectory.IndexOf(@"\bin\"))) {
-            // NOTE:  Change base constructor's Icon as applicable, depending on customer.
+        private TestEx() : base(new Icon(Assembly.GetExecutingAssembly().Location), AppDomain.CurrentDomain.BaseDirectory.Remove(AppDomain.CurrentDomain.BaseDirectory.IndexOf(@"\bin\"))) {
+            // NOTE: The icon for the application is extracted from the executable itself.
+            // NOTE:  Create base constructor's Icon as applicable, depending on customer.
             // https://stackoverflow.com/questions/40933304/how-to-create-an-icon-for-visual-studio-with-just-mspaint-and-visual-studio
             // TODO:  Eventually; dynamically create custom TestExec menu items, allowing non-standard Apps & UUT menu choices.
             //        - https://stackoverflow.com/questions/1757574/dynamically-adding-toolstripmenuitems-to-a-menustrip-c-winforms
@@ -132,6 +135,37 @@ namespace ABT.Test.TestPlans.Diagnostics {
             WindowState = FormWindowState.Maximized;
             SystemEvents.SessionEnding += OnSessionEnding;
         }
+
+        // Class TestEx's could be located in the TestExec project, but is placed in TestPlan projects so TestPlans can
+        // conveniently override methods such as SystemReset(), IInstrumentsResetClear(), IPowerSuppliesOutputsOff() & IRelaysOpenAll().
+        // This is necessary for TestPlans that utilize custom equipment or require special handling:
+        // - Any non-SCPI equipment exclusively utilized by individual TestPlan's can be initialized/reset in their TestPlan projects.
+        //   - Portable SCPI equipment that's not part of a system's TestExecDefinition.xml configuration is automatically handled by TestExec.
+        //   - Stationary non-SCPI equipment that's permanently part of a test system should also be initialized/reset in TestExec, by modifying it's SystemReset() and other applicable methods.
+        // - Only non-SCPI equipment that's portable and not a permanent part of a test system requires initialization/reset in TestPlan projects that utilize it.
+        //public override void SystemReset() {
+        //    if (TestLib.Data.testPlanDefinition.TestSpace.Simulate) return;
+        //    base.SystemReset();
+        //    // Custom TestPlan specific System Reset Code Here.
+        // }
+
+        //public override void IInstrumentsResetClear() {
+        //    if (TestLib.Data.testPlanDefinition.TestSpace.Simulate) return;
+        //    base.IInstrumentsResetClear();
+        //    // Custom TestPlan specific Instrument Reset / Clear Code Here.
+        // }
+
+        //public override void IPowerSuppliesOutputsOff() {
+        //    if (TestLib.Data.testPlanDefinition.TestSpace.Simulate) return;
+        //    base.IPowerSuppliesOutputsOff();
+        //    // Custom TestPlan specific Power Supply Outputs Off Code Here.
+        // }
+
+        //public override void IRelaysOpenAll() {
+        //    if (TestLib.Data.testPlanDefinition.TestSpace.Simulate) return;
+        //    base.IRelaysOpenAll();
+        //    // Custom TestPlan specific Relay Open All Code Here.
+        // }
 
         protected override void OnFormClosed(FormClosedEventArgs e) {
             base.OnFormClosed(e);
@@ -145,7 +179,6 @@ namespace ABT.Test.TestPlans.Diagnostics {
             // NOTE:  Will only seek invocable methods in TestIndices.TestGroup.Classname that are defined as Method IDs in TestPlanDefinition.xml & and are part of a Group.
             MethodInfo methodInfo = type.GetMethod(method.Name, BindingFlags.Static | BindingFlags.NonPublic);
             // NOTE:  Invocable methods in TestIndices.TestGroup.Classname, defined as Method Names in TestPlanDefinition.xml, must have signatures identical to "internal static String MethodName()",
-            // or "private static String MethodName()", though the latter are discouraged for consistency.
             Object task = await Task.Run(() => methodInfo.Invoke(null, null));
             return (String)task;
         }
