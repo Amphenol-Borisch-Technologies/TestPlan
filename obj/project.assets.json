@@ -4532,11 +4532,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\Diagnostics.csproj",
+      "projectUniqueName": "C:\\Users\\phils\\Source\\Repos\\ABT\\Test\\TestPlans\\Diagnostics\\Diagnostics.csproj",
       "projectName": "Diagnostics",
-      "projectPath": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\Diagnostics.csproj",
+      "projectPath": "C:\\Users\\phils\\Source\\Repos\\ABT\\Test\\TestPlans\\Diagnostics\\Diagnostics.csproj",
       "packagesPath": "C:\\Users\\phils\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\obj\\",
+      "outputPath": "C:\\Users\\phils\\Source\\Repos\\ABT\\Test\\TestPlans\\Diagnostics\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "UsingMicrosoftNETSdk": false,
@@ -4558,11 +4558,11 @@
       "frameworks": {
         "net48": {
           "projectReferences": {
-            "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestExec\\TestExec.csproj": {
-              "projectPath": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestExec\\TestExec.csproj"
+            "C:\\Users\\phils\\Source\\Repos\\ABT\\Test\\TestExec\\TestExec.csproj": {
+              "projectPath": "C:\\Users\\phils\\Source\\Repos\\ABT\\Test\\TestExec\\TestExec.csproj"
             },
-            "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestLib\\TestLib.csproj": {
-              "projectPath": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestLib\\TestLib.csproj"
+            "C:\\Users\\phils\\Source\\Repos\\ABT\\Test\\TestLib\\TestLib.csproj": {
+              "projectPath": "C:\\Users\\phils\\Source\\Repos\\ABT\\Test\\TestLib\\TestLib.csproj"
             }
           }
         }
