@@ -53,7 +53,7 @@
   </InstrumentsTestPlan>
   <TestSpace NamespaceRoot="ABT.Test.TestPlans.Diagnostics.TestPlan" Description="System Diagnostics." Simulate="false">
     <TestOperation NamespaceTrunk="InstrumentsTestPlan" ProductionTest="true" Description="Manufacturer's self-tests + ABT tests of TestPlanDefinition's InstrumentsTestPlan.">
-      <!--<TestGroup Classname="SwitchingUnits" Description="Keysight 34980As." CancelNotPassed="false" Independent="true">
+      <TestGroup Classname="SwitchingUnits" Description="Keysight 34980As." CancelNotPassed="false" Independent="true">
         <MethodCustom Name="MSMU_34980A" Description="Keysight 34980A Multifunction Switch/Measurement Units." CancelNotPassed="false" >
           <Parameter Name="FRTD_34921A_Low°C" Value="15.5"/>
           <Parameter Name="FRTD_34921A_High°C" Value="29.5"/>
@@ -67,7 +67,7 @@
           <Parameter Name="ResistanceRelay_34939A_OpenedΩ" Value="1E9"/>
           <Parameter Name="AccuracyDAC_34952A_VDC" Value="0.1"/>
         </MethodCustom>
-      </TestGroup>-->
+      </TestGroup>
       <TestGroup Classname="PowerSupplies" Description="Keysight E3634As &amp; E3649As." CancelNotPassed="false" Independent="true">
         <MethodCustom Name="PS_E3634A" Description="Keysight E3634A Power Supplies." CancelNotPassed="false" >
           <Parameter Name="Accuracy_E3634A_VDC" Value="0.1"/>
@@ -91,7 +91,7 @@
         <MethodCustom Name="Keysight_34921A" Description="Keysight 34921A 40-Channel Armature Multiplexer." CancelNotPassed="false" >
           <Parameter Name="ModuleType" Value="34921A"/>
           <Parameter Name="FRTD_34921A_Low°C" Value="15.5"/>
-          <Parameter Name="FRTD_34921A_High°C" Value="29.5"/>
+          <Parameter Name="FRTD_34921A_High°C" Value="32.2"/>
           <Parameter Name="ResistanceRelay_34921A_ClosedΩ" Value="3"/>
           <Parameter Name="ResistanceRelay_34921A_OpenedΩ" Value="1E9"/>
         </MethodCustom>
