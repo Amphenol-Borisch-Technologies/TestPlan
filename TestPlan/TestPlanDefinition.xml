@@ -60,6 +60,8 @@
           <Parameter Name="ResistanceRelay_34921A_ClosedΩ" Value="3"/>
           <Parameter Name="ResistanceRelay_34921A_OpenedΩ" Value="1E9"/>
           <Parameter Name="ResistanceRelay_34932A_ClosedΩ" Value="3"/>
+          <Parameter Name="Current_34921A_LowADC" Value="0.075"/>
+          <Parameter Name="Current_34921A_HighADC" Value="0.125"/>          
           <Parameter Name="ResistanceRelay_34932A_OpenedΩ" Value="1E9"/>
           <Parameter Name="ResistanceRelay_34938A_ClosedΩ" Value="3"/>
           <Parameter Name="ResistanceRelay_34938A_OpenedΩ" Value="1E9"/>
@@ -94,6 +96,8 @@
           <Parameter Name="FRTD_34921A_High°C" Value="32.2"/>
           <Parameter Name="ResistanceRelay_34921A_ClosedΩ" Value="3"/>
           <Parameter Name="ResistanceRelay_34921A_OpenedΩ" Value="1E9"/>
+          <Parameter Name="Current_34921A_LowADC" Value="0.075"/>
+          <Parameter Name="Current_34921A_HighADC" Value="0.125"/>
         </MethodCustom>
       </TestGroup>
       <TestGroup Classname="Keysight_34932As" Description="Keysight 34932A Modules." CancelNotPassed="false" Independent="true">
