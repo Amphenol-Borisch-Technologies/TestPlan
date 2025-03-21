@@ -120,6 +120,7 @@
     <Compile Include="TestMain.cs" />
     <Compile Include="TestPlan\InstrumentsTestPlan.cs" />
     <Compile Include="TestPlan\Keysight_34980A.cs" />
+    <Compile Include="TestPlan\TestMethods.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
