@@ -4,18 +4,6 @@
   "Documents": [
     {
       "AbsoluteMoniker": "D:0:0:{24D5E99E-185C-4507-81F0-132D8CB8164E}|..\\..\\TestLib\\TestLib.csproj|c:\\users\\phils\\source\\repos\\abt\\test\\testlib\\instrumentdrivers\\multifunction\\msmu_34980a_scpi_net.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|c:\\users\\phils\\source\\repos\\abt\\test\\testplans\\diagnostics\\testplan\\instrumentstestplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|solutionrelative:testplan\\instrumentstestplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|c:\\users\\phils\\source\\repos\\abt\\test\\testplans\\diagnostics\\testplan\\testplandefinition.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|solutionrelative:testplan\\testplandefinition.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|c:\\users\\phils\\source\\repos\\abt\\test\\testplans\\diagnostics\\testplan\\testmethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|solutionrelative:testplan\\testmethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,8 +12,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 43,
+          "DockedWidth": 108,
+          "SelectedChildIndex": 40,
           "Children": [
             {
               "$type": "Bookmark",
@@ -33,7 +21,7 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
               "$type": "Bookmark",
@@ -181,41 +169,11 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TestPlanDefinition.xml",
-              "DocumentMoniker": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\TestPlan\\TestPlanDefinition.xml",
-              "RelativeDocumentMoniker": "TestPlan\\TestPlanDefinition.xml",
-              "ToolTip": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\TestPlan\\TestPlanDefinition.xml",
-              "RelativeToolTip": "TestPlan\\TestPlanDefinition.xml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAADMAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2025-03-21T16:08:02.26Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TestMethods.cs",
-              "DocumentMoniker": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\TestPlan\\TestMethods.cs",
-              "RelativeDocumentMoniker": "TestPlan\\TestMethods.cs",
-              "ToolTip": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\TestPlan\\TestMethods.cs",
-              "RelativeToolTip": "TestPlan\\TestMethods.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T15:54:01.707Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -225,23 +183,20 @@
               "RelativeDocumentMoniker": "..\\..\\TestLib\\InstrumentDrivers\\Multifunction\\MSMU_34980A_SCPI_NET.cs",
               "ToolTip": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestLib\\InstrumentDrivers\\Multifunction\\MSMU_34980A_SCPI_NET.cs",
               "RelativeToolTip": "..\\..\\TestLib\\InstrumentDrivers\\Multifunction\\MSMU_34980A_SCPI_NET.cs",
-              "ViewState": "AgIAAKoAAAAAAAAAAAAAAMQAAABEAAAAAAAAAA==",
+              "ViewState": "AgIAAKIAAAAAAAAAAAAAAF0AAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T15:11:12.778Z",
+              "WhenOpened": "2025-03-20T20:28:01.115Z",
               "EditorCaption": ""
-            },
+            }
+          ]
+        },
+        {
+          "DockedWidth": 165,
+          "SelectedChildIndex": -1,
+          "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "InstrumentsTestPlan.cs",
-              "DocumentMoniker": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\TestPlan\\InstrumentsTestPlan.cs",
-              "RelativeDocumentMoniker": "TestPlan\\InstrumentsTestPlan.cs",
-              "ToolTip": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\TestPlan\\InstrumentsTestPlan.cs",
-              "RelativeToolTip": "TestPlan\\InstrumentsTestPlan.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAEoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T16:33:21.403Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }
