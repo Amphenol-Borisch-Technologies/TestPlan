@@ -3,6 +3,9 @@
   "WorkspaceRootPath": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{314614CB-6E17-4B74-A9F9-CE4699F78C9B}|..\\..\\TestExec\\TestExec.csproj|c:\\users\\phils\\source\\repos\\abt\\test\\testexec\\testexec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{24D5E99E-185C-4507-81F0-132D8CB8164E}|..\\..\\TestLib\\TestLib.csproj|c:\\users\\phils\\source\\repos\\abt\\test\\testlib\\instrumentdrivers\\multifunction\\msmu_34980a_scpi_net.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -186,19 +189,31 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "TestExec.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestExec\\TestExec.cs",
+              "RelativeDocumentMoniker": "..\\..\\TestExec\\TestExec.cs",
+              "ToolTip": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestExec\\TestExec.cs [Design]",
+              "RelativeToolTip": "..\\..\\TestExec\\TestExec.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T17:16:47.208Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "MSMU_34980A_SCPI_NET.cs",
               "DocumentMoniker": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestLib\\InstrumentDrivers\\Multifunction\\MSMU_34980A_SCPI_NET.cs",
               "RelativeDocumentMoniker": "..\\..\\TestLib\\InstrumentDrivers\\Multifunction\\MSMU_34980A_SCPI_NET.cs",
               "ToolTip": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestLib\\InstrumentDrivers\\Multifunction\\MSMU_34980A_SCPI_NET.cs",
               "RelativeToolTip": "..\\..\\TestLib\\InstrumentDrivers\\Multifunction\\MSMU_34980A_SCPI_NET.cs",
-              "ViewState": "AgIAAKgAAAAAAAAAAAAIwMoAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAIwGkAAABbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-21T16:59:47.181Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "InstrumentsTestPlan.cs",
               "DocumentMoniker": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\TestPlan\\InstrumentsTestPlan.cs",
               "RelativeDocumentMoniker": "TestPlan\\InstrumentsTestPlan.cs",
