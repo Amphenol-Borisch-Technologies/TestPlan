@@ -1,6 +1,5 @@
 ﻿namespace ABT.Test.TestPlans.Diagnostics.TestPlan.InstrumentsTestPlan {
     using System;
-    using System.Collections.Generic;
     using System.Diagnostics;
     using System.Windows.Forms;
     using ABT.Test.TestLib;

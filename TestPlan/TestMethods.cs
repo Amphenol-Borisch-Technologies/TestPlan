@@ -14,12 +14,12 @@ namespace ABT.Test.TestPlans.Diagnostics.TestPlan {
                 StringBuilder stringBuilder = new StringBuilder();
                 stringBuilder.AppendLine($"No instruments of type '{typeof(T).Name}' found:");
                 stringBuilder.AppendLine($"Check '{Data.TestExecDefinitionXML}' for missing:");
-                stringBuilder.AppendLine($" - Element '{nameof(InstrumentTestExec)}'.");
-                stringBuilder.AppendLine($" - Attribute '{nameof(InstrumentTestExec.NameSpacedClassName)}' = '{typeof(T).Name}'.");
+                stringBuilder.AppendLine($" - Element:   '{nameof(InstrumentTestExec)}'.");
+                stringBuilder.AppendLine($" - Attribute: '{nameof(InstrumentTestExec.NameSpacedClassName)}' = '{typeof(T).Name}'.");
                 stringBuilder.AppendLine(String.Empty);
                 stringBuilder.AppendLine($"Check '{Data.TestPlanDefinitionXML}' for:");
-                stringBuilder.AppendLine($" - Element '{nameof(TestSpace)}'.");
-                stringBuilder.AppendLine($" - Attribute '{nameof(TestSpace.Simulate)}' = '{true}'.");
+                stringBuilder.AppendLine($" - Element:   '{nameof(TestSpace)}'.");
+                stringBuilder.AppendLine($" - Attribute: '{nameof(TestSpace.Simulate)}' = '{true}'.");
                 TestIndices.Method.Log.Append(stringBuilder.ToString());
                 return EVENTS.INFORMATION;
             }
