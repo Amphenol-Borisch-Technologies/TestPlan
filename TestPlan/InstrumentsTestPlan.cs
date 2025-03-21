@@ -1,7 +1,4 @@
 ﻿namespace ABT.Test.TestPlans.Diagnostics.TestPlan.InstrumentsTestPlan {
-    using System;
-    using System.Diagnostics;
-    using System.Windows.Forms;
     using ABT.Test.TestLib;
     using ABT.Test.TestLib.Configuration;
     using ABT.Test.TestLib.InstrumentDrivers.Generic;
@@ -10,6 +7,9 @@
     using ABT.Test.TestLib.InstrumentDrivers.Oscilloscopes;
     using ABT.Test.TestLib.InstrumentDrivers.PowerSupplies;
     using ABT.Test.TestPlans.Diagnostics.InstrumentDrivers;
+    using System;
+    using System.Diagnostics;
+    using System.Windows.Forms;
     using static ABT.Test.TestLib.Configuration.Assertions;
 
     internal class SwitchingUnits {
