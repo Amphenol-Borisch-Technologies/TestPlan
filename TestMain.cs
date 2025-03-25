@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using ABT.Test.TestLib.Configuration;
+using Microsoft.Win32;
+using System;
 using System.Drawing;
 using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ABT.Test.TestLib.Configuration;
-using ABT.Test.TestLib.InstrumentDrivers.Interfaces;
-using Microsoft.Win32;
 
 // NOTE:  Recommend using Microsoft's Visual Studio Code to develop/debug TestExec based closed source/proprietary projects:
 //        - Visual Studio Code is a co$t free, open-source Integrated Development Environment entirely suitable for textual C# development, like Exec.
