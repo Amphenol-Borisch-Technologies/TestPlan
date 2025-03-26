@@ -66,23 +66,23 @@
             },
             "System.Buffers": {
               "target": "Package",
-              "version": "[4.6.0, )"
+              "version": "[4.6.1, )"
             },
             "System.Diagnostics.DiagnosticSource": {
               "target": "Package",
-              "version": "[9.0.1, )"
+              "version": "[9.0.3, )"
             },
             "System.Memory": {
               "target": "Package",
-              "version": "[4.6.0, )"
+              "version": "[4.6.2, )"
             },
             "System.Numerics.Vectors": {
               "target": "Package",
-              "version": "[4.6.0, )"
+              "version": "[4.6.1, )"
             },
             "System.Runtime.CompilerServices.Unsafe": {
               "target": "Package",
-              "version": "[6.1.0, )"
+              "version": "[6.1.1, )"
             },
             "System.Runtime.InteropServices.WindowsRuntime": {
               "target": "Package",
@@ -98,15 +98,15 @@
             },
             "System.Threading.Channels": {
               "target": "Package",
-              "version": "[9.0.1, )"
+              "version": "[9.0.3, )"
             },
             "System.Threading.Tasks.Extensions": {
               "target": "Package",
-              "version": "[4.6.0, )"
+              "version": "[4.6.2, )"
             },
             "System.ValueTuple": {
               "target": "Package",
-              "version": "[4.5.0, )"
+              "version": "[4.6.1, )"
             }
           }
         }
@@ -176,23 +176,23 @@
             },
             "System.Buffers": {
               "target": "Package",
-              "version": "[4.6.0, )"
+              "version": "[4.6.1, )"
             },
             "System.Diagnostics.DiagnosticSource": {
               "target": "Package",
-              "version": "[9.0.1, )"
+              "version": "[9.0.3, )"
             },
             "System.Memory": {
               "target": "Package",
-              "version": "[4.6.0, )"
+              "version": "[4.6.2, )"
             },
             "System.Numerics.Vectors": {
               "target": "Package",
-              "version": "[4.6.0, )"
+              "version": "[4.6.1, )"
             },
             "System.Runtime.CompilerServices.Unsafe": {
               "target": "Package",
-              "version": "[6.1.0, )"
+              "version": "[6.1.1, )"
             },
             "System.Runtime.InteropServices.WindowsRuntime": {
               "target": "Package",
@@ -208,11 +208,11 @@
             },
             "System.Threading.Channels": {
               "target": "Package",
-              "version": "[9.0.1, )"
+              "version": "[9.0.3, )"
             },
             "System.Threading.Tasks.Extensions": {
               "target": "Package",
-              "version": "[4.6.0, )"
+              "version": "[4.6.2, )"
             }
           }
         }
