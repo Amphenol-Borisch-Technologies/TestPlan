@@ -17,6 +17,7 @@
             if (Data.testSequence.IsOperation) Debug.Assert(TestOperation(NamespaceTrunk: "InstrumentsTestPlan", ProductionTest: "true", Description: "Manufacturer\'s self-tests + ABT tests of TestPlanDefinition\'s InstrumentsTestPlan.", TestGroups: "SwitchingUnits|PowerSupplies|DigitalMultiMeters|Oscilloscopes|WaveformGenerators"));
             Debug.Assert(TestGroup(Classname: "SwitchingUnits", Description: "Keysight 34980As.", CancelNotPassed: "false", Independent: "true", Methods: "MSMU_34980A"));
             Debug.Assert(MethodCustom(Name: "MSMU_34980A", Description: "Keysight 34980A Multifunction Switch/Measurement Units.", CancelNotPassed: "false"));
+            Debug.Assert(((MethodCustom)TestIndices.Method).Assert(Name: "MSMU_34980A", Description: "Keysight 34980A Multifunction Switch/Measurement Units.", CancelNotPassed: "false"));
 
             TestIndices.Method.Event = TestMethods.DiagnosticsT<MSMU_34980A_SCPI_NET>(((MethodCustom)TestIndices.Method).Parameters);
             return TestIndices.Method.LogFetchAndClear();
@@ -26,7 +27,7 @@
     internal class PowerSupplies {
         internal static String PS_E3634A() {
             Debug.Assert(TestGroup(Classname: "PowerSupplies", Description: "Keysight E3634As & E3649As.", CancelNotPassed: "false", Independent: "true", Methods: "PS_E3634A|PS_E3649A"));
-            Debug.Assert(MethodCustom(Name: "PS_E3634A", Description: "Keysight E3634A Power Supplies.", CancelNotPassed: "false"));
+            Debug.Assert(((MethodCustom)TestIndices.Method).Assert(Name: "PS_E3634A", Description: "Keysight E3634A Power Supplies.", CancelNotPassed: "false"));
 
             TestIndices.Method.Event = TestMethods.DiagnosticsT<PS_E3634A_SCPI_NET>(((MethodCustom)TestIndices.Method).Parameters);
             return TestIndices.Method.LogFetchAndClear();

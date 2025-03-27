@@ -10,7 +10,7 @@
         internal static String Keysight_34921A() {
             if (Data.testSequence.IsOperation) Debug.Assert(TestOperation(NamespaceTrunk: "Keysight_34980A", ProductionTest: "false", Description: "Keysight 34980A Module Tests.", TestGroups: "Keysight_34921As|Keysight_34932As|Keysight_34938As|Keysight_34952As"));
             Debug.Assert(TestGroup(Classname: "Keysight_34921As", Description: "Keysight 34921A Modules.", CancelNotPassed: "false", Independent: "true", Methods: "Keysight_34921A"));
-            Debug.Assert(MethodCustom(Name: "Keysight_34921A", Description: "Keysight 34921A 40-Channel Armature Multiplexer.", CancelNotPassed: "false"));
+            Debug.Assert(((MethodCustom)TestIndices.Method).Assert(Name: "Keysight_34921A", Description: "Keysight 34921A 40-Channel Armature Multiplexer.", CancelNotPassed: "false"));
 
             TestIndices.Method.Event = TestMethods.DiagnosticsT<MSMU_34980A_SCPI_NET>(((MethodCustom)TestIndices.Method).Parameters);
             return TestIndices.Method.LogFetchAndClear();
