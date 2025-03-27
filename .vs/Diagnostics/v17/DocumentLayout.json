@@ -3,32 +3,27 @@
   "WorkspaceRootPath": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{24D5E99E-185C-4507-81F0-132D8CB8164E}|..\\..\\TestLib\\TestLib.csproj|c:\\users\\phils\\source\\repos\\abt\\test\\testlib\\configuration\\testplangenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{24D5E99E-185C-4507-81F0-132D8CB8164E}|..\\..\\TestLib\\TestLib.csproj|c:\\users\\phils\\source\\repos\\abt\\test\\testlib\\configuration\\testplandefinition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24D5E99E-185C-4507-81F0-132D8CB8164E}|..\\..\\TestLib\\TestLib.csproj|c:\\users\\phils\\source\\repos\\abt\\test\\testlib\\configuration\\assertions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{24D5E99E-185C-4507-81F0-132D8CB8164E}|..\\..\\TestLib\\TestLib.csproj|c:\\users\\phils\\source\\repos\\abt\\test\\testlib\\instrumentdrivers\\multifunction\\msmu_34980a_scpi_net.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|c:\\users\\phils\\source\\repos\\abt\\test\\testplans\\diagnostics\\testplan\\instrumentstestplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|solutionrelative:testplan\\instrumentstestplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{24D5E99E-185C-4507-81F0-132D8CB8164E}|..\\..\\TestLib\\TestLib.csproj|c:\\users\\phils\\source\\repos\\abt\\test\\testlib\\testlib.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{314614CB-6E17-4B74-A9F9-CE4699F78C9B}|..\\..\\TestExec\\TestExec.csproj|c:\\users\\phils\\source\\repos\\abt\\test\\testexec\\testexec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|c:\\users\\phils\\source\\repos\\abt\\test\\testplans\\diagnostics\\testplan\\keysight_34980a.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|solutionrelative:testplan\\keysight_34980a.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24D5E99E-185C-4507-81F0-132D8CB8164E}|..\\..\\TestLib\\TestLib.csproj|c:\\users\\phils\\source\\repos\\abt\\test\\testlib\\configuration\\testplangenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|c:\\users\\phils\\source\\repos\\abt\\test\\testplans\\diagnostics\\testplan\\testmethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|solutionrelative:testplan\\testmethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|c:\\users\\phils\\source\\repos\\abt\\test\\testplans\\diagnostics\\testplan\\testplandefinition.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|solutionrelative:testplan\\testplandefinition.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{314614CB-6E17-4B74-A9F9-CE4699F78C9B}|..\\..\\TestExec\\TestExec.csproj|c:\\users\\phils\\source\\repos\\abt\\test\\testexec\\testexec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|c:\\users\\phils\\source\\repos\\abt\\test\\testplans\\diagnostics\\testplan\\instrumentstestplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|solutionrelative:testplan\\instrumentstestplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,8 +33,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 108,
-          "SelectedChildIndex": 47,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TestPlanGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestLib\\Configuration\\TestPlanGenerator.cs",
+              "RelativeDocumentMoniker": "..\\..\\TestLib\\Configuration\\TestPlanGenerator.cs",
+              "ToolTip": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestLib\\Configuration\\TestPlanGenerator.cs",
+              "RelativeToolTip": "..\\..\\TestLib\\Configuration\\TestPlanGenerator.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAAEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T17:29:36.958Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -202,93 +210,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Keysight_34980A.cs",
               "DocumentMoniker": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\TestPlan\\Keysight_34980A.cs",
               "RelativeDocumentMoniker": "TestPlan\\Keysight_34980A.cs",
               "ToolTip": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\TestPlan\\Keysight_34980A.cs",
               "RelativeToolTip": "TestPlan\\Keysight_34980A.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T15:22:25.706Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TestMethods.cs",
-              "DocumentMoniker": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\TestPlan\\TestMethods.cs",
-              "RelativeDocumentMoniker": "TestPlan\\TestMethods.cs",
-              "ToolTip": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\TestPlan\\TestMethods.cs",
-              "RelativeToolTip": "TestPlan\\TestMethods.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T15:22:25.012Z",
+              "WhenOpened": "2025-03-27T17:16:31.669Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "TestPlanDefinition.xml",
-              "DocumentMoniker": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\TestPlan\\TestPlanDefinition.xml",
-              "RelativeDocumentMoniker": "TestPlan\\TestPlanDefinition.xml",
-              "ToolTip": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\TestPlan\\TestPlanDefinition.xml",
-              "RelativeToolTip": "TestPlan\\TestPlanDefinition.xml",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAAcAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2025-03-27T15:08:56.438Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TestPlanGenerator.cs",
-              "DocumentMoniker": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestLib\\Configuration\\TestPlanGenerator.cs",
-              "RelativeDocumentMoniker": "..\\..\\TestLib\\Configuration\\TestPlanGenerator.cs",
-              "ToolTip": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestLib\\Configuration\\TestPlanGenerator.cs",
-              "RelativeToolTip": "..\\..\\TestLib\\Configuration\\TestPlanGenerator.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAAAEwAAACRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T14:32:02.853Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "InstrumentsTestPlan.cs",
               "DocumentMoniker": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\TestPlan\\InstrumentsTestPlan.cs",
               "RelativeDocumentMoniker": "TestPlan\\InstrumentsTestPlan.cs",
               "ToolTip": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\TestPlan\\InstrumentsTestPlan.cs",
               "RelativeToolTip": "TestPlan\\InstrumentsTestPlan.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAACeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T13:41:41.313Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "TestExec.cs",
-              "DocumentMoniker": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestExec\\TestExec.cs",
-              "RelativeDocumentMoniker": "..\\..\\TestExec\\TestExec.cs",
-              "ToolTip": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestExec\\TestExec.cs",
-              "RelativeToolTip": "..\\..\\TestExec\\TestExec.cs",
-              "ViewState": "AgIAAFQBAAAAAAAAAAAAAOQBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T13:10:27.603Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Assertions.cs",
-              "DocumentMoniker": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestLib\\Configuration\\Assertions.cs",
-              "RelativeDocumentMoniker": "..\\..\\TestLib\\Configuration\\Assertions.cs",
-              "ToolTip": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestLib\\Configuration\\Assertions.cs",
-              "RelativeToolTip": "..\\..\\TestLib\\Configuration\\Assertions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T13:40:15.032Z",
+              "WhenOpened": "2025-03-27T16:45:07.452Z",
               "EditorCaption": ""
             }
           ]
@@ -309,10 +252,10 @@
       "Orientation": 0,
       "VerticalTabListWidth": 256,
       "FloatingWindowState": {
-        "Id": "49502e83-f7e2-457b-b505-ebef11622d0a",
+        "Id": "9511bd2e-ac0a-4dae-b63d-f955ea749657",
         "Display": 1,
-        "X": 96,
-        "Y": 172,
+        "X": 335,
+        "Y": 126,
         "Width": 1496,
         "Height": 837,
         "WindowState": 2
@@ -320,19 +263,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "TestLib.cs",
+              "DocumentMoniker": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestLib\\TestLib.cs",
+              "RelativeDocumentMoniker": "..\\..\\TestLib\\TestLib.cs",
+              "ToolTip": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestLib\\TestLib.cs",
+              "RelativeToolTip": "..\\..\\TestLib\\TestLib.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAEwIIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T17:45:19.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MSMU_34980A_SCPI_NET.cs",
+              "DocumentMoniker": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestLib\\InstrumentDrivers\\Multifunction\\MSMU_34980A_SCPI_NET.cs",
+              "RelativeDocumentMoniker": "..\\..\\TestLib\\InstrumentDrivers\\Multifunction\\MSMU_34980A_SCPI_NET.cs",
+              "ToolTip": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestLib\\InstrumentDrivers\\Multifunction\\MSMU_34980A_SCPI_NET.cs",
+              "RelativeToolTip": "..\\..\\TestLib\\InstrumentDrivers\\Multifunction\\MSMU_34980A_SCPI_NET.cs",
+              "ViewState": "AgIAAOUBAAAAAAAAAAAEwAwCAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T17:44:04.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TestExec.cs",
+              "DocumentMoniker": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestExec\\TestExec.cs",
+              "RelativeDocumentMoniker": "..\\..\\TestExec\\TestExec.cs",
+              "ToolTip": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestExec\\TestExec.cs",
+              "RelativeToolTip": "..\\..\\TestExec\\TestExec.cs",
+              "ViewState": "AgIAAOUBAAAAAAAAAAAEwCkCAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T17:43:55.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "TestPlanDefinition.cs",
               "DocumentMoniker": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestLib\\Configuration\\TestPlanDefinition.cs",
               "RelativeDocumentMoniker": "..\\..\\TestLib\\Configuration\\TestPlanDefinition.cs",
               "ToolTip": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestLib\\Configuration\\TestPlanDefinition.cs",
               "RelativeToolTip": "..\\..\\TestLib\\Configuration\\TestPlanDefinition.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMUAAABFAAAAAAAAAA==",
+              "ViewState": "AgIAAK0BAAAAAAAAAAAEwMcBAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T13:08:37.036Z",
+              "WhenOpened": "2025-03-27T16:53:18.844Z",
               "EditorCaption": ""
             }
           ]
