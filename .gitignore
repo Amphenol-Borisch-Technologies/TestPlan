@@ -53,3 +53,4 @@ idea/
 /.vs/Diagnostics/v17/DocumentLayout.backup.json
 /.vs/Diagnostics/v17/DocumentLayout.json
 /.vs/Diagnostics/v17/DocumentLayout.json
+/obj/x64/Debug/Diagnostics.csproj.SuggestedBindingRedirects.cache
