@@ -30,7 +30,7 @@
           - Invalid: "BRH-2449-123"; "BRH-" ≠ "BRH".
           - Invalid: "BRH2200-123"; week must be "01" to "52", not "00".
         
-        See https://regex101.com/ for help in creating & understanding Regular Expressions.
+        See https://regex101.com/ for help in creating & understanding Regular Expressions.  Also, Microsoft's CoPilot at https://copilot.microsoft.com/.
   -->
   <Development Released="2025-04-01">
     <Developer Name="Phillip Smelt" Language="CSharp" Comment="" />
