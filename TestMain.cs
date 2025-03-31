@@ -89,7 +89,7 @@ using System.Windows.Forms;
 /// </para>
 /// </summary>
 namespace ABT.Test.TestPlans.Diagnostics {
-    internal class TestMain {
+    internal static class TestMain {
         [STAThread]
         static void Main() {
             TestLib.Data.MutexTest = new Mutex(true, TestLib.Data.MutexTestName, out Boolean onlyInstance);
@@ -104,8 +104,8 @@ namespace ABT.Test.TestPlans.Diagnostics {
             Application.SetCompatibleTextRenderingDefault(false);
             try { Application.Run(TestEx.Only); } catch (Exception e) {
                 TestExec.TestExec.StatusTimer.Stop();
-                TestExec.TestExec.ErrorMessage(e.ToString());
-                TestExec.TestExec.ErrorMessage(e);
+                TestLib.Data.ErrorMessage(e.ToString());
+                TestLib.Data.ErrorMessage(e);
             }
         }
     }

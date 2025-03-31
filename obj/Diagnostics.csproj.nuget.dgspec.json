@@ -103,10 +103,6 @@
             "System.Threading.Tasks.Extensions": {
               "target": "Package",
               "version": "[4.6.2, )"
-            },
-            "System.ValueTuple": {
-              "target": "Package",
-              "version": "[4.6.1, )"
             }
           }
         }
