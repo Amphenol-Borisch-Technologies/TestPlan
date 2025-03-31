@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ABT.Test.TestPlans.Diagnostics.TestMain</StartupObject>
+    <StartupObject>ABT.Test.TestPlans.Diagnostics.Program</StartupObject>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
     <DebugSymbols>true</DebugSymbols>
@@ -117,7 +117,7 @@
   <ItemGroup>
     <Compile Include="InstrumentDrivers\InstrumentAliases.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TestMain.cs" />
+    <Compile Include="TestEx.cs" />
     <Compile Include="TestPlan\InstrumentsTestPlan.cs" />
     <Compile Include="TestPlan\Keysight_34980A.cs" />
     <Compile Include="TestPlan\TestMethods.cs" />
@@ -149,7 +149,7 @@
     <Content Include="Resources\Amphenol.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="TestPlan\TestPlanDefinition.xml" />
+    <Content Include="TestPlanDefinition.xml" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft-WindowsAPICodePack-ShellExtensions" Version="1.1.5" />
