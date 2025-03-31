@@ -47,7 +47,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 108,
-          "SelectedChildIndex": 46,
+          "SelectedChildIndex": 45,
           "Children": [
             {
               "$type": "Bookmark",
@@ -249,18 +249,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "TestPlanDefinitionValidator.cs",
-              "DocumentMoniker": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestLib\\Configuration\\TestPlanDefinitionValidator.cs",
-              "RelativeDocumentMoniker": "..\\..\\TestLib\\Configuration\\TestPlanDefinitionValidator.cs",
-              "ToolTip": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestLib\\Configuration\\TestPlanDefinitionValidator.cs",
-              "RelativeToolTip": "..\\..\\TestLib\\Configuration\\TestPlanDefinitionValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T17:57:37.901Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
               "Title": "TestPlanGenerator.cs",
               "DocumentMoniker": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestLib\\Configuration\\TestPlanGenerator.cs",
@@ -295,6 +283,18 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
               "WhenOpened": "2025-03-28T12:53:34.896Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TestPlanDefinitionValidator.cs",
+              "DocumentMoniker": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestLib\\Configuration\\TestPlanDefinitionValidator.cs",
+              "RelativeDocumentMoniker": "..\\..\\TestLib\\Configuration\\TestPlanDefinitionValidator.cs",
+              "ToolTip": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestLib\\Configuration\\TestPlanDefinitionValidator.cs",
+              "RelativeToolTip": "..\\..\\TestLib\\Configuration\\TestPlanDefinitionValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T17:57:37.901Z"
             },
             {
               "$type": "Document",
