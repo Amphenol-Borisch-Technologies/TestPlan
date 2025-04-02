@@ -99,7 +99,7 @@
     <Reference Include="Ivi.Scope.Interop, Version=3.0.0.0, Culture=neutral, PublicKeyToken=a128c98f1d7717c1, processorArchitecture=AMD64">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>True</EmbedInteropTypes>
-      <HintPath>..\..\..\..\..\..\..\..\Program Files\IVI Foundation\IVI\Bin\Primary Interop Assemblies\Ivi.Scope.Interop.dll</HintPath>
+      <HintPath>C:\Program Files\IVI Foundation\IVI\Bin\Primary Interop Assemblies\Ivi.Scope.Interop.dll</HintPath>
     </Reference>
     <Reference Include="Ivi.Visa, Version=7.2.0.0, Culture=neutral, PublicKeyToken=a128c98f1d7717c1, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -124,12 +124,12 @@
     </Reference>
     <Reference Include="TestExec, Version=1.0.9222.25269, Culture=neutral, processorArchitecture=AMD64">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\Program Files\ABT\Test\TestExec\TestExec.dll</HintPath>
+      <HintPath>C:\Program Files\ABT\Test\TestExec\TestExec.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="TestLib, Version=1.0.9222.25268, Culture=neutral, processorArchitecture=AMD64">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\Program Files\ABT\Test\TestExec\TestLib.dll</HintPath>
+      <HintPath>C:\Program Files\ABT\Test\TestExec\TestLib.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
