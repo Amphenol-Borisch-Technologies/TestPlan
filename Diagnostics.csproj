@@ -62,32 +62,39 @@
     <Reference Include="Ag34401_11, Version=0.0.0.0, Culture=neutral, PublicKeyToken=344b812ea93ad2d2, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\ProgramData\Keysight\Command Expert\ScpiNetDrivers\Ag34401_11.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Ag34980_2_43, Version=0.0.0.0, Culture=neutral, PublicKeyToken=344b812ea93ad2d2, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\ProgramData\Keysight\Command Expert\ScpiNetDrivers\Ag34980_2_43.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="AgE363x_1_7, Version=0.0.0.0, Culture=neutral, PublicKeyToken=344b812ea93ad2d2, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\ProgramData\Keysight\Command Expert\ScpiNetDrivers\AgE363x_1_7.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="AgE364xD_1_7, Version=0.0.0.0, Culture=neutral, PublicKeyToken=344b812ea93ad2d2, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\ProgramData\Keysight\Command Expert\ScpiNetDrivers\AgE364xD_1_7.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Agilent.Agilent34952A.Interop, Version=1.6.0.0, Culture=neutral, PublicKeyToken=ced78d295d1e0f2b, processorArchitecture=AMD64">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>False</EmbedInteropTypes>
       <HintPath>C:\Program Files\IVI Foundation\IVI\Bin\Primary Interop Assemblies\Agilent.Agilent34952A.Interop.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="AgSCPI99_1_0, Version=0.0.0.0, Culture=neutral, PublicKeyToken=344b812ea93ad2d2, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\ProgramData\Keysight\Command Expert\ScpiNetDrivers\AgSCPI99_1_0.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Ivi.Driver.Interop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a128c98f1d7717c1, processorArchitecture=AMD64">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>False</EmbedInteropTypes>
       <HintPath>C:\Program Files\IVI Foundation\IVI\Bin\Primary Interop Assemblies\Ivi.Driver.Interop.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Ivi.Scope.Interop, Version=3.0.0.0, Culture=neutral, PublicKeyToken=a128c98f1d7717c1, processorArchitecture=AMD64">
       <SpecificVersion>False</SpecificVersion>
@@ -97,6 +104,7 @@
     <Reference Include="Ivi.Visa, Version=7.2.0.0, Culture=neutral, PublicKeyToken=a128c98f1d7717c1, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Program Files\IVI Foundation\VISA\Microsoft.NET\Framework64\v2.0.50727\VISA.NET Shared Components 7.2.0\Ivi.Visa.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
@@ -112,6 +120,17 @@
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>False</EmbedInteropTypes>
       <HintPath>C:\Program Files\IVI Foundation\IVI\Bin\Primary Interop Assemblies\Tektronix.Tkdpo2k3k4k.Interop.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="TestExec, Version=1.0.9222.25269, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\ABT\Test\TestExec\TestExec.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="TestLib, Version=1.0.9222.25268, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\ABT\Test\TestExec\TestLib.dll</HintPath>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -180,16 +199,6 @@
     <PackageReference Include="WindowsAPICodePack">
       <Version>8.0.6</Version>
     </PackageReference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\TestExec\TestExec.csproj">
-      <Project>{314614cb-6e17-4b74-a9f9-ce4699f78c9b}</Project>
-      <Name>TestExec</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\TestLib\TestLib.csproj">
-      <Project>{24d5e99e-185c-4507-81f0-132d8cb8164e}</Project>
-      <Name>TestLib</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
