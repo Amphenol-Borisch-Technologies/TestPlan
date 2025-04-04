@@ -1,7 +1,6 @@
 ﻿using ABT.Test.TestLib.Configuration;
 using Microsoft.Win32;
 using System;
-using System.Diagnostics;
 using System.Drawing;
 using System.Reflection;
 using System.Threading;

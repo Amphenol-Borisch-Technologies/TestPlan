@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <TestPlanDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                xsi:noNamespaceSchemaLocation="file://C://Program Files//ABT//Test//TestExec//TestPlanDefinition.xsd">
+                xsi:noNamespaceSchemaLocation="file://C://Program Files//ABT//Test//TestExecutive//TestPlanDefinition.xsd">
   <UUT Number="Diagnostics" Description="Diagnostics of TestExec Functional Test System." Revision="-" Category="System">
     <Customer Name="Amphenol Corporation" Division="Amphenol Borisch Technologies" Location="Grand Rapids" />
     <TestSpecification Document="None" Revision="None" Title="None" Date="2025-04-01" />
