@@ -44,45 +44,9 @@
       "frameworks": {
         "net48": {
           "dependencies": {
-            "Microsoft-WindowsAPICodePack-ShellExtensions": {
+            "Microsoft-WindowsAPICodePack-Shell": {
               "target": "Package",
               "version": "[1.1.5, )"
-            },
-            "Microsoft.NETCore.Platforms": {
-              "target": "Package",
-              "version": "[7.0.4, )"
-            },
-            "System.IO": {
-              "target": "Package",
-              "version": "[4.3.0, )"
-            },
-            "System.Net.Http": {
-              "target": "Package",
-              "version": "[4.3.4, )"
-            },
-            "System.Runtime": {
-              "target": "Package",
-              "version": "[4.3.1, )"
-            },
-            "System.Security.Cryptography.Algorithms": {
-              "target": "Package",
-              "version": "[4.3.1, )"
-            },
-            "System.Security.Cryptography.Encoding": {
-              "target": "Package",
-              "version": "[4.3.0, )"
-            },
-            "System.Security.Cryptography.Primitives": {
-              "target": "Package",
-              "version": "[4.3.0, )"
-            },
-            "System.Security.Cryptography.X509Certificates": {
-              "target": "Package",
-              "version": "[4.3.2, )"
-            },
-            "WindowsAPICodePack": {
-              "target": "Package",
-              "version": "[8.0.6, )"
             }
           }
         }
