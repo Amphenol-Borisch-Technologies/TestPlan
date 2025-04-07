@@ -126,9 +126,6 @@ namespace ABT.Test.TestPlans.Diagnostics {
         private TestEx() : base(Icon.ExtractAssociatedIcon(Assembly.GetExecutingAssembly().Location), AppDomain.CurrentDomain.BaseDirectory.Remove(AppDomain.CurrentDomain.BaseDirectory.IndexOf(@"\bin\"))) {
             // NOTE:  Create base constructor's Icon as applicable, depending on customer.
             // https://stackoverflow.com/questions/40933304/how-to-create-an-icon-for-visual-studio-with-just-mspaint-and-visual-studio
-            // TODO:  Eventually; dynamically create custom TestExec menu items, allowing non-standard Apps & UUT menu choices.
-            //        - https://stackoverflow.com/questions/1757574/dynamically-adding-toolstripmenuitems-to-a-menustrip-c-winforms
-            //        - https://learn.microsoft.com/en-us/dotnet/desktop/winforms/controls/how-to-add-toolstrip-items-dynamically?view=netframeworkdesktop-4.8
             WindowState = FormWindowState.Maximized;
             SystemEvents.SessionEnding += OnSessionEnding;
         }

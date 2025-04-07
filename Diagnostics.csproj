@@ -56,7 +56,7 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>..\..\..\..\..\..\..\..\Program Files\ABT\Test\TestExecutive\Amphenol.ico</ApplicationIcon>
+    <ApplicationIcon>..\..\..\..\..\..\..\..\Program Files\ABT\Test\TestExecutive\Shared\Amphenol.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <NoWin32Manifest>true</NoWin32Manifest>
@@ -147,7 +147,7 @@
     <Folder Include="Documentation\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\..\..\..\..\..\..\Program Files\ABT\Test\TestExecutive\Amphenol.ico">
+    <Content Include="..\..\..\..\..\..\..\..\Program Files\ABT\Test\TestExecutive\Shared\Amphenol.ico">
       <Link>Amphenol.ico</Link>
     </Content>
     <Content Include="TestPlanDefinition.xml">
