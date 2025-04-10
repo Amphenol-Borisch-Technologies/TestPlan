@@ -1,4 +1,4 @@
-﻿using ABT.Test.TestLib.Configuration;
+﻿using ABT.Test.TestExecutive.TestLib.Configuration;
 using Microsoft.Win32;
 using System;
 using System.Drawing;
@@ -88,7 +88,7 @@ using System.Windows.Forms;
 ///        inside the Exec.sRun() loop.
 /// </para>
 /// </summary>
-namespace ABT.Test.TestPlans.Diagnostics {
+namespace ABT.Test.TestExecutive.TestPlans.Diagnostics {
     internal static class Program {
         [STAThread]
         static void Main() {

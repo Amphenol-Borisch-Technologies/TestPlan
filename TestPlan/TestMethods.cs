@@ -1,11 +1,11 @@
-﻿using ABT.Test.TestLib;
-using ABT.Test.TestLib.Configuration;
-using ABT.Test.TestLib.InstrumentDrivers.Interfaces;
+﻿using ABT.Test.TestExecutive.TestLib;
+using ABT.Test.TestExecutive.TestLib.Configuration;
+using ABT.Test.TestExecutive.TestLib.InstrumentDrivers.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-namespace ABT.Test.TestPlans.Diagnostics.TestPlan {
+namespace ABT.Test.TestExecutive.TestPlans.Diagnostics.TestPlan {
 
     internal static class TestMethods {
         internal static EVENTS DiagnosticsT<T>(List<Parameter> Parameters) where T : IDiagnostics {

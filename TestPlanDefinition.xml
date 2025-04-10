@@ -39,17 +39,17 @@
   </Development>
   <Modifications>
     <Modification Who="Phillip Smelt" What="Adapted prior TestExecutive &amp; TestExecutor into TestExec, TestLib &amp; TestPlan." When="2024-10-01" Where="Most Namespaces &amp; files updated." Why="Many major improvements." />
-    <Modification Who="Phillip Smelt" What="Replaced App.Config with TestPlanDefinition.xsd, TestPlanDefinition.xml &amp; TestPlanDefinition.cs." When="2024-12-28" Where="ABT.Test.TestLib.Configuration &amp; ABT.Test.Test.Testplans"
+    <Modification Who="Phillip Smelt" What="Replaced App.Config with TestPlanDefinition.xsd, TestPlanDefinition.xml &amp; TestPlanDefinition.cs." When="2024-12-28" Where="ABT.Test.TestExecutive.TestLib.Configuration &amp; ABT.Test.TestExecutive.Test.Testplans"
                   Why="App.Config custom System.Configuration classes don't handle hierachical XML directly." />
     <Modification Who="Phillip Smelt" What="Converted TestExecDefinition access from XML reads to De-Serialized classes." When="2025-02-28" Where="TestExecDefinition.xsd, TestExecDefinition.xml &amp; TestExecDefinition.cs." Why="Consistency with TestPlanDefinition.*." />
   </Modifications>
   <InstrumentsTestPlan>
-    <Mobile ID="MSO1_3014" Alias="MSO" Detail="Tektronix MSO3014 Mixed Signal Oscilloscope" Address="USB0::0x0699::0x0421::C021373::INSTR" NameSpacedClassName="ABT.Test.TestLib.InstrumentDrivers.Oscilloscopes.MSO_3014_IVI_COM" />
+    <Mobile ID="MSO1_3014" Alias="MSO" Detail="Tektronix MSO3014 Mixed Signal Oscilloscope" Address="USB0::0x0699::0x0421::C021373::INSTR" NameSpacedClassName="ABT.Test.TestExecutive.TestLib.InstrumentDrivers.Oscilloscopes.MSO_3014_IVI_COM" />
     <!--<Stationary ID="MSMU1_34980A" Alias="MSMU" />
     <Stationary ID="PS1ε2_E3649A" Alias="P12V_N12V" />
     <Stationary ID="PS3_E3634A" Alias="P28V" />-->
   </InstrumentsTestPlan>
-  <TestSpace NamespaceRoot="ABT.Test.TestPlans.Diagnostics.TestPlan" Description="System Diagnostics." Simulate="true">
+  <TestSpace NamespaceRoot="ABT.Test.TestExecutive.TestPlans.Diagnostics.TestPlan" Description="System Diagnostics." Simulate="true">
     <TestOperation NamespaceTrunk="InstrumentsTestPlan" ProductionTest="true" Description="Manufacturer's self-tests + ABT tests of TestPlanDefinition's InstrumentsTestPlan.">
       <TestGroup Classname="SwitchingUnits" Description="Keysight 34980As." CancelNotPassed="false" Independent="true">
         <MethodCustom Name="MSMU_34980A" Description="Keysight 34980A Multifunction Switch/Measurement Units." CancelNotPassed="false" >
