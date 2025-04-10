@@ -7,18 +7,12 @@
       "RelativeMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|solutionrelative:instrumentdrivers\\instrumentaliases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\testex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|solutionrelative:testex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Diagnostics||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|c:\\users\\phils\\source\\repos\\abt\\test\\testplans\\diagnostics\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
+      "AbsoluteMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\testex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|solutionrelative:testex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -202,26 +196,14 @@
               "RelativeDocumentMoniker": "InstrumentDrivers\\InstrumentAliases.cs",
               "ToolTip": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\InstrumentDrivers\\InstrumentAliases.cs",
               "RelativeToolTip": "InstrumentDrivers\\InstrumentAliases.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T10:40:09.495Z",
+              "WhenOpened": "2025-04-10T10:07:57.098Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Diagnostics",
-              "DocumentMoniker": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\Diagnostics.csproj",
-              "RelativeDocumentMoniker": "Diagnostics.csproj",
-              "ToolTip": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\Diagnostics.csproj",
-              "RelativeToolTip": "Diagnostics.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-04-10T10:26:04.152Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "App.config",
               "DocumentMoniker": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\App.config",
               "RelativeDocumentMoniker": "App.config",
@@ -233,16 +215,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "TestEx.cs",
               "DocumentMoniker": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\TestEx.cs",
               "RelativeDocumentMoniker": "TestEx.cs",
               "ToolTip": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\TestEx.cs",
               "RelativeToolTip": "TestEx.cs",
-              "ViewState": "AgIAAJwAAAAAAAAAAAAowKYAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAcwG8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T14:24:34.235Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-07T14:24:34.235Z"
             }
           ]
         }
