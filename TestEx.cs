@@ -130,7 +130,7 @@ namespace ABT.Test.TestPlans.Diagnostics {
             SystemEvents.SessionEnding += OnSessionEnding;
         }
 
-        // Class TestEx's could be located in the TestExec project, but is placed in TestPlan projects so TestPlans can
+        // Class TestEx could be located in the TestExec project, but is placed in TestPlan projects so TestPlans can
         // conveniently override methods such as SystemReset(), IInstrumentsResetClear(), IPowerSuppliesOutputsOff() & IRelaysOpenAll().
         // This is necessary for TestPlans that utilize custom equipment or require special handling:
         // - Any non-SCPI equipment exclusively utilized by individual TestPlan's can be initialized/reset in their TestPlan projects.
