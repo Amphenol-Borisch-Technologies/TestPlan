@@ -1,4 +1,6 @@
-﻿using ABT.Test.TestExecutive.TestLib.Configuration;
+﻿using ABT.Test.TestExecutive.TestExec;
+using ABT.Test.TestExecutive.TestLib;
+using ABT.Test.TestExecutive.TestLib.Configuration;
 using Microsoft.Win32;
 using System;
 using System.Drawing;
@@ -88,29 +90,29 @@ using System.Windows.Forms;
 ///        inside the Exec.sRun() loop.
 /// </para>
 /// </summary>
-namespace ABT.Test.TestExecutive.TestPlans.Diagnostics {
+namespace ABT.Test.TestPlans.Diagnostics {
     internal static class Program {
         [STAThread]
         static void Main() {
-            TestLib.Data.MutexTest = new Mutex(true, TestLib.Data.MutexTestName, out Boolean onlyInstance);
+            Data.MutexTest = new Mutex(true, Data.MutexTestName, out Boolean onlyInstance);
             if (!onlyInstance) {
                 _ = MessageBox.Show($"Already have one executing instance of {nameof(TestExec)}.{Environment.NewLine}{Environment.NewLine}" +
                     $"Cannot have two, as both would attempt to control system instruments simultaneously.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
                 return;
             }
-            GC.KeepAlive(TestLib.Data.MutexTest);
+            GC.KeepAlive(Data.MutexTest);
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             try { Application.Run(TestEx.Only); } catch (Exception e) {
-                TestExec.TestExec.StatusTimer.Stop();
-                TestLib.Data.ErrorMessage(e.ToString());
-                TestLib.Data.ErrorMessage(e);
+                TestExec.StatusTimer.Stop();
+                Data.ErrorMessage(e.ToString());
+                Data.ErrorMessage(e);
             }
         }
     }
 
-    internal sealed class TestEx : TestExec.TestExec {
+    internal sealed class TestEx : TestExec {
         internal static TestEx Only { get; } = new TestEx();
 
         static TestEx() { }
@@ -169,7 +171,7 @@ namespace ABT.Test.TestExecutive.TestPlans.Diagnostics {
         private void OnSessionEnding(Object sender, SessionEndingEventArgs e) { Application.Exit(); }
 
         protected override async Task<String> MethodRun(Method method) {
-            Type type = Type.GetType($"{TestLib.Data.testPlanDefinition.TestSpace.NamespaceRoot}.{TestIndices.TestOperation.NamespaceTrunk}.{TestIndices.TestGroup.Classname}");
+            Type type = Type.GetType($"{Data.testPlanDefinition.TestSpace.NamespaceRoot}.{TestIndices.TestOperation.NamespaceTrunk}.{TestIndices.TestGroup.Classname}");
             // NOTE:  Will only seek invocable methods in TestIndices.TestGroup.Classname that are defined as Method IDs in TestPlanDefinition.xml & and are part of a Group.
             MethodInfo methodInfo = type.GetMethod(method.Name, BindingFlags.Static | BindingFlags.NonPublic);
             // NOTE:  Invocable methods in TestIndices.TestGroup.Classname, defined as Method Names in TestPlanDefinition.xml, must have signatures identical to "internal static String MethodName()",

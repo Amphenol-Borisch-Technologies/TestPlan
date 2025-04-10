@@ -1,4 +1,4 @@
-﻿namespace ABT.Test.TestExecutive.TestPlans.Diagnostics.TestPlan.InstrumentsTestPlan {
+﻿namespace ABT.Test.TestPlans.Diagnostics.TestPlan.InstrumentsTestPlan {
     using ABT.Test.TestExecutive.TestLib;
     using ABT.Test.TestExecutive.TestLib.Configuration;
     using ABT.Test.TestExecutive.TestLib.InstrumentDrivers.Generic;
@@ -6,7 +6,7 @@
     using ABT.Test.TestExecutive.TestLib.InstrumentDrivers.MultiMeters;
     using ABT.Test.TestExecutive.TestLib.InstrumentDrivers.Oscilloscopes;
     using ABT.Test.TestExecutive.TestLib.InstrumentDrivers.PowerSupplies;
-    using ABT.Test.TestExecutive.TestPlans.Diagnostics.InstrumentDrivers;
+    using ABT.Test.TestPlans.Diagnostics.InstrumentDrivers;
     using System;
     using System.Diagnostics;
     using System.Windows.Forms;

@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-namespace ABT.Test.TestExecutive.TestPlans.Diagnostics.TestPlan {
+namespace ABT.Test.TestPlans.Diagnostics.TestPlan {
 
     internal static class TestMethods {
         internal static EVENTS DiagnosticsT<T>(List<Parameter> Parameters) where T : IDiagnostics {
