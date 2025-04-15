@@ -37,7 +37,7 @@ using System.Windows.Forms;
 /// <para>
 ///  References:
 ///  - https://github.com/Amphenol-Borisch-Technologies/TestExecutive
-///  - https://github.com/Amphenol-Borisch-Technologies/TestExecutor
+///  - https://github.com/Amphenol-Borisch-Technologies/TestPlan
 ///  </para>
 
 /// <summary>
@@ -69,7 +69,7 @@ using System.Windows.Forms;
 ///      2)  Operator Reactive:
 ///          - TestExec's already implemented, always available & default reactive "Cancel before next Test" technique,
 ///            which simply invokes CT_Cancel.Cancel().
-///          - If CT_Cancel.IsCancellationRequested, TestExec.MethodsRun()'s foreach loop is broken, causing reactive cancellation
+///          - If CT_Cancel.IsCancellationRequested, the TestExec.MethodsRun() foreach loop is broken, causing reactive cancellation
 ///            prior to the next Method's execution.
 ///          - Note: This doesn't proactively cancel the *currently* executing Method, which runs to completion.
 /// B) PrePlanned Developer Programmed Cancellations:
@@ -80,14 +80,14 @@ using System.Windows.Forms;
 ///          - Simply throw an OperationCanceledException if the specific condition(s) occcur.
 ///      4)  TestPlanDefinition.xml's CancelNotPassed:
 ///          - TestPlanDefinition.xml's Method element has a Boolean "CancelNotPassed" field:
-///          - If the current Test.Run() has CancelNotPassed=true and it's resulting EvaluateEvent() doesn't return EVENTS.PASS,
-///            TestExec.sRun() will break/exit, stopping further testing.
-///		    - Do not pass Go, do not collect $200, go directly to TestExec.sPostRun().
+///          - If the current TestExec.MethodRun() has CancelNotPassed=true and it's resulting EvaluateEvent() doesn't return EVENTS.PASS,
+///            TestExec.MethodRun() will break/exit, stopping further testing.
+///		    - Do not pass Go, do not collect $200, go directly to TestExec.PostRun().
 ///
-/// NOTE:  The Operator Proactive & TestExec Developer initiated cancellations both occur while the currently executing Test.Run() conpletes, via 
+/// NOTE:  The Operator Proactive & TestExec Developer initiated cancellations both occur while the currently executing TestExec.MethodRun() conpletes, via 
 ///        thrown OperationCanceledExceptions.
-/// NOTE:  The Operator Reactive & TestPlanDefinition.xml's CancelNotPassed cancellations both occur after the currently executing Test.Run() completes, via checks
-///        inside the Exec.sRun() loop.
+/// NOTE:  The Operator Reactive & TestPlanDefinition.xml's CancelNotPassed cancellations both occur after the currently executing TestExec.MethodRun() completes, via checks
+///        inside the TestExec.MethodsRun() loop.
 /// </para>
 /// </summary>
 namespace ABT.Test.TestPlans.Diagnostics {
@@ -104,7 +104,7 @@ namespace ABT.Test.TestPlans.Diagnostics {
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            try { Application.Run(TestEx.Only); } catch (Exception e) {
+            try { Application.Run(TestExecutor.Only); } catch (Exception e) {
                 TestExec.StatusTimer.Stop();
                 Data.ErrorMessage(e.ToString());
                 Data.ErrorMessage(e);
@@ -112,27 +112,27 @@ namespace ABT.Test.TestPlans.Diagnostics {
         }
     }
 
-    internal sealed class TestEx : TestExec {
-        internal static TestEx Only { get; } = new TestEx();
+    internal sealed class TestExecutor : TestExec {
+        internal static TestExecutor Only { get; } = new TestExecutor();
 
-        static TestEx() { }
+        static TestExecutor() { }
         /// <summary>
         /// Singleton pattern requires explicit static constructor to tell C# compiler not to mark type as beforefieldinit.
         /// https://csharpindepth.com/articles/singleton
         /// <para>
-        ///  - Utilized Singleton for TestEx class because there should only ever be 1 instance of TestEx.
-        ///  - Also, TestEx being a Singleton eliminates needing to pass it's instance to all TestPlan methods, most which don't require it, which generates annoying compiler warnings.
-        ///    - Realize both mayn't be optimal practices, and may refactor TestEx to a non-Singleton class, and resume explicitly passing TestEx object into methods.
+        ///  - Utilized Singleton for TestExecutor class because there should only ever be 1 instance of TestExecutor.
+        ///  - Also, TestExecutor being a Singleton eliminates needing to pass it's instance to all TestPlan methods, most which don't require it, which generates annoying compiler warnings.
+        ///    - Realize both mayn't be optimal practices, and may refactor TestExecutor to a non-Singleton class, and resume explicitly passing TestExecutor object into methods.
         /// </para>
         /// </summary>
-        private TestEx() : base(Icon.ExtractAssociatedIcon(Assembly.GetExecutingAssembly().Location), AppDomain.CurrentDomain.BaseDirectory.Remove(AppDomain.CurrentDomain.BaseDirectory.IndexOf(@"\bin\"))) {
+        private TestExecutor() : base(Icon.ExtractAssociatedIcon(Assembly.GetExecutingAssembly().Location), AppDomain.CurrentDomain.BaseDirectory.Remove(AppDomain.CurrentDomain.BaseDirectory.IndexOf(@"\bin\"))) {
             // NOTE:  Create base constructor's Icon as applicable, depending on customer.
             // https://stackoverflow.com/questions/40933304/how-to-create-an-icon-for-visual-studio-with-just-mspaint-and-visual-studio
             WindowState = FormWindowState.Maximized;
             SystemEvents.SessionEnding += OnSessionEnding;
         }
-
-        // Class TestEx could be located in the TestExec project, but is placed in TestPlan projects so TestPlans can
+        
+        // NOTE: Class TestExecutor could be located in the TestExec project, but is placed in TestPlan projects so TestPlans can
         // conveniently override methods such as SystemReset(), IInstrumentsResetClear(), IPowerSuppliesOutputsOff() & IRelaysOpenAll().
         // This is necessary for TestPlans that utilize custom equipment or require special handling:
         // - Any non-SCPI equipment exclusively utilized by individual TestPlan's can be initialized/reset in their TestPlan projects.
