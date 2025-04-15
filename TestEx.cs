@@ -1,4 +1,6 @@
-﻿using ABT.Test.TestLib.Configuration;
+﻿using ABT.Test.TestExecutive.TestExec;
+using ABT.Test.TestExecutive.TestLib;
+using ABT.Test.TestExecutive.TestLib.Configuration;
 using Microsoft.Win32;
 using System;
 using System.Drawing;
@@ -89,28 +91,28 @@ using System.Windows.Forms;
 /// </para>
 /// </summary>
 namespace ABT.Test.TestPlans.Diagnostics {
-    internal class TestMain {
+    internal static class Program {
         [STAThread]
         static void Main() {
-            TestLib.Data.MutexTest = new Mutex(true, TestLib.Data.MutexTestName, out Boolean onlyInstance);
+            Data.MutexTest = new Mutex(true, Data.MutexTestName, out Boolean onlyInstance);
             if (!onlyInstance) {
                 _ = MessageBox.Show($"Already have one executing instance of {nameof(TestExec)}.{Environment.NewLine}{Environment.NewLine}" +
                     $"Cannot have two, as both would attempt to control system instruments simultaneously.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
                 return;
             }
-            GC.KeepAlive(TestLib.Data.MutexTest);
+            GC.KeepAlive(Data.MutexTest);
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             try { Application.Run(TestEx.Only); } catch (Exception e) {
-                TestExec.TestExec.StatusTimer.Stop();
-                TestExec.TestExec.ErrorMessage(e.ToString());
-                TestExec.TestExec.ErrorMessage(e);
+                TestExec.StatusTimer.Stop();
+                Data.ErrorMessage(e.ToString());
+                Data.ErrorMessage(e);
             }
         }
     }
 
-    internal sealed class TestEx : TestExec.TestExec {
+    internal sealed class TestEx : TestExec {
         internal static TestEx Only { get; } = new TestEx();
 
         static TestEx() { }
@@ -126,14 +128,11 @@ namespace ABT.Test.TestPlans.Diagnostics {
         private TestEx() : base(Icon.ExtractAssociatedIcon(Assembly.GetExecutingAssembly().Location), AppDomain.CurrentDomain.BaseDirectory.Remove(AppDomain.CurrentDomain.BaseDirectory.IndexOf(@"\bin\"))) {
             // NOTE:  Create base constructor's Icon as applicable, depending on customer.
             // https://stackoverflow.com/questions/40933304/how-to-create-an-icon-for-visual-studio-with-just-mspaint-and-visual-studio
-            // TODO:  Eventually; dynamically create custom TestExec menu items, allowing non-standard Apps & UUT menu choices.
-            //        - https://stackoverflow.com/questions/1757574/dynamically-adding-toolstripmenuitems-to-a-menustrip-c-winforms
-            //        - https://learn.microsoft.com/en-us/dotnet/desktop/winforms/controls/how-to-add-toolstrip-items-dynamically?view=netframeworkdesktop-4.8
             WindowState = FormWindowState.Maximized;
             SystemEvents.SessionEnding += OnSessionEnding;
         }
 
-        // Class TestEx's could be located in the TestExec project, but is placed in TestPlan projects so TestPlans can
+        // Class TestEx could be located in the TestExec project, but is placed in TestPlan projects so TestPlans can
         // conveniently override methods such as SystemReset(), IInstrumentsResetClear(), IPowerSuppliesOutputsOff() & IRelaysOpenAll().
         // This is necessary for TestPlans that utilize custom equipment or require special handling:
         // - Any non-SCPI equipment exclusively utilized by individual TestPlan's can be initialized/reset in their TestPlan projects.
@@ -172,7 +171,7 @@ namespace ABT.Test.TestPlans.Diagnostics {
         private void OnSessionEnding(Object sender, SessionEndingEventArgs e) { Application.Exit(); }
 
         protected override async Task<String> MethodRun(Method method) {
-            Type type = Type.GetType($"{TestLib.Data.testPlanDefinition.TestSpace.NamespaceRoot}.{TestIndices.TestOperation.NamespaceTrunk}.{TestIndices.TestGroup.Classname}");
+            Type type = Type.GetType($"{Data.testPlanDefinition.TestSpace.NamespaceRoot}.{TestIndices.TestOperation.NamespaceTrunk}.{TestIndices.TestGroup.Classname}");
             // NOTE:  Will only seek invocable methods in TestIndices.TestGroup.Classname that are defined as Method IDs in TestPlanDefinition.xml & and are part of a Group.
             MethodInfo methodInfo = type.GetMethod(method.Name, BindingFlags.Static | BindingFlags.NonPublic);
             // NOTE:  Invocable methods in TestIndices.TestGroup.Classname, defined as Method Names in TestPlanDefinition.xml, must have signatures identical to "internal static String MethodName()",
