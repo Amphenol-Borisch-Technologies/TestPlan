@@ -1,6 +1,6 @@
 # TestPlan
-Part of a minimalist functional test sequencer/test executive.
+Example test plan to be run with TestExecutive.
 
   References:
-  - (https://github.com/Amphenol-Borisch-Technologies/TestExecutive)
+  - https://github.com/Amphenol-Borisch-Technologies/TestExecutive
 
