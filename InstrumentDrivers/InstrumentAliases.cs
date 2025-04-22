@@ -1,10 +1,10 @@
 namespace ABT.Test.TestPlans.Diagnostics.InstrumentDrivers {
-    using ABT.Test.TestExecutive.TestLib;
-    using ABT.Test.TestExecutive.TestLib.InstrumentDrivers.Generic;
-    using ABT.Test.TestExecutive.TestLib.InstrumentDrivers.Multifunction;
-    using ABT.Test.TestExecutive.TestLib.InstrumentDrivers.MultiMeters;
-    using ABT.Test.TestExecutive.TestLib.InstrumentDrivers.Oscilloscopes;
-    using ABT.Test.TestExecutive.TestLib.InstrumentDrivers.PowerSupplies;
+    using ABT.Test.TestLibrary.TestLib;
+    using ABT.Test.TestLibrary.TestLib.InstrumentDrivers.Generic;
+    using ABT.Test.TestLibrary.TestLib.InstrumentDrivers.Multifunction;
+    using ABT.Test.TestLibrary.TestLib.InstrumentDrivers.MultiMeters;
+    using ABT.Test.TestLibrary.TestLib.InstrumentDrivers.Oscilloscopes;
+    using ABT.Test.TestLibrary.TestLib.InstrumentDrivers.PowerSupplies;
 
     internal static class IA { // Instrument Aliases.
         internal static MSMU_34980A_SCPI_NET MSMU = ((MSMU_34980A_SCPI_NET)(Data.InstrumentDrivers["MSMU1_34980A"]));
