@@ -64,22 +64,16 @@
   <ItemGroup>
     <Reference Include="Ag34401_11, Version=0.0.0.0, Culture=neutral, PublicKeyToken=344b812ea93ad2d2, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\Ag34401_11\v4.0_0.0.0.0__344b812ea93ad2d2\Ag34401_11.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\ABT\Test\TestExecutive\Ag34401_11.dll</HintPath>
     </Reference>
-    <Reference Include="Ag34980_2_43, Version=0.0.0.0, Culture=neutral, PublicKeyToken=344b812ea93ad2d2, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\ProgramData\Keysight\Command Expert\ScpiNetDrivers\Ag34980_2_43.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="Ag34980_2_43">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\ABT\Test\TestExecutive\Ag34980_2_43.dll</HintPath>
     </Reference>
-    <Reference Include="AgE363x_1_7, Version=0.0.0.0, Culture=neutral, PublicKeyToken=344b812ea93ad2d2, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\ProgramData\Keysight\Command Expert\ScpiNetDrivers\AgE363x_1_7.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="AgE363x_1_7">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\ABT\Test\TestExecutive\AgE363x_1_7.dll</HintPath>
     </Reference>
-    <Reference Include="AgE364xD_1_7, Version=0.0.0.0, Culture=neutral, PublicKeyToken=344b812ea93ad2d2, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\ProgramData\Keysight\Command Expert\ScpiNetDrivers\AgE364xD_1_7.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="AgE364xD_1_7">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\ABT\Test\TestExecutive\AgE364xD_1_7.dll</HintPath>
     </Reference>
     <Reference Include="Agilent.Agilent34952A.Interop, Version=1.6.0.0, Culture=neutral, PublicKeyToken=ced78d295d1e0f2b, processorArchitecture=AMD64">
       <SpecificVersion>False</SpecificVersion>
@@ -87,10 +81,8 @@
       <HintPath>C:\Program Files\IVI Foundation\IVI\Bin\Primary Interop Assemblies\Agilent.Agilent34952A.Interop.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="AgSCPI99_1_0, Version=0.0.0.0, Culture=neutral, PublicKeyToken=344b812ea93ad2d2, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\ProgramData\Keysight\Command Expert\ScpiNetDrivers\AgSCPI99_1_0.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="AgSCPI99_1_0">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\ABT\Test\TestExecutive\AgSCPI99_1_0.dll</HintPath>
     </Reference>
     <Reference Include="Ivi.Driver.Interop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a128c98f1d7717c1, processorArchitecture=AMD64">
       <SpecificVersion>False</SpecificVersion>
@@ -125,11 +117,11 @@
     </Reference>
     <Reference Include="TestExec, Version=1.0.0.0, Culture=neutral, PublicKeyToken=69d5d3b8c136adcf, processorArchitecture=AMD64">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_64\TestExec\v4.0_1.0.0.0__69d5d3b8c136adcf\TestExec.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\ABT\Test\TestExecutive\TestExec.dll</HintPath>
     </Reference>
     <Reference Include="TestLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=69d5d3b8c136adcf, processorArchitecture=AMD64">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_64\TestLib\v4.0_1.0.0.0__69d5d3b8c136adcf\TestLib.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\ABT\Test\TestExecutive\TestLib.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
