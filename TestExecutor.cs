@@ -1,6 +1,6 @@
 ﻿using ABT.Test.TestExecutive.TestExec;
-using ABT.Test.TestLibrary.TestLib;
-using ABT.Test.TestLibrary.TestLib.Configuration;
+using ABT.Test.TestExecutive.TestLib;
+using ABT.Test.TestExecutive.TestLib.Configuration;
 using Microsoft.Win32;
 using System;
 using System.Drawing;

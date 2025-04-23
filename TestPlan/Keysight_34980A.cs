@@ -1,7 +1,7 @@
 ﻿namespace ABT.Test.TestPlans.Diagnostics.TestPlan.Keysight_34980A {
-    using ABT.Test.TestLibrary.TestLib;
-    using ABT.Test.TestLibrary.TestLib.Configuration;
-    using ABT.Test.TestLibrary.TestLib.InstrumentDrivers.Multifunction;
+    using ABT.Test.TestExecutive.TestLib;
+    using ABT.Test.TestExecutive.TestLib.Configuration;
+    using ABT.Test.TestExecutive.TestLib.InstrumentDrivers.Multifunction;
     using System;
     using System.Diagnostics;
 
