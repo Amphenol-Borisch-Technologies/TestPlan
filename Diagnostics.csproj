@@ -125,15 +125,12 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
       <HintPath>..\..\..\..\..\..\..\..\Windows\assembly\GAC_64\Tektronix.Tkdpo2k3k4k.Interop\1.5.0.0__65cff6f5578f3c89\Tektronix.Tkdpo2k3k4k.Interop.dll</HintPath>
     </Reference>
-<<<<<<< HEAD
-=======
     <Reference Include="TestExec">
       <HintPath>..\..\..\..\..\..\..\..\Program Files\ABT\Test\TestExecutive\TestExec.dll</HintPath>
     </Reference>
     <Reference Include="TestLib">
       <HintPath>..\..\..\..\..\..\..\..\Program Files\ABT\Test\TestExecutive\TestLib.dll</HintPath>
     </Reference>
->>>>>>> 62bddbef38bbbe5b24ebefc1d489cfa75c5f40b7
   </ItemGroup>
   <ItemGroup>
     <Compile Include="InstrumentDrivers\InstrumentAliases.cs" />
