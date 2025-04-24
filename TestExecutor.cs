@@ -3,6 +3,8 @@ using ABT.Test.TestExecutive.TestLib;
 using ABT.Test.TestExecutive.TestLib.Configuration;
 using Microsoft.Win32;
 using System;
+using System.Configuration;
+using System.Diagnostics;
 using System.Drawing;
 using System.Reflection;
 using System.Threading;
