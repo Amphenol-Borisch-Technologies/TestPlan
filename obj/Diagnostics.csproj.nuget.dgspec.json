@@ -4,96 +4,6 @@
     "C:\\Users\\phils\\Source\\Repos\\ABT\\Test\\TestPlans\\Diagnostics\\Diagnostics.csproj": {}
   },
   "projects": {
-    "C:\\Users\\phils\\Source\\Repos\\ABT\\Test\\TestExecutive\\TestExec\\TestExec.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\phils\\Source\\Repos\\ABT\\Test\\TestExecutive\\TestExec\\TestExec.csproj",
-        "projectName": "TestExec",
-        "projectPath": "C:\\Users\\phils\\Source\\Repos\\ABT\\Test\\TestExecutive\\TestExec\\TestExec.csproj",
-        "packagesPath": "C:\\Users\\phils\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\phils\\Source\\Repos\\ABT\\Test\\TestExecutive\\TestExec\\obj\\",
-        "projectStyle": "PackageReference",
-        "skipContentFileWrite": true,
-        "UsingMicrosoftNETSdk": false,
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\phils\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net48"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net48": {
-            "projectReferences": {
-              "C:\\Users\\phils\\Source\\Repos\\ABT\\Test\\TestExecutive\\TestLib\\TestLib.csproj": {
-                "projectPath": "C:\\Users\\phils\\Source\\Repos\\ABT\\Test\\TestExecutive\\TestLib\\TestLib.csproj"
-              }
-            }
-          }
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        }
-      },
-      "frameworks": {
-        "net48": {
-          "dependencies": {
-            "Microsoft-WindowsAPICodePack-Shell": {
-              "target": "Package",
-              "version": "[1.1.5, )"
-            },
-            "Microsoft.Windows.SDK.Contracts": {
-              "target": "Package",
-              "version": "[10.0.26100.1742, )"
-            },
-            "Serilog.Sinks.File": {
-              "target": "Package",
-              "version": "[6.0.0, )"
-            }
-          }
-        }
-      },
-      "runtimes": {
-        "win": {
-          "#import": []
-        },
-        "win-arm64": {
-          "#import": []
-        },
-        "win-x64": {
-          "#import": []
-        },
-        "win-x86": {
-          "#import": []
-        }
-      }
-    },
-    "C:\\Users\\phils\\Source\\Repos\\ABT\\Test\\TestExecutive\\TestLib\\TestLib.csproj": {
-      "restore": {
-        "projectUniqueName": "C:\\Users\\phils\\Source\\Repos\\ABT\\Test\\TestExecutive\\TestLib\\TestLib.csproj",
-        "projectName": "TestLib",
-        "projectPath": "C:\\Users\\phils\\Source\\Repos\\ABT\\Test\\TestExecutive\\TestLib\\TestLib.csproj",
-        "UsingMicrosoftNETSdk": false,
-        "frameworks": {
-          "net48": {
-            "projectReferences": {}
-          }
-        }
-      },
-      "frameworks": {
-        "net48": {}
-      }
-    },
     "C:\\Users\\phils\\Source\\Repos\\ABT\\Test\\TestPlans\\Diagnostics\\Diagnostics.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -122,14 +32,7 @@
         },
         "frameworks": {
           "net48": {
-            "projectReferences": {
-              "C:\\Users\\phils\\Source\\Repos\\ABT\\Test\\TestExecutive\\TestExec\\TestExec.csproj": {
-                "projectPath": "C:\\Users\\phils\\Source\\Repos\\ABT\\Test\\TestExecutive\\TestExec\\TestExec.csproj"
-              },
-              "C:\\Users\\phils\\Source\\Repos\\ABT\\Test\\TestExecutive\\TestLib\\TestLib.csproj": {
-                "projectPath": "C:\\Users\\phils\\Source\\Repos\\ABT\\Test\\TestExecutive\\TestLib\\TestLib.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "restoreAuditProperties": {
