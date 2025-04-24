@@ -67,15 +67,18 @@
       <HintPath>..\..\..\..\..\..\..\..\Program Files\ABT\Test\TestExecutive\Ag34401_11.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Ag34980_2_43">
+    <Reference Include="Ag34980_2_43, Version=0.0.0.0, Culture=neutral, PublicKeyToken=344b812ea93ad2d2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\..\..\Program Files\ABT\Test\TestExecutive\Ag34980_2_43.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="AgE363x_1_7">
+    <Reference Include="AgE363x_1_7, Version=0.0.0.0, Culture=neutral, PublicKeyToken=344b812ea93ad2d2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\..\..\Program Files\ABT\Test\TestExecutive\AgE363x_1_7.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="AgE364xD_1_7">
+    <Reference Include="AgE364xD_1_7, Version=0.0.0.0, Culture=neutral, PublicKeyToken=344b812ea93ad2d2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\..\..\Program Files\ABT\Test\TestExecutive\AgE364xD_1_7.dll</HintPath>
       <Private>False</Private>
     </Reference>
@@ -85,7 +88,8 @@
       <HintPath>C:\Program Files\IVI Foundation\IVI\Bin\Primary Interop Assemblies\Agilent.Agilent34952A.Interop.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="AgSCPI99_1_0">
+    <Reference Include="AgSCPI99_1_0, Version=0.0.0.0, Culture=neutral, PublicKeyToken=344b812ea93ad2d2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\..\..\Program Files\ABT\Test\TestExecutive\AgSCPI99_1_0.dll</HintPath>
       <Private>False</Private>
     </Reference>
@@ -121,6 +125,15 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
       <HintPath>..\..\..\..\..\..\..\..\Windows\assembly\GAC_64\Tektronix.Tkdpo2k3k4k.Interop\1.5.0.0__65cff6f5578f3c89\Tektronix.Tkdpo2k3k4k.Interop.dll</HintPath>
     </Reference>
+<<<<<<< HEAD
+=======
+    <Reference Include="TestExec">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\ABT\Test\TestExecutive\TestExec.dll</HintPath>
+    </Reference>
+    <Reference Include="TestLib">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\ABT\Test\TestExecutive\TestLib.dll</HintPath>
+    </Reference>
+>>>>>>> 62bddbef38bbbe5b24ebefc1d489cfa75c5f40b7
   </ItemGroup>
   <ItemGroup>
     <Compile Include="InstrumentDrivers\InstrumentAliases.cs" />
