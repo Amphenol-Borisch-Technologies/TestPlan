@@ -120,11 +120,15 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
       <HintPath>..\..\..\..\..\..\..\..\Windows\assembly\GAC_64\Tektronix.Tkdpo2k3k4k.Interop\1.5.0.0__65cff6f5578f3c89\Tektronix.Tkdpo2k3k4k.Interop.dll</HintPath>
     </Reference>
-    <Reference Include="TestExec">
+    <Reference Include="TestExec, Version=1.0.0.0, Culture=neutral, PublicKeyToken=69d5d3b8c136adcf, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\..\..\Program Files\ABT\Test\TestExecutive\TestExec.dll</HintPath>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="TestLib">
+    <Reference Include="TestLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=69d5d3b8c136adcf, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\..\..\Program Files\ABT\Test\TestExecutive\TestLib.dll</HintPath>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -154,18 +158,6 @@
     <PackageReference Include="System.Diagnostics.DiagnosticSource">
       <Version>9.0.4</Version>
     </PackageReference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\TestExecutive\TestExec\TestExec.csproj">
-      <Project>{314614cb-6e17-4b74-a9f9-ce4699f78c9b}</Project>
-      <Name>TestExec</Name>
-      <Private>True</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\..\TestExecutive\TestLib\TestLib.csproj">
-      <Project>{24d5e99e-185c-4507-81f0-132d8cb8164e}</Project>
-      <Name>TestLib</Name>
-      <Private>True</Private>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

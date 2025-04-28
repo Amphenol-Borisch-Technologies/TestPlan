@@ -4,6 +4,7 @@ using ABT.Test.TestExecutive.TestLib.Configuration;
 using Microsoft.Win32;
 using System;
 using System.IO;
+using System.Drawing;
 using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
@@ -128,7 +129,9 @@ namespace ABT.Test.TestPlans.Diagnostics {
         ///    - Realize both mayn't be optimal practices, and may refactor TestExecutor to a non-Singleton class, and resume explicitly passing TestExecutor object into methods.
         /// </para>
         /// </summary>
-        private TestExecutor() : base(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)) {
+        private TestExecutor() : base(Icon.ExtractAssociatedIcon(Assembly.GetExecutingAssembly().Location), Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)) {
+            // NOTE:  Create base constructor's Icon as applicable, depending on customer.
+            // https://stackoverflow.com/questions/40933304/how-to-create-an-icon-for-visual-studio-with-just-mspaint-and-visual-studio
             WindowState = FormWindowState.Maximized;
             SystemEvents.SessionEnding += OnSessionEnding;
         }
