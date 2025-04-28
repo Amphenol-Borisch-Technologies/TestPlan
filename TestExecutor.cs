@@ -3,7 +3,7 @@ using ABT.Test.TestExecutive.TestLib;
 using ABT.Test.TestExecutive.TestLib.Configuration;
 using Microsoft.Win32;
 using System;
-using System.Drawing;
+using System.IO;
 using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
@@ -92,7 +92,7 @@ using System.Windows.Forms;
 /// </summary>
 namespace ABT.Test.TestPlans.Diagnostics {
     internal static class Program {
-        internal static Mutex MutexTestExecutor { get; set; } = null; // NOTE:  Must be initialized to null, or else compiler will complain about uninitialized variable.
+        internal static Mutex MutexTestExecutor { get; private set; } = null; // NOTE:  Must be initialized to null, or else compiler will complain about uninitialized variable.
         [STAThread]
         static void Main() {
             MutexTestExecutor = new Mutex(true, nameof(MutexTestExecutor), out Boolean onlyInstance);
@@ -105,8 +105,10 @@ namespace ABT.Test.TestPlans.Diagnostics {
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            try { Application.Run(TestExecutor.Only); } catch (Exception e) {
-                TestExec.StatusTimer.Stop();
+            try {
+                Application.Run(TestExecutor.Only);
+            } catch (Exception e) {
+                TestExec.StatusTimer?.Stop();
                 Data.ErrorMessage(e.ToString());
                 Data.ErrorMessage(e);
             }
@@ -126,9 +128,7 @@ namespace ABT.Test.TestPlans.Diagnostics {
         ///    - Realize both mayn't be optimal practices, and may refactor TestExecutor to a non-Singleton class, and resume explicitly passing TestExecutor object into methods.
         /// </para>
         /// </summary>
-        private TestExecutor() : base(Icon.ExtractAssociatedIcon(Assembly.GetExecutingAssembly().Location), AppDomain.CurrentDomain.BaseDirectory.Remove(AppDomain.CurrentDomain.BaseDirectory.IndexOf(@"\bin\"))) {
-            // NOTE:  Create base constructor's Icon as applicable, depending on customer.
-            // https://stackoverflow.com/questions/40933304/how-to-create-an-icon-for-visual-studio-with-just-mspaint-and-visual-studio
+        private TestExecutor() : base(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)) {
             WindowState = FormWindowState.Maximized;
             SystemEvents.SessionEnding += OnSessionEnding;
         }
