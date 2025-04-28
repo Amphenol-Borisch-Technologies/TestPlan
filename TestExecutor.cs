@@ -93,7 +93,7 @@ using System.Windows.Forms;
 /// </summary>
 namespace ABT.Test.TestPlans.Diagnostics {
     internal static class Program {
-        internal static Mutex MutexTestExecutor { get; private set; } = null; // NOTE:  Must be initialized to null, or else compiler will complain about uninitialized variable.
+        internal static Mutex MutexTestExecutor { get; private set; } = null;
         [STAThread]
         static void Main() {
             MutexTestExecutor = new Mutex(true, nameof(MutexTestExecutor), out Boolean onlyInstance);
