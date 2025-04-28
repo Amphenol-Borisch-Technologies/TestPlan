@@ -3,8 +3,6 @@ using ABT.Test.TestExecutive.TestLib;
 using ABT.Test.TestExecutive.TestLib.Configuration;
 using Microsoft.Win32;
 using System;
-using System.Configuration;
-using System.Diagnostics;
 using System.Drawing;
 using System.Reflection;
 using System.Threading;
@@ -94,15 +92,16 @@ using System.Windows.Forms;
 /// </summary>
 namespace ABT.Test.TestPlans.Diagnostics {
     internal static class Program {
+        internal static Mutex MutexTestExecutor { get; set; } = null; // NOTE:  Must be initialized to null, or else compiler will complain about uninitialized variable.
         [STAThread]
         static void Main() {
-            Data.MutexTest = new Mutex(true, Data.MutexTestName, out Boolean onlyInstance);
+            MutexTestExecutor = new Mutex(true, nameof(MutexTestExecutor), out Boolean onlyInstance);
             if (!onlyInstance) {
                 _ = MessageBox.Show($"Already have one executing instance of {nameof(TestExec)}.{Environment.NewLine}{Environment.NewLine}" +
                     $"Cannot have two, as both would attempt to control system instruments simultaneously.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
                 return;
             }
-            GC.KeepAlive(Data.MutexTest);
+            GC.KeepAlive(MutexTestExecutor);
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
@@ -168,6 +167,8 @@ namespace ABT.Test.TestPlans.Diagnostics {
         protected override void OnFormClosed(FormClosedEventArgs e) {
             base.OnFormClosed(e);
             SystemEvents.SessionEnding -= OnSessionEnding;
+            Program.MutexTestExecutor?.ReleaseMutex();
+            Program.MutexTestExecutor?.Dispose();
         }
 
         private void OnSessionEnding(Object sender, SessionEndingEventArgs e) { Application.Exit(); }
