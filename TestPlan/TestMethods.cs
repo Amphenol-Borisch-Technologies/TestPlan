@@ -9,15 +9,15 @@ namespace ABT.Test.TestPlans.Diagnostics.TestPlan {
 
     internal static class TestMethods {
         internal static EVENTS DiagnosticsT<T>(List<Parameter> Parameters) where T : IDiagnostics {
-            Dictionary<String, T> instrumentDriversT = Data.InstrumentDrivers.Where(kvp => kvp.Value is T).ToDictionary(kvp => kvp.Key, kvp => (T)kvp.Value);
+            Dictionary<String, T> instrumentDriversT = TestLib.InstrumentDrivers.Where(kvp => kvp.Value is T).ToDictionary(kvp => kvp.Key, kvp => (T)kvp.Value);
             if (instrumentDriversT.Count() == 0) {
                 StringBuilder stringBuilder = new StringBuilder();
                 stringBuilder.AppendLine($"No instruments of type '{typeof(T).Name}' found:");
-                stringBuilder.AppendLine($"Check '{Data.TestExecutiveDefinitionXML}' for missing:");
+                stringBuilder.AppendLine($"Check '{TestLib.TestExecutiveDefinitionXML}' for missing:");
                 stringBuilder.AppendLine($" - Element:   '{nameof(InstrumentTestExec)}'.");
                 stringBuilder.AppendLine($" - Attribute: '{nameof(InstrumentTestExec.NameSpacedClassName)}' = '{typeof(T).Name}'.");
                 stringBuilder.AppendLine(String.Empty);
-                stringBuilder.AppendLine($"Check '{Data.TestPlanDefinitionXML}' for:");
+                stringBuilder.AppendLine($"Check '{TestLib.TestPlanDefinitionXML}' for:");
                 stringBuilder.AppendLine($" - Element:   '{nameof(TestSpace)}'.");
                 stringBuilder.AppendLine($" - Attribute: '{nameof(TestSpace.Simulate)}' = '{true}'.");
                 TestIndices.Method.Log.Append(stringBuilder.ToString());

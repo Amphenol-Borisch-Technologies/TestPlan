@@ -110,8 +110,8 @@ namespace ABT.Test.TestPlans.Diagnostics {
                 Application.Run(TestExecutor.Only);
             } catch (Exception e) {
                 TestExec.StatusTimer?.Stop();
-                Data.ErrorMessage(e.ToString());
-                Data.ErrorMessage(e);
+                TestLib.ErrorMessage(e.ToString());
+                TestLib.ErrorMessage(e);
             }
         }
     }
@@ -144,27 +144,27 @@ namespace ABT.Test.TestPlans.Diagnostics {
         //   - Stationary non-SCPI equipment that's permanently part of a test system should also be initialized/reset in TestExec, by modifying it's SystemReset() and other applicable methods.
         // - Only non-SCPI equipment that's portable and not a permanent part of a test system requires initialization/reset in TestPlan projects that utilize it.
         //public override void SystemReset() {
-        //    if (TestLib.Data.testPlanDefinition.TestSpace.Simulate) return;
+        //    if (TestLib.testPlanDefinition.TestSpace.Simulate) return;
         //    base.SystemReset();
         //    // Custom TestPlan specific System Reset code here.
         // }
 
         //public override void IInstrumentsResetClear() {
-        //    if (TestLib.Data.testPlanDefinition.TestSpace.Simulate) return;
+        //    if (TestLib.testPlanDefinition.TestSpace.Simulate) return;
         //    base.IInstrumentsResetClear();
         //    // Custom TestPlan specific Instrument Reset/Clear code here.
         // }
 
         //public override void IPowerSuppliesOutputsOff() {
-        //    if (TestLib.Data.testPlanDefinition.TestSpace.Simulate) return;
+        //    if (TestLib.testPlanDefinition.TestSpace.Simulate) return;
         //    base.IPowerSuppliesOutputsOff();
         //    // Custom TestPlan specific Power Supply Outputs Off code here.
         // }
 
-        //public override void IRelaysOpenAll() {
-        //    if (TestLib.Data.testPlanDefinition.TestSpace.Simulate) return;
-        //    base.IRelaysOpenAll();
-        //    // Custom TestPlan specific Relay Open All code here.
+        // public override void IRelaysOpenAll() {
+        //     if (TestLib.testPlanDefinition.TestSpace.Simulate) return;
+        //     base.IRelaysOpenAll();
+        //     // Custom TestPlan specific Relay Open All code here.
         // }
 
         protected override void OnFormClosed(FormClosedEventArgs e) {
@@ -177,7 +177,7 @@ namespace ABT.Test.TestPlans.Diagnostics {
         private void OnSessionEnding(Object sender, SessionEndingEventArgs e) { Application.Exit(); }
 
         protected override async Task<String> MethodRun(Method method) {
-            Type type = Type.GetType($"{Data.testPlanDefinition.TestSpace.NamespaceRoot}.{TestIndices.TestOperation.NamespaceTrunk}.{TestIndices.TestGroup.Classname}");
+            Type type = Type.GetType($"{TestLib.testPlanDefinition.TestSpace.NamespaceRoot}.{TestIndices.TestOperation.NamespaceTrunk}.{TestIndices.TestGroup.Classname}");
             // NOTE:  Will only seek invocable methods in TestIndices.TestGroup.Classname that are defined as Method IDs in TestPlanDefinition.xml & and are part of a Group.
             MethodInfo methodInfo = type.GetMethod(method.Name, BindingFlags.Static | BindingFlags.NonPublic);
             // NOTE:  Invocable methods in TestIndices.TestGroup.Classname, defined as Method Names in TestPlanDefinition.xml, must have signatures identical to "internal static String MethodName()",
