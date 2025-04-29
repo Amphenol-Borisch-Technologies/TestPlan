@@ -13,7 +13,7 @@
 
     internal class SwitchingUnits {
         internal static String MSMU_34980A() {
-            if (Data.testSequence.IsOperation) Debug.Assert(TestIndices.TestOperation.Assert(NamespaceTrunk: "InstrumentsTestPlan", ProductionTest: "true", Description: "Manufacturer\'s self-tests + ABT tests of TestPlanDefinition\'s InstrumentsTestPlan.", TestGroups: "SwitchingUnits|PowerSupplies|DigitalMultiMeters|Oscilloscopes|WaveformGenerators"));
+            if (TestLib.testSequence.IsOperation) Debug.Assert(TestIndices.TestOperation.Assert(NamespaceTrunk: "InstrumentsTestPlan", ProductionTest: "true", Description: "Manufacturer\'s self-tests + ABT tests of TestPlanDefinition\'s InstrumentsTestPlan.", TestGroups: "SwitchingUnits|PowerSupplies|DigitalMultiMeters|Oscilloscopes|WaveformGenerators"));
             Debug.Assert(TestIndices.TestGroup.Assert(Classname: "SwitchingUnits", Description: "Keysight 34980As.", CancelNotPassed: "false", Independent: "true", Methods: "MSMU_34980A"));
             Debug.Assert(((MethodCustom)TestIndices.Method).Assert(Name: "MSMU_34980A", Description: "Keysight 34980A Multifunction Switch/Measurement Units.", CancelNotPassed: "false", Parameters: "FRTD_34921A_Low°C=15.5|FRTD_34921A_High°C=29.5|ResistanceRelay_34921A_ClosedΩ=3|ResistanceRelay_34921A_OpenedΩ=1E9|ResistanceRelay_34932A_ClosedΩ=3|Current_34921A_LowADC=0.075|Current_34921A_HighADC=0.125|ResistanceRelay_34932A_OpenedΩ=1E9|ResistanceRelay_34938A_ClosedΩ=3|ResistanceRelay_34938A_OpenedΩ=1E9|ResistanceRelay_34939A_ClosedΩ=3|ResistanceRelay_34939A_OpenedΩ=1E9|AccuracyDAC_34952A_VDC=0.1"));
 

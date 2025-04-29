@@ -7,7 +7,7 @@
 
     internal class Keysight_34921As {
         internal static String Keysight_34921A() {
-            if (Data.testSequence.IsOperation) Debug.Assert(TestIndices.TestOperation.Assert(NamespaceTrunk: "Keysight_34980A", ProductionTest: "false", Description: "Keysight 34980A Module Tests.", TestGroups: "Keysight_34921As|Keysight_34932As|Keysight_34938As|Keysight_34939As|Keysight_34952As"));
+            if (TestLib.testSequence.IsOperation) Debug.Assert(TestIndices.TestOperation.Assert(NamespaceTrunk: "Keysight_34980A", ProductionTest: "false", Description: "Keysight 34980A Module Tests.", TestGroups: "Keysight_34921As|Keysight_34932As|Keysight_34938As|Keysight_34939As|Keysight_34952As"));
             Debug.Assert(TestIndices.TestGroup.Assert(Classname: "Keysight_34921As", Description: "Keysight 34921A Modules.", CancelNotPassed: "false", Independent: "true", Methods: "Keysight_34921A"));
             Debug.Assert(((MethodCustom)TestIndices.Method).Assert(Name: "Keysight_34921A", Description: "Keysight 34921A 40-Channel Armature Multiplexer.", CancelNotPassed: "false", Parameters: "ModuleType=34921A|FRTD_34921A_Low°C=15.5|FRTD_34921A_High°C=32.2|ResistanceRelay_34921A_ClosedΩ=3|ResistanceRelay_34921A_OpenedΩ=1E9|Current_34921A_LowADC=0.075|Current_34921A_HighADC=0.125"));
 
