@@ -32,6 +32,9 @@
         
         See https://regex101.com/ for help in creating & understanding Regular Expressions.  Also, Microsoft's CoPilot at https://copilot.microsoft.com/.
   -->
+
+  <EMailGroup Name="TestExecutive Administrators" Address="TEAdmins@borisch.com" Comment="Update group member(s) as needed." />
+  
   <Development Released="2025-04-01">
     <Developer Name="Phillip Smelt" Language="CSharp" Comment="" />
     <Documentation Folder="C:\Users\phils\source\repos\ABT\Test\TestPlans\Diagnostics\Documentation" />
@@ -57,9 +60,9 @@
           <Parameter Name="FRTD_34921A_High°C" Value="29.5"/>
           <Parameter Name="ResistanceRelay_34921A_ClosedΩ" Value="3"/>
           <Parameter Name="ResistanceRelay_34921A_OpenedΩ" Value="1E9"/>
-          <Parameter Name="ResistanceRelay_34932A_ClosedΩ" Value="3"/>
           <Parameter Name="Current_34921A_LowADC" Value="0.075"/>
-          <Parameter Name="Current_34921A_HighADC" Value="0.125"/>          
+          <Parameter Name="Current_34921A_HighADC" Value="0.125"/>
+          <Parameter Name="ResistanceRelay_34932A_ClosedΩ" Value="3"/>
           <Parameter Name="ResistanceRelay_34932A_OpenedΩ" Value="1E9"/>
           <Parameter Name="ResistanceRelay_34938A_ClosedΩ" Value="3"/>
           <Parameter Name="ResistanceRelay_34938A_OpenedΩ" Value="1E9"/>
