@@ -35,7 +35,7 @@
   <Development Released="2025-04-01">
     <Developer Name="Phillip Smelt" Language="CSharp" Comment="" />
     <Documentation Folder="C:\Users\phils\source\repos\ABT\Test\TestPlans\Diagnostics\Documentation" />
-    <Repository URL="file://C://Users//phils//source//repos//ABT//Test//TestPlans//Diagnostics" />
+    <Repository URL="file://C:/Users/phils/source/repos/ABT/Test/TestPlans/Diagnostics" />
   </Development>
   <Modifications>
     <Modification Who="Phillip Smelt" What="Adapted prior TestExecutive &amp; TestExecutor into TestExec, TestLib &amp; TestPlan." When="2024-10-01" Where="Most Namespaces &amp; files updated." Why="Many major improvements." />
