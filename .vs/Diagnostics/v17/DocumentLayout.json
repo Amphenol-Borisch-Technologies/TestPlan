@@ -14,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 40,
+          "SelectedChildIndex": 41,
           "Children": [
             {
               "$type": "Bookmark",
@@ -184,7 +184,7 @@
               "RelativeDocumentMoniker": "TestPlanDefinition.xml",
               "ToolTip": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\TestPlanDefinition.xml",
               "RelativeToolTip": "TestPlanDefinition.xml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAC4AAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
               "WhenOpened": "2025-04-30T18:14:15.783Z",
               "EditorCaption": ""
