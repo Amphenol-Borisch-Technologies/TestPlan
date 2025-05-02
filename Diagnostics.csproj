@@ -78,12 +78,6 @@
       <HintPath>..\..\..\..\..\..\..\..\Program Files\ABT\Test\TestExecutive\AgE364xD_1_7.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Agilent.Agilent34952A.Interop, Version=1.6.0.0, Culture=neutral, PublicKeyToken=ced78d295d1e0f2b, processorArchitecture=AMD64">
-      <SpecificVersion>False</SpecificVersion>
-      <EmbedInteropTypes>False</EmbedInteropTypes>
-      <HintPath>C:\Program Files\IVI Foundation\IVI\Bin\Primary Interop Assemblies\Agilent.Agilent34952A.Interop.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="AgSCPI99_1_0">
       <HintPath>..\..\..\..\..\..\..\..\Program Files\ABT\Test\TestExecutive\AgSCPI99_1_0.dll</HintPath>
       <Private>False</Private>
@@ -96,8 +90,9 @@
     </Reference>
     <Reference Include="Ivi.Scope.Interop, Version=3.0.0.0, Culture=neutral, PublicKeyToken=a128c98f1d7717c1, processorArchitecture=AMD64">
       <SpecificVersion>False</SpecificVersion>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
       <HintPath>C:\Program Files\IVI Foundation\IVI\Bin\Primary Interop Assemblies\Ivi.Scope.Interop.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Ivi.Visa, Version=7.2.0.0, Culture=neutral, PublicKeyToken=a128c98f1d7717c1, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -117,8 +112,9 @@
     <Reference Include="System.Xml" />
     <Reference Include="Tektronix.Tkdpo2k3k4k.Interop, Version=1.5.0.0, Culture=neutral, PublicKeyToken=65cff6f5578f3c89, processorArchitecture=AMD64">
       <SpecificVersion>False</SpecificVersion>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
       <HintPath>..\..\..\..\..\..\..\..\Windows\assembly\GAC_64\Tektronix.Tkdpo2k3k4k.Interop\1.5.0.0__65cff6f5578f3c89\Tektronix.Tkdpo2k3k4k.Interop.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="TestExec, Version=1.0.0.0, Culture=neutral, PublicKeyToken=69d5d3b8c136adcf, processorArchitecture=AMD64">
       <SpecificVersion>False</SpecificVersion>
