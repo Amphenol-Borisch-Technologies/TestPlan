@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TestPlanDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="file:///C:/Program%20Files/ABT/Test/TestExecutive/TestPlanDefinition.xsd 
-        https://github.com/Amphenol-Borisch-Technologies/TestExecutive/raw/refs/heads/master/TestLib/Configuration/TestPlanDefinition.xsd">
+        https://raw.githubusercontent.com/Amphenol-Borisch-Technologies/TestExecutive/refs/heads/master/TestLib/Configuration/TestPlanDefinition.xsd">
   
   <UUT Number="Diagnostics" Description="Diagnostics of TestExec Functional Test System." Revision="-" Category="System">
     <Customer Name="Amphenol Corporation" Division="Amphenol Borisch Technologies" Location="Grand Rapids" />
