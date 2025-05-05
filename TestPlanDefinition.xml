@@ -34,8 +34,6 @@
         See https://regex101.com/ for help in creating & understanding Regular Expressions.  Also, Microsoft's CoPilot at https://copilot.microsoft.com/.
   -->
 
-  <EMailGroup Name="TestExecutive Administrators" Address="TEAdmins@borisch.com" Comment="Update group member(s) as needed." />
-
   <Development Released="2025-04-01">
     <Developer Name="Phillip Smelt" Language="CSharp" Comment="" />
     <Documentation Folder="C:\Users\phils\source\repos\ABT\Test\TestPlans\Diagnostics\Documentation" />

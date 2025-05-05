@@ -111,7 +111,6 @@ namespace ABT.Test.TestPlans.Diagnostics {
             } catch (Exception e) {
                 TestExec.StatusTimer?.Stop();
                 TestLib.ErrorMessage(e.ToString());
-                TestLib.ErrorMessage(e);
             }
         }
     }
