@@ -13,11 +13,11 @@ namespace ABT.Test.TestPlans.Diagnostics.TestPlan {
             if (instrumentDriversT.Count() == 0) {
                 StringBuilder stringBuilder = new StringBuilder();
                 stringBuilder.AppendLine($"No instruments of type '{typeof(T).Name}' found:");
-                stringBuilder.AppendLine($"Check '{TestLib.TestExecutiveDefinitionXML}' for missing:");
+                stringBuilder.AppendLine($"Check '{TestLib.TestExecDefinitionXML_Path}' for missing:");
                 stringBuilder.AppendLine($" - Element:   '{nameof(InstrumentTestExec)}'.");
                 stringBuilder.AppendLine($" - Attribute: '{nameof(InstrumentTestExec.NameSpacedClassName)}' = '{typeof(T).Name}'.");
                 stringBuilder.AppendLine(String.Empty);
-                stringBuilder.AppendLine($"Check '{TestLib.TestPlanDefinitionXML}' for:");
+                stringBuilder.AppendLine($"Check '{TestLib.TestPlanDefinitionXML_Path}' for:");
                 stringBuilder.AppendLine($" - Element:   '{nameof(TestSpace)}'.");
                 stringBuilder.AppendLine($" - Attribute: '{nameof(TestSpace.Simulate)}' = '{true}'.");
                 TestIndices.Method.Log.Append(stringBuilder.ToString());

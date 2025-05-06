@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
 <TestPlanDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                xsi:noNamespaceSchemaLocation="file://C://Program Files//ABT//Test//TestExecutive//TestPlanDefinition.xsd">
+        xsi:schemaLocation="file:///C:/Program%20Files/ABT/Test/TestExecutive/TestPlanDefinition.xsd 
+        https://raw.githubusercontent.com/Amphenol-Borisch-Technologies/TestExecutive/refs/heads/master/TestLib/Configuration/TestPlanDefinition.xsd">
+  
   <UUT Number="Diagnostics" Description="Diagnostics of TestExec Functional Test System." Revision="-" Category="System">
     <Customer Name="Amphenol Corporation" Division="Amphenol Borisch Technologies" Location="Grand Rapids" />
     <TestSpecification Document="None" Revision="None" Title="None" Date="2025-04-01" />
@@ -33,8 +34,6 @@
         See https://regex101.com/ for help in creating & understanding Regular Expressions.  Also, Microsoft's CoPilot at https://copilot.microsoft.com/.
   -->
 
-  <EMailGroup Name="TestExecutive Administrators" Address="TEAdmins@borisch.com" Comment="Update group member(s) as needed." />
-  
   <Development Released="2025-04-01">
     <Developer Name="Phillip Smelt" Language="CSharp" Comment="" />
     <Documentation Folder="C:\Users\phils\source\repos\ABT\Test\TestPlans\Diagnostics\Documentation" />
