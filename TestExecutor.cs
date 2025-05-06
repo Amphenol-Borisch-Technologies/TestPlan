@@ -108,9 +108,9 @@ namespace ABT.Test.TestPlans.Diagnostics {
             Application.SetCompatibleTextRenderingDefault(false);
             try {
                 Application.Run(TestExecutor.Only);
-            } catch (Exception e) {
+            } catch (Exception exception) {
                 TestExec.StatusTimer?.Stop();
-                TestLib.ErrorMessage(e.ToString());
+                TestLib.ErrorMessage(exception.ToString());
             }
         }
     }
