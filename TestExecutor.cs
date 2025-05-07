@@ -45,13 +45,13 @@ using System.Windows.Forms;
 /// NOTE:  Test Developer is responsible for ensuring Methods can be both safely & correctly called in sequence defined in TestPlanDefinition.xml:
 /// <para>
 ///        - That is, if Methods execute sequentially as (M1, M2, M3, M4, M5), Test Developer is responsible for ensuring all equipment is
-///          configured safely & correctly between each Methods step.
+///          configured safely & correctly between each Method's step.
 ///          - If:
 ///            - M1 is unpowered Shorts & Opens measurements.
 ///            - M2 is powered voltage measurements.
 ///            - M3 begins with unpowered operator cable connections/disconnections for In-System Programming.
 ///          - Then Test Developer must ensure necessary equipment state transitions are implemented so test operator isn't
-///            plugging/unplugging a powered UUT in T03.
+///            plugging/unplugging a powered UUT in M3.
 /// </para>
 /// </summary>
 /// 
