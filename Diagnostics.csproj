@@ -142,6 +142,7 @@
   <ItemGroup>
     <Content Include="..\..\..\..\..\..\..\..\Program Files\ABT\Test\TestExecutive\Shared\Amphenol.ico">
       <Link>Amphenol.ico</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="TestPlanDefinition.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

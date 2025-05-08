@@ -51,7 +51,7 @@
     <Stationary ID="PS1ε2_E3649A" Alias="P12V_N12V" />
     <Stationary ID="PS3_E3634A" Alias="P28V" />
   </InstrumentsTestPlan>
-  <TestSpace NamespaceRoot="ABT.Test.TestPlans.Diagnostics.TestPlan" Description="System Diagnostics." Simulate="false">
+  <TestSpace NamespaceRoot="ABT.Test.TestPlans.Diagnostics.TestPlan" Description="System Diagnostics." Simulate="false">  
     <TestOperation NamespaceTrunk="InstrumentsTestPlan" ProductionTest="true" Description="Manufacturer's self-tests + ABT tests of TestPlanDefinition's InstrumentsTestPlan.">
       <TestGroup Classname="SwitchingUnits" Description="Keysight 34980As." CancelNotPassed="false" Independent="true">
         <MethodCustom Name="MSMU_34980A" Description="Keysight 34980A Multifunction Switch/Measurement Units." CancelNotPassed="false" >
