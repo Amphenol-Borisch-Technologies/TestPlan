@@ -62,25 +62,25 @@
     <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Ag34401_11">
+    <Reference Include="Ag34401_11, Version=0.0.0.0, Culture=neutral, PublicKeyToken=344b812ea93ad2d2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\..\..\Program Files\ABT\Test\TestExecutive\Ag34401_11.dll</HintPath>
-      <Private>False</Private>
     </Reference>
-    <Reference Include="Ag34980_2_43">
+    <Reference Include="Ag34980_2_43, Version=0.0.0.0, Culture=neutral, PublicKeyToken=344b812ea93ad2d2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\..\..\Program Files\ABT\Test\TestExecutive\Ag34980_2_43.dll</HintPath>
-      <Private>False</Private>
     </Reference>
-    <Reference Include="AgE363x_1_7">
+    <Reference Include="AgE363x_1_7, Version=0.0.0.0, Culture=neutral, PublicKeyToken=344b812ea93ad2d2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\..\..\Program Files\ABT\Test\TestExecutive\AgE363x_1_7.dll</HintPath>
-      <Private>False</Private>
     </Reference>
-    <Reference Include="AgE364xD_1_7">
+    <Reference Include="AgE364xD_1_7, Version=0.0.0.0, Culture=neutral, PublicKeyToken=344b812ea93ad2d2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\..\..\Program Files\ABT\Test\TestExecutive\AgE364xD_1_7.dll</HintPath>
-      <Private>False</Private>
     </Reference>
-    <Reference Include="AgSCPI99_1_0">
+    <Reference Include="AgSCPI99_1_0, Version=0.0.0.0, Culture=neutral, PublicKeyToken=344b812ea93ad2d2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\..\..\Program Files\ABT\Test\TestExecutive\AgSCPI99_1_0.dll</HintPath>
-      <Private>False</Private>
     </Reference>
     <Reference Include="Ivi.Driver.Interop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a128c98f1d7717c1, processorArchitecture=AMD64">
       <SpecificVersion>False</SpecificVersion>
@@ -134,7 +134,6 @@
     <Compile Include="TestPlan\InstrumentsTestPlan.cs" />
     <Compile Include="TestPlan\Keysight_34980A.cs" />
     <Compile Include="TestPlan\TestMethods.cs" />
-    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Documentation\" />
@@ -155,6 +154,9 @@
     <PackageReference Include="System.Diagnostics.DiagnosticSource">
       <Version>9.0.4</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
