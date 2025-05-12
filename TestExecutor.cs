@@ -3,8 +3,8 @@ using ABT.Test.TestExecutive.TestLib;
 using ABT.Test.TestExecutive.TestLib.Configuration;
 using Microsoft.Win32;
 using System;
-using System.IO;
 using System.Drawing;
+using System.IO;
 using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
@@ -134,7 +134,7 @@ namespace ABT.Test.TestPlans.Diagnostics {
             WindowState = FormWindowState.Maximized;
             SystemEvents.SessionEnding += OnSessionEnding;
         }
-        
+
         // NOTE: Class TestExecutor could be located in the TestExec project, but is placed in TestPlan projects so TestPlans can
         // conveniently override methods such as SystemReset(), IInstrumentsResetClear(), IPowerSuppliesOutputsOff() & IRelaysOpenAll().
         // This is necessary for TestPlans that utilize custom equipment or require special handling:
