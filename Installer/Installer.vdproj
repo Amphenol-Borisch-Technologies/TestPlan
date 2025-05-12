@@ -513,7 +513,7 @@
             "Sequence" = "3:1"
             "Identifier" = "8:_2C3D5C47_7059_4D76_896A_711653AD8B14"
             "InstallerClass" = "11:TRUE"
-            "CustomActionData" = "8:"
+            "CustomActionData" = "8:/targetdir=\"[TARGETDIR]\\\""
             }
         }
         "DefaultFeature"
@@ -1189,7 +1189,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Diagnostics"
         "ProductCode" = "8:{52ACD0AF-C7C8-4F94-9A79-970E78B7EF68}"
-        "PackageCode" = "8:{C96DC7CB-5AC6-4FC0-927B-A9D7A81D7584}"
+        "PackageCode" = "8:{CCA04BEF-C0D1-4542-8112-A086A568A512}"
         "UpgradeCode" = "8:{F088318B-BF6E-4FEB-8AB6-EF880F1D999E}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
