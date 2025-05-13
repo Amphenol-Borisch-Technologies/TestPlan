@@ -674,7 +674,7 @@
             }
             "{3C67513D-01DD-4637-8A68-80971EB9504F}:_70D6008F188B43A4B242BFDADCB2BDBF"
             {
-            "DefaultLocation" = "8:[ProgramFiles64Folder][Manufacturer]\\Test\\[ProductName]"
+            "DefaultLocation" = "8:[ProgramFiles64Folder][Manufacturer]\\Test\\TestPlans\\[ProductName]"
             "Name" = "8:#1925"
             "AlwaysCreate" = "11:FALSE"
             "Condition" = "8:"
@@ -719,7 +719,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Diagnostics"
         "ProductCode" = "8:{81BDB8DD-0C5F-4422-A146-475874D75A40}"
-        "PackageCode" = "8:{315785CF-9A39-473D-B1F7-32E3505E2EDD}"
+        "PackageCode" = "8:{9E4160CC-32C8-46A4-BF76-8C79775B7EBE}"
         "UpgradeCode" = "8:{BE19FC02-5916-4B68-9DCB-CE9C91426FB3}"
         "AspNetVersion" = "8:"
         "RestartWWWService" = "11:FALSE"
