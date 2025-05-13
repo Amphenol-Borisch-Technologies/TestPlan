@@ -719,7 +719,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Diagnostics"
         "ProductCode" = "8:{81BDB8DD-0C5F-4422-A146-475874D75A40}"
-        "PackageCode" = "8:{33082015-628C-4A20-B445-6395EDC2AF19}"
+        "PackageCode" = "8:{315785CF-9A39-473D-B1F7-32E3505E2EDD}"
         "UpgradeCode" = "8:{BE19FC02-5916-4B68-9DCB-CE9C91426FB3}"
         "AspNetVersion" = "8:"
         "RestartWWWService" = "11:FALSE"
