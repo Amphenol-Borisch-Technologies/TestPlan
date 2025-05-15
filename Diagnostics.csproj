@@ -61,6 +61,12 @@
   <PropertyGroup>
     <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>ABT_Test.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Ag34401_11, Version=0.0.0.0, Culture=neutral, PublicKeyToken=344b812ea93ad2d2, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -160,6 +166,7 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="ABT_Test.pfx" />
     <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
