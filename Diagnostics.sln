@@ -5,7 +5,7 @@ VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diagnostics", "Diagnostics.csproj", "{5FC19C56-1566-457A-A8AF-A3A69561320C}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Installer", "..\Installer\Installer.vdproj", "{B3724FF1-63B2-8EB6-790C-41E05982363C}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Installer", "Installer\Installer.vdproj", "{52B20422-474D-5734-629F-99A1F7DE9787}"
 	ProjectSection(ProjectDependencies) = postProject
 		{5FC19C56-1566-457A-A8AF-A3A69561320C} = {5FC19C56-1566-457A-A8AF-A3A69561320C}
 	EndProjectSection
@@ -26,11 +26,13 @@ Global
 		{5FC19C56-1566-457A-A8AF-A3A69561320C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5FC19C56-1566-457A-A8AF-A3A69561320C}.Release|x64.ActiveCfg = Release|x64
 		{5FC19C56-1566-457A-A8AF-A3A69561320C}.Release|x64.Build.0 = Release|x64
-		{B3724FF1-63B2-8EB6-790C-41E05982363C}.Debug|Any CPU.ActiveCfg = Debug
-		{B3724FF1-63B2-8EB6-790C-41E05982363C}.Debug|x64.ActiveCfg = Debug
-		{B3724FF1-63B2-8EB6-790C-41E05982363C}.Release|Any CPU.ActiveCfg = Release
-		{B3724FF1-63B2-8EB6-790C-41E05982363C}.Release|x64.ActiveCfg = Release
-		{B3724FF1-63B2-8EB6-790C-41E05982363C}.Release|x64.Build.0 = Release
+		{52B20422-474D-5734-629F-99A1F7DE9787}.Debug|Any CPU.ActiveCfg = Debug
+		{52B20422-474D-5734-629F-99A1F7DE9787}.Debug|Any CPU.Build.0 = Debug
+		{52B20422-474D-5734-629F-99A1F7DE9787}.Debug|x64.ActiveCfg = Debug
+		{52B20422-474D-5734-629F-99A1F7DE9787}.Release|Any CPU.ActiveCfg = Release
+		{52B20422-474D-5734-629F-99A1F7DE9787}.Release|Any CPU.Build.0 = Release
+		{52B20422-474D-5734-629F-99A1F7DE9787}.Release|x64.ActiveCfg = Release
+		{52B20422-474D-5734-629F-99A1F7DE9787}.Release|x64.Build.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
