@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|c:\\users\\phils\\source\\repos\\abt\\test\\testplans\\diagnostics\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 39,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -171,19 +166,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\app.config",
-              "RelativeDocumentMoniker": "app.config",
-              "ToolTip": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\app.config",
-              "RelativeToolTip": "app.config",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAACcAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-05-15T21:10:26.793Z",
-              "EditorCaption": ""
             }
           ]
         }
