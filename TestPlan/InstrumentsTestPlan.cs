@@ -10,10 +10,6 @@
     using System;
     using System.Windows.Forms;
     using System.Diagnostics;
-    using Ivi.Driver.Interop;
-    using Ivi.Scope.Interop;
-    using Tektronix.Tkdpo2k3k4k.Interop;
-    using Ivi.SessionFactory.Interop;
 
     internal class SwitchingUnits {
         internal static String MSMU_34980A() {
