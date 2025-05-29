@@ -55,7 +55,6 @@
 
     internal class Oscilloscopes {
         internal static String MSO_3014() {
-            _ = MessageBox.Show(IA.MSO.Identity.InstrumentFirmwareRevision, "Firmware Revision", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
             Debug.Assert(TestIndices.TestGroup.Assert(Classname: "Oscilloscopes", Description: "Tektronix MSO-3014s.", CancelNotPassed: "false", Independent: "true", Methods: "MSO_3014"));
             Debug.Assert(((MethodCustom)TestIndices.Method).Assert(Name: "MSO_3014", Description: "Tektronix MSO-3014 Mixed-Signal Oscilloscopes.", CancelNotPassed: "false"));
 
