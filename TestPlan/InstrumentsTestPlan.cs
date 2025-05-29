@@ -8,8 +8,8 @@
     using ABT.Test.TestExecutive.TestLib.InstrumentDrivers.PowerSupplies;
     using ABT.Test.TestPlans.Diagnostics.InstrumentDrivers;
     using System;
-    using System.Diagnostics;
     using System.Windows.Forms;
+    using System.Diagnostics;
 
     internal class SwitchingUnits {
         internal static String MSMU_34980A() {
