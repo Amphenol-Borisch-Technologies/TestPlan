@@ -46,10 +46,10 @@
     <Modification Who="Phillip Smelt" What="Converted TestExecDefinition access from XML reads to De-Serialized classes." When="2025-02-28" Where="TestExecDefinition.xsd, TestExecDefinition.xml &amp; TestExecDefinition.cs." Why="Consistency with TestPlanDefinition.*." />
   </Modifications>
   <InstrumentsTestPlan>
-    <!--<Mobile ID="MSO1_3014" Alias="MSO" Detail="Tektronix MSO3014 Mixed Signal Oscilloscope" Address="USB0::0x0699::0x0421::C021373::0::INSTR" NameSpacedClassName="ABT.Test.TestExecutive.TestLib.InstrumentDrivers.Oscilloscopes.MSO_3014_IVI_COM" />-->
-    <Stationary ID="MSMU1_34980A" Alias="MSMU" />
+    <Mobile ID="MSO1_3014" Alias="MSO" Detail="Tektronix MSO3014 Mixed Signal Oscilloscope" Address="USB0::0x0699::0x0421::C021373::0::INSTR" NameSpacedClassName="ABT.Test.TestExecutive.TestLib.InstrumentDrivers.Oscilloscopes.MSO_3014_IVI_COM" />
+    <!--<Stationary ID="MSMU1_34980A" Alias="MSMU" />
     <Stationary ID="PS1ε2_E3649A" Alias="P12V_N12V" />
-    <Stationary ID="PS3_E3634A" Alias="P28V" />
+    <Stationary ID="PS3_E3634A" Alias="P28V" />-->
   </InstrumentsTestPlan>
   <TestSpace NamespaceRoot="ABT.Test.TestPlans.Diagnostics.TestPlan" Description="System Diagnostics." Simulate="false">  
     <TestOperation NamespaceTrunk="InstrumentsTestPlan" ProductionTest="true" Description="Manufacturer's self-tests + ABT tests of TestPlanDefinition's InstrumentsTestPlan.">
