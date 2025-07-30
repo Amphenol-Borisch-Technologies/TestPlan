@@ -15,26 +15,20 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_03C4EF50D9F6722C96544CA7F1B095E3"
+        "MsmKey" = "8:_3E32BF3E7BE0B114F28A4A201F579F26"
         "OwnerKey" = "8:_F6459051625F2596A2B2B6E40C02B85E"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_4924A12406F12243FE70093B57DDB7BF"
-        "OwnerKey" = "8:_4C6007E69ACC4FABC5A67BD1BAE04B27"
+        "MsmKey" = "8:_43ADC726B8950B49895FA82DEBAC5984"
+        "OwnerKey" = "8:_A704797D33C44E804915A37DC1B17D00"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_4C6007E69ACC4FABC5A67BD1BAE04B27"
         "OwnerKey" = "8:_F89035BBFDCC4E51B4CB92AB36D00267"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_72893DC2098AD2AB6FBA5FCD153B9AC0"
-        "OwnerKey" = "8:_A704797D33C44E804915A37DC1B17D00"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -46,19 +40,13 @@
         "Entry"
         {
         "MsmKey" = "8:_A704797D33C44E804915A37DC1B17D00"
-        "OwnerKey" = "8:_F89035BBFDCC4E51B4CB92AB36D00267"
+        "OwnerKey" = "8:_4C6007E69ACC4FABC5A67BD1BAE04B27"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_A704797D33C44E804915A37DC1B17D00"
         "OwnerKey" = "8:_F6459051625F2596A2B2B6E40C02B85E"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_A704797D33C44E804915A37DC1B17D00"
-        "OwnerKey" = "8:_4C6007E69ACC4FABC5A67BD1BAE04B27"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -71,6 +59,12 @@
         {
         "MsmKey" = "8:_D46EF509D44647818C83B36F63A7E843"
         "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_D5F83838BF92D624338A88718A3259AF"
+        "OwnerKey" = "8:_4C6007E69ACC4FABC5A67BD1BAE04B27"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -88,6 +82,12 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_A704797D33C44E804915A37DC1B17D00"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_F89035BBFDCC4E51B4CB92AB36D00267"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -101,12 +101,6 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_F6459051625F2596A2B2B6E40C02B85E"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_A704797D33C44E804915A37DC1B17D00"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -204,7 +198,7 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_03C4EF50D9F6722C96544CA7F1B095E3"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3E32BF3E7BE0B114F28A4A201F579F26"
             {
             "SourcePath" = "8:IviScopeTypeLib.dll"
             "TargetName" = "8:IviScopeTypeLib.dll"
@@ -224,10 +218,10 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4924A12406F12243FE70093B57DDB7BF"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_43ADC726B8950B49895FA82DEBAC5984"
             {
-            "SourcePath" = "8:Tkdpo2k3k4k.dll"
-            "TargetName" = "8:Tkdpo2k3k4k.dll"
+            "SourcePath" = "8:IviDriverTypeLib.dll"
+            "TargetName" = "8:IviDriverTypeLib.dll"
             "Tag" = "8:"
             "Folder" = "8:_46515388A37A4FD0AE534960E973B1F5"
             "Condition" = "8:"
@@ -271,26 +265,6 @@
             "SharedLegacy" = "11:FALSE"
             "PackageAs" = "3:1"
             "Register" = "3:1"
-            "Exclude" = "11:TRUE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_72893DC2098AD2AB6FBA5FCD153B9AC0"
-            {
-            "SourcePath" = "8:IviDriverTypeLib.dll"
-            "TargetName" = "8:IviDriverTypeLib.dll"
-            "Tag" = "8:"
-            "Folder" = "8:_46515388A37A4FD0AE534960E973B1F5"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:4"
             "Exclude" = "11:TRUE"
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
@@ -384,6 +358,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_D5F83838BF92D624338A88718A3259AF"
+            {
+            "SourcePath" = "8:Tkdpo2k3k4k.dll"
+            "TargetName" = "8:Tkdpo2k3k4k.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_46515388A37A4FD0AE534960E973B1F5"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:4"
+            "Exclude" = "11:TRUE"
+            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_F6459051625F2596A2B2B6E40C02B85E"
@@ -512,7 +506,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Diagnostics"
         "ProductCode" = "8:{4C060CD6-421A-4E77-81C3-6C75AA43CD30}"
-        "PackageCode" = "8:{9745B066-45E4-43D0-BC0D-6187A42A6013}"
+        "PackageCode" = "8:{2EE1FEAE-0E41-4A29-B21C-B6827457D442}"
         "UpgradeCode" = "8:{EA619323-F96A-4C0E-A56D-C4BDEBEA1AF5}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
