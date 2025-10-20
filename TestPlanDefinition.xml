@@ -10,7 +10,7 @@
   </UUT>
   <!--<SerialNumberEntry EntryType="None"/>-->
   <!--<SerialNumberEntry EntryType="Keyboard" RegularEx="01BB2-[0-9]{5}" Format="'01BB2-XXXXX' where X is any digit in range [0,9].&#xA;Examples:  '01BB2-12345' ε '01BB2-00001'." />-->
-  <SerialNumberEntry EntryType="Keyboard" RegularEx="[0-9]{1}" Format="'X' where X is any integer in range [0,9].&#xA;Examples:  '0', '1', '2' ...'9'." />
+  <SerialNumberEntry EntryType="Keyboard" RegularEx="[0-9]{1}" Format="'X' where X is any integer in range [0,9].&#xA;Examples:  '0', '1', '2' ...'9'." SupplementalData="false"/>
   <!--
         RegularEx="[0-9]{4}" accepts only Serial Numbers of form "XXXX" where X is any digit in range [0,9].
           - Valid:   "1234", "0246" & "1357".
