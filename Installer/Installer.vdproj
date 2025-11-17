@@ -21,7 +21,7 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_4924A12406F12243FE70093B57DDB7BF"
+        "MsmKey" = "8:_46C7557909EEC43897CB1651A67EDA3D"
         "OwnerKey" = "8:_4C6007E69ACC4FABC5A67BD1BAE04B27"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -130,10 +130,10 @@
             "ComponentsUrl" = "8:"
                 "Items"
                 {
-                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.8"
                     {
-                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
-                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    "Name" = "8:Microsoft .NET Framework 4.8 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.8"
                     }
                 }
             }
@@ -218,7 +218,7 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4924A12406F12243FE70093B57DDB7BF"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_46C7557909EEC43897CB1651A67EDA3D"
             {
             "SourcePath" = "8:Tkdpo2k3k4k.dll"
             "TargetName" = "8:Tkdpo2k3k4k.dll"
@@ -506,7 +506,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Diagnostics"
         "ProductCode" = "8:{4C060CD6-421A-4E77-81C3-6C75AA43CD30}"
-        "PackageCode" = "8:{73EA0A85-C196-440B-9F8F-FE6D82D2FF3A}"
+        "PackageCode" = "8:{7311443A-D379-4C53-9F11-CFD837D2FCEE}"
         "UpgradeCode" = "8:{EA619323-F96A-4C0E-A56D-C4BDEBEA1AF5}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
