@@ -56,7 +56,8 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>..\..\..\..\..\..\..\..\Program Files\ABT\Test\TestExecutive\Shared\Amphenol.ico</ApplicationIcon>
+    <ApplicationIcon>
+    </ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <NoWin32Manifest>true</NoWin32Manifest>
@@ -70,40 +71,28 @@
   <ItemGroup>
     <Reference Include="Ag34401_11, Version=0.0.0.0, Culture=neutral, PublicKeyToken=344b812ea93ad2d2, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\Program Files\ABT\Test\TestExecutive\Ag34401_11.dll</HintPath>
+      <HintPath>C:\Program Files\ABT\Test\TestExecutive\Ag34401_11.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Ag34980_2_43, Version=0.0.0.0, Culture=neutral, PublicKeyToken=344b812ea93ad2d2, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\Program Files\ABT\Test\TestExecutive\Ag34980_2_43.dll</HintPath>
+      <HintPath>C:\Program Files\ABT\Test\TestExecutive\Ag34980_2_43.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AgE363x_1_7, Version=0.0.0.0, Culture=neutral, PublicKeyToken=344b812ea93ad2d2, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\Program Files\ABT\Test\TestExecutive\AgE363x_1_7.dll</HintPath>
+      <HintPath>C:\Program Files\ABT\Test\TestExecutive\AgE363x_1_7.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AgE364xD_1_7, Version=0.0.0.0, Culture=neutral, PublicKeyToken=344b812ea93ad2d2, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\Program Files\ABT\Test\TestExecutive\AgE364xD_1_7.dll</HintPath>
+      <HintPath>C:\Program Files\ABT\Test\TestExecutive\AgE364xD_1_7.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AgSCPI99_1_0, Version=0.0.0.0, Culture=neutral, PublicKeyToken=344b812ea93ad2d2, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\Program Files\ABT\Test\TestExecutive\AgSCPI99_1_0.dll</HintPath>
+      <HintPath>C:\Program Files\ABT\Test\TestExecutive\AgSCPI99_1_0.dll</HintPath>
       <Private>False</Private>
-    </Reference>
-    <Reference Include="Ivi.Driver.Interop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a128c98f1d7717c1, processorArchitecture=AMD64">
-      <SpecificVersion>False</SpecificVersion>
-      <EmbedInteropTypes>False</EmbedInteropTypes>
-      <HintPath>C:\Program Files\IVI Foundation\IVI\Bin\Primary Interop Assemblies\Ivi.Driver.Interop.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Ivi.Scope.Interop, Version=3.0.0.0, Culture=neutral, PublicKeyToken=a128c98f1d7717c1, processorArchitecture=AMD64">
-      <SpecificVersion>False</SpecificVersion>
-      <EmbedInteropTypes>False</EmbedInteropTypes>
-      <HintPath>C:\Program Files\IVI Foundation\IVI\Bin\Primary Interop Assemblies\Ivi.Scope.Interop.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="Ivi.SessionFactory.Interop, Version=1.1.0.0, Culture=neutral, PublicKeyToken=a128c98f1d7717c1, processorArchitecture=AMD64">
       <SpecificVersion>False</SpecificVersion>
@@ -135,15 +124,17 @@
       <HintPath>..\..\..\..\..\..\..\..\Windows\assembly\GAC_64\Tektronix.Tkdpo2k3k4k.Interop\1.5.0.0__65cff6f5578f3c89\Tektronix.Tkdpo2k3k4k.Interop.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="TestExec, Version=1.0.0.0, Culture=neutral, PublicKeyToken=69d5d3b8c136adcf, processorArchitecture=AMD64">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\Program Files\ABT\Test\TestExecutive\TestExec.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="TestChooser">
+      <HintPath>C:\Program Files\ABT\Test\TestExecutive\TestChooser.exe</HintPath>
     </Reference>
-    <Reference Include="TestLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=69d5d3b8c136adcf, processorArchitecture=AMD64">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\Program Files\ABT\Test\TestExecutive\TestLib.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="TestDev">
+      <HintPath>C:\Program Files\ABT\Test\TestExecutive\TestDev.exe</HintPath>
+    </Reference>
+    <Reference Include="TestExec">
+      <HintPath>C:\Program Files\ABT\Test\TestExecutive\TestExec.dll</HintPath>
+    </Reference>
+    <Reference Include="TestLib">
+      <HintPath>C:\Program Files\ABT\Test\TestExecutive\TestLib.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -158,9 +149,8 @@
     <Folder Include="Documentation\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\..\..\..\..\..\..\Program Files\ABT\Test\TestExecutive\Shared\Amphenol.ico">
+    <Content Include="C:\Program Files\ABT\Test\TestExecutive\Shared\Amphenol.ico">
       <Link>Amphenol.ico</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="TestPlanDefinition.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -177,6 +167,26 @@
   <ItemGroup>
     <None Include="ABT_Test.pfx" />
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="IviDriverLib">
+      <Guid>{47ED5120-A398-11D4-BA58-000064657374}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="IviScopeLib">
+      <Guid>{47ED5124-A398-11D4-BA58-000064657374}</Guid>
+      <VersionMajor>3</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

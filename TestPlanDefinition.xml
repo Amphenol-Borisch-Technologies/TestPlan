@@ -47,16 +47,16 @@
   </Modifications>
   <InstrumentsTestPlan>
     <Mobile ID="MSO1_3014" Alias="MSO" Detail="Tektronix MSO3014 Mixed Signal Oscilloscope" Address="USB0::0x0699::0x0421::C021373::0::INSTR" NameSpacedClassName="ABT.Test.TestExecutive.TestLib.InstrumentDrivers.Oscilloscopes.MSO_3014_IVI_COM" />
-    <!--<Stationary ID="MSMU1_34980A" Alias="MSMU" />
+    <Stationary ID="MSMU1_34980A" Alias="MSMU" />
     <Stationary ID="PS1ε2_E3649A" Alias="P12V_N12V" />
-    <Stationary ID="PS3_E3634A" Alias="P28V" />-->
+    <Stationary ID="PS3_E3634A" Alias="P28V" />
   </InstrumentsTestPlan>
   <TestSpace NamespaceRoot="ABT.Test.TestPlans.Diagnostics.TestPlan" Description="System Diagnostics." Simulate="false">  
     <TestOperation NamespaceTrunk="InstrumentsTestPlan" ProductionTest="true" Description="Manufacturer's self-tests + ABT tests of TestPlanDefinition's InstrumentsTestPlan.">
       <TestGroup Classname="SwitchingUnits" Description="Keysight 34980As." CancelNotPassed="false" Independent="true">
         <MethodCustom Name="MSMU_34980A" Description="Keysight 34980A Multifunction Switch/Measurement Units." CancelNotPassed="false" >
           <Parameter Name="FRTD_34921A_Low°C" Value="15.5"/>
-          <Parameter Name="FRTD_34921A_High°C" Value="29.5"/>
+          <Parameter Name="FRTD_34921A_High°C" Value="32.2"/>
           <Parameter Name="ResistanceRelay_34921A_ClosedΩ" Value="3"/>
           <Parameter Name="ResistanceRelay_34921A_OpenedΩ" Value="1E9"/>
           <Parameter Name="Current_34921A_LowADC" Value="0.075"/>

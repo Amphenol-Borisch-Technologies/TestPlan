@@ -944,11 +944,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\Diagnostics.csproj",
+      "projectUniqueName": "H:\\Documents\\ABT\\Test\\TestPlans\\Diagnostics\\Diagnostics.csproj",
       "projectName": "Diagnostics",
-      "projectPath": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\Diagnostics.csproj",
+      "projectPath": "H:\\Documents\\ABT\\Test\\TestPlans\\Diagnostics\\Diagnostics.csproj",
       "packagesPath": "C:\\Users\\phils\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\phils\\source\\repos\\ABT\\Test\\TestPlans\\Diagnostics\\obj\\",
+      "outputPath": "H:\\Documents\\ABT\\Test\\TestPlans\\Diagnostics\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "UsingMicrosoftNETSdk": false,
