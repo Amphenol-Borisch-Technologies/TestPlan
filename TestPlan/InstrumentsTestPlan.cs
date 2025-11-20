@@ -56,7 +56,7 @@
             Debug.Assert(TestIndices.TestGroup.Assert(Classname: "Oscilloscopes", Description: "Tektronix MSO-3014s.", CancelNotPassed: "false", Independent: "true", Methods: "MSO_3014"));
             Debug.Assert(((MethodCustom)TestIndices.Method).Assert(Name: "MSO_3014", Description: "Tektronix MSO-3014 Mixed-Signal Oscilloscopes.", CancelNotPassed: "false"));
 
-            TestIndices.Method.Event = TestMethods.DiagnosticsT<MSO_3014_IVI_COM>(((MethodCustom)TestIndices.Method).Parameters);
+            TestIndices.Method.Event = TestMethods.DiagnosticsT<MSO_3014_IVI_COM_ɛ_VISA_NET>(((MethodCustom)TestIndices.Method).Parameters);
             return TestIndices.Method.LogFetchAndClear();
         }
     }
