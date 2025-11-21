@@ -8,8 +8,8 @@
     using ABT.Test.TestExecutive.TestLib.InstrumentDrivers.PowerSupplies;
     using ABT.Test.TestPlans.Diagnostics.InstrumentDrivers;
     using System;
-    using System.Windows.Forms;
     using System.Diagnostics;
+    using System.Windows.Forms;
 
     internal class SwitchingUnits {
         internal static String MSMU_34980A() {
@@ -51,12 +51,13 @@
 
     internal class Oscilloscopes {
         internal static String MSO_3014() {
-            _ = MessageBox.Show(ID.I.Value.MSO.Tkdpo2k3k4kClass.InstrumentFirmwareRevision,  "Tektronix MSO-3014", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+            ID.I.Value.MSO.UsbSession.FormattedIO.WriteLine("*IDN?");
+            _ = MessageBox.Show(ID.I.Value.MSO.UsbSession.FormattedIO.ReadLine().Trim('"').Trim(), "Tektronix MSO-3014", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
 
             Debug.Assert(TestIndices.TestGroup.Assert(Classname: "Oscilloscopes", Description: "Tektronix MSO-3014s.", CancelNotPassed: "false", Independent: "true", Methods: "MSO_3014"));
             Debug.Assert(((MethodCustom)TestIndices.Method).Assert(Name: "MSO_3014", Description: "Tektronix MSO-3014 Mixed-Signal Oscilloscopes.", CancelNotPassed: "false"));
 
-            TestIndices.Method.Event = TestMethods.DiagnosticsT<MSO_3014_IVI_COM_ɛ_VISA_NET>(((MethodCustom)TestIndices.Method).Parameters);
+            TestIndices.Method.Event = TestMethods.DiagnosticsT<MSO_3014_VISA_NET>(((MethodCustom)TestIndices.Method).Parameters);
             return TestIndices.Method.LogFetchAndClear();
         }
     }
@@ -68,7 +69,7 @@
 
             TestIndices.Method.Event = TestMethods.DiagnosticsT<SCPI_NET>(((MethodCustom)TestIndices.Method).Parameters);
             if (TestIndices.Method.Event != EVENTS.INFORMATION) { // No SCPI_NET instruments defined in TestPlanDefinition.xml.
-               // ID.I.Value.WG.Transport.Command.Invoke("APPLy:SQUare 10E+6, 5.0, -2.5");
+                                                                  // ID.I.Value.WG.Transport.Command.Invoke("APPLy:SQUare 10E+6, 5.0, -2.5");
                 _ = MessageBox.Show("Press OK to continue.", "Waveform Generator", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
             }
             return TestIndices.Method.LogFetchAndClear();

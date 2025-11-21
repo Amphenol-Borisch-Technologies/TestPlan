@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "H:\\Documents\\ABT\\Test\\TestPlans\\Diagnostics\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|h:\\documents\\abt\\test\\testplans\\diagnostics\\testplandefinition.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|solutionrelative:testplandefinition.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|H:\\Documents\\ABT\\Test\\TestPlans\\Diagnostics\\testplan\\instrumentstestplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|solutionrelative:testplan\\instrumentstestplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|H:\\Documents\\ABT\\Test\\TestPlans\\Diagnostics\\instrumentdrivers\\instrumentaliases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|solutionrelative:instrumentdrivers\\instrumentaliases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|h:\\documents\\abt\\test\\testplans\\diagnostics\\testplandefinition.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{5FC19C56-1566-457A-A8AF-A3A69561320C}|Diagnostics.csproj|solutionrelative:testplandefinition.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 44,
+          "SelectedChildIndex": 42,
           "Children": [
             {
               "$type": "Bookmark",
@@ -194,37 +194,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "InstrumentsTestPlan.cs",
               "DocumentMoniker": "H:\\Documents\\ABT\\Test\\TestPlans\\Diagnostics\\TestPlan\\InstrumentsTestPlan.cs",
               "RelativeDocumentMoniker": "TestPlan\\InstrumentsTestPlan.cs",
               "ToolTip": "H:\\Documents\\ABT\\Test\\TestPlans\\Diagnostics\\TestPlan\\InstrumentsTestPlan.cs",
               "RelativeToolTip": "TestPlan\\InstrumentsTestPlan.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAWwDoAAABbAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAwwDQAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T19:15:33.858Z"
+              "WhenOpened": "2025-11-20T19:15:33.858Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "InstrumentAliases.cs",
               "DocumentMoniker": "H:\\Documents\\ABT\\Test\\TestPlans\\Diagnostics\\InstrumentDrivers\\InstrumentAliases.cs",
               "RelativeDocumentMoniker": "InstrumentDrivers\\InstrumentAliases.cs",
               "ToolTip": "H:\\Documents\\ABT\\Test\\TestPlans\\Diagnostics\\InstrumentDrivers\\InstrumentAliases.cs",
               "RelativeToolTip": "InstrumentDrivers\\InstrumentAliases.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T21:36:04.581Z"
+              "WhenOpened": "2025-11-17T21:36:04.581Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "TestPlanDefinition.xml",
               "DocumentMoniker": "H:\\Documents\\ABT\\Test\\TestPlans\\Diagnostics\\TestPlanDefinition.xml",
               "RelativeDocumentMoniker": "TestPlanDefinition.xml",
               "ToolTip": "H:\\Documents\\ABT\\Test\\TestPlans\\Diagnostics\\TestPlanDefinition.xml",
               "RelativeToolTip": "TestPlanDefinition.xml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
               "WhenOpened": "2025-11-17T21:35:43.773Z",
               "EditorCaption": ""
