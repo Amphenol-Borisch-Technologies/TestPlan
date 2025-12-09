@@ -51,8 +51,7 @@
 
     internal class Oscilloscopes {
         internal static String MSO_3014() {
-            ID.I.Value.MSO.UsbSession.FormattedIO.WriteLine("*IDN?");
-            _ = MessageBox.Show(ID.I.Value.MSO.UsbSession.FormattedIO.ReadLine().Trim('"').Trim(), "Tektronix MSO-3014", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+            _ = MessageBox.Show(ID.I.Value.MSO.QueryLine("*IDN?"), "Tektronix MSO-3014", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
 
             Debug.Assert(TestIndices.TestGroup.Assert(Classname: "Oscilloscopes", Description: "Tektronix MSO-3014s.", CancelNotPassed: "false", Independent: "true", Methods: "MSO_3014"));
             Debug.Assert(((MethodCustom)TestIndices.Method).Assert(Name: "MSO_3014", Description: "Tektronix MSO-3014 Mixed-Signal Oscilloscopes.", CancelNotPassed: "false"));
