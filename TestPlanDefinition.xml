@@ -2,16 +2,16 @@
 <TestPlanDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="file:///C:/Program%20Files/ABT/Test/TestExecutive/TestPlanDefinition.xsd 
         https://raw.githubusercontent.com/Amphenol-Borisch-Technologies/TestExecutive/refs/heads/master/TestLib/Configuration/TestPlanDefinition.xsd">
-  
-  <UUT Number="Diagnostics" Description="Diagnostics of TestExec Functional Test System." Revision="-" Category="System">
-    <Customer Name="Amphenol Corporation" Division="Amphenol Borisch Technologies" Location="Grand Rapids" />
-    <TestSpecification Document="None" Revision="None" Title="None" Date="2025-04-01" />
-    <Documentation Folder="P:\Test\Workspace\eDocs\D\Diagnostics" />
-  </UUT>
-  <!--<SerialNumberEntry EntryType="None"/>-->
-  <!--<SerialNumberEntry EntryType="Keyboard" RegularEx="01BB2-[0-9]{5}" Format="'01BB2-XXXXX' where X is any digit in range [0,9].&#xA;Examples:  '01BB2-12345' ε '01BB2-00001'." />-->
-  <SerialNumberEntry EntryType="Keyboard" RegularEx="[0-9]{1}" Format="'X' where X is any integer in range [0,9].&#xA;Examples:  '0', '1', '2' ...'9'." />
-  <!--
+
+	<UUT Number="Diagnostics" Description="Diagnostics of TestExec Functional Test System." Revision="-" Category="System">
+		<Customer Name="Amphenol Corporation" Division="Amphenol Borisch Technologies" Location="Grand Rapids" />
+		<TestSpecification Document="None" Revision="None" Title="None" Date="2025-04-01" />
+		<Documentation Folder="P:\Test\Workspace\eDocs\D\Diagnostics" />
+	</UUT>
+	<!--<SerialNumberEntry EntryType="None"/>-->
+	<!--<SerialNumberEntry EntryType="Keyboard" RegularEx="01BB2-[0-9]{5}" Format="'01BB2-XXXXX' where X is any digit in range [0,9].&#xA;Examples:  '01BB2-12345' ε '01BB2-00001'." />-->
+	<SerialNumberEntry EntryType="Keyboard" RegularEx="[0-9]{1}" Format="'X' where X is any integer in range [0,9].&#xA;Examples:  '0', '1', '2' ...'9'." />
+	<!--
         RegularEx="[0-9]{4}" accepts only Serial Numbers of form "XXXX" where X is any digit in range [0,9].
           - Valid:   "1234", "0246" & "1357".
           - Invalid: "123"; "123" doesn't have 4 digits.
@@ -34,99 +34,99 @@
         See https://regex101.com/ for help in creating & understanding Regular Expressions.  Also, Microsoft's CoPilot at https://copilot.microsoft.com/.
   -->
 
-  <Development Released="2025-04-01">
-    <Developer Name="Phillip Smelt" Language="CSharp" Comment="" />
-    <Documentation Folder="C:\Users\phils\source\repos\ABT\Test\TestPlans\Diagnostics\Documentation" />
-    <Repository URL="file://C:/Users/phils/source/repos/ABT/Test/TestPlans/Diagnostics" />
-  </Development>
-  <Modifications>
-    <Modification Who="Phillip Smelt" What="Adapted prior TestExecutive &amp; TestExecutor into TestExec, TestLib &amp; TestPlan." When="2024-10-01" Where="Most Namespaces &amp; files updated." Why="Many major improvements." />
-    <Modification Who="Phillip Smelt" What="Replaced App.Config with TestPlanDefinition.xsd, TestPlanDefinition.xml &amp; TestPlanDefinition.cs." When="2024-12-28" Where="ABT.Test.TestExecutive.TestLib.Configuration &amp; ABT.Test.TestExecutive.Test.Testplans"
-                  Why="App.Config custom System.Configuration classes don't handle hierachical XML directly." />
-    <Modification Who="Phillip Smelt" What="Converted TestExecDefinition access from XML reads to De-Serialized classes." When="2025-02-28" Where="TestExecDefinition.xsd, TestExecDefinition.xml &amp; TestExecDefinition.cs." Why="Consistency with TestPlanDefinition.*." />
-  </Modifications>
-  <InstrumentsTestPlan>
-    <Mobile ID="MSO1_3014" Alias="MSO" Detail="Tektronix MSO3014 Mixed Signal Oscilloscope" Address="USB0::0x0699::0x0421::C021373::0::INSTR" NameSpacedClassName="ABT.Test.TestExecutive.TestLib.InstrumentDrivers.Oscilloscopes.MSO_3014_IVI_COM_ɛ_VISA_NET" />
-    <Stationary ID="MSMU1_34980A" Alias="MSMU" />
-    <Stationary ID="PS1ε2_E3649A" Alias="P12V_N12V" />
-    <Stationary ID="PS3_E3634A" Alias="P28V" />
-  </InstrumentsTestPlan>
-  <TestSpace NamespaceRoot="ABT.Test.TestPlans.Diagnostics.TestPlan" Description="System Diagnostics." WorkFolder = "C:\Users\Public\Documents\ABT\Test\TestPlans\Diagnostics" Simulate="false">  
-    <TestOperation NamespaceTrunk="InstrumentsTestPlan" ProductionTest="true" Description="Manufacturer's self-tests + ABT tests of TestPlanDefinition's InstrumentsTestPlan.">
-      <TestGroup Classname="SwitchingUnits" Description="Keysight 34980As." CancelNotPassed="false" Independent="true">
-        <MethodCustom Name="MSMU_34980A" Description="Keysight 34980A Multifunction Switch/Measurement Units." CancelNotPassed="false" >
-          <Parameter Name="FRTD_34921A_Low°C" Value="15.5"/>
-          <Parameter Name="FRTD_34921A_High°C" Value="32.2"/>
-          <Parameter Name="ResistanceRelay_34921A_ClosedΩ" Value="3"/>
-          <Parameter Name="ResistanceRelay_34921A_OpenedΩ" Value="1E9"/>
-          <Parameter Name="Current_34921A_LowADC" Value="0.075"/>
-          <Parameter Name="Current_34921A_HighADC" Value="0.125"/>
-          <Parameter Name="ResistanceRelay_34932A_ClosedΩ" Value="3"/>
-          <Parameter Name="ResistanceRelay_34932A_OpenedΩ" Value="1E9"/>
-          <Parameter Name="ResistanceRelay_34938A_ClosedΩ" Value="3"/>
-          <Parameter Name="ResistanceRelay_34938A_OpenedΩ" Value="1E9"/>
-          <Parameter Name="ResistanceRelay_34939A_ClosedΩ" Value="3"/>
-          <Parameter Name="ResistanceRelay_34939A_OpenedΩ" Value="1E9"/>
-          <Parameter Name="AccuracyDAC_34952A_VDC" Value="0.1"/>
-        </MethodCustom>
-      </TestGroup>
-      <TestGroup Classname="PowerSupplies" Description="Keysight E3634As &amp; E3649As." CancelNotPassed="false" Independent="true">
-        <MethodCustom Name="PS_E3634A" Description="Keysight E3634A Power Supplies." CancelNotPassed="false" >
-          <Parameter Name="Accuracy_E3634A_VDC" Value="0.1"/>
-        </MethodCustom>
-        <MethodCustom Name="PS_E3649A" Description="Keysight E3649A Power Supplies." CancelNotPassed="false" >
-          <Parameter Name="Accuracy_E3649A_VDC" Value="0.1"/>
-        </MethodCustom>
-      </TestGroup>
-      <TestGroup Classname="DigitalMultiMeters" Description="Keysight 34401As." CancelNotPassed="false" Independent="true">
-        <MethodCustom Name="MM_34401A" Description="Keysight 34401A Digital Multi-Meters." CancelNotPassed="false"  />
-      </TestGroup>
-      <TestGroup Classname="Oscilloscopes" Description="Tektronix MSO-3014s." CancelNotPassed="false" Independent="true">
-        <MethodCustom Name="MSO_3014" Description="Tektronix MSO-3014 Mixed-Signal Oscilloscopes." CancelNotPassed="false" />
-      </TestGroup>
-      <TestGroup Classname="WaveformGenerators" Description="Keysight 33120As." CancelNotPassed="false" Independent="true">
-        <MethodCustom Name="WG_33120A" Description="Keysight 33120A 15MHz Function/Arbitrary Waveform Generators." CancelNotPassed="false" />
-      </TestGroup>
-    </TestOperation>
-    <TestOperation NamespaceTrunk="Keysight_34980A" ProductionTest="false" Description="Keysight 34980A Module Tests.">
-      <TestGroup Classname="Keysight_34921As" Description="Keysight 34921A Modules." CancelNotPassed="false" Independent="true">
-        <MethodCustom Name="Keysight_34921A" Description="Keysight 34921A 40-Channel Armature Multiplexer." CancelNotPassed="false" >
-          <Parameter Name="ModuleType" Value="34921A"/>
-          <Parameter Name="FRTD_34921A_Low°C" Value="15.5"/>
-          <Parameter Name="FRTD_34921A_High°C" Value="32.2"/>
-          <Parameter Name="ResistanceRelay_34921A_ClosedΩ" Value="3"/>
-          <Parameter Name="ResistanceRelay_34921A_OpenedΩ" Value="1E9"/>
-          <Parameter Name="Current_34921A_LowADC" Value="0.075"/>
-          <Parameter Name="Current_34921A_HighADC" Value="0.125"/>
-        </MethodCustom>
-      </TestGroup>
-      <TestGroup Classname="Keysight_34932As" Description="Keysight 34932A Modules." CancelNotPassed="false" Independent="true">
-        <MethodCustom Name="Keysight_34932A" Description="Keysight 34032A Dual 4x16 Armature Matrix." CancelNotPassed="false" >
-          <Parameter Name="ModuleType" Value="34932A"/>
-          <Parameter Name="ResistanceRelay_34932A_ClosedΩ" Value="3"/>
-          <Parameter Name="ResistanceRelay_34932A_OpenedΩ" Value="1E9"/>
-        </MethodCustom>
-      </TestGroup>
-      <TestGroup Classname="Keysight_34938As" Description="Keysight 34938A Modules." CancelNotPassed="false" Independent="true">
-        <MethodCustom Name="Keysight_34938A" Description="Keysight 34938A 20-Channel 5 Amp Form A General Purpose Switch Module." CancelNotPassed="false" >
-          <Parameter Name="ModuleType" Value="34938A"/>
-          <Parameter Name="ResistanceRelay_34938A_ClosedΩ" Value="3"/>
-          <Parameter Name="ResistanceRelay_34938A_OpenedΩ" Value="1E9"/>
-        </MethodCustom>
-      </TestGroup>
-      <TestGroup Classname="Keysight_34939As" Description="Keysight 34939A Modules." CancelNotPassed="false" Independent="true">
-        <MethodCustom Name="Keysight_34939A" Description="Keysight 34939A 64-Channel 1 Amp Form A General Purpose Switch Module." CancelNotPassed="false" >
-          <Parameter Name="ModuleType" Value="34939A"/>
-          <Parameter Name="ResistanceRelay_34939A_ClosedΩ" Value="3"/>
-          <Parameter Name="ResistanceRelay_34939A_OpenedΩ" Value="1E9"/>
-        </MethodCustom>
-      </TestGroup>
-      <TestGroup Classname="Keysight_34952As" Description="Keysight 34952A Modules." CancelNotPassed="false" Independent="true">
-        <MethodCustom Name="Keysight_34952A" Description="Keysight 34952A Multifunction Module." CancelNotPassed="false" >
-          <Parameter Name="ModuleType" Value="34952A"/>
-          <Parameter Name="AccuracyDAC_34952A_VDC" Value="0.1"/>
-        </MethodCustom>
-      </TestGroup>
-    </TestOperation>
-  </TestSpace>
+	<Development Released="2025-04-01">
+		<Developer Name="Phillip Smelt" Language="CSharp" Comment="" />
+		<Documentation Folder="C:\Users\phils\source\repos\ABT\Test\TestPlans\Diagnostics\Documentation" />
+		<Repository URL="file://C:/Users/phils/source/repos/ABT/Test/TestPlans/Diagnostics" />
+	</Development>
+	<Modifications>
+		<Modification Who="Phillip Smelt" What="Adapted prior TestExecutive &amp; TestExecutor into TestExec, TestLib &amp; TestPlan." When="2024-10-01" Where="Most Namespaces &amp; files updated." Why="Many major improvements." />
+		<Modification Who="Phillip Smelt" What="Replaced App.Config with TestPlanDefinition.xsd, TestPlanDefinition.xml &amp; TestPlanDefinition.cs." When="2024-12-28" Where="ABT.Test.TestExecutive.TestLib.Configuration &amp; ABT.Test.TestExecutive.Test.Testplans"
+					  Why="App.Config custom System.Configuration classes don't handle hierachical XML directly." />
+		<Modification Who="Phillip Smelt" What="Converted TestExecDefinition access from XML reads to De-Serialized classes." When="2025-02-28" Where="TestExecDefinition.xsd, TestExecDefinition.xml &amp; TestExecDefinition.cs." Why="Consistency with TestPlanDefinition.*." />
+	</Modifications>
+	<InstrumentsTestPlan>
+		<Mobile     ID="MSO1_3014"    Alias="MSO"       Detail="Tektronix MSO3014 Mixed Signal Oscilloscope" Address="USB0::0x0699::0x0421::C021373::0::INSTR" NameSpacedClassName="ABT.Test.TestExecutive.TestLib.InstrumentDrivers.Oscilloscopes.MSO_3014_IVI_COM_ɛ_VISA_NET" />
+		<Mobile     ID="PS1ε2_E3649A" Alias="P12V_N12V" Detail="Agilent E3649A Dual Output DC Power Supply"  Address="GPIB0::1::INSTR"						   NameSpacedClassName="ABT.Test.TestExecutive.TestLib.InstrumentDrivers.PowerSupplies.PS_E3649A_SCPI_NET" />
+		<Stationary ID="PS3_E3634A"   Alias="P28V" />
+		<Stationary ID="MSMU1_34980A" Alias="MSMU" />
+	</InstrumentsTestPlan>
+	<TestSpace NamespaceRoot="ABT.Test.TestPlans.Diagnostics.TestPlan" Description="System Diagnostics." WorkFolder = "C:\Users\Public\Documents\ABT\Test\TestPlans\Diagnostics" Simulate="false">
+		<TestOperation NamespaceTrunk="InstrumentsTestPlan" ProductionTest="true" Description="Manufacturer's self-tests + ABT tests of TestPlanDefinition's InstrumentsTestPlan.">
+			<TestGroup Classname="SwitchingUnits" Description="Keysight 34980As." CancelNotPassed="false" Independent="true">
+				<MethodCustom Name="MSMU_34980A" Description="Keysight 34980A Multifunction Switch/Measurement Units." CancelNotPassed="false" >
+					<Parameter Name="FRTD_34921A_Low°C" Value="15.5"/>
+					<Parameter Name="FRTD_34921A_High°C" Value="32.2"/>
+					<Parameter Name="ResistanceRelay_34921A_ClosedΩ" Value="3"/>
+					<Parameter Name="ResistanceRelay_34921A_OpenedΩ" Value="1E9"/>
+					<Parameter Name="Current_34921A_LowADC" Value="0.075"/>
+					<Parameter Name="Current_34921A_HighADC" Value="0.125"/>
+					<Parameter Name="ResistanceRelay_34932A_ClosedΩ" Value="3"/>
+					<Parameter Name="ResistanceRelay_34932A_OpenedΩ" Value="1E9"/>
+					<Parameter Name="ResistanceRelay_34938A_ClosedΩ" Value="3"/>
+					<Parameter Name="ResistanceRelay_34938A_OpenedΩ" Value="1E9"/>
+					<Parameter Name="ResistanceRelay_34939A_ClosedΩ" Value="3"/>
+					<Parameter Name="ResistanceRelay_34939A_OpenedΩ" Value="1E9"/>
+					<Parameter Name="AccuracyDAC_34952A_VDC" Value="0.1"/>
+				</MethodCustom>
+			</TestGroup>
+			<TestGroup Classname="PowerSupplies" Description="Keysight E3634As &amp; E3649As." CancelNotPassed="false" Independent="true">
+				<MethodCustom Name="PS_E3634A" Description="Keysight E3634A Power Supplies." CancelNotPassed="false" >
+					<Parameter Name="Accuracy_E3634A_VDC" Value="0.1"/>
+				</MethodCustom>
+				<MethodCustom Name="PS_E3649A" Description="Keysight E3649A Power Supplies." CancelNotPassed="false" >
+					<Parameter Name="Accuracy_E3649A_VDC" Value="0.1"/>
+				</MethodCustom>
+			</TestGroup>
+			<TestGroup Classname="DigitalMultiMeters" Description="Keysight 34401As." CancelNotPassed="false" Independent="true">
+				<MethodCustom Name="MM_34401A" Description="Keysight 34401A Digital Multi-Meters." CancelNotPassed="false"  />
+			</TestGroup>
+			<TestGroup Classname="Oscilloscopes" Description="Tektronix MSO-3014s." CancelNotPassed="false" Independent="true">
+				<MethodCustom Name="MSO_3014" Description="Tektronix MSO-3014 Mixed-Signal Oscilloscopes." CancelNotPassed="false" />
+			</TestGroup>
+			<TestGroup Classname="WaveformGenerators" Description="Keysight 33120As." CancelNotPassed="false" Independent="true">
+				<MethodCustom Name="WG_33120A" Description="Keysight 33120A 15MHz Function/Arbitrary Waveform Generators." CancelNotPassed="false" />
+			</TestGroup>
+		</TestOperation>
+		<TestOperation NamespaceTrunk="Keysight_34980A" ProductionTest="false" Description="Keysight 34980A Module Tests.">
+			<TestGroup Classname="Keysight_34921As" Description="Keysight 34921A Modules." CancelNotPassed="false" Independent="true">
+				<MethodCustom Name="Keysight_34921A" Description="Keysight 34921A 40-Channel Armature Multiplexer." CancelNotPassed="false" >
+					<Parameter Name="ModuleType" Value="34921A"/>
+					<Parameter Name="FRTD_34921A_Low°C" Value="15.5"/>
+					<Parameter Name="FRTD_34921A_High°C" Value="32.2"/>
+					<Parameter Name="ResistanceRelay_34921A_ClosedΩ" Value="3"/>
+					<Parameter Name="ResistanceRelay_34921A_OpenedΩ" Value="1E9"/>
+					<Parameter Name="Current_34921A_LowADC" Value="0.075"/>
+					<Parameter Name="Current_34921A_HighADC" Value="0.125"/>
+				</MethodCustom>
+			</TestGroup>
+			<TestGroup Classname="Keysight_34932As" Description="Keysight 34932A Modules." CancelNotPassed="false" Independent="true">
+				<MethodCustom Name="Keysight_34932A" Description="Keysight 34032A Dual 4x16 Armature Matrix." CancelNotPassed="false" >
+					<Parameter Name="ModuleType" Value="34932A"/>
+					<Parameter Name="ResistanceRelay_34932A_ClosedΩ" Value="3"/>
+					<Parameter Name="ResistanceRelay_34932A_OpenedΩ" Value="1E9"/>
+				</MethodCustom>
+			</TestGroup>
+			<TestGroup Classname="Keysight_34938As" Description="Keysight 34938A Modules." CancelNotPassed="false" Independent="true">
+				<MethodCustom Name="Keysight_34938A" Description="Keysight 34938A 20-Channel 5 Amp Form A General Purpose Switch Module." CancelNotPassed="false" >
+					<Parameter Name="ModuleType" Value="34938A"/>
+					<Parameter Name="ResistanceRelay_34938A_ClosedΩ" Value="3"/>
+					<Parameter Name="ResistanceRelay_34938A_OpenedΩ" Value="1E9"/>
+				</MethodCustom>
+			</TestGroup>
+			<TestGroup Classname="Keysight_34939As" Description="Keysight 34939A Modules." CancelNotPassed="false" Independent="true">
+				<MethodCustom Name="Keysight_34939A" Description="Keysight 34939A 64-Channel 1 Amp Form A General Purpose Switch Module." CancelNotPassed="false" >
+					<Parameter Name="ModuleType" Value="34939A"/>
+					<Parameter Name="ResistanceRelay_34939A_ClosedΩ" Value="3"/>
+					<Parameter Name="ResistanceRelay_34939A_OpenedΩ" Value="1E9"/>
+				</MethodCustom>
+			</TestGroup>
+			<TestGroup Classname="Keysight_34952As" Description="Keysight 34952A Modules." CancelNotPassed="false" Independent="true">
+				<MethodCustom Name="Keysight_34952A" Description="Keysight 34952A Multifunction Module." CancelNotPassed="false" >
+					<Parameter Name="ModuleType" Value="34952A"/>
+					<Parameter Name="AccuracyDAC_34952A_VDC" Value="0.1"/>
+				</MethodCustom>
+			</TestGroup>
+		</TestOperation>
+	</TestSpace>
 </TestPlanDefinition>
